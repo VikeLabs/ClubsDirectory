@@ -21,13 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write \"src/**/*.{t,j}s{x,}\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "format": "prettier --write \"src/**/*.{t,j}s{x,}\"",
+    "lint": "eslint \"src/**/*.{t,j}s{x,}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{t,j}s{x,}\""
   },
   "browserslist": {
     "production": [
@@ -42,6 +38,41 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript"
+    ],
+    "rules": {
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "parent",
+            "sibling",
+            "index"
+          ],
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          }
+        }
+      ]
+    },
+    "ignorePatterns": [
+      "functions/**"
+    ]
   }
 }
