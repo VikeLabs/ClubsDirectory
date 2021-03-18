@@ -63,3 +63,52 @@ export const defaultPhotos: Photo[] = [
     alt: 'slack3',
   },
 ];
+
+export interface Info {
+  image: Photo;
+  text: string;
+}
+
+export const defaultInfos: Info[] = [
+  {
+    image: {
+      source: './slack.jpg',
+      alt: 'person_icon',
+    },
+    text: '74 members',
+  },
+  {
+    image: {
+      source: './slack.jpg',
+      alt: 'calendar_icon',
+    },
+    text: 'Created January 2019',
+  },
+];
+
+export const defaultLogo: Photo[] = [
+  {
+    source: './slack.jpg',
+    alt: 'logo',
+  },
+];
+
+export interface Tag {
+  text: string;
+  url: string;
+}
+
+export const defaultTags: Tag[] = [
+  {
+    text: 'Arts',
+    url: './arts',
+  },
+  {
+    text: 'Photography',
+    url: './photography',
+  },
+  {
+    text: 'Off Campus',
+    url: './offcampus',
+  },
+];
