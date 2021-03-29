@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './App.css';
-
 import ClubsListPage from './ClubListPage';
 
 function App() {

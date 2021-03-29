@@ -1,17 +1,35 @@
 import React from 'react';
 
 import { Title } from './../data';
+import styled from 'styled-components';
 
 interface TitleProps {
   title: Title;
 }
 
+const TitleContainer = styled.div`
+  font-family: ${(props) => props.theme.font};
+  font-style: ${(props) => props.theme.fontStyle};
+  color: white;
+`
+
+const TitleTag = styled.h1`
+  display: inline-block;
+  font-size: 72px;
+  margin: 50px 500px 15px 70px;
+`
+const TitleDirTag = styled.h3`
+  display: inline-block;
+  font-size: 17px;
+`
+
+
 function TitleItem(props: TitleProps) {
   return (
-    <div className="title">
-      <h1>{props.title.categoryName}</h1>
-      <h3>{props.title.directoryName}</h3>
-    </div>
+    <TitleContainer>
+      <TitleTag>{props.title.categoryName}</TitleTag>
+      <TitleDirTag>{props.title.directoryName}</TitleDirTag>
+    </TitleContainer>
   );
 }
 
