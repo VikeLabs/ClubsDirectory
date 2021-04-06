@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './CategoryButton.css';
+import './Assets/CSS/CategoryButton.css';
 import { Category } from './categoryData';
 
 interface CategoryProps {
@@ -21,9 +21,9 @@ interface ListProps {
   updateCategory: (category: Category, index: number) => void;
 }
 
-function CategoryList(props: ListProps) {
+function CategoryButtonMatrix(props: ListProps) {
   return (
-    <div className="category-list">
+    <div className="category-buttons">
       {props.items.map((category, index) => (
         <CategoryItem category={category} updateCategory={(category) => props.updateCategory(category, index)} />
       ))}
@@ -31,4 +31,4 @@ function CategoryList(props: ListProps) {
   );
 }
 
-export default CategoryList;
+export default CategoryButtonMatrix;

@@ -1,14 +1,20 @@
 import React from 'react';
 
 import CategoryPage from './CategoryPage';
-import './App.css';
+import Sidebar from './Sidebar';
+import './Assets/CSS/App.css';
 
 function App() {
   return (
-    <div>
+    <div className="club-landing">
       <h1>UVSS</h1>
       <h2>Club Categories</h2>
-      <CategoryPage />
+      <div className="category-page">
+        <CategoryPage />
+      </div>
+      <div className="sidebar-page">
+        <Sidebar />
+      </div>
     </div>
   );
 }

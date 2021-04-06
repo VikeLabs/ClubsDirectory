@@ -1,5 +1,0 @@
-.category-list{
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-auto-rows: minmax(100px, auto);
-}

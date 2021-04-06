@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
-import CategoryButtonMatrix from './CategoryButtonMatrix';
-import './Assets/CSS/CategoryButton.css';
 import { defaultCategory, Category } from './categoryData';
+import SideBarCategories from './SideBarCategories';
 
-function CategoryPage() {
+function Sidebar() {
   const [categories, setCategory] = useState(defaultCategory);
 
   function updateCategory(category: Category, index: number) {
@@ -14,9 +13,9 @@ function CategoryPage() {
   }
 
   return (
-    <div className="category-matrix">
-      <CategoryButtonMatrix items={categories} updateCategory={updateCategory} />
+    <div className="sidebar-nav">
+      <SideBarCategories items={categories} updateCategory={updateCategory} />
     </div>
   );
 }
-export default CategoryPage;
+export default Sidebar;
