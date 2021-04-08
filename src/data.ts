@@ -8,7 +8,7 @@ export const defaultTitle: Title = {
   directoryName: 'Club Categories/Art Clubs',
 };
 
-export interface CategoryItem {
+export interface CategoryItem { 
   categoryName: string;
   clubs: string[];
 }

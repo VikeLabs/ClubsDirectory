@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Club } from './../data';
+import { Club } from './data';
 
 interface ClubProp {
   club: Club;

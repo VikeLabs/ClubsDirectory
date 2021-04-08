@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CategoryMenu from './Components/CategoryMenu';
-import Clubs from './Components/Clubs';
-import TitleItem from './Components/Title';
+import CategoryMenu from './CategoryMenu';
+import Clubs from './Clubs';
+import TitleItem from './Title';
 import { defaultTitle, defaultCategoryMenu, defaultClubs } from './data';
 import styled, { ThemeProvider } from 'styled-components';
 
@@ -21,7 +21,6 @@ function ClubListPage() {
     <ThemeProvider theme={theme}>
       <PageContainer>
         <TitleItem title={defaultTitle} />
-        <h2>Hamburger Menu</h2>
         <CategoryMenu categoryList={defaultCategoryMenu} />
         <h2>Clubs List</h2>
         <Clubs clubs={defaultClubs} />

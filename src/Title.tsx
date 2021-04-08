@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Title } from './../data';
+import { Title } from './data';
 import styled from 'styled-components';
 
 interface TitleProps {
@@ -18,6 +18,7 @@ const TitleTag = styled.h1`
   font-size: 72px;
   margin: 50px 500px 15px 70px;
 `
+
 const TitleDirTag = styled.h3`
   display: inline-block;
   font-size: 17px;
