@@ -3,24 +3,8 @@ import React from 'react';
 import { CategoryItem } from './data';
 import styled from 'styled-components';
 import { GiPaintBrush } from 'react-icons/gi';
-
-const HamIcon = styled.div`
-  display: inline-block;
-  cursor: pointer;
-  margin-left: 30px;
-  padding: 3px 5px;
-  border-radius: 5px;
-`
-
-
-const HamBar = styled.div`
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-  border-radius:2px;
-`
+import HamIcon, { HamIconDiv } from './HamIcon';
+import ActionButton from './Assets/Styling/Buttons'
 
 const CategoryContent = styled.div`
   display: none;
@@ -40,9 +24,9 @@ const CategoryMenuDiv = styled.div`
   &:hover ${CategoryContent} {
     display: block;
   }
-  &:hover ${HamIcon} {
+  &:hover ${HamIconDiv}{
     background-color: #125864;
-  }
+  } 
 `
 const ClubNameList = styled.div`
   display: none;
@@ -61,8 +45,9 @@ const CategoryName = styled.a`
   }
 `
 
-const ClubName = styled.a`
+const ClubName = styled(ActionButton)`
   display: list-item;
+  list-style-type: none;
   padding-left: 24px;
   &:hover {
     background-color:#bbb9b9;
@@ -72,7 +57,12 @@ interface CategoryItemProp {
   categoryItem: CategoryItem;
 }
 
+const gotoLink = async () => {
+  /* function to navigate to the button url prop*/
+};
+
 function CategoryListItem(props: CategoryItemProp) {
+
   return (
     <CategoryItemDiv>
       <CategoryName>
@@ -81,7 +71,7 @@ function CategoryListItem(props: CategoryItemProp) {
       </CategoryName>
       <ClubNameList>
         {props.categoryItem.clubs.map((clubname) => {
-          return <ClubName>{clubname}</ClubName>;
+          return <ClubName variant="sideBarButton" onClick={gotoLink}>{clubname}</ClubName>;
         })}
       </ClubNameList>
     </CategoryItemDiv>
@@ -93,16 +83,10 @@ interface CategoryMenuProp {
 }
 
 function CategoryMenu(props: CategoryMenuProp) {
-  function hamIconClick() {
-    console.log('The HamIcon Was Clicked');
-  }
+
   return (
     <CategoryMenuDiv>
-      <HamIcon onClick={hamIconClick}>
-        <HamBar></HamBar>
-        <HamBar></HamBar>
-        <HamBar></HamBar>
-      </HamIcon>
+      <HamIcon/> 
       <CategoryContent>        
           {props.categoryList.map((categoryItem) => {
             return <CategoryListItem categoryItem={categoryItem} />;
