@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 import { buttonStyle } from 'styled-system';
 import { BaseTheme, ButtonVariants } from '../../Theme';
 
@@ -12,7 +12,7 @@ export interface Props {
   disabled?: boolean;
 }
 
-const ActionButtonStyle = styled<BaseTheme>('button')`
+const ActionButtonStyle = styled('button')`
   font-size: ${({ theme }) => theme.fontSizes.s}; 
   border-radius: 12px;
   padding: 0.5rem 2rem;
