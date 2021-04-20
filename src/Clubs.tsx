@@ -14,8 +14,8 @@ function ClubIcon(props: ClubProp) {
       <h3>{props.club.clubName}</h3>
       <p>{props.club.clubDescription}</p>
       <ul>
-        {props.club.clubTags.map((tag) => {
-          return <li>{tag}</li>;
+        {props.club.clubTags.map((tag, index) => {
+          return <li key={index}>{tag}</li>;
         })}
       </ul>
     </div>
@@ -29,8 +29,8 @@ interface ClubsProp {
 function Clubs(props: ClubsProp) {
   return (
     <ul>
-      {props.clubs.map((club) => {
-        return <ClubIcon club={club} />;
+      {props.clubs.map((club, index) => {
+        return <ClubIcon club={club} key={index}/>;
       })}
     </ul>
   );

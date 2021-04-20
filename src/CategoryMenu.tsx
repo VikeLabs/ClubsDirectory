@@ -37,7 +37,7 @@ const CategoryItemDiv = styled.div`
   }
 `
 
-const CategoryName = styled.a`
+const CategoryName = styled(ActionButton)`
   padding: 12px 15px;
   display: block;
   &:hover {
@@ -62,16 +62,16 @@ const gotoLink = async () => {
 };
 
 function CategoryListItem(props: CategoryItemProp) {
-
+  // Need to import club category icon instead of GiPaintBrush tag
   return (
     <CategoryItemDiv>
-      <CategoryName>
-        <GiPaintBrush />
+      <CategoryName variant="sideBarButton" onClick={gotoLink}>
+        <GiPaintBrush /> 
         <b>{props.categoryItem.categoryName}</b>
       </CategoryName>
       <ClubNameList>
-        {props.categoryItem.clubs.map((clubname) => {
-          return <ClubName variant="sideBarButton" onClick={gotoLink}>{clubname}</ClubName>;
+        {props.categoryItem.clubs.map((clubname, index) => {
+          return <ClubName variant="sideBarButton" onClick={gotoLink} key={index}>{clubname}</ClubName>;
         })}
       </ClubNameList>
     </CategoryItemDiv>
@@ -88,8 +88,8 @@ function CategoryMenu(props: CategoryMenuProp) {
     <CategoryMenuDiv>
       <HamIcon/> 
       <CategoryContent>        
-          {props.categoryList.map((categoryItem) => {
-            return <CategoryListItem categoryItem={categoryItem} />;
+          {props.categoryList.map((categoryItem, index) => {
+            return <CategoryListItem categoryItem={categoryItem} key={index}/>;
           })}        
       </CategoryContent>
     </CategoryMenuDiv>

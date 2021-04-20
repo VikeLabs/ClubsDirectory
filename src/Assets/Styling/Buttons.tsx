@@ -1,7 +1,6 @@
 import React from 'react';
-import styled, { DefaultTheme } from 'styled-components';
+import styled from 'styled-components';
 import { buttonStyle } from 'styled-system';
-import { BaseTheme, ButtonVariants } from '../../Theme';
 
 export type Variant = 'clubListButton' | 'clubCategoriesButton' | 'tagButton' | 'sideBarButton';
 
@@ -13,8 +12,8 @@ export interface Props {
 }
 
 const ActionButtonStyle = styled('button')`
-  font-size: ${({ theme }) => theme.fontSizes.s}; 
-  border-radius: 12px;
+  font-size: 1rem; //change to use theme 
+  border-radius: 12px; 
   padding: 0.5rem 2rem;
   width: 100%;
   border: none;

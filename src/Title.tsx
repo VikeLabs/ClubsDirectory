@@ -8,8 +8,6 @@ interface TitleProps {
 }
 
 const TitleContainer = styled.div`
-  font-family: ${(props) => props.theme.font};
-  font-style: ${(props) => props.theme.fontStyle};
   color: white;
 `
 

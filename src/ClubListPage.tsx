@@ -7,7 +7,7 @@ import { defaultTitle, defaultCategoryMenu, defaultClubs } from './data';
 import styled from 'styled-components';
 
 const PageContainer = styled.div`
-  background-color: ${(props) => props.theme.uvssBlue};
+  background-color: #1B8091; // Change to use theme color
 `
 
 function ClubListPage() {
