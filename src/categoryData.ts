@@ -1,55 +1,72 @@
+import React, { ComponentType } from 'react';
+
+import {
+  ArtMock,
+  CommunityMock,
+  CultureMock,
+  EnvironmentMock,
+  FoodMock,
+  GamingMock,
+  MusicMock,
+  OtherMock,
+  PoliticsMock,
+  ReligionMock,
+  SportsMock,
+  STEMMock,
+} from './Assets/MockPages';
+
 export interface Category {
   title: string;
-  completed: boolean;
+  page: ComponentType;
 }
 
 export const defaultCategory: Category[] = [
   {
     title: 'Arts',
-    completed: false,
+    page: ArtMock,
   },
   {
     title: 'Community',
-    completed: false,
+    page: CommunityMock,
   },
   {
     title: 'Culture',
-    completed: false,
+    page: CultureMock,
   },
   {
     title: 'Environment',
-    completed: false,
+    page: EnvironmentMock,
   },
   {
     title: 'Food',
-    completed: false,
+    page: FoodMock,
   },
   {
     title: 'Gaming',
-    completed: false,
+    page: GamingMock,
   },
   {
     title: 'Music',
-    completed: false,
+    page: MusicMock,
   },
   {
     title: 'Politics',
-    completed: false,
+    page: PoliticsMock,
   },
   {
     title: 'Religion',
-    completed: false,
+    page: ReligionMock,
   },
   {
     title: 'Sports',
-    completed: false,
+    page: SportsMock,
   },
   {
     title: 'STEM',
-    completed: false,
+    page: STEMMock,
   },
   {
     title: 'Other',
-    completed: false,
+    page: OtherMock,
   },
 ];
