@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function SportsMock() {
-  return <h1>Sports Page</h1>;
+  return <CategoryTitle>Sports Page</CategoryTitle>;
 }
 
 export default SportsMock;

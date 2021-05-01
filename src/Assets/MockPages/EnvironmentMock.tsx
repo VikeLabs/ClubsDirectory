@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function EnvironmentMock() {
-  return <h1>Environment Page</h1>;
+  return <CategoryTitle>Environment Page</CategoryTitle>;
 }
 
 export default EnvironmentMock;

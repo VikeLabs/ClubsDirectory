@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function MusicMock() {
-  return <h1>Music Page</h1>;
+  return <CategoryTitle>Music Page</CategoryTitle>;
 }
 
 export default MusicMock;

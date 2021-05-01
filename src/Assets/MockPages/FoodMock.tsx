@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function FoodMock() {
-  return <h1>Food Page</h1>;
+  return <CategoryTitle>Food Page</CategoryTitle>;
 }
 
 export default FoodMock;

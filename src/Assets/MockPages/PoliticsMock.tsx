@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function PoliticsMock() {
-  return <h1>Politics Page</h1>;
+  return <CategoryTitle>Politics Page</CategoryTitle>;
 }
 
 export default PoliticsMock;

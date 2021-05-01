@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function GamingMock() {
-  return <h1>Gaming Page</h1>;
+  return <CategoryTitle>Gaming Page</CategoryTitle>;
 }
 
 export default GamingMock;

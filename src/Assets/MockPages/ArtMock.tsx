@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function ArtMock() {
-  return <h1>Arts Page</h1>;
+  return <CategoryTitle>Arts Page</CategoryTitle>;
 }
 
 export default ArtMock;

@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function CommunityMock() {
-  return <h1>Community Page</h1>;
+  return <CategoryTitle>Community Page</CategoryTitle>;
 }
 
 export default CommunityMock;

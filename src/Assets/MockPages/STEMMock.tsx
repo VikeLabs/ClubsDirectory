@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function STEMMock() {
-  return <h1>STEM Page</h1>;
+  return <CategoryTitle>STEM Page</CategoryTitle>;
 }
 
 export default STEMMock;

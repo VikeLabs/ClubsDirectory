@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function CultureMock() {
-  return <h1>Culture Page</h1>;
+  return <CategoryTitle>Culture Page</CategoryTitle>;
 }
 
 export default CultureMock;

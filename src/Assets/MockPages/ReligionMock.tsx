@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function ReligionMock() {
-  return <h1>Religion Page</h1>;
+  return <CategoryTitle>Religion Page</CategoryTitle>;
 }
 
 export default ReligionMock;

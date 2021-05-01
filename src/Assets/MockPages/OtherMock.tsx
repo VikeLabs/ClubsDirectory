@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryTitle } from '../../CategoryModule/MatrixStyledComponents';
+
 function OtherMock() {
-  return <h1>Other Page</h1>;
+  return <CategoryTitle>Other Page</CategoryTitle>;
 }
 
 export default OtherMock;
