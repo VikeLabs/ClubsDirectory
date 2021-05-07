@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import './Assets/CSS/GlobalBackgroundImage.css';
 import CategoryPage from './CategoryModule/CategoryPage';
 import Header from './Header';
 import LandingPage from './LandingPage';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
       <Router>
         <Switch>

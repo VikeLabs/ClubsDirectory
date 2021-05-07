@@ -1,0 +1,10 @@
+.App {
+  position: fixed;
+  background-Image: url(../Images/CompletedBackground.png);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  overflow-y: scroll;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+}

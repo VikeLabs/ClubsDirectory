@@ -10,7 +10,7 @@ const HeaderBar = styled.nav`
   max-height: 15vh;
   background: #1b8091;
   color: white;
-  box-shadow: 20px;
+  box-shadow: 0 15px 15px 10px rgba(0, 0, 0, 0.2);
 `;
 
 function Header() {

@@ -8,8 +8,8 @@ const Grid = styled.div`
   padding-bottom: 100px;
   grid-template-columns: repeat(4, 100px);
   grid-auto-rows: minmax(100px, auto);
-  grid-row-gap: 30px;
-  grid-column-gap: 80px;
+  grid-row-gap: 90px;
+  grid-column-gap: 120px;
 `;
 
 const Gridbutton = styled.button`
