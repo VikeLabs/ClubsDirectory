@@ -4,13 +4,12 @@ import { CategoryItem } from './data';
 import styled from 'styled-components';
 import { GiPaintBrush } from 'react-icons/gi';
 import HamIcon, { HamIconDiv } from './HamIcon';
-import ActionButton from './Assets/Styling/Buttons'
 
 const CategoryContent = styled.div`
   display: none;
   position: absolute;
   margin-left: 30px;
-  background-color: #f9f9f9;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -37,18 +36,26 @@ const CategoryItemDiv = styled.div`
   }
 `
 
-const CategoryName = styled(ActionButton)`
+const CategoryName = styled.button`
   padding: 12px 15px;
+  width: 100%;
   display: block;
+  background: none;
+  border: none;
   &:hover {
     background-color: #bbb9b9;
   }
 `
 
-const ClubName = styled(ActionButton)`
+const ClubName = styled.button`
   display: list-item;
   list-style-type: none;
   padding-left: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  background: none;
+  border: none;
   &:hover {
     background-color:#bbb9b9;
   }
@@ -61,17 +68,20 @@ const gotoLink = async () => {
   /* function to navigate to the button url prop*/
 };
 
+function openClubNames() {
+
+}
 function CategoryListItem(props: CategoryItemProp) {
   // Need to import club category icon instead of GiPaintBrush tag
   return (
     <CategoryItemDiv>
-      <CategoryName variant="sideBarButton" onClick={gotoLink}>
+      <CategoryName onClick={openClubNames}>
         <GiPaintBrush /> 
         <b>{props.categoryItem.categoryName}</b>
       </CategoryName>
       <ClubNameList>
         {props.categoryItem.clubs.map((clubname, index) => {
-          return <ClubName variant="sideBarButton" onClick={gotoLink} key={index}>{clubname}</ClubName>;
+          return <ClubName onClick={gotoLink} key={index}>{clubname}</ClubName>;
         })}
       </ClubNameList>
     </CategoryItemDiv>

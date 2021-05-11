@@ -9,12 +9,14 @@ interface TitleProps {
 
 const TitleContainer = styled.div`
   color: white;
+  font-family: Helvetica;
+  font-weight: bold;
 `
 
 const TitleTag = styled.h1`
   display: inline-block;
   font-size: 72px;
-  margin: 50px 500px 15px 70px;
+  margin: 50px 500px 15px 70px; 
 `
 
 const TitleDirTag = styled.h3`

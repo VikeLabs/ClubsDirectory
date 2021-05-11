@@ -5,9 +5,13 @@ import Clubs from './Clubs';
 import TitleItem from './Title';
 import { defaultTitle, defaultCategoryMenu, defaultClubs } from './data';
 import styled from 'styled-components';
+import backgroundImg from './Assets/Images/CompletedBackground.png'
 
 const PageContainer = styled.div`
-  background-color: #1B8091; // Change to use theme color
+  background-image: url(${backgroundImg});
+  background-size: cover;
+  background-color: white;
+  padding-bottom: 50px;
 `
 
 function ClubListPage() {

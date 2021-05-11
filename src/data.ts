@@ -1,3 +1,6 @@
+import error_img from './Assets/Images/error_image.png';
+import { Photo } from './Photo'
+
 export interface Title {
   categoryName: string;
   directoryName: string;
@@ -20,30 +23,25 @@ export const defaultCategoryMenu: CategoryItem[] = [
   },
   {
     categoryName: 'Community Service',
-    clubs: ['Community Service Club', '...'],
+    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
   {
     categoryName: 'Cutural',
-    clubs: [],
+    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
   {
     categoryName: 'Environmental',
-    clubs: [],
+    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
   {
     categoryName: 'Food & Drink',
-    clubs: [],
+    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
   {
-    categoryName: '...',
-    clubs: [],
+    categoryName: 'Technology',
+    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
 ];
-
-export interface Photo {
-  url: string;
-  alt: string;
-}
 
 export interface Club {
   clubName: string;
@@ -53,7 +51,7 @@ export interface Club {
 }
 
 const defaultPhoto: Photo = {
-  url: './error_image.png',
+  source: error_img,
   alt: 'club logo',
 };
 
@@ -61,19 +59,19 @@ export const defaultClubs: Club[] = [
   {
     clubName: 'Her Campus',
     clubImage: defaultPhoto,
-    clubDescription: 'This is the club description. This is the club description. This is the club description.',
+    clubDescription: 'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
     clubTags: ['Arts', 'Blog', 'Digital Media'],
   },
   {
     clubName: 'UVic Photography Excursion Club',
     clubImage: defaultPhoto,
-    clubDescription: 'This is the club description. This is the club description. This is the club description.',
+    clubDescription: 'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
     clubTags: ['Arts', 'Off Campus', 'Photography'],
   },
   {
     clubName: 'Vikes Improv',
     clubImage: defaultPhoto,
-    clubDescription: 'This is the club description. This is the club description. This is the club description.',
+    clubDescription: 'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
     clubTags: ['Acting', 'Arts', 'Theatre'],
   },
 ];
