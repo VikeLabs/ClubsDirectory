@@ -1,6 +1,10 @@
 import React from 'react';
 
+import './infos.css';
+
 import { Info } from './data';
+import IconItem from './Icon';
+import Icon from './Icon';
 
 interface InfoProps {
   info: Info;
@@ -9,8 +13,9 @@ interface InfoProps {
 function InfoItem(props: InfoProps) {
   return (
     <div className="info-item">
-      <img src={props.info.image.source} alt={props.info.image.alt}></img>
-      <p>{props.info.text}</p>
+      <p>
+        <Icon icon={props.info.icon} /> {props.info.text}
+      </p>
     </div>
   );
 }
@@ -21,11 +26,11 @@ interface InfoListProps {
 
 function InfoList(props: InfoListProps) {
   return (
-    <ul className="info-list">
+    <p className="info-list">
       {props.infos.map((info) => {
         return <InfoItem info={info} />;
       })}
-    </ul>
+    </p>
   );
 }
 

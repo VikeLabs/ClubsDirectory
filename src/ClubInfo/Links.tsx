@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Link } from './data';
+import Icon from './Icon';
 
 interface LinkProps {
   link: Link;
@@ -9,7 +10,7 @@ interface LinkProps {
 function LinkItem(props: LinkProps) {
   return (
     <div className="link-item">
-      <img src={props.link.logo.source} alt={props.link.logo.alt}></img>
+      <Icon icon={props.link.logo}></Icon>
       <p>{props.link.url}</p>
     </div>
   );

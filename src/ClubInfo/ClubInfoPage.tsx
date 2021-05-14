@@ -1,4 +1,10 @@
+import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useState } from 'react';
+
+import PhotoBar from '../Photo';
+import { Grid, Row } from '../theme';
+
+import './ClubInfoPage.css';
 
 import {
   defaultLinks,
@@ -8,11 +14,15 @@ import {
   defaultInfos,
   defaultLogo,
   defaultTags,
+  defaultIcon,
+  defaultPath,
 } from './data';
 import Description from './Description';
+import Icon from './Icon';
 import InfoList from './Infos';
 import LinkList from './Links';
-import PhotoBar from './Photo';
+import LogoItem from './Logo';
+import PathItem from './Path';
 import TagList from './Tags';
 import Title from './Title';
 
@@ -24,21 +34,47 @@ function ClubInfoPage() {
   const infos = defaultInfos;
   const club_logo = defaultLogo;
   const tags = defaultTags;
+  const deficon = defaultIcon;
+  const path = defaultPath;
+
+  // header
+  // logo path
+  //      name
+  //      tags
+  // links infos
+  //      desc
+  // photos
 
   return (
-    <div className="club-info-page">
-      <Title title={title} />
-      <PhotoBar photos={club_logo} />
-      <h2>Tags</h2>
-      <TagList tags={tags} />
-      <h2>Info</h2>
-      <InfoList infos={infos} />
-      <h2>Links</h2>
-      <LinkList links={links} />
-      <h2>Description</h2>
-      <Description description={description} />
-      <h2>Featured Photos</h2>
-      <PhotoBar photos={photos} />
+    <div className="App">
+      <div className="grid">
+        <div className="header">header</div>
+        <div className="logo">
+          <LogoItem logo={club_logo}></LogoItem>
+        </div>
+        <div className="path">
+          <PathItem path={defaultPath}></PathItem>
+        </div>
+        <div className="clubName">
+          <Title title={title} />
+        </div>
+        <div className="tags">
+          <TagList tags={tags} />
+        </div>
+        <div className="links">
+          <LinkList links={links}></LinkList>
+        </div>
+        <div className="infos">
+          <InfoList infos={infos} />
+        </div>
+        <div className="description">
+          <Description description={description} />
+        </div>
+        <div className="photoHeader">
+          <p>Featured Photos</p>
+        </div>
+        <div className="photos">photos</div>
+      </div>
     </div>
   );
 }

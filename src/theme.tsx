@@ -1,5 +1,12 @@
 import React from 'react';
-import { ThemeProvider, DefaultTheme } from 'styled-components';
+import styled, { ThemeProvider, DefaultTheme } from 'styled-components';
+
+export const Grid = styled.div``;
+
+export const Row = styled.div`
+  display: flex;
+  justify-content: left;
+`;
 
 export interface BaseTheme {
   fontSizes: { xs: string; s: string; m: string; l: string; xl: string };

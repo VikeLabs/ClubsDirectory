@@ -3,7 +3,6 @@
 #top .title-item {
   color: #fff;
   border: 0;
-  padding-top: 50px;
 }
 
 #top #main .container_wrap_first,
@@ -20,6 +19,6 @@
 .title-item {
   font-size: 37.5px;
   line-height: normal;
-  color: #118e9b;
-  margin-bottom: 20px;
+  color: #000;
+  font-weight: bold;
 }

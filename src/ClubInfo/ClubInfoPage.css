@@ -1,0 +1,101 @@
+/* .App {
+  position: fixed;
+  background-Image: url(../Assets/Images/CompletedBackground.png);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  overflow-y: scroll;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+} */
+
+.grid {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template: 1.5fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 2.5fr 0.5fr 3.5fr / 1fr 4fr;
+  gap: 5px 20px;
+  grid-template-areas:
+  "header header"
+  "gap gap"
+  "logo path"
+  "logo clubName"
+  "logo tags"
+  "logo infos"
+  "links description"
+  "photoHeader empty"
+  "photos photos"
+}
+
+.h2 {
+  font-weight: bold;
+}
+
+.header {
+  background-color: rgb(123, 194, 212);
+  grid-area: header;
+}
+
+.logo {
+  /* background-color: teal; */
+  grid-area: logo;
+}
+
+.path {
+  /* background-color: azure; */
+  grid-area: path;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.clubName {
+  /* background-color: pink; */
+  grid-area: clubName;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.tags {
+  /*background-color: red;*/
+  grid-area: tags;
+  text-align: left;
+  padding: 0 0 10px 10px;
+}
+
+.links {
+  /* background-color: brown; */
+  grid-area: links;
+  text-align: left;
+  padding-left: 15%; 
+}
+
+.infos {
+  background-color: white;
+  grid-area: infos;
+  text-align: left;
+  padding: 0 0 10px 10px;
+}
+
+.description {
+  /* background-color: pink; */
+  grid-area: description;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.photoHeader {
+  /* background-color: aquamarine; */
+  grid-area: photoHeader;
+  text-align: left;
+  padding-left: 15%;
+  font-weight: bold;
+}
+
+.photos {
+  background-color: pink;
+  grid-area: photos;
+  text-align: left;
+  padding: 0 15% 0 15%;
+  display: flex;
+  flex-direction: row;
+}

@@ -1,15 +1,14 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
 
 import ClubInfoPage from './ClubInfo/ClubInfoPage';
-import LinkList from './ClubInfo/Links';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <ChakraProvider>
       <ClubInfoPage />
-    </div>
+    </ChakraProvider>
   );
 }
 
