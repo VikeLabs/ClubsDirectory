@@ -1,6 +1,6 @@
 body{
-  background-image: url(../Images/CompletedBackground.png);
-  background-repeat: no-repeat;
-  background-position-y: 80px;
-  background-color: white;
+  background-image: url(../Images/CompletedBackground.png) !important;
+  background-repeat: no-repeat !important;
+  background-position-y: 80px !important;
+  background-color: white !important;
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import CategoryButtonMatrix from './CategoryButtonMatrix';
-import { Category, defaultCategory } from './CategoryData';
+import { defaultCategory } from './CategoryData';
 
 function CategoryPage() {
   // Array holding all the category data.

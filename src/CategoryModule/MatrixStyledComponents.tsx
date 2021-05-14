@@ -1,3 +1,4 @@
+import { Center } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -39,8 +40,9 @@ const CategoryTitle = styled.h1`
   font-style: normal;
 `;
 
-const ButtonIcon = styled.i`
+const ButtonIcon = styled(Center)`
   font-size: 80px;
+  padding-bottom: 10px;
 `;
 
 const ButtonLabel = styled.p`

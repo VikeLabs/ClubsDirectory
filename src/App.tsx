@@ -8,7 +8,7 @@ import LandingPage from './LandingPage';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Router>
         <Switch>

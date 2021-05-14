@@ -6,7 +6,7 @@ const LandingPageTitle = styled.h1`
   font-size: 100px;
   font-weight: 600;
   margin-left: 55px;
-  margin-top: 80px;
+  margin-top: 70px;
 `;
 
 const LandingPageBodyText = styled.p`
@@ -15,11 +15,12 @@ const LandingPageBodyText = styled.p`
   width: 680px;
   height: 166px;
   margin-left: 55px;
-  margin-top: -20px;
+  margin-top: 40px;
 `;
 
 const CategoryNavButton = styled.button`
   margin-left: 55px;
+  margin-top: 60px;
   width: 306px;
   height: 61px;
   border-radius: 20px;
