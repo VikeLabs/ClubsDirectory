@@ -4,41 +4,95 @@ import { Club } from './data';
 import styled from 'styled-components';
 import { Tag } from '@chakra-ui/react';
 import PhotoItem from './Photo'
-
+import { IoIosArrowForward } from 'react-icons/io'
 
 const ClubIconDiv = styled.div`
  background-color: white;
- margin: 50px 800px 50px 40px;
+ margin: 45px 0px;
+ display: grid;
+ grid-template-rows: 1fr 4fr 1fr;
+ grid-template-columns: 3fr 8fr 1.4fr;
+ border-radius: 15px;
 `
 
 const StyledTag = styled(Tag)`
   margin: 5px 10px;
   padding-left: 15px; 
 `
+const ClubImgDiv = styled.div`
+grid-row: 1 / -1;
+grid-column: 1;
+margin-left: 7px;
+margin-top: 2px;
+`
 
+const ClubNameDiv = styled.div`
+grid-row: 1;
+grid-column: 2;
+`
 
+const ClubDesDiv = styled.div`
+grid-row: 2;
+grid-column: 2;
+`
+
+const ClubTagsDiv = styled.div`
+grid-row: 3;
+grid-column: 2;
+`
+
+const ArrowIconDiv = styled.div`
+grid-row: 1 / -1;
+grid-column: 3;
+margin: auto;
+`
+
+const ClubName = styled.h1`
+font-weight: bold;
+font-size: 22px;
+`
+
+const ClubDes = styled.p`
+font-size: 18px;
+margin-left: 25px;
+`
 
 interface ClubProp {
   club: Club;
 }
 
 function ClubIcon(props: ClubProp) {
-  // img tag will not load url as it 'cannot find module'. tried using require()
 
   return (
     <ClubIconDiv>
-      <PhotoItem source={props.club.clubImage.source} alt={props.club.clubImage.alt}></PhotoItem> 
-      <h1>{props.club.clubName}</h1>
-      <p>{props.club.clubDescription}</p>
-      <ul>
+      <ClubImgDiv>
+        <PhotoItem source={props.club.clubImage.source} alt={props.club.clubImage.alt}></PhotoItem> 
+      </ClubImgDiv>
+      <ClubNameDiv>
+        <ClubName>{props.club.clubName}</ClubName>
+      </ClubNameDiv>
+      <ClubDesDiv>
+        <ClubDes>{props.club.clubDescription}</ClubDes>
+      </ClubDesDiv>
+      <ClubTagsDiv>
         {props.club.clubTags.map((tag, index) => {
           return <StyledTag borderRadius="full" key={index}>{tag}</StyledTag>;
         })}
-      </ul>
+      </ClubTagsDiv>
+      <ArrowIconDiv>
+        <IoIosArrowForward size={150} color='#74B7C1'style = {{ stroke: 'lightgray', strokeWidth: '3'}}/>
+      </ArrowIconDiv>     
     </ClubIconDiv>
   );
 }
 
+const ClubsDiv = styled.div`
+grid-row: 2;
+grid-column: 2 / 3;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+`
 
 interface ClubsProp {
   clubs: Club[];
@@ -46,11 +100,11 @@ interface ClubsProp {
 
 function Clubs(props: ClubsProp) {
   return (
-    <ul>
-      {props.clubs.map((club, index) => {
-        return <ClubIcon club={club} key={index}/>;
-      })}
-    </ul>
+    <ClubsDiv>      
+        {props.clubs.map((club, index) => {
+          return <ClubIcon club={club} key={index}/>;
+        })}      
+    </ClubsDiv>
   );
 }
 

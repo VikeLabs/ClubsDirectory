@@ -7,9 +7,7 @@ export interface Photo {
 
 function PhotoItem(props: Photo) {
   return (
-    <div className="link-item">
-      <img src={props.source} alt={props.alt}></img>
-    </div>
+      <img src={props.source} alt={props.alt}></img>   
   );
 }
 

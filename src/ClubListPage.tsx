@@ -11,15 +11,25 @@ const PageContainer = styled.div`
   background-image: url(${backgroundImg});
   background-size: cover;
   background-color: white;
-  padding-bottom: 50px;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr 4fr 3fr;
 `
+
+const CategoryMenuDiv = styled.div`
+grid-row: 1;
+grid-column: 1;
+`
+
+
 
 function ClubListPage() {
   return (
-    <PageContainer>
+    <PageContainer>    
       <TitleItem title={defaultTitle} />
-      <CategoryMenu categoryList={defaultCategoryMenu} />
-      <h2>Clubs List</h2>
+      <CategoryMenuDiv>
+        <CategoryMenu categoryList={defaultCategoryMenu} />
+      </CategoryMenuDiv>      
       <Clubs clubs={defaultClubs} />
     </PageContainer>  
   );

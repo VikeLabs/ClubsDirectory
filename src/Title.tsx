@@ -8,6 +8,8 @@ interface TitleProps {
 }
 
 const TitleContainer = styled.div`
+  grid-row: 1;
+  grid-column: 1 / -1; 
   color: white;
   font-family: Helvetica;
   font-weight: bold;
