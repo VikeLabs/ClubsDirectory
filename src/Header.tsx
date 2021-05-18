@@ -5,7 +5,7 @@ const HeaderBar = styled.nav`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-height: 15vh;
+  height: 80px;
   background: #1b8091;
   color: white;
   box-shadow: 0 15px 15px 10px rgba(0, 0, 0, 0.2);

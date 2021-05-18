@@ -5,9 +5,12 @@ import styled from 'styled-components';
 export const HamIconDiv = styled.div`
   display: inline-block;
   cursor: pointer;
-  margin-left: 30px;
   padding: 3px 5px;
   border-radius: 5px;
+  background-color: #1B8091;
+  &:hover{
+    background-color: #125c69;
+  }
 `
 
 const HamBar = styled.div`
@@ -25,7 +28,7 @@ function HamIcon() {
         <HamBar></HamBar>
         <HamBar></HamBar>
         <HamBar></HamBar>
-      </HamIconDiv>   
+    </HamIconDiv>   
   )
 }
 

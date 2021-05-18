@@ -13,20 +13,12 @@ const PageContainer = styled.div`
   grid-template-columns: 1fr 4fr 3fr;
 `
 
-const CategoryMenuDiv = styled.div`
-grid-row: 1;
-grid-column: 1;
-`
-
-
 
 function ClubListPage() {
   return (
     <PageContainer>    
-      <TitleItem title={defaultTitle} />
-      <CategoryMenuDiv>
-        <CategoryMenu categoryList={defaultCategoryMenu} />
-      </CategoryMenuDiv>      
+      <TitleItem title={defaultTitle} />     
+      <CategoryMenu categoryList={defaultCategoryMenu} />          
       <Clubs clubs={defaultClubs} />
     </PageContainer>  
   );
