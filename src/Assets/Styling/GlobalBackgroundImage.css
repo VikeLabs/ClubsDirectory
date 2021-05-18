@@ -1,0 +1,7 @@
+ body {
+  background-image: url(../Images/CompletedBackground.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position-y: 80px !important;
+  background-color: white !important;
+}

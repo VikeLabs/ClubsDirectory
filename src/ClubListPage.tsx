@@ -8,9 +8,6 @@ import styled from 'styled-components';
 import backgroundImg from './Assets/Images/CompletedBackground.png'
 
 const PageContainer = styled.div`
-  background-image: url(${backgroundImg});
-  background-size: cover;
-  background-color: white;
   display: grid;
   grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr 4fr 3fr;
