@@ -6,6 +6,7 @@ import { Tag } from '@chakra-ui/react';
 import PhotoItem from './Photo'
 import { IoIosArrowForward } from 'react-icons/io'
 
+
 const ClubIconDiv = styled.div`
  background-color: white;
  margin: 45px 0px;
@@ -13,12 +14,21 @@ const ClubIconDiv = styled.div`
  grid-template-rows: 1fr 4fr 1fr;
  grid-template-columns: 3fr 8fr 1.4fr;
  border-radius: 15px;
+ cursor: pointer;
+ box-shadow: 5px 10px 8px #818080;
+ &:hover{
+  background-color: lightgray;
+ }
+ &:active{
+  background-color: gray;
+ }
 `
 
 const StyledTag = styled(Tag)`
   margin: 5px 10px;
-  padding-left: 15px; 
+  padding-left: 15px;
 `
+
 const ClubImgDiv = styled.div`
 grid-row: 1 / -1;
 grid-column: 1;

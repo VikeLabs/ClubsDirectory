@@ -18,7 +18,7 @@ const TitleContainer = styled.div`
 const TitleTag = styled.h1`
   display: inline-block;
   font-size: 72px;
-  margin: 50px 500px 15px 70px; 
+  margin: 50px 500px 15px 80px; 
 `
 
 const TitleDirTag = styled.h3`
