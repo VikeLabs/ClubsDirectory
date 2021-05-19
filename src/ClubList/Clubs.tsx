@@ -1,6 +1,7 @@
 import { Tag } from '@chakra-ui/react';
 import { ComponentType } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { Club } from './data';
@@ -58,6 +59,10 @@ const ClubDes = styled.p`
   margin-left: 25px;
 `;
 
+const LinkedButton = styled(Link)`
+  text-decoration: none;
+`;
+
 interface ClubProp {
   club: Club;
 }
@@ -84,7 +89,11 @@ function ClubIcon(props: ClubProp) {
         })}
       </ClubTagsDiv>
       <ArrowIconDiv>
-        <IoIosArrowForward size={150} color="#74B7C1" style={{ stroke: 'lightgray', strokeWidth: '3' }} />
+        <LinkedButton to="/Testing/All">
+          <button>
+            <IoIosArrowForward size={150} color="#74B7C1" style={{ stroke: 'lightgray', strokeWidth: '3' }} />
+          </button>
+        </LinkedButton>
       </ArrowIconDiv>
     </ClubIconDiv>
   );

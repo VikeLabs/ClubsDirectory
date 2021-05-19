@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import ClubInfoPage from '../ClubInfo/ClubInfoPage';
 import ClubListPage from '../ClubList/ClubListPage';
 
 import CategoryButtonMatrix from './CategoryButtonMatrix';
@@ -16,8 +17,9 @@ function CategoryPage() {
           <Route exact path="/Clubs" component={CategoryButtonMatrix} />
           {categoies.map((category) => (
             // Creating Route tags for each category title and corresponding page.
-            <Route path={`/${category.title}`} component={() => ClubListPage(category.title)} />
+            <Route path={`/${category.ShortTitle}`} component={() => ClubListPage(category.FullTitle)} />
           ))}
+          <Route path="/Testing/All" component={ClubInfoPage} />
         </Switch>
       </Router>
     </div>

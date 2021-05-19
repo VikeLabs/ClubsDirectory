@@ -8,7 +8,7 @@ interface CategoryProps {
 }
 
 function CategoryItem(props: CategoryProps) {
-  var title = props.category.title;
+  var title = props.category.ShortTitle;
   var IconImage = props.category.icon;
   return (
     // Linking the grid button to the correct page.

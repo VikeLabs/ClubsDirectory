@@ -7,6 +7,7 @@ const LandingPageTitle = styled.h1`
   font-weight: 600;
   margin-left: 55px;
   margin-top: 70px;
+  color: white;
 `;
 
 const LandingPageBodyText = styled.p`

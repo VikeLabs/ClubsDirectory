@@ -34,9 +34,10 @@ const Gridbutton = styled.button`
 const CategoryTitle = styled.h1`
   position: flex;
   font-size: 60px;
+  font-weight: 600;
   margin-left: 39px;
   margin-top: 60px;
-  font-family: Montserrat;
+  color: white;
   font-style: normal;
 `;
 

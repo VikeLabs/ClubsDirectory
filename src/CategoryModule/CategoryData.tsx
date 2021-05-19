@@ -6,57 +6,70 @@ import { IoIosPeople, IoIosMore } from 'react-icons/io';
 import { IoGameController, IoEarthOutline } from 'react-icons/io5';
 
 export interface Category {
-  title: string;
+  ShortTitle: string;
+  FullTitle: string;
   icon: ComponentType;
 }
 
 export const defaultCategory: Category[] = [
   {
-    title: 'Arts',
+    ShortTitle: 'Arts',
+    FullTitle: 'Arts',
     icon: FaPaintBrush,
   },
   {
-    title: 'Community',
+    ShortTitle: 'Community',
+    FullTitle: 'Community Service',
     icon: FaHandsHelping,
   },
   {
-    title: 'Culture',
+    ShortTitle: 'Culture',
+    FullTitle: 'Culture',
     icon: IoIosPeople,
   },
   {
-    title: 'Environment',
+    ShortTitle: 'Environment',
+    FullTitle: 'Environmental',
     icon: IoEarthOutline,
   },
   {
-    title: 'Food',
+    ShortTitle: 'Food',
+    FullTitle: 'Food & Drink',
     icon: GiKnifeFork,
   },
   {
-    title: 'Gaming',
+    ShortTitle: 'Gaming',
+    FullTitle: 'Gaming',
     icon: IoGameController,
   },
   {
-    title: 'Music',
+    ShortTitle: 'Music',
+    FullTitle: 'Music',
     icon: FaMusic,
   },
   {
-    title: 'Politics',
+    ShortTitle: 'Politics',
+    FullTitle: 'Politics',
     icon: GoLaw,
   },
   {
-    title: 'Religion',
+    ShortTitle: 'Religion',
+    FullTitle: 'Religion',
     icon: FaPrayingHands,
   },
   {
-    title: 'Sports',
+    ShortTitle: 'Sports',
+    FullTitle: 'Sports & Rec',
     icon: GiSoccerBall,
   },
   {
-    title: 'STEM',
+    ShortTitle: 'STEM',
+    FullTitle: 'STEM',
     icon: FaMicroscope,
   },
   {
-    title: 'Other',
+    ShortTitle: 'Other',
+    FullTitle: 'Other',
     icon: IoIosMore,
   },
 ];
