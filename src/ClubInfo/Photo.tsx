@@ -1,4 +1,5 @@
 import React from 'react';
+import './photo.css';
 
 export interface Photo {
   source: string;
@@ -7,7 +8,7 @@ export interface Photo {
 
 function PhotoItem(props: Photo) {
   return (
-    <div className="link-item">
+    <div className="photo-item">
       <img src={props.source} alt={props.alt}></img>
     </div>
   );
@@ -19,11 +20,11 @@ interface PhotoBarProps {
 
 function PhotoBar(props: PhotoBarProps) {
   return (
-    <ul className="photo-bar">
+    <div className="photo-bar">
       {props.photos.map((photo) => {
         return <PhotoItem source={photo.source} alt={photo.alt} />;
       })}
-    </ul>
+    </div>
   );
 }
 

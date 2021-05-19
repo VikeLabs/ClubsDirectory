@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import './logo.css';
+
 const LogoDiv = styled.div`
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   margin: 0px 0;
   border-radius: 2px;
   text-align: left;
@@ -20,9 +22,9 @@ export interface LogoProps {
 
 function LogoItem(props: LogoProps) {
   return (
-    <LogoDiv>
+    <div className="logo-item">
       <img src={props.logo.source} alt={props.logo.alt}></img>
-    </LogoDiv>
+    </div>
   );
 }
 

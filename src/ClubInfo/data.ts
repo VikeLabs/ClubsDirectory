@@ -3,8 +3,10 @@ import { AiOutlineSlack, AiOutlineMail } from 'react-icons/ai';
 import { IoIosPeople, IoIosCalendar } from 'react-icons/io';
 import { SiZoom } from 'react-icons/si';
 
+import pec_logo from '../Assets/Images/pec.jpg';
 import logo from '../Assets/Images/slack.jpg';
-import { Photo } from '../Photo';
+
+import { Photo } from './Photo';
 
 export interface Icon {
   icon: ComponentType;
@@ -70,7 +72,7 @@ export const defaultPhotos: Photo[] = [
     alt: 'slack1',
   },
   {
-    source: logo,
+    source: pec_logo,
     alt: 'slack2',
   },
   {
@@ -101,7 +103,7 @@ export interface Logo {
 }
 
 export const defaultLogo: Logo = {
-  source: logo,
+  source: pec_logo,
   alt: 'logo',
 };
 

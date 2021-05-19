@@ -1,7 +1,6 @@
 import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
-import PhotoBar from '../Photo';
 import { Grid, Row } from '../theme';
 
 import './ClubInfoPage.css';
@@ -23,6 +22,7 @@ import InfoList from './Infos';
 import LinkList from './Links';
 import LogoItem from './Logo';
 import PathItem from './Path';
+import PhotoBar from './Photo';
 import TagList from './Tags';
 import Title from './Title';
 
@@ -49,6 +49,7 @@ function ClubInfoPage() {
     <div className="App">
       <div className="grid">
         <div className="header">header</div>
+        <div className="back">back</div>
         <div className="logo">
           <LogoItem logo={club_logo}></LogoItem>
         </div>
@@ -73,7 +74,9 @@ function ClubInfoPage() {
         <div className="photoHeader">
           <p>Featured Photos</p>
         </div>
-        <div className="photos">photos</div>
+        <div className="photos">
+          <PhotoBar photos={defaultPhotos}></PhotoBar>
+        </div>
       </div>
     </div>
   );
