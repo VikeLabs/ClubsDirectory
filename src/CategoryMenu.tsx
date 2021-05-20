@@ -21,25 +21,6 @@ const MenuDiv = styled.div`
   transform: translate(15px, 90px); 
 `
 
-interface CategoryItemProp {
-  categoryItem: CategoryItem;
-}
-
-function CategoryListItem(props: CategoryItemProp) {
-  return (
-  <Menu>
-    <MenuButton>
-      CategoryName
-    </MenuButton>
-    <Portal>
-      <MenuList>
-      <MenuItem>clubname</MenuItem>           
-      </MenuList>
-    </Portal>
-  </Menu>
-  );
-}
-
 interface CategoryMenuProp {
   categoryList: CategoryItem[];
 }
