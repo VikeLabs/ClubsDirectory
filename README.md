@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# UVSS Clubs Directory Page
+
+This project is an open-source web application developed for the University of Victoria Students' Society to improve access to information on student clubs and course unions. The web application is being built with React, and will be hosted on the [UVSS site](https://uvss.ca). 
+
+The design phase of the application is complete, and our current work is focused on the React implementation. See our designs below.
+
+![Club Categories Page](./src/Assets/Images/clubcategories.png "Club Categories Page")
+![Club List Page](./src/Assets/Images/clublist.png "Club List Page")
+![Club Info Page](./src/Assets/Images/clubinfo.png "Club Info Page")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
