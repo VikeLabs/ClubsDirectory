@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ClubInfoStyles.css';
+
 export interface Photo {
   source: string;
   alt: string;
@@ -7,8 +9,8 @@ export interface Photo {
 
 function PhotoItem(props: Photo) {
   return (
-    <div className="link-item">
-      <img src={props.source} alt={props.alt}></img>
+    <div className="photo-item">
+      <img src={props.source} alt={props.alt} />
     </div>
   );
 }
@@ -19,11 +21,11 @@ interface PhotoBarProps {
 
 function PhotoBar(props: PhotoBarProps) {
   return (
-    <ul className="photo-bar">
+    <div className="photo-bar">
       {props.photos.map((photo) => {
         return <PhotoItem source={photo.source} alt={photo.alt} />;
       })}
-    </ul>
+    </div>
   );
 }
 

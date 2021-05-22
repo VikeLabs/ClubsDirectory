@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import ClubInfoPage from '../ClubInfo/ClubInfoPage';
-import ClubListPage from '../ClubList/ClubListPage';
+import ClubInfoPage from '../ClubsInfo/ClubInfoPage';
+import ClubListPage from '../ClubsList/ClubListPage';
 
 import CategoryButtonMatrix from './CategoryButtonMatrix';
 import { defaultCategory } from './CategoryData';

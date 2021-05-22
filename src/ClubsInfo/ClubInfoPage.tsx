@@ -47,12 +47,12 @@ function ClubInfoPage() {
   return (
     <div className="App">
       <div className="grid">
-        <div className="header">header</div>
+        <div className="header" />
         <div className="logo">
-          <LogoItem logo={club_logo}></LogoItem>
+          <LogoItem logo={club_logo} />
         </div>
         <div className="path">
-          <PathItem path={defaultPath}></PathItem>
+          <PathItem path={defaultPath} />
         </div>
         <div className="clubName">
           <Title title={title} />
@@ -61,7 +61,7 @@ function ClubInfoPage() {
           <TagList tags={tags} />
         </div>
         <div className="links">
-          <LinkList links={links}></LinkList>
+          <LinkList links={links} />
         </div>
         <div className="infos">
           <InfoList infos={infos} />
@@ -72,7 +72,9 @@ function ClubInfoPage() {
         <div className="photoHeader">
           <p>Featured Photos</p>
         </div>
-        <div className="photos">photos</div>
+        <div className="photos">
+          <PhotoBar photos={defaultPhotos} />
+        </div>
       </div>
     </div>
   );

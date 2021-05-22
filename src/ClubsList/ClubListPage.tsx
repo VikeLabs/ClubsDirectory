@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { defaultClubs, Title } from './ClubListData';
 import Clubs from './Clubs';
-import { defaultTitle, defaultClubs } from './data';
 import TitleItem from './Title';
 
 const PageContainer = styled.div`
@@ -12,9 +12,14 @@ const PageContainer = styled.div`
 `;
 
 function ClubListPage(categoryTitle: string) {
+  const titleData: Title = {
+    categoryName: categoryTitle,
+    directoryName: `Club Categories/${categoryTitle} Clubs`,
+  };
+
   return (
     <PageContainer>
-      <TitleItem title={categoryTitle} />
+      <TitleItem title={titleData} />
       <Clubs clubs={defaultClubs} />
     </PageContainer>
   );

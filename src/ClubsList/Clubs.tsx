@@ -1,10 +1,9 @@
 import { Tag } from '@chakra-ui/react';
-import { ComponentType } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Club } from './data';
+import { Club } from './ClubListData';
 import PhotoItem from './Photo';
 
 const ClubIconDiv = styled.div`
@@ -14,6 +13,14 @@ const ClubIconDiv = styled.div`
   grid-template-rows: 1fr 4fr 1fr;
   grid-template-columns: 3fr 8fr 1.4fr;
   border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 5px 10px 8px #818080;
+  &:hover {
+    background-color: lightgray;
+  }
+  &:active {
+    background-color: gray;
+  }
 `;
 
 const StyledTag = styled(Tag)`
@@ -69,33 +76,34 @@ interface ClubProp {
 
 function ClubIcon(props: ClubProp) {
   return (
-    <ClubIconDiv>
-      <ClubImgDiv>
-        <PhotoItem source={props.club.clubImage.source} alt={props.club.clubImage.alt} />
-      </ClubImgDiv>
-      <ClubNameDiv>
-        <ClubName>{props.club.clubName}</ClubName>
-      </ClubNameDiv>
-      <ClubDesDiv>
-        <ClubDes>{props.club.clubDescription}</ClubDes>
-      </ClubDesDiv>
-      <ClubTagsDiv>
-        {props.club.clubTags.map((tag, index) => {
-          return (
-            <StyledTag borderRadius="full" key={index}>
-              {tag}
-            </StyledTag>
-          );
-        })}
-      </ClubTagsDiv>
-      <ArrowIconDiv>
-        <LinkedButton to="/Testing/All">
+    // Linked button switches the page to the club info page when clicked.
+    <LinkedButton to="/Testing/All">
+      <ClubIconDiv>
+        <ClubImgDiv>
+          <PhotoItem source={props.club.clubImage.source} alt={props.club.clubImage.alt} />
+        </ClubImgDiv>
+        <ClubNameDiv>
+          <ClubName>{props.club.clubName}</ClubName>
+        </ClubNameDiv>
+        <ClubDesDiv>
+          <ClubDes>{props.club.clubDescription}</ClubDes>
+        </ClubDesDiv>
+        <ClubTagsDiv>
+          {props.club.clubTags.map((tag, index) => {
+            return (
+              <StyledTag borderRadius="full" key={index}>
+                {tag}
+              </StyledTag>
+            );
+          })}
+        </ClubTagsDiv>
+        <ArrowIconDiv>
           <button>
             <IoIosArrowForward size={150} color="#74B7C1" style={{ stroke: 'lightgray', strokeWidth: '3' }} />
           </button>
-        </LinkedButton>
-      </ArrowIconDiv>
-    </ClubIconDiv>
+        </ArrowIconDiv>
+      </ClubIconDiv>
+    </LinkedButton>
   );
 }
 

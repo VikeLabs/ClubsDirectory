@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './Assets/CSS/GlobalBackgroundImage.css';
-import CategoryPage from './CategoryModule/CategoryPage';
+import CategoryPage from './ClubsCategories/CategoryPage';
+import LandingPage from './ClubsLanding/LandingPage';
 import Header from './Header';
-import LandingPage from './LandingPage';
 
 function App() {
   return (

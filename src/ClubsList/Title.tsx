@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Title } from './data';
+import { Title } from './ClubListData';
 
 interface TitleProps {
-  title: string;
+  title: Title;
 }
 
 const TitleContainer = styled.div`
@@ -18,7 +18,7 @@ const TitleContainer = styled.div`
 const TitleTag = styled.h1`
   display: inline-block;
   font-size: 72px;
-  margin: 50px 500px 15px 70px;
+  margin: 50px 500px 15px 80px;
 `;
 
 const TitleDirTag = styled.h3`
@@ -29,8 +29,8 @@ const TitleDirTag = styled.h3`
 function TitleItem(props: TitleProps) {
   return (
     <TitleContainer>
-      <TitleTag>{props.title}</TitleTag>
-      {/* <TitleDirTag>{props.title.directoryName}</TitleDirTag> */}
+      <TitleTag>{props.title.categoryName}</TitleTag>
+      <TitleDirTag>{props.title.directoryName}</TitleDirTag>
     </TitleContainer>
   );
 }
