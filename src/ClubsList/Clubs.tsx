@@ -77,7 +77,7 @@ interface ClubProp {
 function ClubIcon(props: ClubProp) {
   return (
     // Linked button switches the page to the club info page when clicked.
-    <LinkedButton to="/Testing/All">
+    <LinkedButton to="/ClubInfo">
       <ClubIconDiv>
         <ClubImgDiv>
           <PhotoItem source={props.club.clubImage.source} alt={props.club.clubImage.alt} />

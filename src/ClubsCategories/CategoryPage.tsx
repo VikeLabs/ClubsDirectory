@@ -1,27 +1,12 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-import ClubInfoPage from '../ClubsInfo/ClubInfoPage';
-import ClubListPage from '../ClubsList/ClubListPage';
 
 import CategoryButtonMatrix from './CategoryButtonMatrix';
-import { defaultCategory } from './CategoryData';
 
 function CategoryPage() {
-  // Array holding all the category data.
-  const [categoies] = useState(defaultCategory);
   return (
     <div>
-      <Router>
-        <Switch>
-          <Route exact path="/Clubs" component={CategoryButtonMatrix} />
-          {categoies.map((category) => (
-            // Creating Route tags for each category title and corresponding page.
-            <Route path={`/${category.ShortTitle}`} component={() => ClubListPage(category.FullTitle)} />
-          ))}
-          <Route path="/Testing/All" component={ClubInfoPage} />
-        </Switch>
-      </Router>
+      {/* Component containg the grid of buttons for each club category */}
+      <CategoryButtonMatrix />
     </div>
   );
 }
