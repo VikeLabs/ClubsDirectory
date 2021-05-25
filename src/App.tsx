@@ -21,7 +21,7 @@ function App() {
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/ClubCategories" component={CategoryPage} />
             <Route exact path="/ClubCategories/ClubList/:clubList Club" component={ClubListPage} />
-            <Route path="/ClubInfo" component={ClubInfoPage} />
+            <Route exact path="/ClubCategories/ClubList/:clubType/:clubName" component={ClubInfoPage} />
           </div>
         </Switch>
       </Router>

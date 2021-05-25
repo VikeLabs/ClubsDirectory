@@ -2,9 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Category, defaultCategory } from '../ClubsCategories/CategoryData';
+import { defaultCategory } from '../ClubsCategories/CategoryData';
 
-import { defaultClubs, Title } from './ClubListData';
+import { Title } from './ClubListData';
 import Clubs from './Clubs';
 import TitleItem from './Title';
 
@@ -36,7 +36,7 @@ function ClubListPage() {
   return (
     <PageContainer>
       <TitleItem title={titleData} />
-      <Clubs clubs={defaultClubs} />
+      <Clubs type={clubList} />
     </PageContainer>
   );
 }

@@ -1,5 +1,6 @@
 import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import './ClubInfoStyles.css';
 
@@ -12,7 +13,6 @@ import {
   defaultLogo,
   defaultTags,
   defaultIcon,
-  defaultPath,
 } from './ClubInfoData';
 import Description from './Description';
 import Icon from './Icon';
@@ -28,13 +28,14 @@ import Title from './Title';
 function ClubInfoPage() {
   const links = defaultLinks;
   const description = defaultDescription;
-  const title = defaultTitle;
   const photos = defaultPhotos;
   const infos = defaultInfos;
   const club_logo = defaultLogo;
   const tags = defaultTags;
   const deficon = defaultIcon;
-  const path = defaultPath;
+  const { clubType, clubName } = useParams<{ clubType: string; clubName: string }>();
+  const path = `Club Categories/${clubType}/${clubName}`;
+  const title = clubName;
 
   // header
   // logo path
@@ -52,7 +53,7 @@ function ClubInfoPage() {
           <LogoItem logo={club_logo} />
         </div>
         <div className="path">
-          <PathItem path={defaultPath} />
+          <PathItem pathURL={path} />
         </div>
         <div className="clubName">
           <Title title={title} />
