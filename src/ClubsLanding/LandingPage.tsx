@@ -44,7 +44,7 @@ function LandingPage() {
       <LandingPageBodyText>
         The University of Victoria Student Society has over 200 different student-led clubs to suit your interests.
       </LandingPageBodyText>
-      <Link to="/Clubs" style={{ textDecoration: 'none' }}>
+      <Link to="/ClubCategories" style={{ textDecoration: 'none' }}>
         <CategoryNavButton>Explore Current Clubs</CategoryNavButton>
       </Link>
     </div>

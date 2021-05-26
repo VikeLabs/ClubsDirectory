@@ -17,8 +17,8 @@ interface PathProps {
   path: Path;
 }
 
-function PathItem(props: PathProps) {
-  return <p>{props.path.text}</p>;
+function PathItem(props: { pathURL: string }) {
+  return <p>{props.pathURL}</p>;
 }
 
 export default PathItem;

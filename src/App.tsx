@@ -19,12 +19,9 @@ function App() {
         <Switch>
           <div>
             <Route exact path="/" component={LandingPage} />
-            <Route path="/Clubs" component={CategoryPage} />
-            {categoies.map((category) => (
-              // Creating Route path for each category title to the corresponding club listing page.
-              <Route path={`/${category.ShortTitle}`} component={() => ClubListPage(category.FullTitle)} />
-            ))}
-            <Route path="/ClubInfo" component={ClubInfoPage} />
+            <Route exact path="/ClubCategories" component={CategoryPage} />
+            <Route exact path="/ClubCategories/ClubList/:clubList Club" component={ClubListPage} />
+            <Route exact path="/ClubCategories/ClubList/:clubType/:clubName" component={ClubInfoPage} />
           </div>
         </Switch>
       </Router>

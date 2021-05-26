@@ -13,7 +13,7 @@ function CategoryItem(props: CategoryProps) {
   var IconImage = props.category.icon;
   return (
     // Linking each grid button to their corresponding page.
-    <LinkButton to={`/${title}`}>
+    <LinkButton to={`/ClubCategories/ClubList/${title} Club`}>
       <Gridbutton>
         <ButtonIcon>
           <IconImage />

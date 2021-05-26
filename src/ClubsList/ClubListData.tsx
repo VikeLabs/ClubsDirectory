@@ -51,6 +51,12 @@ export interface Club {
   clubTags: string[];
 }
 
+export interface TestClub {
+  clubName: string;
+  clubImage: string;
+  clubDescription: string;
+}
+
 const defaultPhoto: Photo = {
   source: error_img,
   alt: 'club logo',
