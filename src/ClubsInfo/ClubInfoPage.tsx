@@ -1,6 +1,6 @@
 import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 
 import './ClubInfoStyles.css';
 
@@ -14,7 +14,7 @@ import {
   defaultTags,
   defaultIcon,
 } from './ClubInfoData';
-import Description from './Description';
+import DescriptionItem from './Description';
 import Icon from './Icon';
 import InfoList from './Infos';
 import LinkList from './Links';
@@ -68,7 +68,7 @@ function ClubInfoPage() {
           <InfoList infos={infos} />
         </div>
         <div className="description">
-          <Description description={description} />
+          <DescriptionItem description={description} />
         </div>
         <div className="photoHeader">
           <p>Featured Photos</p>
