@@ -1,5 +1,7 @@
 import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import styled from 'styled-components';
+import { gridArea } from 'styled-system';
 
 import { Grid, Row } from '../theme';
 
@@ -26,6 +28,46 @@ import PhotoBar from './Photo';
 import TagList from './Tags';
 import Title from './Title';
 
+const GridDiv = styled.div`
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template: 30px 0.5fr 0.5fr 1fr 0.5fr 0.5fr 2.5fr 0.5fr 3.5fr / 1fr 4fr;
+  gap: 5px 20px;
+  grid-template-areas:
+    'header header'
+    'back gap'
+    'logo path'
+    'logo clubName'
+    'logo tags'
+    'logo infos'
+    'links description'
+    'photoHeader empty'
+    'photos photos';
+`;
+
+interface GridItemProps {
+  gridArea: string;
+  margin: string;
+}
+
+const Item = styled.div<GridItemProps>`
+  grid-area: ${(props) => props.gridArea};
+  text-align: left;
+`;
+
+const LeftItem = styled(Item)`
+  margin: ${(props) => props.margin};
+`;
+
+LeftItem.defaultProps = {
+  margin: '10px 0 0 15%',
+};
+
+const RightItem = styled(Item)`
+  margin: 10px 0 10px 10px;
+`;
+
 function ClubInfoPage() {
   const links = defaultLinks;
   const description = defaultDescription;
@@ -47,37 +89,34 @@ function ClubInfoPage() {
 
   return (
     <div className="App">
-      <div className="grid">
-        <div className="header">header</div>
+      <GridDiv>
         <div className="back">back</div>
-        <div className="logo">
+        <LeftItem gridArea="logo">
           <LogoItem logo={club_logo}></LogoItem>
-        </div>
-        <div className="path">
+        </LeftItem>
+        <RightItem gridArea="path">
           <PathItem path={defaultPath}></PathItem>
-        </div>
-        <div className="clubName">
+        </RightItem>
+        <RightItem gridArea="clubName">
           <Title title={title} />
-        </div>
-        <div className="tags">
+        </RightItem>
+        <RightItem gridArea="tags">
           <TagList tags={tags} />
-        </div>
-        <div className="links">
+        </RightItem>
+        <LeftItem gridArea="links">
           <LinkList links={links}></LinkList>
-        </div>
-        <div className="infos">
+        </LeftItem>
+        <RightItem gridArea="infos">
           <InfoList infos={infos} />
-        </div>
-        <div className="description">
+        </RightItem>
+        <RightItem gridArea="description">
           <Description description={description} />
-        </div>
-        <div className="photoHeader">
-          <p>Featured Photos</p>
-        </div>
-        <div className="photos">
+        </RightItem>
+        <LeftItem gridArea="photoHeader">Featured Photos</LeftItem>
+        <LeftItem gridArea="photos">
           <PhotoBar photos={defaultPhotos}></PhotoBar>
-        </div>
-      </div>
+        </LeftItem>
+      </GridDiv>
     </div>
   );
 }
