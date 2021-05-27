@@ -13,12 +13,8 @@ const Box = styled.div<Props>`
   ${border};
 `;
 
-interface DescProps {
-  description: Description;
-}
-
-function DescriptionItem(props: DescProps) {
-  return <Box color="#000">{props.description.text}</Box>;
+function DescriptionItem(props: { text: string }) {
+  return <Box color="#000">{props.text}</Box>;
 }
 
 export default DescriptionItem;

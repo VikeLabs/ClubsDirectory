@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 
-import { defaultClubs, Club } from './ClubListData';
+import data from '../JSON/MockData.json';
+
+import { defaultClubs, Club, ClubData } from './ClubListData';
 import {
   ClubsDiv,
   LinkedButton,
@@ -17,14 +19,14 @@ import {
 } from './ClubListStyling';
 import PhotoItem from './Photo';
 
-function ClubIcon(iconProps: { club: Club; type: string }) {
+function ClubIcon(iconProps: { club: ClubData; type: string }) {
   return (
     // Linked button switches the page to the club info page when clicked.
     <LinkedButton to={`/ClubCategories/ClubList/${iconProps.type}/${iconProps.club.clubName}`}>
       <ClubIconDiv>
-        <ClubImgDiv>
+        {/* <ClubImgDiv>
           <PhotoItem source={iconProps.club.clubImage.source} alt={iconProps.club.clubImage.alt} />
-        </ClubImgDiv>
+        </ClubImgDiv> */}
         <ClubNameDiv>
           <ClubName>{iconProps.club.clubName}</ClubName>
         </ClubNameDiv>
@@ -50,8 +52,17 @@ function ClubIcon(iconProps: { club: Club; type: string }) {
   );
 }
 
+function findClubs(type: string) {
+  let completedData: ClubData[] = data
+    .filter((clubType) => clubType.category === type)
+    .map(({ name, description, tags }) => ({ clubName: name, clubDescription: description, clubTags: tags }));
+  return completedData;
+}
+
 function Clubs(clubType: { type: string }) {
-  const [clubs] = useState(defaultClubs);
+  // Finding the clubs related to the passed category.
+  const clubs: ClubData[] = findClubs(clubType.type);
+  console.log(clubs);
   return (
     <ClubsDiv>
       {clubs.map((club) => {

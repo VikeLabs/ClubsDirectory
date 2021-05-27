@@ -51,10 +51,10 @@ export interface Club {
   clubTags: string[];
 }
 
-export interface TestClub {
+export interface ClubData {
   clubName: string;
-  clubImage: string;
   clubDescription: string;
+  clubTags: string[];
 }
 
 const defaultPhoto: Photo = {

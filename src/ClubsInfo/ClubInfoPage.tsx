@@ -1,13 +1,14 @@
 import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import './ClubInfoStyles.css';
+import { ClubData } from '../ClubsList/ClubListData';
+import data from '../JSON/MockData.json';
 
 import {
   defaultLinks,
   defaultDescription,
-  defaultTitle,
   defaultPhotos,
   defaultInfos,
   defaultLogo,
@@ -22,28 +23,28 @@ import LogoItem from './Logo';
 import PathItem from './Path';
 import PhotoBar from './PhotoBar';
 import TagList from './Tags';
-import { Grid, Row } from './theme';
 import Title from './Title';
+
+function findClubInfo(clubName: string) {
+  let completedData: ClubData[] = data
+    .filter((clubType) => clubType.name === clubName)
+    .map(({ name, description, tags }) => ({ clubName: name, clubDescription: description, clubTags: tags }));
+  return completedData;
+}
 
 function ClubInfoPage() {
   const links = defaultLinks;
-  const description = defaultDescription;
   const photos = defaultPhotos;
   const infos = defaultInfos;
   const club_logo = defaultLogo;
-  const tags = defaultTags;
   const deficon = defaultIcon;
+  // Parsing and extracting the data from the JSON.
   const { clubType, clubName } = useParams<{ clubType: string; clubName: string }>();
   const path = `Club Categories/${clubType}/${clubName}`;
-  const title = clubName;
-
-  // header
-  // logo path
-  //      name
-  //      tags
-  // links infos
-  //      desc
-  // photos
+  const clubInfo = findClubInfo(clubName);
+  const title = clubInfo[0].clubName;
+  const tags = clubInfo[0].clubTags;
+  const description = clubInfo[0].clubDescription;
 
   return (
     <div className="App">
@@ -68,7 +69,7 @@ function ClubInfoPage() {
           <InfoList infos={infos} />
         </div>
         <div className="description">
-          <DescriptionItem description={description} />
+          <DescriptionItem text={description} />
         </div>
         <div className="photoHeader">
           <p>Featured Photos</p>

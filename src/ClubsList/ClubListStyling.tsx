@@ -67,6 +67,7 @@ const LinkedButton = styled(Link)`
 `;
 
 const ClubsDiv = styled.div`
+  margin-top: -200px;
   grid-row: 2;
   grid-column: 2 / 3;
   display: flex;
