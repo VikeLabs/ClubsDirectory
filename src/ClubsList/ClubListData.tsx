@@ -1,6 +1,15 @@
+import { ComponentType } from 'react';
+import { IoIosPeople } from 'react-icons/io';
+
 import error_img from '../Assets/Images/error_image.png';
 
 import { Photo } from './Photo';
+
+export interface Icon {
+  icon: ComponentType;
+}
+
+export const defaultIcon: Icon = { icon: IoIosPeople };
 
 export interface Title {
   categoryName: string;
@@ -13,32 +22,39 @@ export const defaultTitle: Title = {
 };
 
 export interface CategoryItem {
+  categoryIcon: Icon;
   categoryName: string;
   clubs: string[];
 }
 
 export const defaultCategoryMenu: CategoryItem[] = [
   {
+    categoryIcon: defaultIcon,
     categoryName: 'Arts',
     clubs: ['Her Campus', 'Uvic Photography Club', 'Vikes Improv'],
   },
   {
+    categoryIcon: defaultIcon,
     categoryName: 'Community Service',
     clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
   {
+    categoryIcon: defaultIcon,
     categoryName: 'Cutural',
     clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
   {
+    categoryIcon: defaultIcon,
     categoryName: 'Environmental',
     clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
   {
+    categoryIcon: defaultIcon,
     categoryName: 'Food & Drink',
     clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },
   {
+    categoryIcon: defaultIcon,
     categoryName: 'Technology',
     clubs: ['Community Service Club', 'Random Club', 'Random Club'],
   },

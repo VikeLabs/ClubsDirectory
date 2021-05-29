@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import { defaultCategory } from '../ClubsCategories/CategoryData';
 
+import CategoryMenu from './CategoryMenu';
+import { defaultCategoryMenu } from './ClubListData';
 import { Title } from './ClubListData';
 import Clubs from './Clubs';
 import TitleItem from './Title';
@@ -12,6 +14,9 @@ const PageContainer = styled.div`
   display: grid;
   grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr 4fr 3fr;
+  grid-template-areas:
+    'header header header'
+    'gap clubList gap';
 `;
 
 // getFulltitle takes the club category path ID and searches for the full title of the category from the category data file.
@@ -36,6 +41,7 @@ function ClubListPage() {
   return (
     <PageContainer>
       <TitleItem title={titleData} />
+      <CategoryMenu categoryList={defaultCategoryMenu} />
       <Clubs type={clubList} />
     </PageContainer>
   );
