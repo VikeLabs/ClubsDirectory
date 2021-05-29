@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ClubIconDiv = styled.div`
   background-color: white;
-  margin: 45px 0px;
+  margin: 45px 5px;
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
   grid-template-columns: 3fr 8fr 1.4fr;
