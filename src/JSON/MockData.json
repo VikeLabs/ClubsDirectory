@@ -114,11 +114,11 @@
   {
     "id": "9",
     "name": "Club Nova",
-    "category": "Religon",
+    "category": "Religion",
     "primaryEmail": "club9@uvic.ca",
     "members": "4089",
     "tags": [
-      "Religon",
+      "Religion",
       "Discussion",
       "Off Campus"
     ],
@@ -758,11 +758,11 @@
   {
     "id": "55",
     "name": "The Studio",
-    "category": "Religon",
+    "category": "Religion",
     "primaryEmail": "club55@uvic.ca",
     "members": "1067",
     "tags": [
-      "Religon",
+      "Religion",
       "Theatre",
       "Cooking"
     ],
@@ -954,11 +954,11 @@
   {
     "id": "69",
     "name": "Myth",
-    "category": "Religon",
+    "category": "Religion",
     "primaryEmail": "club69@uvic.ca",
     "members": "2076",
     "tags": [
-      "Religon",
+      "Religion",
       "Acting",
       "Theatre"
     ],
@@ -996,11 +996,11 @@
   {
     "id": "72",
     "name": "The Dream",
-    "category": "Religon",
+    "category": "Religion",
     "primaryEmail": "club72@uvic.ca",
     "members": "1265",
     "tags": [
-      "Religon",
+      "Religion",
       "Discussion",
       "Blog"
     ],

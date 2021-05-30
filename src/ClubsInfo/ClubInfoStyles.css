@@ -7,6 +7,10 @@
   padding-right: 10px;
 }
 
+.info-item {
+  padding-right: 10px;
+}
+
 .info-list {
   display: flex;
   flex-direction: row;

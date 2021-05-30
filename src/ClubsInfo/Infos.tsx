@@ -10,11 +10,12 @@ interface InfoProps {
   info: Info;
 }
 
-function InfoItem(props: InfoProps) {
+function InfoItem(props: { info: string }) {
   return (
     <div className="info-item">
       <p>
-        <Icon icon={props.info.icon} /> {props.info.text}
+        {/* <Icon icon={props.info.icon} />  */}
+        {props.info}
       </p>
     </div>
   );
@@ -24,7 +25,7 @@ interface InfoListProps {
   infos: Info[];
 }
 
-function InfoList(props: InfoListProps) {
+function InfoList(props: { infos: string[] }) {
   return (
     <p className="info-list">
       {props.infos.map((info) => {

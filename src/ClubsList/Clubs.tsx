@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 
+import error_img from '../Assets/Images/error_image.png';
+import { ClubListData } from '../CustomProps';
 import data from '../JSON/MockData.json';
 
-import { defaultClubs, Club, ClubData } from './ClubListData';
 import {
   ClubsDiv,
   LinkedButton,
@@ -19,14 +20,14 @@ import {
 } from './ClubListStyling';
 import PhotoItem from './Photo';
 
-function ClubIcon(iconProps: { club: ClubData; type: string }) {
+function ClubIcon(iconProps: { club: ClubListData }) {
   return (
     // Linked button switches the page to the club info page when clicked.
-    <LinkedButton to={`/ClubCategories/ClubList/${iconProps.type}/${iconProps.club.clubName}`}>
+    <LinkedButton to={`/ClubCategories/ClubList/${iconProps.club.clubCategory}/${iconProps.club.clubName}`}>
       <ClubIconDiv>
-        {/* <ClubImgDiv>
-          <PhotoItem source={iconProps.club.clubImage.source} alt={iconProps.club.clubImage.alt} />
-        </ClubImgDiv> */}
+        <ClubImgDiv>
+          <PhotoItem source={iconProps.club.clubImage} alt={'Club Icon'} />
+        </ClubImgDiv>
         <ClubNameDiv>
           <ClubName>{iconProps.club.clubName}</ClubName>
         </ClubNameDiv>
@@ -52,21 +53,26 @@ function ClubIcon(iconProps: { club: ClubData; type: string }) {
   );
 }
 
-function findClubs(type: string) {
-  let completedData: ClubData[] = data
-    .filter((clubType) => clubType.category === type)
-    .map(({ name, description, tags }) => ({ clubName: name, clubDescription: description, clubTags: tags }));
+function findClubs(clubCategory: string) {
+  let completedData: ClubListData[] = data
+    .filter((clubType) => clubType.category === clubCategory)
+    .map(({ name, description, tags }) => ({
+      clubName: name,
+      clubCategory: clubCategory,
+      clubDescription: description,
+      clubTags: tags,
+      clubImage: error_img,
+    }));
   return completedData;
 }
 
-function Clubs(clubType: { type: string }) {
+function Clubs(clubType: { category: string }) {
   // Finding the clubs related to the passed category.
-  const clubs: ClubData[] = findClubs(clubType.type);
-  console.log(clubs);
+  const clubs: ClubListData[] = findClubs(clubType.category);
   return (
     <ClubsDiv>
       {clubs.map((club) => {
-        return <ClubIcon type={clubType.type} club={club} />;
+        return <ClubIcon club={club} />;
       })}
     </ClubsDiv>
   );
