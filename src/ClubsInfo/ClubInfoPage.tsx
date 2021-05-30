@@ -1,5 +1,4 @@
-import { Button, ButtonGroup } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import pec_logo from '../Assets/Images/pec.jpg';
@@ -7,17 +6,8 @@ import './ClubInfoStyles.css';
 import { ClubInfoData } from '../CustomProps';
 import data from '../JSON/MockData.json';
 
-import {
-  defaultLinks,
-  defaultDescription,
-  defaultPhotos,
-  defaultInfos,
-  defaultLogo,
-  defaultTags,
-  defaultIcon,
-} from './ClubInfoData';
+import { defaultPhotos } from './ClubInfoData';
 import DescriptionItem from './Description';
-import Icon from './Icon';
 import InfoList from './Infos';
 import LinkList from './Links';
 import LogoBar from './Logo';
@@ -41,9 +31,6 @@ function findClubInfo(clubName: string) {
 }
 
 function ClubInfoPage() {
-  const photos = defaultPhotos;
-  const infos = defaultInfos;
-  const deficon = defaultIcon;
   // Parsing and extracting the data from the JSON.
   const { clubType, clubName } = useParams<{ clubType: string; clubName: string }>();
   const path = `Club Categories/${clubType}/${clubName}`;

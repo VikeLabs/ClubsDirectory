@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 
 import error_img from '../Assets/Images/error_image.png';
@@ -7,7 +6,7 @@ import data from '../JSON/MockData.json';
 
 import {
   ClubsDiv,
-  LinkedButton,
+  LinkButton,
   ClubDes,
   ClubName,
   ArrowIconDiv,
@@ -17,13 +16,13 @@ import {
   ClubImgDiv,
   ClubIconDiv,
   StyledTag,
-} from './ClubListStyling';
+} from './ClubListStyles';
 import PhotoItem from './Photo';
 
 function ClubIcon(iconProps: { club: ClubListData }) {
   return (
     // Linked button switches the page to the club info page when clicked.
-    <LinkedButton to={`/ClubCategories/ClubList/${iconProps.club.clubCategory}/${iconProps.club.clubName}`}>
+    <LinkButton to={`/ClubCategories/ClubList/${iconProps.club.clubCategory}/${iconProps.club.clubName}`}>
       <ClubIconDiv>
         <ClubImgDiv>
           <PhotoItem source={iconProps.club.clubImage} alt={'Club Icon'} />
@@ -49,7 +48,7 @@ function ClubIcon(iconProps: { club: ClubListData }) {
           </button>
         </ArrowIconDiv>
       </ClubIconDiv>
-    </LinkedButton>
+    </LinkButton>
   );
 }
 

@@ -2,43 +2,21 @@
   background-color: white;
 }
 
-.icon-item {
-  float: left;
-  padding-right: 10px;
+.back{
+  text-align: left;
+  padding-left: 15%;
 }
 
-.info-item {
-  padding-right: 10px;
+.clubName {
+  grid-area: clubName;
+  text-align: left;
+  padding-left: 10px;
 }
 
-.info-list {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  gap: 20px;
-}
-
-#top .title-item {
-  color: #fff;
-  border: 0;
-}
-
-#top #main .container_wrap_first,
-#top #main .av_default_container_wrap {
-  padding: 50px 0;
-}
-
-#top .title-item .container {
-  padding: 0;
-}
-
-#top #main .title-item .main-title,
-#top #main .title-item .main-title a,
-.title-item {
-  font-size: 37.5px;
-  line-height: normal;
-  color: #000;
-  font-weight: bold;
+.description {
+  grid-area: description;
+  text-align: left;
+  padding-left: 10px 0 10px 10px;
 }
 
 .grid {
@@ -63,41 +41,9 @@
   font-weight: bold;
 }
 
-
-.back{
-  text-align: left;
-  padding-left: 15%;
-}
-
-.logo {
-  grid-area: logo;
-  max-width: 100%;
-  max-height: 100%;
-  padding-left: 15%;
-}
-
-.path {
-  grid-area: path;
-  text-align: left;
-  padding-left: 10px;
-}
-
-.clubName {
-  grid-area: clubName;
-  text-align: left;
-  padding-left: 10px;
-}
-
-.tags {
-  grid-area: tags;
-  text-align: left;
-  padding: 0 0 10px 10px;
-}
-
-.links {
-  grid-area: links;
-  text-align: left;
-  padding-left: 10px 0 0 15%; 
+.icon-item {
+  float: left;
+  padding-right: 10px;
 }
 
 .infos {
@@ -107,23 +53,28 @@
   padding: 0 0 10px 10px;
 }
 
-.description {
-  grid-area: description;
-  text-align: left;
-  padding-left: 10px 0 10px 10px;
+.info-item {
+  padding-right: 10px;
 }
 
-.photoHeader {
-  grid-area: photoHeader;
+.info-list {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 20px;
+}
+
+.links {
+  grid-area: links;
   text-align: left;
+  padding-left: 10px 0 0 15%; 
+}
+
+.logo {
+  grid-area: logo;
+  max-width: 100%;
+  max-height: 100%;
   padding-left: 15%;
-  font-weight: bold;
-}
-
-.photos {
-  grid-area: photos;
-  text-align: left;
-  padding: 0 15% 0 15%;
 }
 
 .logo-item > img {
@@ -134,12 +85,23 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.photo-item > img {
-  height: auto;
-  width: auto;
-  background-size: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.path {
+  grid-area: path;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.photos {
+  grid-area: photos;
+  text-align: left;
+  padding: 0 15% 0 15%;
+}
+
+.photoHeader {
+  grid-area: photoHeader;
+  text-align: left;
+  padding-left: 15%;
+  font-weight: bold;
 }
 
 .photo-bar {
@@ -148,4 +110,41 @@
   align-items: left;
   gap: 30px;
   margin: 10px 0 10px 0;
+}
+
+.photo-item > img {
+  height: auto;
+  width: auto;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tags {
+  grid-area: tags;
+  text-align: left;
+  padding: 0 0 10px 10px;
+}
+
+#top .title-item {
+  color: #fff;
+  border: 0;
+}
+
+#top #main .container_wrap_first,
+#top #main .av_default_container_wrap {
+  padding: 50px 0;
+}
+
+#top .title-item .container {
+  padding: 0;
+}
+
+#top #main .title-item .main-title,
+#top #main .title-item .main-title a,
+.title-item {
+  font-size: 37.5px;
+  line-height: normal;
+  color: #000;
+  font-weight: bold;
 }

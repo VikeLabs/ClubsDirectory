@@ -2,22 +2,14 @@ import { ComponentType } from 'react';
 import { IoIosPeople } from 'react-icons/io';
 
 import error_img from '../Assets/Images/error_image.png';
-
-import { Photo } from './Photo';
-
-export interface Title {
-  categoryName: string;
-  directoryName: string;
+export interface Photo {
+  source: string;
+  alt: string;
 }
 
 export interface Icon {
   icon: ComponentType;
 }
-
-export const defaultTitle: Title = {
-  categoryName: 'Arts',
-  directoryName: 'Club Categories/Art Clubs',
-};
 
 export interface CategoryItem {
   categoryIcon: Icon;
@@ -103,44 +95,7 @@ export const defaultCategoryMenu: CategoryItem[] = [
   },
 ];
 
-export interface Club {
-  clubName: string;
-  clubImage: Photo;
-  clubDescription: string;
-  clubTags: string[];
-}
-
-export interface ClubData {
-  clubName: string;
-  clubDescription: string;
-  clubTags: string[];
-}
-
 const defaultPhoto: Photo = {
   source: error_img,
   alt: 'club logo',
 };
-
-export const defaultClubs: Club[] = [
-  {
-    clubName: 'Her Campus',
-    clubImage: defaultPhoto,
-    clubDescription:
-      'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
-    clubTags: ['Arts', 'Blog', 'Digital Media'],
-  },
-  {
-    clubName: 'UVic Photography Excursion Club',
-    clubImage: defaultPhoto,
-    clubDescription:
-      'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
-    clubTags: ['Arts', 'Off Campus', 'Photography'],
-  },
-  {
-    clubName: 'Vikes Improv',
-    clubImage: defaultPhoto,
-    clubDescription:
-      'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
-    clubTags: ['Acting', 'Arts', 'Theatre'],
-  },
-];

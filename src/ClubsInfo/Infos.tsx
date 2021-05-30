@@ -1,28 +1,19 @@
 import React from 'react';
+import { GoLaw } from 'react-icons/go';
 
 import './ClubInfoStyles.css';
-
-import { Info } from './ClubInfoData';
-import IconItem from './Icon';
 import Icon from './Icon';
 
-interface InfoProps {
-  info: Info;
-}
-
 function InfoItem(props: { info: string }) {
+  const icon = GoLaw;
   return (
     <div className="info-item">
       <p>
-        {/* <Icon icon={props.info.icon} />  */}
+        <Icon icon={icon} />
         {props.info}
       </p>
     </div>
   );
-}
-
-interface InfoListProps {
-  infos: Info[];
 }
 
 function InfoList(props: { infos: string[] }) {

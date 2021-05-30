@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { border, color, BorderProps, ColorProps } from 'styled-system';
 
-import { Description } from './ClubInfoData';
-
 interface Props extends ColorProps, BorderProps {
   children: React.ReactNode;
 }

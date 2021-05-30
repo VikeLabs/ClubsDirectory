@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Title } from './ClubListData';
-
-interface TitleProps {
-  title: Title;
-}
-
 const TitleContainer = styled.div`
   grid-row: 1;
   grid-column: 1 / -1;
@@ -26,11 +20,11 @@ const TitleDirTag = styled.h3`
   font-size: 17px;
 `;
 
-function TitleItem(props: TitleProps) {
+function TitleItem(props: { categoryName: string; directoryName: string }) {
   return (
     <TitleContainer>
-      <TitleTag>{props.title.categoryName}</TitleTag>
-      <TitleDirTag>{props.title.directoryName}</TitleDirTag>
+      <TitleTag>{props.categoryName}</TitleTag>
+      <TitleDirTag>{props.directoryName}</TitleDirTag>
     </TitleContainer>
   );
 }

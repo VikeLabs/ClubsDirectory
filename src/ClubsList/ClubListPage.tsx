@@ -6,7 +6,6 @@ import { defaultCategory } from '../ClubsCategories/CategoryData';
 
 import CategoryMenu from './CategoryMenu';
 import { defaultCategoryMenu } from './ClubListData';
-import { Title } from './ClubListData';
 import Clubs from './Clubs';
 import TitleItem from './Title';
 
@@ -32,15 +31,11 @@ function getFullTitle(pathClubID: string) {
 function ClubListPage() {
   const { clubList } = useParams<{ clubList: string }>();
   const fullTitle = getFullTitle(clubList);
-
-  const titleData: Title = {
-    categoryName: fullTitle,
-    directoryName: `Club Categories/${fullTitle} Clubs`,
-  };
+  const directory = `Club Categories/${fullTitle} Clubs`;
 
   return (
     <PageContainer>
-      <TitleItem title={titleData} />
+      <TitleItem categoryName={fullTitle} directoryName={directory} />
       <CategoryMenu categoryList={defaultCategoryMenu} />
       <Clubs category={clubList} />
     </PageContainer>

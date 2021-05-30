@@ -1,9 +1,8 @@
-import { IconButton, Menu, MenuButton, Portal, MenuList, MenuItem, forwardRef } from '@chakra-ui/react';
+import { IconButton, Menu, MenuButton, Portal, MenuList, MenuItem } from '@chakra-ui/react';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { LinkButton } from '../ClubsCategories/MatrixStyledComponents';
+import { LinkButton } from './ClubListStyles';
 
 import { CategoryItem } from './ClubListData';
 import HamIcon from './HamIcon';

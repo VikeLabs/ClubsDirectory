@@ -2,6 +2,25 @@ import { Center } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const ButtonIcon = styled(Center)`
+  font-size: 80px;
+  padding-bottom: 10px;
+`;
+
+const ButtonLabel = styled.p`
+  margin-top: -5px;
+`;
+
+const CategoryTitle = styled.h1`
+  position: flex;
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: 39px;
+  margin-top: 60px;
+  color: white;
+  font-style: normal;
+`;
+
 const Grid = styled.div`
   display: grid;
   margin-left: 300px;
@@ -29,25 +48,6 @@ const Gridbutton = styled.button`
     color: white;
     background: #1b8091;
   }
-`;
-
-const CategoryTitle = styled.h1`
-  position: flex;
-  font-size: 60px;
-  font-weight: 600;
-  margin-left: 39px;
-  margin-top: 60px;
-  color: white;
-  font-style: normal;
-`;
-
-const ButtonIcon = styled(Center)`
-  font-size: 80px;
-  padding-bottom: 10px;
-`;
-
-const ButtonLabel = styled.p`
-  margin-top: -5px;
 `;
 
 const LinkButton = styled(Link)`

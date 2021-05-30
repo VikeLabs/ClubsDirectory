@@ -2,8 +2,6 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 import React from 'react';
 import styled from 'styled-components';
 
-import { Tag } from './ClubInfoData';
-
 const Row = styled.div`
   display: flex;
   justify-content: center;

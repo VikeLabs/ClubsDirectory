@@ -2,6 +2,31 @@ import { Tag } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+const ArrowIconDiv = styled.div`
+  grid-row: 1 / -1;
+  grid-column: 3;
+  margin: auto;
+`;
+
+const ClubDes = styled.p`
+  font-size: 18px;
+  margin-left: 25px;
+`;
+
+const ClubDesDiv = styled.div`
+  grid-row: 2;
+  grid-column: 2;
+`;
+
+const ClubsDiv = styled.div`
+  margin-top: -200px;
+  grid-row: 2;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
 const ClubIconDiv = styled.div`
   background-color: white;
   margin: 45px 0px;
@@ -19,9 +44,9 @@ const ClubIconDiv = styled.div`
   }
 `;
 
-const StyledTag = styled(Tag)`
-  margin: 5px 10px;
-  padding-left: 15px;
+const ClubName = styled.h1`
+  font-weight: bold;
+  font-size: 22px;
 `;
 
 const ClubImgDiv = styled.div`
@@ -36,48 +61,23 @@ const ClubNameDiv = styled.div`
   grid-column: 2;
 `;
 
-const ClubDesDiv = styled.div`
-  grid-row: 2;
-  grid-column: 2;
-`;
-
 const ClubTagsDiv = styled.div`
   grid-row: 3;
   grid-column: 2;
 `;
 
-const ArrowIconDiv = styled.div`
-  grid-row: 1 / -1;
-  grid-column: 3;
-  margin: auto;
-`;
-
-const ClubName = styled.h1`
-  font-weight: bold;
-  font-size: 22px;
-`;
-
-const ClubDes = styled.p`
-  font-size: 18px;
-  margin-left: 25px;
-`;
-
-const LinkedButton = styled(Link)`
+const LinkButton = styled(Link)`
   text-decoration: none;
 `;
 
-const ClubsDiv = styled.div`
-  margin-top: -200px;
-  grid-row: 2;
-  grid-column: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+const StyledTag = styled(Tag)`
+  margin: 5px 10px;
+  padding-left: 15px;
 `;
 
 export {
   ClubsDiv,
-  LinkedButton,
+  LinkButton,
   ClubDes,
   ClubName,
   ArrowIconDiv,

@@ -1,12 +1,5 @@
 import React from 'react';
 
-import { Link } from './ClubInfoData';
-import Icon from './Icon';
-
-interface LinkProps {
-  link: Link;
-}
-
 function LinkItem(props: { link: string }) {
   return (
     <div className="link-item">

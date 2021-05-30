@@ -1,14 +1,9 @@
 import React from 'react';
-
 import './ClubInfoStyles.css';
-import { Icon } from './ClubInfoData';
+import { IconType } from 'react-icons/lib';
 
-export interface IconProps {
-  icon: Icon;
-}
-
-function IconItem(props: IconProps) {
-  var IconType = props.icon.icon;
+function IconItem(props: { icon: IconType }) {
+  var IconType = props.icon;
   return (
     <div className="icon-item">
       <IconType />
