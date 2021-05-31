@@ -1,29 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import CategoryMenu from './CategoryMenu';
+import { defaultCategoryMenu } from './ClubListData';
+
 const TitleContainer = styled.div`
-  grid-row: 1;
-  grid-column: 1 / -1;
   color: white;
   font-family: Helvetica;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 15%;
+  text-overflow: clip;
+  align-items: center;
+  margin-top: 3%;
+  padding-bottom: 10px;
 `;
 
 const TitleTag = styled.h1`
-  display: inline-block;
   font-size: 72px;
-  margin: 50px 500px 15px 80px;
+  padding-left: 30px;
+`;
+
+const ListingHeader = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const TitleDirTag = styled.h3`
-  display: inline-block;
   font-size: 17px;
 `;
 
 function TitleItem(props: { categoryName: string; directoryName: string }) {
   return (
     <TitleContainer>
-      <TitleTag>{props.categoryName}</TitleTag>
+      <ListingHeader>
+        <CategoryMenu categoryList={defaultCategoryMenu} />
+        <TitleTag>{props.categoryName}</TitleTag>
+      </ListingHeader>
       <TitleDirTag>{props.directoryName}</TitleDirTag>
     </TitleContainer>
   );

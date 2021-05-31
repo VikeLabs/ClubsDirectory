@@ -19,12 +19,12 @@ const ClubDesDiv = styled.div`
 `;
 
 const ClubsDiv = styled.div`
-  margin-top: -200px;
-  grid-row: 2;
-  grid-column: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  margin-left: 300px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  grid-template-columns: repeat(1, 70%);
+  grid-auto-rows: minmax(300px, auto);
 `;
 
 const ClubIconDiv = styled.div`
