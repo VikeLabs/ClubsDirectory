@@ -4,6 +4,7 @@ import logo from '../Assets/Images/slack.jpg';
 import { Photo } from './Photo';
 
 // These icon are currently not being used. Saving them just incase we need to refer to them later.
+// export const defaultIcon: Icon = { icon: IoIosPeople };
 // export const defaultCalIcon: Icon = { icon: IoIosCalendar };
 // export const defaultSlackIcon: Icon = { icon: AiOutlineSlack };
 // export const defaultEmailIcon: Icon = { icon: AiOutlineMail };

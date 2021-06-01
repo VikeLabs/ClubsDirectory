@@ -25,9 +25,37 @@ function findClubInfo(clubName: string) {
       clubTags: tags,
       clubImage: pec_logo,
       clubLinks: [primaryEmail, 'join.slack.com/', 'uvic.zoom.us/club'],
-      clubMembersAndCreationDate: [members, createdDate],
+      clubMembersAndCreationDate: [members + ' members', createdDate],
     }));
   return completedData;
+}
+
+function extractDate(rawDate: string) {
+  let extractedDate = RegExp(/[0-9]*\-[0-9]*\-[0-9]*/).exec(rawDate);
+  let processedDate = 'Date could not be extracted';
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  if (extractedDate != null) {
+    let splitDateArray = extractedDate[0].split('-');
+    let monthIndex = Number(splitDateArray[1]);
+    let extractedMonth = months[monthIndex];
+    let extractedYear = splitDateArray[0];
+    processedDate = extractedMonth + ' ' + extractedYear;
+  }
+  return processedDate;
 }
 
 function ClubInfoPage() {
@@ -35,6 +63,8 @@ function ClubInfoPage() {
   const { clubType, clubName } = useParams<{ clubType: string; clubName: string }>();
   const path = `Club Categories/${clubType}/${clubName}`;
   const clubInfo = findClubInfo(clubName);
+  // Extracting the year and month the club was created.
+  clubInfo[0].clubMembersAndCreationDate[1] = extractDate(clubInfo[0].clubMembersAndCreationDate[1]);
   const title = clubInfo[0].clubName;
   const tags = clubInfo[0].clubTags;
   const description = clubInfo[0].clubDescription;

@@ -25,7 +25,7 @@ function CategoryMenu(props: CategoryMenuProp) {
         <Portal>
           <MenuList>
             {props.categoryList.map((categoryItem, index) => {
-              if (categoryItem.categoryName == 'Home') {
+              if (categoryItem.categoryName === 'Home') {
                 return (
                   <LinkButton to="/ClubCategories">
                     <MenuItem key={index} icon={<Icon icon={categoryItem.categoryIcon} />}>

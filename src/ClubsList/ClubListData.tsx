@@ -1,5 +1,10 @@
 import { ComponentType } from 'react';
-import { IoIosPeople } from 'react-icons/io';
+import { FaHandsHelping, FaPaintBrush, FaMusic, FaPrayingHands, FaMicroscope, FaHome } from 'react-icons/fa';
+import { GiKnifeFork, GiSoccerBall } from 'react-icons/gi';
+import { GoLaw } from 'react-icons/go';
+import { IoIosPeople, IoIosMore } from 'react-icons/io';
+import { IoGameController, IoEarthOutline } from 'react-icons/io5';
+import { IconType } from 'react-icons/lib';
 
 import error_img from '../Assets/Images/error_image.png';
 export interface Photo {
@@ -12,7 +17,7 @@ export interface Icon {
 }
 
 export interface CategoryItem {
-  categoryIcon: Icon;
+  categoryIcon: IconType;
   categoryName: string;
   categoryShortName: string;
 }
@@ -21,67 +26,67 @@ export const defaultIcon: Icon = { icon: IoIosPeople };
 
 export const defaultCategoryMenu: CategoryItem[] = [
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: FaHome,
     categoryName: 'Home',
     categoryShortName: 'Home',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: FaPaintBrush,
     categoryName: 'Arts',
     categoryShortName: 'Arts',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: FaHandsHelping,
     categoryName: 'Community Service',
     categoryShortName: 'Community',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: IoIosPeople,
     categoryName: 'Cultural',
     categoryShortName: 'Culture',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: IoEarthOutline,
     categoryName: 'Environmental',
     categoryShortName: 'Environment',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: GiKnifeFork,
     categoryName: 'Food & Drink',
     categoryShortName: 'Food',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: IoGameController,
     categoryName: 'Gaming',
     categoryShortName: 'Gaming',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: FaMusic,
     categoryName: 'Music',
     categoryShortName: 'Music',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: GoLaw,
     categoryName: 'Politics',
     categoryShortName: 'Politics',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: FaPrayingHands,
     categoryName: 'Religion',
     categoryShortName: 'Religion',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: GiSoccerBall,
     categoryName: 'Sports & Rec',
     categoryShortName: 'Sports',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: FaMicroscope,
     categoryName: 'STEM',
     categoryShortName: 'STEM',
   },
   {
-    categoryIcon: defaultIcon,
+    categoryIcon: IoIosMore,
     categoryName: 'Other',
     categoryShortName: 'Other',
   },
