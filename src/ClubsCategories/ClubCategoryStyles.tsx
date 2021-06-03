@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ButtonIcon = styled(Center)`
-  font-size: 80px;
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
+  font-size: 100px;
   padding-bottom: 10px;
 `;
 
@@ -12,6 +15,9 @@ const ButtonLabel = styled.p`
 `;
 
 const CategoryTitle = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
   position: flex;
   font-size: 60px;
   font-weight: 600;
@@ -22,23 +28,33 @@ const CategoryTitle = styled.h1`
 `;
 
 const Grid = styled.div`
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 100px);
+    margin-left: 20px;
+    grid-column-gap: 100px;
+  }
   display: grid;
-  margin-left: 300px;
+  margin-left: 200px;
   margin-top: 50px;
   padding-bottom: 100px;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(3, 100px);
   grid-auto-rows: minmax(100px, auto);
-  grid-row-gap: 90px;
-  grid-column-gap: 120px;
+  grid-row-gap: 40px;
+  grid-column-gap: 250px;
 `;
 
 const Gridbutton = styled.button`
+  @media screen and (max-width: 768px) {
+    width: 175px;
+    height: 175px;
+    font-size: 30px;
+  }
   font-weight: 500;
-  font-size: 20px;
-  width: 162px;
-  height: 162px;
+  font-size: 50px;
+  width: 300px;
+  height: 300px;
   color: black;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
   border: 0px;
   background: #ffffff;
   border-radius: 12px;

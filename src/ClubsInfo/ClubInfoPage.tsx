@@ -80,7 +80,7 @@ function ClubInfoPage() {
           <LogoBar source={club_logo} alt={'club logo'} />
         </div>
         <div className="path">
-          <PathItem pathURL={path} />
+          <PathItem category={clubType} clubName={clubName} />
         </div>
         <div className="clubName">
           <Title title={title} />
