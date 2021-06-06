@@ -8,6 +8,6 @@ body{
 
 @media screen and (max-width: 768px) {
     body{
-      background-size: 100% 30% !important;
+      background-size: 100% !important;
     }
 }

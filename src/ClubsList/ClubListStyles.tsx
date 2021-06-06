@@ -3,22 +3,36 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ArrowIconDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   grid-row: 1 / -1;
   grid-column: 3;
   margin: auto;
 `;
 
 const ClubDes = styled.p`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   font-size: 18px;
   margin-left: 25px;
 `;
 
 const ClubDesDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   grid-row: 2;
   grid-column: 2;
 `;
 
 const ClubsDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 100%);
+    grid-auto-rows: minmax(100px, auto);
+    margin-left: 30px;
+  }
   display: grid;
   margin-left: 300px;
   margin-top: 50px;
@@ -28,6 +42,11 @@ const ClubsDiv = styled.div`
 `;
 
 const ClubIconDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    margin-left: -20px;
+    grid-template-rows: 1fr 0.1fr 0.7fr;
+    grid-template-columns: 3fr 5fr 1.4fr;
+  }
   background-color: white;
   margin: 45px 0px;
   display: grid;
@@ -45,11 +64,18 @@ const ClubIconDiv = styled.div`
 `;
 
 const ClubName = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+    margin-left: 20px;
+  }
   font-weight: bold;
   font-size: 22px;
 `;
 
 const ClubImgDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    grid-column: auto;
+  }
   grid-row: 1 / -1;
   grid-column: 1;
   margin-left: 7px;
@@ -62,15 +88,25 @@ const ClubNameDiv = styled.div`
 `;
 
 const ClubTagsDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   grid-row: 3;
   grid-column: 2;
 `;
 
 const LinkButton = styled(Link)`
+  @media screen and (max-width: 768px) {
+    width: 350px;
+    height: 200px;
+  }
   text-decoration: none;
 `;
 
 const StyledTag = styled(Tag)`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   margin: 5px 10px;
   padding-left: 15px;
 `;

@@ -3,14 +3,22 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const LandingPageTitle = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
   font-size: 100px;
   font-weight: 600;
   margin-left: 55px;
   margin-top: 70px;
-  color: white;
+  color: black;
 `;
 
 const LandingPageBodyText = styled.p`
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    height: 50px;
+    width: 300px;
+  }
   font-size: 30px;
   font-weight: 600;
   width: 680px;
@@ -20,6 +28,10 @@ const LandingPageBodyText = styled.p`
 `;
 
 const CategoryNavButton = styled.button`
+  @media screen and (max-width: 768px) {
+    margin-top: 300px;
+    margin-left: 50px;
+  }
   margin-left: 55px;
   margin-top: 60px;
   width: 306px;

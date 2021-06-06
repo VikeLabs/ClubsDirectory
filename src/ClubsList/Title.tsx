@@ -5,6 +5,9 @@ import CategoryMenu from './CategoryMenu';
 import { defaultCategoryMenu } from './ClubListData';
 
 const TitleContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    margin-top: 5%;
+  }
   color: white;
   font-family: Helvetica;
   font-weight: bold;
@@ -18,6 +21,10 @@ const TitleContainer = styled.div`
 `;
 
 const TitleTag = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+    color: black;
+  }
   font-size: 72px;
   padding-left: 30px;
 `;
@@ -28,6 +35,9 @@ const ListingHeader = styled.div`
 `;
 
 const TitleDirTag = styled.h3`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   font-size: 17px;
 `;
 

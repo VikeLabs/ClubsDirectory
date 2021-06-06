@@ -17,6 +17,8 @@ const ButtonLabel = styled.p`
 const CategoryTitle = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 50px;
+    color: black;
+    margin-left: 30px;
   }
   position: flex;
   font-size: 60px;
