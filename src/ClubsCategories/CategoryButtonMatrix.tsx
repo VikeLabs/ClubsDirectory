@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { Category, defaultCategory } from './CategoryData';
-import { Grid, Gridbutton, CategoryTitle, ButtonIcon, ButtonLabel, LinkButton } from './MatrixStyledComponents';
+import { Grid, Gridbutton, CategoryTitle, ButtonIcon, ButtonLabel, LinkButton } from './ClubCategoryStyles';
 
 interface CategoryProps {
   category: Category;

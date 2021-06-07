@@ -1,15 +1,16 @@
-import { IconButton, Menu, MenuButton, Portal, MenuList, MenuItem, forwardRef } from '@chakra-ui/react';
+import { IconButton, Menu, MenuButton, Portal, MenuList, MenuItem } from '@chakra-ui/react';
 import React from 'react';
 import styled from 'styled-components';
 
 import { CategoryItem } from './ClubListData';
+import { LinkButton } from './ClubListStyles';
 import HamIcon from './HamIcon';
 import Icon from './Icon';
 
 const MenuDiv = styled.div`
   grid-row: 1;
   grid-column: 1;
-  transform: translate(15px, 90px);
+  margin-left: 20px;
 `;
 
 interface CategoryMenuProp {
@@ -24,10 +25,21 @@ function CategoryMenu(props: CategoryMenuProp) {
         <Portal>
           <MenuList>
             {props.categoryList.map((categoryItem, index) => {
+              if (categoryItem.categoryName === 'Home') {
+                return (
+                  <LinkButton to="/ClubCategories">
+                    <MenuItem key={index} icon={<Icon icon={categoryItem.categoryIcon} />}>
+                      {categoryItem.categoryName}
+                    </MenuItem>
+                  </LinkButton>
+                );
+              }
               return (
-                <MenuItem key={index} icon={<Icon icon={categoryItem.categoryIcon} />}>
-                  {categoryItem.categoryName}
-                </MenuItem>
+                <LinkButton to={`/ClubCategories/ClubList/${categoryItem.categoryShortName} Club`}>
+                  <MenuItem key={index} icon={<Icon icon={categoryItem.categoryIcon} />}>
+                    {categoryItem.categoryName}
+                  </MenuItem>
+                </LinkButton>
               );
             })}
           </MenuList>

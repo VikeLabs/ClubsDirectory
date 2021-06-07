@@ -12,34 +12,14 @@ const LogoDiv = styled.div`
   margin-left: 0px;
 `;
 
-export interface Logo {
-  source: string;
-  alt: string;
-}
-export interface LogoProps {
-  logo: Logo;
-}
-
-function LogoItem(props: LogoProps) {
-  return (
-    <div className="logo-item">
-      <img src={props.logo.source} alt={props.logo.alt} />
-    </div>
-  );
-}
-
-interface LogoBarProps {
-  logos: Logo[];
-}
-
-function LogoBar(props: LogoBarProps) {
+function LogoBar(logoProps: { source: string; alt: string }) {
   return (
     <ul className="logo-bar">
-      {props.logos.map((logo) => {
-        return <LogoItem logo={logo} />;
-      })}
+      <div className="logo-item">
+        <img src={logoProps.source} alt={logoProps.alt} />
+      </div>
     </ul>
   );
 }
 
-export default LogoItem;
+export default LogoBar;

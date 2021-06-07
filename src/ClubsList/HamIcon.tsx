@@ -1,4 +1,3 @@
-/* A styled Hamburger Icon Component */
 import React from 'react';
 import styled from 'styled-components';
 

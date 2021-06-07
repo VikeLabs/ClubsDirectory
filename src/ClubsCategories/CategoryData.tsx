@@ -24,7 +24,7 @@ export const defaultCategory: Category[] = [
   },
   {
     ShortTitle: 'Culture',
-    FullTitle: 'Culture',
+    FullTitle: 'Cultural',
     icon: IoIosPeople,
   },
   {
