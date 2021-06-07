@@ -3,4 +3,5 @@ body{
   background-repeat: no-repeat !important;
   background-position-y: 80px !important;
   background-color: white !important;
+  background-size: cover !important;
 }
