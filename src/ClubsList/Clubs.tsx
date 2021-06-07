@@ -1,4 +1,5 @@
 import { IoIosArrowForward } from 'react-icons/io';
+import styled from 'styled-components';
 
 import DMTC_img from '../Assets/Images/DMTCIcon.png';
 import HER_img from '../Assets/Images/HerClubIcon.png';
@@ -22,13 +23,19 @@ import {
 } from './ClubListStyles';
 import PhotoItem from './Photo';
 
+const StyledPhoto = styled(PhotoItem)`
+  width: 400px;
+  height: 400px;
+  display: block;
+`;
+
 function ClubIcon(iconProps: { club: ClubListData }) {
   return (
     // Linked button switches the page to the club info page when clicked.
     <LinkButton to={`/ClubCategories/ClubList/${iconProps.club.clubCategory}/${iconProps.club.clubName}`}>
       <ClubIconDiv>
         <ClubImgDiv>
-          <PhotoItem source={iconProps.club.clubImage} alt={'Club Icon'} />
+          <StyledPhoto source={iconProps.club.clubImage} alt={'Club Icon'} />
         </ClubImgDiv>
         <ClubNameDiv>
           <ClubName>{iconProps.club.clubName}</ClubName>
