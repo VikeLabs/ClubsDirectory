@@ -5,12 +5,13 @@ import styled from 'styled-components';
 const LandingPageTitle = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 50px;
+    color: black;
   }
   font-size: 100px;
   font-weight: 600;
   margin-left: 55px;
   margin-top: 70px;
-  color: black;
+  color: white;
 `;
 
 const LandingPageBodyText = styled.p`

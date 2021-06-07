@@ -29,9 +29,10 @@ const ClubDesDiv = styled.div`
 
 const ClubsDiv = styled.div`
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(1, 100%);
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(1, 95%);
+    grid-auto-rows: min-content;
     margin-left: 30px;
+    margin-top: 0px;
   }
   display: grid;
   margin-left: 300px;
@@ -44,8 +45,7 @@ const ClubsDiv = styled.div`
 const ClubIconDiv = styled.div`
   @media screen and (max-width: 768px) {
     margin-left: -20px;
-    grid-template-rows: 1fr 0.1fr 0.7fr;
-    grid-template-columns: 3fr 5fr 1.4fr;
+    grid-template-rows: min-content;
   }
   background-color: white;
   margin: 45px 0px;
@@ -65,6 +65,10 @@ const ClubIconDiv = styled.div`
 
 const ClubName = styled.h1`
   @media screen and (max-width: 768px) {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
     margin-left: 20px;
   }
@@ -74,7 +78,9 @@ const ClubName = styled.h1`
 
 const ClubImgDiv = styled.div`
   @media screen and (max-width: 768px) {
-    grid-column: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 12px;
   }
   grid-row: 1 / -1;
   grid-column: 1;
@@ -83,6 +89,9 @@ const ClubImgDiv = styled.div`
 `;
 
 const ClubNameDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    grid-row: 1 / 4;
+  }
   grid-row: 1;
   grid-column: 2;
 `;
@@ -96,10 +105,6 @@ const ClubTagsDiv = styled.div`
 `;
 
 const LinkButton = styled(Link)`
-  @media screen and (max-width: 768px) {
-    width: 350px;
-    height: 200px;
-  }
   text-decoration: none;
 `;
 
