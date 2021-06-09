@@ -1,10 +1,19 @@
 import React from 'react';
-
-import './infos.css';
+import styled from 'styled-components';
 
 import { Info } from './data';
 import IconItem from './Icon';
 import Icon from './Icon';
+
+const InfoListDiv = styled.p`
+  grid-area: infos;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 20px;
+  text-align: left;
+  margin: 0 0 10px 10px;
+`;
 
 interface InfoProps {
   info: Info;
@@ -12,7 +21,7 @@ interface InfoProps {
 
 function InfoItem(props: InfoProps) {
   return (
-    <div className="info-item">
+    <div>
       <p>
         <Icon icon={props.info.icon} /> {props.info.text}
       </p>
@@ -26,11 +35,11 @@ interface InfoListProps {
 
 function InfoList(props: InfoListProps) {
   return (
-    <p className="info-list">
+    <InfoListDiv>
       {props.infos.map((info) => {
         return <InfoItem info={info} />;
       })}
-    </p>
+    </InfoListDiv>
   );
 }
 

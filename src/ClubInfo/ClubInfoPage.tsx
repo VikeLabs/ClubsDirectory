@@ -1,12 +1,7 @@
 import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import { gridArea } from 'styled-system';
 
-import { Grid, Row } from '../theme';
-
-import './ClubInfoPage.css';
-
+import { GridDiv, RightSubGridDiv, PhotoHeaderDiv } from './ClubInfoPageStyledComponents';
 import {
   defaultLinks,
   defaultDescription,
@@ -28,56 +23,26 @@ import PhotoBar from './Photo';
 import TagList from './Tags';
 import Title from './Title';
 
-const GridDiv = styled.div`
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template: 30px 0.5fr 0.5fr 1fr 0.5fr 0.5fr 2.5fr 0.5fr 3.5fr / 1fr 4fr;
-  gap: 5px 20px;
-  grid-template-areas:
-    'header header'
-    'back gap'
-    'logo path'
-    'logo clubName'
-    'logo tags'
-    'logo infos'
-    'links description'
-    'photoHeader empty'
-    'photos photos';
-`;
-
-interface GridItemProps {
-  gridArea: string;
-  margin: string;
+function RightSubGrid() {
+  const infos = defaultInfos;
+  const title = defaultTitle;
+  const tags = defaultTags;
+  const path = defaultPath;
+  return (
+    <RightSubGridDiv>
+      <PathItem path={path}></PathItem>
+      <Title title={title} />
+      <TagList tags={tags} />
+      <InfoList infos={infos} />
+    </RightSubGridDiv>
+  );
 }
-
-const Item = styled.div<GridItemProps>`
-  grid-area: ${(props) => props.gridArea};
-  text-align: left;
-`;
-
-const LeftItem = styled(Item)`
-  margin: ${(props) => props.margin};
-`;
-
-LeftItem.defaultProps = {
-  margin: '10px 0 0 15%',
-};
-
-const RightItem = styled(Item)`
-  margin: 10px 0 10px 10px;
-`;
 
 function ClubInfoPage() {
   const links = defaultLinks;
   const description = defaultDescription;
-  const title = defaultTitle;
   const photos = defaultPhotos;
-  const infos = defaultInfos;
   const club_logo = defaultLogo;
-  const tags = defaultTags;
-  const deficon = defaultIcon;
-  const path = defaultPath;
 
   // header
   // logo path
@@ -90,32 +55,12 @@ function ClubInfoPage() {
   return (
     <div className="App">
       <GridDiv>
-        <div className="back">back</div>
-        <LeftItem gridArea="logo">
-          <LogoItem logo={club_logo}></LogoItem>
-        </LeftItem>
-        <RightItem gridArea="path">
-          <PathItem path={defaultPath}></PathItem>
-        </RightItem>
-        <RightItem gridArea="clubName">
-          <Title title={title} />
-        </RightItem>
-        <RightItem gridArea="tags">
-          <TagList tags={tags} />
-        </RightItem>
-        <LeftItem gridArea="links">
-          <LinkList links={links}></LinkList>
-        </LeftItem>
-        <RightItem gridArea="infos">
-          <InfoList infos={infos} />
-        </RightItem>
-        <RightItem gridArea="description">
-          <Description description={description} />
-        </RightItem>
-        <LeftItem gridArea="photoHeader">Featured Photos</LeftItem>
-        <LeftItem gridArea="photos">
-          <PhotoBar photos={defaultPhotos}></PhotoBar>
-        </LeftItem>
+        <LogoItem logo={club_logo}></LogoItem>
+        <RightSubGrid></RightSubGrid>
+        <LinkList links={links}></LinkList>
+        <Description description={description} />
+        <PhotoHeaderDiv>Featured Photos</PhotoHeaderDiv>
+        <PhotoBar photos={photos}></PhotoBar>
       </GridDiv>
     </div>
   );

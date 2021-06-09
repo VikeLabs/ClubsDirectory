@@ -9,15 +9,9 @@ import Theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
-<<<<<<< HEAD
-    <Theme>
-      <App />
-    </Theme>
-=======
     <ChakraProvider>
       <App />
     </ChakraProvider>
->>>>>>> 5f73e71e3c0f21d68411e3f6da7a689c179f1606
   </React.StrictMode>,
   document.getElementById('root')
 );

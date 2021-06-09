@@ -11,6 +11,9 @@ interface Props extends ColorProps, BorderProps {
 const Box = styled.div<Props>`
   ${color};
   ${border};
+  grid-area: description;
+  text-align: left;
+  margin: 10px 0 10px 10px;
 `;
 
 interface DescProps {

@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import './logo.css';
-
 const LogoDiv = styled.div`
   max-width: 100%;
   max-height: 100%;
-  margin: 0px 0;
-  border-radius: 2px;
+  border-radius: 8px;
   text-align: left;
-  margin-left: 0px;
+  grid-area: 'logo';
+  margin-left: 15%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: visible;
 `;
 
 export interface Logo {
@@ -22,9 +22,9 @@ export interface LogoProps {
 
 function LogoItem(props: LogoProps) {
   return (
-    <div className="logo-item">
+    <LogoDiv>
       <img src={props.logo.source} alt={props.logo.alt}></img>
-    </div>
+    </LogoDiv>
   );
 }
 

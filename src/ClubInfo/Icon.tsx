@@ -1,7 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import './icon.css';
 import { Icon } from './data';
+
+const IconItemDiv = styled.div`
+  float: left;
+  padding-right: 10px;
+`;
 
 export interface IconProps {
   icon: Icon;
@@ -10,9 +15,9 @@ export interface IconProps {
 function IconItem(props: IconProps) {
   var IconType = props.icon.icon;
   return (
-    <div className="icon-item">
+    <IconItemDiv className="icon-item">
       <IconType />
-    </div>
+    </IconItemDiv>
   );
 }
 

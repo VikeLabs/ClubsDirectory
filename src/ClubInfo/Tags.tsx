@@ -4,9 +4,10 @@ import styled from 'styled-components';
 
 import { Tag } from './data';
 
-const Row = styled.div`
-  display: flex;
-  justify-content: center;
+const TagListDiv = styled.div`
+  grid-area: tags;
+  text-align: left;
+  margin: 0 0 10px 10px;
 `;
 
 interface TagProps {
@@ -33,11 +34,13 @@ interface TagListProps {
 
 function TagList(props: TagListProps) {
   return (
-    <ButtonGroup variant="solid" spacing="3">
-      {props.tags.map((tag) => {
-        return <TagItem tag={tag} />;
-      })}
-    </ButtonGroup>
+    <TagListDiv>
+      <ButtonGroup variant="solid" spacing="3">
+        {props.tags.map((tag) => {
+          return <TagItem tag={tag} />;
+        })}
+      </ButtonGroup>
+    </TagListDiv>
   );
 }
 
