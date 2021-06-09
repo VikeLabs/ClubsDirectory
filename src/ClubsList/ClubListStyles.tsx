@@ -41,7 +41,7 @@ const ClubsDiv = styled.div`
   margin-top: 50px;
   padding-bottom: 100px;
   grid-template-columns: repeat(1, 70%);
-  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 70px;
 `;
 
 const ClubIconDiv = styled.div`
@@ -56,7 +56,6 @@ const ClubIconDiv = styled.div`
     grid-template-columns: 250px 700px 150px;
   }
   background-color: white;
-  margin: 45px 5px;
   display: grid;
   border-radius: 15px;
   cursor: pointer;
