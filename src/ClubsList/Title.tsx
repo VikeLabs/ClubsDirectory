@@ -1,36 +1,54 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Title } from './ClubListData';
-
-interface TitleProps {
-  title: Title;
-}
+import CategoryMenu from './CategoryMenu';
+import { defaultCategoryMenu } from './ClubListData';
 
 const TitleContainer = styled.div`
-  grid-row: 1;
-  grid-column: 1 / -1;
+  @media screen and (max-width: 768px) {
+    margin-top: 5%;
+  }
   color: white;
   font-family: Helvetica;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 15%;
+  text-overflow: clip;
+  align-items: center;
+  margin-top: 3%;
+  padding-bottom: 10px;
 `;
 
 const TitleTag = styled.h1`
-  display: inline-block;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+    color: black;
+  }
   font-size: 72px;
-  margin: 50px 500px 15px 80px;
+  padding-left: 30px;
+`;
+
+const ListingHeader = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const TitleDirTag = styled.h3`
-  display: inline-block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   font-size: 17px;
 `;
 
-function TitleItem(props: TitleProps) {
+function TitleItem(props: { categoryName: string; directoryName: string }) {
   return (
     <TitleContainer>
-      <TitleTag>{props.title.categoryName}</TitleTag>
-      <TitleDirTag>{props.title.directoryName}</TitleDirTag>
+      <ListingHeader>
+        <CategoryMenu categoryList={defaultCategoryMenu} />
+        <TitleTag>{props.categoryName}</TitleTag>
+      </ListingHeader>
+      <TitleDirTag>{props.directoryName}</TitleDirTag>
     </TitleContainer>
   );
 }

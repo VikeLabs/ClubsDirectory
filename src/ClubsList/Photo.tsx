@@ -1,11 +1,6 @@
 import React from 'react';
 
-export interface Photo {
-  source: string;
-  alt: string;
-}
-
-function PhotoItem(props: Photo) {
+function PhotoItem(props: { source: string; alt: string }) {
   return <img src={props.source} alt={props.alt}></img>;
 }
 

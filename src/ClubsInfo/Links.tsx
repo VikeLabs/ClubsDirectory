@@ -1,26 +1,15 @@
 import React from 'react';
 
-import { Link } from './ClubInfoData';
-import Icon from './Icon';
-
-interface LinkProps {
-  link: Link;
-}
-
-function LinkItem(props: LinkProps) {
+function LinkItem(props: { link: string }) {
   return (
     <div className="link-item">
-      <Icon icon={props.link.logo}></Icon>
-      <p>{props.link.url}</p>
+      {/* <Icon icon={props.link.logo}></Icon> */}
+      <p>{props.link}</p>
     </div>
   );
 }
 
-interface LinkListProps {
-  links: Link[];
-}
-
-function LinkList(props: LinkListProps) {
+function LinkList(props: { links: string[] }) {
   return (
     <ul className="link-list">
       {props.links.map((link) => {

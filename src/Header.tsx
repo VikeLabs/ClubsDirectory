@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { CategoryTitle } from './ClubsCategories/MatrixStyledComponents';
+import { CategoryTitle } from './ClubsCategories/ClubCategoryStyles';
 
 const HeaderBar = styled.nav`
   display: flex;
