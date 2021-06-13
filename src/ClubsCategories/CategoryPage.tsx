@@ -1,13 +1,14 @@
 import React from 'react';
 
 import CategoryButtonMatrix from './CategoryButtonMatrix';
+import { CategoryDiv } from './ClubCategoryStyles';
 
 function CategoryPage() {
   return (
-    <div>
+    <CategoryDiv>
       {/* Component containg the grid of buttons for each club category */}
       <CategoryButtonMatrix />
-    </div>
+    </CategoryDiv>
   );
 }
 export default CategoryPage;

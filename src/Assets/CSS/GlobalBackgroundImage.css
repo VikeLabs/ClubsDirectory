@@ -1,3 +1,4 @@
+
 body{
   background-image: url(../Images/CompletedBackground.png) !important;
   background-repeat: no-repeat !important;
@@ -8,6 +9,6 @@ body{
 
 @media screen and (max-width: 768px) {
     body{
-      background-size: 100% !important;
+      background-image: none !important;
     }
 }

@@ -19,6 +19,7 @@ import {
   ClubImgDiv,
   ClubIconDiv,
   StyledTag,
+  StyledPhoto,
 } from './ClubListStyles';
 import PhotoItem from './Photo';
 
@@ -28,7 +29,7 @@ function ClubIcon(iconProps: { club: ClubListData }) {
     <LinkButton to={`/ClubCategories/ClubList/${iconProps.club.clubCategory}/${iconProps.club.clubName}`}>
       <ClubIconDiv>
         <ClubImgDiv>
-          <PhotoItem source={iconProps.club.clubImage} alt={'Club Icon'} />
+          <StyledPhoto source={iconProps.club.clubImage} alt={'Club Icon'} />
         </ClubImgDiv>
         <ClubNameDiv>
           <ClubName>{iconProps.club.clubName}</ClubName>

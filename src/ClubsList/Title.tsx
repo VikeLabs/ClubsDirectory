@@ -6,7 +6,7 @@ import { defaultCategoryMenu } from './ClubListData';
 
 const TitleContainer = styled.div`
   @media screen and (max-width: 768px) {
-    margin-top: 5%;
+    padding-top: 5%;
   }
   color: white;
   font-family: Helvetica;
@@ -16,7 +16,7 @@ const TitleContainer = styled.div`
   grid-column-gap: 15%;
   text-overflow: clip;
   align-items: center;
-  margin-top: 3%;
+  padding-top: 3%;
   padding-bottom: 10px;
 `;
 
