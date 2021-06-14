@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ArrowIconDiv = styled.div`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1299px) {
     display: none;
   }
   grid-row: 1 / -1;
@@ -14,6 +14,9 @@ const ArrowIconDiv = styled.div`
 const ClubDes = styled.p`
   @media screen and (max-width: 768px) {
     display: none;
+  }
+  @media screen and (max-width: 1299px) and (min-width: 769px) {
+    margin-top: 5px;
   }
   font-size: 18px;
   margin-left: 25px;
@@ -36,6 +39,9 @@ const ClubsDiv = styled.div`
     margin-left: 30px;
     margin-top: 0px;
   }
+  @media screen and (max-width: 1299px) and (min-width: 769px) {
+    margin-left: 7%;
+  }
   display: grid;
   margin-left: 10%;
   margin-top: 50px;
@@ -49,9 +55,15 @@ const ClubIconDiv = styled.div`
     margin-left: -20px;
     grid-template-rows: min-content;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (max-width: 1299px) and (min-width: 769px) {
+    height: 180px;
+    width: 700px;
+    grid-template-rows: 25px 110px 28px;
+    grid-template-columns: 180px 470px;
+  }
+  @media screen and (min-width: 1300px) {
     height: 210px;
-    width: 1120px;
+    width: 1100px;
     grid-template-rows: 33px 130px 37px;
     grid-template-columns: 250px 700px 150px;
   }
@@ -76,6 +88,9 @@ const ClubName = styled.h1`
     align-items: center;
     font-size: 25px;
     margin-left: 20px;
+  }
+  @media screen and (max-width: 1299px) and (min-width: 769px) {
+    margin-left: 10px;
   }
   font-weight: bold;
   font-size: 22px;
