@@ -5,6 +5,10 @@ import styled from 'styled-components';
 import { Tag } from './data';
 
 const TagListDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+    display: none;
+  }
   grid-area: tags;
   text-align: left;
   margin: 0 0 10px 10px;
