@@ -24,7 +24,7 @@ const ClubDes = styled.p`
   margin-left: 25px;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: pre;
+  white-space: nowrap;
 `;
 
 const ClubDesDiv = styled.div`
