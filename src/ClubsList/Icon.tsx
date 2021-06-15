@@ -1,6 +1,5 @@
 import React from 'react';
-import './ClubInfoStyles.css';
-import { IconType } from 'react-icons/lib';
+import { IconType } from 'react-icons';
 
 function IconItem(props: { icon: IconType }) {
   var IconType = props.icon;

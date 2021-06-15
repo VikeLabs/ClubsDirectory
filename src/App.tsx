@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './Assets/CSS/GlobalBackgroundImage.css';
@@ -10,8 +10,6 @@ import ClubListPage from './ClubsList/ClubListPage';
 import Header from './Header';
 
 function App() {
-  // // Array holding all the category data.
-  const [categoies] = useState(defaultCategory);
   return (
     <div>
       <Header />

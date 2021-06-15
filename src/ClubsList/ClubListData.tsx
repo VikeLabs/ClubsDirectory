@@ -1,87 +1,98 @@
+import { ComponentType } from 'react';
+import { FaHandsHelping, FaPaintBrush, FaMusic, FaPrayingHands, FaMicroscope, FaHome } from 'react-icons/fa';
+import { GiKnifeFork, GiSoccerBall } from 'react-icons/gi';
+import { GoLaw } from 'react-icons/go';
+import { IoIosPeople, IoIosMore } from 'react-icons/io';
+import { IoGameController, IoEarthOutline } from 'react-icons/io5';
+import { IconType } from 'react-icons/lib';
+
 import error_img from '../Assets/Images/error_image.png';
-
-import { Photo } from './Photo';
-
-export interface Title {
-  categoryName: string;
-  directoryName: string;
+export interface Photo {
+  source: string;
+  alt: string;
 }
 
-export const defaultTitle: Title = {
-  categoryName: 'Arts',
-  directoryName: 'Club Categories/Art Clubs',
-};
+export interface Icon {
+  icon: ComponentType;
+}
 
 export interface CategoryItem {
+  categoryIcon: IconType;
   categoryName: string;
-  clubs: string[];
+  categoryShortName: string;
 }
+
+export const defaultIcon: Icon = { icon: IoIosPeople };
 
 export const defaultCategoryMenu: CategoryItem[] = [
   {
+    categoryIcon: FaHome,
+    categoryName: 'Home',
+    categoryShortName: 'Home',
+  },
+  {
+    categoryIcon: FaPaintBrush,
     categoryName: 'Arts',
-    clubs: ['Her Campus', 'Uvic Photography Club', 'Vikes Improv'],
+    categoryShortName: 'Arts',
   },
   {
+    categoryIcon: FaHandsHelping,
     categoryName: 'Community Service',
-    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
+    categoryShortName: 'Community',
   },
   {
-    categoryName: 'Cutural',
-    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
+    categoryIcon: IoIosPeople,
+    categoryName: 'Cultural',
+    categoryShortName: 'Culture',
   },
   {
+    categoryIcon: IoEarthOutline,
     categoryName: 'Environmental',
-    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
+    categoryShortName: 'Environment',
   },
   {
+    categoryIcon: GiKnifeFork,
     categoryName: 'Food & Drink',
-    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
+    categoryShortName: 'Food',
   },
   {
-    categoryName: 'Technology',
-    clubs: ['Community Service Club', 'Random Club', 'Random Club'],
+    categoryIcon: IoGameController,
+    categoryName: 'Gaming',
+    categoryShortName: 'Gaming',
+  },
+  {
+    categoryIcon: FaMusic,
+    categoryName: 'Music',
+    categoryShortName: 'Music',
+  },
+  {
+    categoryIcon: GoLaw,
+    categoryName: 'Politics',
+    categoryShortName: 'Politics',
+  },
+  {
+    categoryIcon: FaPrayingHands,
+    categoryName: 'Religion',
+    categoryShortName: 'Religion',
+  },
+  {
+    categoryIcon: GiSoccerBall,
+    categoryName: 'Sports & Rec',
+    categoryShortName: 'Sports',
+  },
+  {
+    categoryIcon: FaMicroscope,
+    categoryName: 'STEM',
+    categoryShortName: 'STEM',
+  },
+  {
+    categoryIcon: IoIosMore,
+    categoryName: 'Other',
+    categoryShortName: 'Other',
   },
 ];
-
-export interface Club {
-  clubName: string;
-  clubImage: Photo;
-  clubDescription: string;
-  clubTags: string[];
-}
-
-export interface TestClub {
-  clubName: string;
-  clubImage: string;
-  clubDescription: string;
-}
 
 const defaultPhoto: Photo = {
   source: error_img,
   alt: 'club logo',
 };
-
-export const defaultClubs: Club[] = [
-  {
-    clubName: 'Her Campus',
-    clubImage: defaultPhoto,
-    clubDescription:
-      'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
-    clubTags: ['Arts', 'Blog', 'Digital Media'],
-  },
-  {
-    clubName: 'UVic Photography Excursion Club',
-    clubImage: defaultPhoto,
-    clubDescription:
-      'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
-    clubTags: ['Arts', 'Off Campus', 'Photography'],
-  },
-  {
-    clubName: 'Vikes Improv',
-    clubImage: defaultPhoto,
-    clubDescription:
-      'This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description. This is the club description.',
-    clubTags: ['Acting', 'Arts', 'Theatre'],
-  },
-];
