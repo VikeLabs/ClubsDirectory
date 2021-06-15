@@ -9,6 +9,9 @@ interface Props extends ColorProps, BorderProps {
 }
 
 const Box = styled.div<Props>`
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
   ${color};
   ${border};
   grid-area: description;

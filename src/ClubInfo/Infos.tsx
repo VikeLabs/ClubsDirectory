@@ -6,6 +6,10 @@ import IconItem from './Icon';
 import Icon from './Icon';
 
 const InfoListDiv = styled.p`
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+    gap: 10px;
+  }
   grid-area: infos;
   display: flex;
   flex-direction: row;
