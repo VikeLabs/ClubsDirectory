@@ -1,7 +1,5 @@
 # UVSS Clubs Directory Page
 
-Test change.
-
 This project is an open-source web application developed for the University of Victoria Students' Society to improve access to information on student clubs and course unions. The web application is being built with React, and will be hosted on the [UVSS site](https://uvss.ca). 
 
 The design phase of the application is complete, and our current work is focused on the React implementation. See our designs below.
