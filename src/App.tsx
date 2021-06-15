@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './Assets/CSS/GlobalBackgroundImage.css';
 import CategoryPage from './ClubsCategories/CategoryPage';
-import ClubInfoPage from './ClubsInfo/ClubInfoPage';
+import ClubInfoPage from './ClubInfo/ClubInfoPage';
 import LandingPage from './ClubsLanding/LandingPage';
 import ClubListPage from './ClubsList/ClubListPage';
 import Header from './Header';
