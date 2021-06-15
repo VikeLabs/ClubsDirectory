@@ -46,7 +46,7 @@ const ClubsDiv = styled.div`
     grid-gap: 20px;
   }
   display: grid;
-  margin-left: 300px;
+  margin-left: 10%;
   margin-top: 50px;
   padding-bottom: 100px;
   grid-template-columns: repeat(1, 70%);
@@ -59,10 +59,14 @@ const ClubIconDiv = styled.div`
     margin-left: -20px;
     grid-template-rows: min-content;
   }
+  @media screen and (min-width: 769px) {
+    height: 210px;
+    width: 1120px;
+    grid-template-rows: 33px 130px 37px;
+    grid-template-columns: 250px 700px 150px;
+  }
   background-color: white;
   display: grid;
-  grid-template-rows: 1fr 4fr 1fr;
-  grid-template-columns: 3fr 8fr 1.4fr;
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 5px 10px 8px #818080;
@@ -137,7 +141,8 @@ const StyledTag = styled(Tag)`
   @media ${device.mobile} {
     display: none;
   }
-  margin: 5px 10px;
+  margin-left: 20px;
+  margin-top: 10px;
   padding-left: 15px;
 `;
 
