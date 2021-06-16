@@ -20,6 +20,7 @@ import {
   ClubImgDiv,
   ClubIconDiv,
   StyledTag,
+  StyledPhoto,
 } from './ClubListStyles';
 import PhotoItem from './Photo';
 

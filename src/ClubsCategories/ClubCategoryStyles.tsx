@@ -2,8 +2,11 @@ import { Center } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { device } from '../Assets/CSS/DeviceBreakPoints';
+import mobileBackground from '../Assets/Images/MobileCategoryBackground.png';
+
 const ButtonIcon = styled(Center)`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     font-size: 50px;
   }
   font-size: 100px;
@@ -14,23 +17,33 @@ const ButtonLabel = styled.p`
   margin-top: -5px;
 `;
 
+const CategoryDiv = styled.div`
+  @media ${device.mobile} {
+    background-color: #ebf6f7;
+    background-image: url(${mobileBackground});
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+`;
+
 const CategoryTitle = styled.h1`
-  @media screen and (max-width: 768px) {
-    font-size: 50px;
+  @media ${device.mobile} {
+    font-size: 32px;
     color: black;
     margin-left: 30px;
+    padding-top: 30px;
   }
   position: flex;
   font-size: 60px;
   font-weight: 600;
   margin-left: 39px;
-  margin-top: 60px;
+  padding-top: 60px;
   color: white;
   font-style: normal;
 `;
 
 const Grid = styled.div`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     grid-template-columns: repeat(2, 100px);
     margin-left: 20px;
     grid-column-gap: 100px;
@@ -46,7 +59,7 @@ const Grid = styled.div`
 `;
 
 const Gridbutton = styled.button`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     width: 175px;
     height: 175px;
     font-size: 30px;
@@ -72,4 +85,4 @@ const LinkButton = styled(Link)`
   text-decoration: none;
 `;
 
-export { Grid, Gridbutton, CategoryTitle, ButtonIcon, ButtonLabel, LinkButton };
+export { Grid, Gridbutton, CategoryTitle, ButtonIcon, ButtonLabel, LinkButton, CategoryDiv };

@@ -2,35 +2,48 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { device } from '../Assets/CSS/DeviceBreakPoints';
+import mobileBackground from '../Assets/Images/MobileBackground.png';
+
 const LandingPageTitle = styled.h1`
-  @media screen and (max-width: 768px) {
-    font-size: 50px;
+  @media ${device.mobile} {
+    font-size: 60px;
+    padding-top: 25px;
     color: black;
   }
   font-size: 100px;
   font-weight: 600;
   margin-left: 55px;
-  margin-top: 70px;
+  padding-top: 70px;
   color: white;
 `;
 
 const LandingPageBodyText = styled.p`
-  @media screen and (max-width: 768px) {
-    font-size: 30px;
+  @media ${device.mobile} {
+    font-size: 18px;
     height: 50px;
     width: 300px;
+    padding-top: 5px;
   }
   font-size: 30px;
   font-weight: 600;
   width: 680px;
   height: 166px;
   margin-left: 55px;
-  margin-top: 40px;
+  padding-top: 40px;
+`;
+
+const LandingDiv = styled.div`
+  @media ${device.mobile} {
+    background-image: url(${mobileBackground});
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
 `;
 
 const CategoryNavButton = styled.button`
-  @media screen and (max-width: 768px) {
-    margin-top: 300px;
+  @media ${device.mobile} {
+    margin-top: 400px;
     margin-left: 50px;
   }
   margin-left: 55px;
@@ -52,7 +65,7 @@ const CategoryNavButton = styled.button`
 
 function LandingPage() {
   return (
-    <div>
+    <LandingDiv>
       <LandingPageTitle>Clubs</LandingPageTitle>
       <LandingPageBodyText>
         The University of Victoria Student Society has over 200 different student-led clubs to suit your interests.
@@ -60,7 +73,7 @@ function LandingPage() {
       <Link to="/ClubCategories" style={{ textDecoration: 'none' }}>
         <CategoryNavButton>Explore Current Clubs</CategoryNavButton>
       </Link>
-    </div>
+    </LandingDiv>
   );
 }
 
