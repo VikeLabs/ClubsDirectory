@@ -137,6 +137,7 @@ const StyledPhoto = styled(PhotoItem)`
   height: 400px;
   display: block;
 `;
+
 const StyledTag = styled(Tag)`
   @media ${device.mobile} {
     display: none;

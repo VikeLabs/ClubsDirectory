@@ -1,5 +1,4 @@
 import { IoIosArrowForward } from 'react-icons/io';
-import styled from 'styled-components';
 
 import DMTC_img from '../Assets/Images/DMTCIcon.png';
 import HER_img from '../Assets/Images/HerClubIcon.png';
@@ -22,13 +21,6 @@ import {
   StyledTag,
   StyledPhoto,
 } from './ClubListStyles';
-import PhotoItem from './Photo';
-
-const StyledPhoto = styled(PhotoItem)`
-  width: 400px;
-  height: 400px;
-  display: block;
-`;
 
 function ClubIcon(iconProps: { club: ClubListData }) {
   return (
