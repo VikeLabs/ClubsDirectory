@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import './photo.css';
+
 const LogoDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   max-width: 100%;
   max-height: 100%;
   border-radius: 8px;
   text-align: left;
   grid-area: 'logo';
   margin-left: 15%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: visible;
 `;
 
@@ -22,7 +26,7 @@ export interface LogoProps {
 
 function LogoItem(props: LogoProps) {
   return (
-    <LogoDiv>
+    <LogoDiv className="photo-item">
       <img src={props.logo.source} alt={props.logo.alt}></img>
     </LogoDiv>
   );

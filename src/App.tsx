@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './Assets/CSS/GlobalBackgroundImage.css';
 import ClubInfoPage from './ClubInfo/ClubInfoPage';
-import { defaultCategory } from './ClubsCategories/CategoryData';
 import CategoryPage from './ClubsCategories/CategoryPage';
 import LandingPage from './ClubsLanding/LandingPage';
 import ClubListPage from './ClubsList/ClubListPage';

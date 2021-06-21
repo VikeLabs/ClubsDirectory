@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { device } from '../Assets/CSS/DeviceBreakPoints';
+
 export const HamIconDiv = styled.div`
+  @media ${device.mobile} {
+    background-color: #ebf6f7;
+    &:hover {
+      background-color: black;
+    }
+  }
   display: inline-block;
   cursor: pointer;
   padding: 3px 5px;
@@ -13,6 +21,9 @@ export const HamIconDiv = styled.div`
 `;
 
 const HamBar = styled.div`
+  @media ${device.mobile} {
+    background-color: black;
+  }
   width: 35px;
   height: 5px;
   background-color: white;

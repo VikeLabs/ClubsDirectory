@@ -7,7 +7,7 @@ import Icon from './Icon';
 const LinkListDiv = styled.ul`
   grid-area: links;
   text-align: left;
-  margin: 10px 0 0 15%;
+  margin: 20px 0 0 0;
 `;
 
 interface LinkProps {

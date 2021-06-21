@@ -1,13 +1,14 @@
+
 body{
   background-image: url(../Images/CompletedBackground.png) !important;
   background-repeat: no-repeat !important;
-  background-position-y: 80px !important;
+  background-position-y: 120px !important;
   background-color: white !important;
   background-size: 100% auto !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     body{
-      background-size: 100% !important;
+      background-image: none !important;
     }
 }

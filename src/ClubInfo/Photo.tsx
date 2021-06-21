@@ -3,6 +3,12 @@ import styled from 'styled-components';
 import './photo.css';
 
 const PhotoListDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 15px;
+  }
   grid-area: photos;
   text-align: left;
   margin: 0 15% 10px 15%;

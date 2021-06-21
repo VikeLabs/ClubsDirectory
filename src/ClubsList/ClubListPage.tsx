@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import { defaultCategory } from '../ClubsCategories/CategoryData';
 
+import { ClubPageDiv } from './ClubListStyles';
 import Clubs from './Clubs';
 import TitleItem from './Title';
 
@@ -22,10 +23,10 @@ function ClubListPage() {
   const directory = `Club Categories/${fullTitle} Clubs`;
 
   return (
-    <div>
+    <ClubPageDiv>
       <TitleItem categoryName={fullTitle} directoryName={directory} />
       <Clubs category={clubList} />
-    </div>
+    </ClubPageDiv>
   );
 }
 

@@ -4,6 +4,10 @@ import styled from 'styled-components';
 import { Title } from './data';
 
 const TitleDiv = styled.div`
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+    font-size: 32px;
+  }
   grid-area: clubName;
   text-align: left;
   margin-left: 10px;

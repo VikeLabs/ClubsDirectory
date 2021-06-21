@@ -2,8 +2,13 @@ import { Tag } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { device } from '../Assets/CSS/DeviceBreakPoints';
+import mobileBackground from '../Assets/Images/MobileBackground.png';
+
+import PhotoItem from './Photo';
+
 const ArrowIconDiv = styled.div`
-  @media screen and (max-width: 1299px) {
+  @media ${device.mobile} { //change to small + medium size
     display: none;
   }
   grid-row: 1 / -1;
@@ -12,7 +17,7 @@ const ArrowIconDiv = styled.div`
 `;
 
 const ClubDes = styled.p`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     display: none;
   }
   @media screen and (max-width: 1299px) and (min-width: 769px) {
@@ -20,10 +25,13 @@ const ClubDes = styled.p`
   }
   font-size: 18px;
   margin-left: 25px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
 `;
 
 const ClubDesDiv = styled.div`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     display: none;
   }
   grid-row: 2;
@@ -33,11 +41,12 @@ const ClubDesDiv = styled.div`
 `;
 
 const ClubsDiv = styled.div`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     grid-template-columns: repeat(1, 95%);
     grid-auto-rows: min-content;
     margin-left: 30px;
     margin-top: 0px;
+    grid-gap: 20px;
   }
   @media screen and (max-width: 1299px) and (min-width: 769px) {
     margin-left: 7%;
@@ -47,11 +56,12 @@ const ClubsDiv = styled.div`
   margin-top: 50px;
   padding-bottom: 100px;
   grid-template-columns: repeat(1, 70%);
-  grid-gap: 70px;
+  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 30px;
 `;
 
 const ClubIconDiv = styled.div`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     margin-left: -20px;
     grid-template-rows: min-content;
   }
@@ -81,7 +91,7 @@ const ClubIconDiv = styled.div`
 `;
 
 const ClubName = styled.h1`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     display: flex;
     margin-top: 20px;
     justify-content: center;
@@ -97,7 +107,7 @@ const ClubName = styled.h1`
 `;
 
 const ClubImgDiv = styled.div`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     padding-top: 12px;
     padding-bottom: 12px;
     margin-left: 12px;
@@ -109,15 +119,23 @@ const ClubImgDiv = styled.div`
 `;
 
 const ClubNameDiv = styled.div`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     grid-row: 1 / 4;
   }
   grid-row: 1;
   grid-column: 2;
 `;
 
+const ClubPageDiv = styled.div`
+  @media ${device.mobile} {
+    background-image: url(${mobileBackground});
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+`;
+
 const ClubTagsDiv = styled.div`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     display: none;
   }
   grid-row: 3;
@@ -126,10 +144,17 @@ const ClubTagsDiv = styled.div`
 
 const LinkButton = styled(Link)`
   text-decoration: none;
+  display: contents;
+`;
+
+const StyledPhoto = styled(PhotoItem)`
+  width: 400px;
+  height: 400px;
+  display: block;
 `;
 
 const StyledTag = styled(Tag)`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     display: none;
   }
   margin-left: 20px;
@@ -149,4 +174,6 @@ export {
   ClubImgDiv,
   ClubIconDiv,
   StyledTag,
+  StyledPhoto,
+  ClubPageDiv,
 };
