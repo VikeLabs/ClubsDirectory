@@ -25,9 +25,6 @@ const ClubDes = styled.p`
   }
   font-size: 18px;
   margin-left: 25px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: pre;
 `;
 
 const ClubDesDiv = styled.div`
@@ -36,7 +33,6 @@ const ClubDesDiv = styled.div`
   }
   grid-row: 2;
   grid-column: 2;
-  text-overflow: ellipsis;
   overflow: hidden;
 `;
 
