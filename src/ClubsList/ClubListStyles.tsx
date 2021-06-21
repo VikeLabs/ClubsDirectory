@@ -2,13 +2,13 @@ import { Tag } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { device } from '../Assets/CSS/DeviceBreakPoints';
+import { device, categoryDevice } from '../Assets/CSS/DeviceBreakPoints';
 import mobileBackground from '../Assets/Images/MobileBackground.png';
 
 import PhotoItem from './Photo';
-
+//change to small + medium size
 const ArrowIconDiv = styled.div`
-  @media ${device.mobile} { //change to small + medium size
+  @media ${device.laptop} {
     display: none;
   }
   grid-row: 1 / -1;
@@ -20,7 +20,7 @@ const ClubDes = styled.p`
   @media ${device.mobile} {
     display: none;
   }
-  @media screen and (max-width: 1299px) and (min-width: 769px) {
+  @media ${categoryDevice.laptop} {
     margin-top: 5px;
   }
   font-size: 18px;
@@ -48,7 +48,7 @@ const ClubsDiv = styled.div`
     margin-top: 0px;
     grid-gap: 20px;
   }
-  @media screen and (max-width: 1299px) and (min-width: 769px) {
+  @media ${categoryDevice.laptop} {
     margin-left: 7%;
   }
   display: grid;
@@ -65,13 +65,13 @@ const ClubIconDiv = styled.div`
     margin-left: -20px;
     grid-template-rows: min-content;
   }
-  @media screen and (max-width: 1299px) and (min-width: 769px) {
+  @media ${categoryDevice.laptop} {
     height: 180px;
     width: 700px;
     grid-template-rows: 25px 110px 28px;
     grid-template-columns: 180px 470px;
   }
-  @media screen and (min-width: 1300px) {
+  @media ${device.desktop} {
     height: 210px;
     width: 1100px;
     grid-template-rows: 33px 130px 37px;
@@ -99,7 +99,7 @@ const ClubName = styled.h1`
     font-size: 25px;
     margin-left: 20px;
   }
-  @media screen and (max-width: 1299px) and (min-width: 769px) {
+  @media ${categoryDevice.laptop} {
     margin-left: 10px;
   }
   font-weight: bold;
