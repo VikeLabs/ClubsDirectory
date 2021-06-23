@@ -125,30 +125,26 @@ const CategoryNavButton = styled.button`
 
 const ImgDiv = styled.div`
   @media ${categoryDevice.mobileTiny} {
-    background-size: 280px 200px;
     height: 200px;
     width: 280px;
   }
   @media ${categoryDevice.mobileS} {
-    background-size: 340px 300px;
     height: 300px;
     width: 340px;
     margin-top: 3%;
   }
   @media ${categoryDevice.mobileXS} {
-    background-size: 300px 260px;
     height: 260px;
     width: 300px;
     margin-top: 3%;
   }
   @media ${categoryDevice.mobile} {
-    background-size: 390px 300px;
-    height: 300px;
+    height: 280px;
     width: 390px;
     margin-top: 10%;
   }
   @media ${device.mobile} {
-    background-image: url(${mobilePeople});
+    background-size: contain;
     background-repeat: no-repeat;
     grid-column: 1;
     grid-row: 3;
