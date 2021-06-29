@@ -7,7 +7,7 @@ export const HamIconDiv = styled.div`
   @media ${device.mobile} {
     background-color: #ebf6f7;
     &:hover {
-      background-color: black;
+      background-color: #1b8091;
     }
   }
   display: inline-block;
@@ -15,8 +15,10 @@ export const HamIconDiv = styled.div`
   padding: 3px 5px;
   border-radius: 5px;
   background-color: #1b8091;
-  &:hover {
-    background-color: #125c69;
+  @media screen and (min-width: 768px) {
+    &:hover {
+      background-color: #125c69;
+    }
   }
 `;
 
