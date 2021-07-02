@@ -10,19 +10,21 @@ const size = {
   desktop: '1300px',
 };
 
+// Breakpoints for when styling is needed on either a max or min width.
 export const device = {
-  mobileS: `(max-width: ${size.mobileS})`,
-  mobile: `(max-width: ${size.mobile})`,
-  laptop: `(max-width: ${size.laptop})`,
-  desktop: `(min-width: ${size.desktop})`,
+  mobileTiny: `(max-width: ${size.mobileTiny})`,  // Styling for screen widths <= 299px
+  mobileS: `(max-width: ${size.mobileS})`,  // Styling for screen widths <= 400px
+  mobile: `(max-width: ${size.mobile})`,  // Styling for screen widths <= 767px
+  laptop: `(max-width: ${size.laptop})`,  // Styling for screen widths <= 1299px
+  desktop: `(min-width: ${size.desktop})`,  // Styling for screen widths >= 1300px
 };
 
+// Breakpoints for when styling is needed in a width range.
 export const categoryDevice = {
-  mobileTiny: `(max-width: ${size.mobileTiny})`,
-  mobileXS: `(min-width: 300px) and (max-width: ${size.mobileXS})`,
-  mobileS: `(min-width: 321px) and (max-width: ${size.mobileS})`,
-  mobile: `(min-width: 401px) and (max-width: ${size.mobile})`,
-  tablet: `(min-width: ${size.tabletS}) and (max-width: ${size.tablet})`,
-  tabletL: `(min-width: ${size.laptopS}) and (max-width: ${size.laptopS})`,
-  laptop: `(min-width: ${size.tabletS}) and (max-width: ${size.laptop})`,
+  mobileXS: `(min-width: 300px) and (max-width: ${size.mobileXS})`, // Styling for screen widths between 300px - 320px
+  mobileS: `(min-width: 321px) and (max-width: ${size.mobileS})`, // Styling for screen widths between 321px - 400px
+  mobile: `(min-width: 401px) and (max-width: ${size.mobile})`, // Styling for screen widths between 401px - 767px
+  tablet: `(min-width: ${size.tabletS}) and (max-width: ${size.tablet})`, // Styling for screen widths between 768px - 1023px
+  tabletL: `(min-width: ${size.laptopS}) and (max-width: ${size.laptopS})`, // Styling for screen widths between 1024px - 1024px
+  laptop: `(min-width: ${size.tabletS}) and (max-width: ${size.laptop})`, // Styling for screen widths between 768px - 1299px
 };

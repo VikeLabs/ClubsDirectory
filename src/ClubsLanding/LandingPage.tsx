@@ -5,10 +5,10 @@ import styled from 'styled-components';
 import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';
 import desktopPeople from '../Assets/Images/DesktopPeople.png';
 import mobileBackground from '../Assets/Images/MobileBackground.png';
-import mobilePeople from '../Assets/Images/MobilePeople.png';
 
+// Styling the title of the landing page.
 const LandingPageTitle = styled.h1`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     font-size: 50px;
     padding-top: 4%;
     margin-left: 3%;
@@ -31,17 +31,23 @@ const LandingPageTitle = styled.h1`
   @media ${device.mobile} {
     color: black;
   }
+  @media ${categoryDevice.tablet} {
+    font-size: 80px;
+  }
+  @media ${categoryDevice.tabletL} {
+    font-size: 80px;
+  }
   font-size: 100px;
   font-weight: 600;
   margin-left: 7%;
-  padding-top: 4%;
   color: white;
   grid-column: 1;
   grid-row: 1;
 `;
 
+// Styling the paragraph text displayed on the landing page.
 const LandingPageBodyText = styled.p`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     font-size: 16px;
     grid-column: 1;
     margin-left: 5%;
@@ -69,6 +75,14 @@ const LandingPageBodyText = styled.p`
     margin-left: 4%;
     margin-right: 4%;
   }
+  @media ${categoryDevice.tablet} {
+    padding-top: 5%;
+    grid-column: 1 / 3;
+  }
+  @media ${categoryDevice.tabletL} {
+    padding-top: 10%;
+    grid-column: 1 / 3;
+  }
   font-size: 30px;
   font-weight: 600;
   height: fit-content;
@@ -79,6 +93,7 @@ const LandingPageBodyText = styled.p`
   grid-row: 2;
 `;
 
+// Changing the background image and grid layout of the landing page for mobile(width <= 767px) and desktop.
 const LandingDiv = styled.div`
   @media ${device.mobile} {
     background-image: url(${mobileBackground});
@@ -91,11 +106,11 @@ const LandingDiv = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   grid-auto-rows: minmax(200px, auto);
-  padding-bottom: 30px;
 `;
 
+// Styling the 'Explore Current Clubs' button.
 const CategoryNavButton = styled.button`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     width: 260px;
     height: 60px;
     font-size: 20px;
@@ -123,8 +138,9 @@ const CategoryNavButton = styled.button`
   }
 `;
 
+// Styling the image with the people dancing.
 const ImgDiv = styled.div`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     height: 200px;
     width: 280px;
   }
@@ -144,20 +160,29 @@ const ImgDiv = styled.div`
     margin-top: 10%;
   }
   @media ${device.mobile} {
-    background-size: contain;
-    background-repeat: no-repeat;
     grid-column: 1;
     grid-row: 3;
   }
+  @media ${categoryDevice.tablet} {
+    height: 300px;
+    width: 370px;
+  }
+  @media ${categoryDevice.tabletL} {
+    height: 340px;
+    width: 650px;
+  }
   background-image: url(${desktopPeople});
   background-repeat: no-repeat;
-  background-size: 600px 420px;
+  background-size: contain;
+  height: 400px;
+  width: 620px;
   grid-column: 2;
   grid-row: 3/5;
 `;
 
+// Styling the 'Explore Current Clubs' button container.
 const ButtonDiv = styled.div`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     padding-top: 10%;
   }
   @media ${categoryDevice.mobileXS} {
@@ -192,6 +217,7 @@ function LandingPage() {
         The University of Victoria Student Society has over 200 different student-led clubs to suit your interests.
       </LandingPageBodyText>
       <ButtonDiv>
+        {/* Linking the button to change pages to the club categories. */}
         <Link to="/ClubCategories" style={{ textDecoration: 'none' }}>
           <CategoryNavButton>Explore Current Clubs</CategoryNavButton>
         </Link>
