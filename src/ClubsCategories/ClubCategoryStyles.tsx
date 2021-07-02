@@ -31,12 +31,7 @@ const CategoryDiv = styled.div`
 
 // Styling how the title is displayed depending on screen width.
 const CategoryTitle = styled.h1`
-  @media ${device.mobileS} {
-    font-size: 32px;
-    color: black;
-    margin-left: 30px;
-  }
-  @media ${categoryDevice.mobile} {
+  @media ${device.mobile} {
     font-size: 32px;
     color: black;
     margin-left: 30px;

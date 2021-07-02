@@ -12,11 +12,11 @@ const size = {
 
 // Breakpoints for when styling is needed on either a max or min width.
 export const device = {
-  mobileTiny: `(max-width: ${size.mobileTiny})`,  // Styling for screen widths <= 299px
-  mobileS: `(max-width: ${size.mobileS})`,  // Styling for screen widths <= 400px
-  mobile: `(max-width: ${size.mobile})`,  // Styling for screen widths <= 767px
-  laptop: `(max-width: ${size.laptop})`,  // Styling for screen widths <= 1299px
-  desktop: `(min-width: ${size.desktop})`,  // Styling for screen widths >= 1300px
+  mobileTiny: `(max-width: ${size.mobileTiny})`, // Styling for screen widths <= 299px
+  mobileS: `(max-width: ${size.mobileS})`, // Styling for screen widths <= 400px
+  mobile: `(max-width: ${size.mobile})`, // Styling for screen widths <= 767px
+  laptop: `(max-width: ${size.laptop})`, // Styling for screen widths <= 1299px
+  desktop: `(min-width: ${size.desktop})`, // Styling for screen widths >= 1300px
 };
 
 // Breakpoints for when styling is needed in a width range.

@@ -55,11 +55,11 @@ const LandingPageBodyText = styled.p`
     padding-top: 30%;
   }
   @media ${categoryDevice.mobileXS} {
-    font-size: 17px;
+    font-size: 16px;
     overflow-wrap: break-word;
     padding-top: 0%;
     margin-left: 4%;
-    margin-right: 4%;
+    margin-right: 2%;
   }
   @media ${categoryDevice.mobileS} {
     font-size: 17px;
@@ -76,11 +76,15 @@ const LandingPageBodyText = styled.p`
     margin-right: 4%;
   }
   @media ${categoryDevice.tablet} {
-    padding-top: 5%;
+    margin-left: 5%;
+    padding-top: 0%;
+    margin-top: 17%;
     grid-column: 1 / 3;
+    grid-row: 1/3;
   }
   @media ${categoryDevice.tabletL} {
-    padding-top: 10%;
+    padding-top: 0%;
+    margin-left: 5%;
     grid-column: 1 / 3;
   }
   font-size: 30px;
@@ -145,21 +149,22 @@ const ImgDiv = styled.div`
     width: 280px;
   }
   @media ${categoryDevice.mobileS} {
-    height: 300px;
+    height: 200px;
     width: 340px;
-    margin-top: 3%;
+    margin-top: 20%;
   }
   @media ${categoryDevice.mobileXS} {
     height: 260px;
     width: 300px;
-    margin-top: 3%;
+    margin-top: 17%;
   }
   @media ${categoryDevice.mobile} {
     height: 280px;
     width: 390px;
-    margin-top: 10%;
+    margin-top: 24%;
   }
   @media ${device.mobile} {
+    justify-self: center;
     grid-column: 1;
     grid-row: 3;
   }
@@ -169,7 +174,7 @@ const ImgDiv = styled.div`
   }
   @media ${categoryDevice.tabletL} {
     height: 340px;
-    width: 650px;
+    width: 500px;
   }
   background-image: url(${desktopPeople});
   background-repeat: no-repeat;
