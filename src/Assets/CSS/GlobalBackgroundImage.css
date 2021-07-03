@@ -1,15 +1,12 @@
-/* The '!important' is needed to override ChakraUI's default values*/
 
-/* Default body background image for screens with widths >= 768px */
 body{
   background-image: url(../Images/CompletedBackground.png) !important;
   background-repeat: no-repeat !important;
-  background-position-y: 105px !important;
+  background-position-y: 120px !important;
   background-color: white !important;
   background-size: 100% auto !important;
 }
 
-/* Remove the body background image for mobile devices */
 @media screen and (max-width: 767px) {
     body{
       background-image: none !important;

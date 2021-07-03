@@ -11,7 +11,6 @@ export interface Category {
   icon: ComponentType;
 }
 
-// Const for storing each category name(full and shorthand) and their icon.
 export const defaultCategory: Category[] = [
   {
     ShortTitle: 'Arts',

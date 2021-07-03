@@ -32,7 +32,7 @@ function CategoryButtonMatrix() {
       <CategoryTitle>Club Categories</CategoryTitle>
       <Grid>
         {categoies.map((category) => (
-          // Creating buttons for each item in the categories array.
+          // Creating all the category buttons to be displayed in the grid.
           <CategoryItem category={category} />
         ))}
       </Grid>

@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';
 import mobileBackground from '../Assets/Images/MobileCategoryBackground.png';
 
-// Styling the category button icon size for desktop and mobile.
 const ButtonIcon = styled(Center)`
   @media ${device.mobile} {
     font-size: 50px;
@@ -14,12 +13,10 @@ const ButtonIcon = styled(Center)`
   padding-bottom: 10px;
 `;
 
-// Styling the text located in the category buttons.
 const ButtonLabel = styled.p`
   margin-top: -5px;
 `;
 
-// Changing the categories page background when screen width is at 767px or less.
 const CategoryDiv = styled.div`
   @media ${device.mobile} {
     background-color: #ebf6f7;
@@ -29,9 +26,13 @@ const CategoryDiv = styled.div`
   }
 `;
 
-// Styling how the title is displayed depending on screen width.
 const CategoryTitle = styled.h1`
-  @media ${device.mobile} {
+  @media ${device.mobileS} {
+    font-size: 32px;
+    color: black;
+    margin-left: 30px;
+  }
+  @media ${categoryDevice.mobile} {
     font-size: 32px;
     color: black;
     margin-left: 30px;
@@ -45,9 +46,8 @@ const CategoryTitle = styled.h1`
   font-style: normal;
 `;
 
-// Styling how the grid is displayed on the categories page depending on screen width.
 const Grid = styled.div`
-  @media ${device.mobileTiny} {
+  @media ${categoryDevice.mobileTiny} {
     grid-template-columns: repeat(2, max-content);
     margin-top: 10%;
     grid-column-gap: 10px;
@@ -88,9 +88,8 @@ const Grid = styled.div`
   justify-content: center;
 `;
 
-// Styling how the category buttons look depending on screen width.
 const Gridbutton = styled.button`
-  @media ${device.mobileTiny} {
+  @media ${categoryDevice.mobileTiny} {
     width: 120px;
     height: 120px;
     font-size: 19px;
@@ -137,7 +136,6 @@ const Gridbutton = styled.button`
   }
 `;
 
-// Removing the underscore that is default with Link.
 const LinkButton = styled(Link)`
   text-decoration: none;
 `;
