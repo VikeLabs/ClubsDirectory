@@ -5,10 +5,10 @@ import styled from 'styled-components';
 import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';
 import desktopPeople from '../Assets/Images/DesktopPeople.png';
 import mobileBackground from '../Assets/Images/MobileBackground.png';
-import mobilePeople from '../Assets/Images/MobilePeople.png';
 
+// Styling the title of the landing page.
 const LandingPageTitle = styled.h1`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     font-size: 50px;
     padding-top: 4%;
     margin-left: 3%;
@@ -31,17 +31,23 @@ const LandingPageTitle = styled.h1`
   @media ${device.mobile} {
     color: black;
   }
+  @media ${categoryDevice.tablet} {
+    font-size: 80px;
+  }
+  @media ${categoryDevice.tabletL} {
+    font-size: 80px;
+  }
   font-size: 100px;
   font-weight: 600;
   margin-left: 7%;
-  padding-top: 4%;
   color: white;
   grid-column: 1;
   grid-row: 1;
 `;
 
+// Styling the paragraph text displayed on the landing page.
 const LandingPageBodyText = styled.p`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     font-size: 16px;
     grid-column: 1;
     margin-left: 5%;
@@ -49,11 +55,11 @@ const LandingPageBodyText = styled.p`
     padding-top: 30%;
   }
   @media ${categoryDevice.mobileXS} {
-    font-size: 17px;
+    font-size: 16px;
     overflow-wrap: break-word;
     padding-top: 0%;
     margin-left: 4%;
-    margin-right: 4%;
+    margin-right: 2%;
   }
   @media ${categoryDevice.mobileS} {
     font-size: 17px;
@@ -69,6 +75,18 @@ const LandingPageBodyText = styled.p`
     margin-left: 4%;
     margin-right: 4%;
   }
+  @media ${categoryDevice.tablet} {
+    margin-left: 5%;
+    padding-top: 0%;
+    margin-top: 17%;
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+  }
+  @media ${categoryDevice.tabletL} {
+    padding-top: 0%;
+    margin-left: 5%;
+    grid-column: 1 / 3;
+  }
   font-size: 30px;
   font-weight: 600;
   height: fit-content;
@@ -79,6 +97,7 @@ const LandingPageBodyText = styled.p`
   grid-row: 2;
 `;
 
+// Changing the background image and grid layout of the landing page for mobile(width <= 767px) and desktop.
 const LandingDiv = styled.div`
   @media ${device.mobile} {
     background-image: url(${mobileBackground});
@@ -91,11 +110,11 @@ const LandingDiv = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   grid-auto-rows: minmax(200px, auto);
-  padding-bottom: 30px;
 `;
 
+// Styling the 'Explore Current Clubs' button.
 const CategoryNavButton = styled.button`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     width: 260px;
     height: 60px;
     font-size: 20px;
@@ -123,45 +142,52 @@ const CategoryNavButton = styled.button`
   }
 `;
 
+// Styling the image with the people dancing.
 const ImgDiv = styled.div`
-  @media ${categoryDevice.mobileTiny} {
-    background-size: 280px 200px;
+  @media ${device.mobileTiny} {
     height: 200px;
     width: 280px;
   }
   @media ${categoryDevice.mobileS} {
-    background-size: 340px 300px;
-    height: 300px;
+    height: 200px;
     width: 340px;
-    margin-top: 3%;
+    margin-top: 20%;
   }
   @media ${categoryDevice.mobileXS} {
-    background-size: 300px 260px;
     height: 260px;
     width: 300px;
-    margin-top: 3%;
+    margin-top: 17%;
   }
   @media ${categoryDevice.mobile} {
-    background-size: 390px 300px;
-    height: 300px;
+    height: 280px;
     width: 390px;
-    margin-top: 10%;
+    margin-top: 24%;
   }
   @media ${device.mobile} {
-    background-image: url(${mobilePeople});
-    background-repeat: no-repeat;
+    justify-self: center;
     grid-column: 1;
     grid-row: 3;
   }
+  @media ${categoryDevice.tablet} {
+    height: 300px;
+    width: 370px;
+  }
+  @media ${categoryDevice.tabletL} {
+    height: 340px;
+    width: 500px;
+  }
   background-image: url(${desktopPeople});
   background-repeat: no-repeat;
-  background-size: 600px 420px;
+  background-size: contain;
+  height: 400px;
+  width: 620px;
   grid-column: 2;
   grid-row: 3/5;
 `;
 
+// Styling the 'Explore Current Clubs' button container.
 const ButtonDiv = styled.div`
-  @media ${categoryDevice.mobileTiny} {
+  @media ${device.mobileTiny} {
     padding-top: 10%;
   }
   @media ${categoryDevice.mobileXS} {
@@ -196,6 +222,7 @@ function LandingPage() {
         The University of Victoria Student Society has over 200 different student-led clubs to suit your interests.
       </LandingPageBodyText>
       <ButtonDiv>
+        {/* Linking the button to change pages to the club categories. */}
         <Link to="/ClubCategories" style={{ textDecoration: 'none' }}>
           <CategoryNavButton>Explore Current Clubs</CategoryNavButton>
         </Link>
