@@ -1,11 +1,18 @@
+/*
+Contains code and styling to display the category title and 
+the directory path at the top of the club list page. 
+*/
 import React from 'react';
 import styled from 'styled-components';
+
+import { device } from '../Assets/CSS/DeviceBreakPoints';
 
 import CategoryMenu from './CategoryMenu';
 import { defaultCategoryMenu } from './ClubListData';
 
+// Title Container uses CSS grid to display the title and directory path.
 const TitleContainer = styled.div`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     padding-top: 5%;
   }
   color: white;
@@ -21,7 +28,7 @@ const TitleContainer = styled.div`
 `;
 
 const TitleTag = styled.h1`
-  @media screen and (max-width: 768px) {
+  @media ${device.mobile} {
     font-size: 40px;
     color: black;
   }
@@ -35,7 +42,7 @@ const ListingHeader = styled.div`
 `;
 
 const TitleDirTag = styled.h3`
-  @media screen and (max-width: 768px) {
+  @media ${device.laptop} {
     display: none;
   }
   font-size: 17px;
