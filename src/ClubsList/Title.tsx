@@ -5,7 +5,7 @@ the directory path at the top of the club list page.
 import React from 'react';
 import styled from 'styled-components';
 
-import { device } from '../Assets/CSS/DeviceBreakPoints';
+import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';
 
 import CategoryMenu from './CategoryMenu';
 import { defaultCategoryMenu } from './ClubListData';
@@ -14,6 +14,10 @@ import { defaultCategoryMenu } from './ClubListData';
 const TitleContainer = styled.div`
   @media ${device.mobile} {
     padding-top: 5%;
+  }
+  @media ${categoryDevice.tablet} {
+    grid-template-columns: repeat(1, auto);
+    padding-top: 1.5%;
   }
   color: white;
   font-family: Helvetica;
@@ -31,6 +35,9 @@ const TitleTag = styled.h1`
   @media ${device.mobile} {
     font-size: 40px;
     color: black;
+  }
+  @media ${categoryDevice.tablet} {
+    font-size: 62px;
   }
   font-size: 72px;
   padding-left: 30px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { categoryDevice, device } from './Assets/CSS/DeviceBreakPoints';
+import { device } from './Assets/CSS/DeviceBreakPoints';
 
 const HeaderBar = styled.nav`
   @media ${device.mobile} {
