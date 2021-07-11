@@ -88,12 +88,11 @@ const ClubIconDiv = styled.div`
 
 const ClubName = styled.h1`
   @media ${device.mobile} {
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
     align-items: center;
     font-size: 25px;
-    margin-left: 20px;
+    text-align: center;
+    word-break: break-word;
+    overflow: hidden;
   }
   @media ${categoryDevice.laptop} {
     margin-left: 10px;
@@ -107,6 +106,7 @@ const ClubImgDiv = styled.div`
     padding-top: 12px;
     padding-bottom: 12px;
     margin-left: 12px;
+    max-width: 130px;
   }
   grid-row: 1 / -1;
   grid-column: 1;
@@ -117,6 +117,8 @@ const ClubImgDiv = styled.div`
 const ClubNameDiv = styled.div`
   @media ${device.mobile} {
     grid-row: 1 / 4;
+    padding-right: 10px;
+    justify-content: right;
   }
   grid-row: 1;
   grid-column: 2;
