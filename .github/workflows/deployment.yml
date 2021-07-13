@@ -17,3 +17,48 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress
       - name: Lint
         run: npm run lint
+  build:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-progress
+      - name: Build
+        run: npm run build
+      - name: Cache React build artifacts
+        uses: actions/cache@v2
+        with:
+          name: react-app
+          path: build
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-progress
+      - name: Download React build artifacts
+        uses: actions/download-artifacts@v2
+        with:
+          name: react-app
+          path: build
+      # - uses: FirebaseExtended/action-hosting-deploy@v0
+      #   with:
+      #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
+      #     firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CLUBS_DIRECTORY }}'
+      #     channelId: live
+      #     projectId: clubs-directory
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CLUBS_DIRECTORY }}'
+          projectId: clubs-directory
