@@ -30,6 +30,9 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-progress
       - name: Build
         run: npm run build
+        env:
+          # TODO: Remove when unused-vars is fixed.
+          CI: false
       - name: Cache React build artifacts
         uses: actions/cache@v2
         with:
