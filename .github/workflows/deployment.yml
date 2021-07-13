@@ -1,9 +1,6 @@
 name: Deployment
 on:
   pull_request:
-  push:
-    branches-ignore:
-      - main
 jobs:
   lint:
     runs-on: ubuntu-latest
