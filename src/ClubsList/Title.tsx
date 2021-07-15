@@ -24,7 +24,9 @@ const TitleContainer = styled.div`
   font-weight: bold;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-column-gap: 15%;
+  /* grid-column-gap: 15%; Removed for demo as I had an idea for a better solution. 
+  The solution is instead of centering all the items the menu and title should be aligned left, while the "Club Categores/Category"
+  should be aligned right with a right margin/padding value. This will ensure every page is consistent.*/
   text-overflow: clip;
   align-items: center;
   padding-top: 3%;
@@ -39,7 +41,7 @@ const TitleTag = styled.h1`
   @media ${categoryDevice.tablet} {
     font-size: 62px;
   }
-  font-size: 72px;
+  font-size: 60px;
   padding-left: 30px;
 `;
 

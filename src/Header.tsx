@@ -8,7 +8,7 @@ const headingTitles = ['ABOUT', 'EVENTS', 'HEALTH & DENTAL', 'RESOURCES', 'SERVI
 export function Header(): JSX.Element {
   const [isMobile] = useMediaQuery('(min-width: 990px)');
   return (
-    <Box as="header" position="fixed" top="0" width="100%" maxWidth="1130px" boxShadow="md" zIndex="">
+    <Box as="header" position="fixed" top="0" width="100%" maxWidth="1130px" boxShadow="md" zIndex="1">
       <Flex bg="brand.secondary" minHeight="30px" alignItems="center"></Flex>
       <Flex bg="brand.primary" minHeight="60px" alignItems="center" justifyContent="space-between" px="8">
         <Heading color="white">UVSS</Heading>
