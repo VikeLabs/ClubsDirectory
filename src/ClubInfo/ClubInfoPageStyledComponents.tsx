@@ -12,9 +12,11 @@ export const GridDiv = styled.div`
       'photoHeader'
       'photos';
     padding: 0 10% 0 10%;
+    height: 200vh;
   }
   background-color: white;
-  height: 100vh;
+  /* height: 100vh; This height parameter is preventing the grid from pushing the footer down as content grows.*/
+  height: max-content;
   width: 100%;
   padding-top: 30px;
   display: grid;
