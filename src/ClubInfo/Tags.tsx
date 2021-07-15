@@ -15,25 +15,21 @@ const TagListDiv = styled.div`
 `;
 
 interface TagProps {
-  tag: Tag;
+  tag: string;
 }
-
-const gotoLink = async () => {
-  /* function to navigate to the button url prop*/
-};
 
 function TagItem(props: TagProps) {
   return (
     <div>
       <Button colorScheme="blue" size="md" variant="ghost" border="1px">
-        {props.tag.text}
+        {props.tag}
       </Button>
     </div>
   );
 }
 
 interface TagListProps {
-  tags: Tag[];
+  tags: string[];
 }
 
 function TagList(props: TagListProps) {

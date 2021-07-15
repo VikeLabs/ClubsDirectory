@@ -1,38 +1,38 @@
 import React from 'react';
+import { IconType } from 'react-icons';
+import { IoMdLink } from 'react-icons/io';
 import styled from 'styled-components';
 
-import { Link } from './data';
 import Icon from './Icon';
 
 const LinkListDiv = styled.ul`
   grid-area: links;
   text-align: left;
-  margin: 20px 0 0 0;
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  margin-top: 20px;
+  margin-left: 15%;
 `;
 
-interface LinkProps {
-  link: Link;
-}
-
-function LinkItem(props: LinkProps) {
+function LinkItem(props: { link: string }) {
   return (
     <div>
-      <Icon icon={props.link.logo}></Icon>
-      <p>{props.link.url}</p>
+      <Icon icon={IoMdLink}></Icon>
+      <p>{props.link}</p>
     </div>
   );
 }
 
-interface LinkListProps {
-  links: Link[];
-}
-
-function LinkList(props: LinkListProps) {
+function LinkList(props: { links: string[] }) {
   return (
     <LinkListDiv>
-      {props.links.map((link) => {
-        return <LinkItem link={link} />;
-      })}
+      <ul className="link-list">
+        {props.links.map((link) => {
+          return <LinkItem link={link} />;
+        })}
+      </ul>
     </LinkListDiv>
   );
 }

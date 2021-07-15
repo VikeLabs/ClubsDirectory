@@ -69,9 +69,9 @@ const ClubIconDiv = styled.div`
   }
   @media ${device.desktop} {
     height: 210px;
-    width: 1100px;
+    width: 900px;
     grid-template-rows: 33px 130px 37px;
-    grid-template-columns: 250px 700px 150px;
+    grid-template-columns: 250px 500px 150px;
   }
   background-color: white;
   display: grid;

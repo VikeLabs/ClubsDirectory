@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconType } from 'react-icons';
 import styled from 'styled-components';
 
 import { Icon } from './data';
@@ -9,11 +10,11 @@ const IconItemDiv = styled.div`
 `;
 
 export interface IconProps {
-  icon: Icon;
+  icon: IconType;
 }
 
 function IconItem(props: IconProps) {
-  var IconType = props.icon.icon;
+  var IconType = props.icon;
   return (
     <IconItemDiv className="icon-item">
       <IconType />

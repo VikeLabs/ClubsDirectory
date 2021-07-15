@@ -1,9 +1,14 @@
 import React from 'react';
+import { IconType } from 'react-icons';
+import { IoIosPeople, IoIosCalendar } from 'react-icons/io';
 import styled from 'styled-components';
 
-import { Info } from './data';
-import IconItem from './Icon';
 import Icon from './Icon';
+
+interface Info {
+  data: string;
+  icon: IconType;
+}
 
 const InfoListDiv = styled.p`
   @media screen and (max-width: 768px) {
@@ -27,20 +32,32 @@ function InfoItem(props: InfoProps) {
   return (
     <div>
       <p>
-        <Icon icon={props.info.icon} /> {props.info.text}
+        <Icon icon={props.info.icon} /> {props.info.data}
       </p>
     </div>
   );
 }
 
 interface InfoListProps {
-  infos: Info[];
+  infos: string[];
 }
 
 function InfoList(props: InfoListProps) {
+  const memberAndDate: Info[] = [
+    {
+      // Members Info and Icon.
+      data: props.infos[0],
+      icon: IoIosPeople,
+    },
+    {
+      // Date Info and Icon.
+      data: props.infos[1],
+      icon: IoIosCalendar,
+    },
+  ];
   return (
     <InfoListDiv>
-      {props.infos.map((info) => {
+      {memberAndDate.map((info) => {
         return <InfoItem info={info} />;
       })}
     </InfoListDiv>
