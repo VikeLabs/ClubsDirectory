@@ -1,0 +1,64 @@
+name: Continuous Integration
+on:
+  pull_request:
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-progress
+      - name: Lint
+        run: npm run lint
+  build:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-progress
+      - name: Build
+        run: npm run build
+        env:
+          # TODO: Remove when unused-vars is fixed.
+          CI: false
+      - name: Cache React build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: react-app
+          path: build
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci --ignore-scripts --no-audit --no-progress
+      - name: Download React build artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: react-app
+          path: build
+      # - uses: FirebaseExtended/action-hosting-deploy@v0
+      #   with:
+      #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
+      #     firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CLUBS_DIRECTORY }}'
+      #     channelId: live
+      #     projectId: clubs-directory
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CLUBS_DIRECTORY }}'
+          projectId: clubs-directory
