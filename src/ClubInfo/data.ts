@@ -3,8 +3,11 @@ import { AiOutlineSlack, AiOutlineMail } from 'react-icons/ai';
 import { IoIosPeople, IoIosCalendar } from 'react-icons/io';
 import { SiZoom } from 'react-icons/si';
 
+import beach from '../Assets/Images/beach.jpg';
+import kayak from '../Assets/Images/kayak.jpg';
 import pec_logo from '../Assets/Images/pec.jpg';
-import logo from '../Assets/Images/slack.jpg';
+import slack_logo from '../Assets/Images/slack.jpg';
+import wedding from '../Assets/Images/wedding.jpg';
 
 import { Photo } from './Photo';
 
@@ -47,7 +50,7 @@ export interface Description {
 }
 
 export const defaultDescription: Description = {
-  text: 'Club description goes here. Blah blah blah...',
+  text: "We are a club at UVic that focuses on going out and exploring the Island with a photographer's mindset.",
 };
 
 export interface Path {
@@ -68,15 +71,15 @@ export const defaultTitle: Title = {
 
 export const defaultPhotos: Photo[] = [
   {
-    source: logo,
+    source: kayak,
     alt: 'slack1',
   },
   {
-    source: pec_logo,
+    source: beach,
     alt: 'slack2',
   },
   {
-    source: logo,
+    source: wedding,
     alt: 'slack3',
   },
 ];

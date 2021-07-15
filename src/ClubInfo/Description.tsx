@@ -23,8 +23,8 @@ interface DescProps {
   description: Description;
 }
 
-function DescriptionItem(props: DescProps) {
-  return <Box color="#000">{props.description.text}</Box>;
+function DescriptionItem(props: { description: string }) {
+  return <Box color="#000">{props.description}</Box>;
 }
 
 export default DescriptionItem;
