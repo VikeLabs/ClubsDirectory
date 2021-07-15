@@ -1,45 +1,30 @@
-import React from 'react';
-import styled from 'styled-components';
+import { Box, Flex, Heading, Text, useMediaQuery } from '@chakra-ui/react';
+import { AiOutlineSearch } from 'react-icons/ai';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
-import { categoryDevice, device } from './Assets/CSS/DeviceBreakPoints';
+const headingTitles = ['ABOUT', 'EVENTS', 'HEALTH & DENTAL', 'RESOURCES', 'SERVICES', 'JOBS', 'CONTACT'];
 
-const HeaderBar = styled.nav`
-  @media ${device.mobile} {
-    box-shadow: 0 7px 7px 5px rgba(0, 0, 0, 0.15);
-  }
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: auto;
-  background: #1b8091;
-  color: white;
-  box-shadow: 0 15px 15px 10px rgba(0, 0, 0, 0.2);
-`;
-
-const ContentDiv = styled.div`
-  // padding: top right bottom left
-  padding: 1.5% 1% 1.5% 1%;
-`;
-
-const HeaderTitle = styled.h1`
-  @media ${device.mobile} {
-    font-size: 50px;
-  }
-  font-size: 60px;
-  font-weight: 600;
-  color: white;
-  font-style: normal;
-`;
-
-function Header() {
+// Implements a mocked-out version of the header on the UVSS homepage. Not meant to be a 1:1 replica
+export function Header(): JSX.Element {
+  const [isMobile] = useMediaQuery('(min-width: 990px)');
   return (
-    <HeaderBar>
-      <ContentDiv>
-        <HeaderTitle>UVSS Clubs</HeaderTitle>
-      </ContentDiv>
-    </HeaderBar>
+    <Box as="header" position="fixed" top="0" width="100%" maxWidth="1130px" boxShadow="md" zIndex="">
+      <Flex bg="brand.secondary" minHeight="30px" alignItems="center"></Flex>
+      <Flex bg="brand.primary" minHeight="60px" alignItems="center" justifyContent="space-between" px="8">
+        <Heading color="white">UVSS</Heading>
+        {isMobile ? (
+          <Flex as="nav" alignItems="center">
+            {headingTitles.map((title) => (
+              <Text color="white" key={title} mx="1.5">
+                {title}
+              </Text>
+            ))}
+            <AiOutlineSearch color="white" />
+          </Flex>
+        ) : (
+          <GiHamburgerMenu color="white" size="2em" />
+        )}
+      </Flex>
+    </Box>
   );
 }
-
-export default Header;
