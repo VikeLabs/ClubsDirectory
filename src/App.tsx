@@ -12,7 +12,7 @@ import { Header } from './Header';
 
 function App() {
   return (
-    <Container maxW="1130px" height="100%" p="0">
+    <Container maxW="1130px" height="100%" p="0" id="AppCont">
       <Header />
       <Router>
         <Switch>
