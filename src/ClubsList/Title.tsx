@@ -21,7 +21,6 @@ const TitleContainer = styled.div`
   }
   color: white;
   font-family: Helvetica;
-  font-weight: bold;
   display: grid;
   grid-template-columns: repeat(2, auto);
   /* grid-column-gap: 15%; Removed for demo as I had an idea for a better solution. 
@@ -39,9 +38,10 @@ const TitleTag = styled.h1`
     color: black;
   }
   @media ${categoryDevice.tablet} {
-    font-size: 62px;
+    font-size: 60px;
   }
   font-size: 60px;
+  font-weight: 600;
   padding-left: 30px;
 `;
 

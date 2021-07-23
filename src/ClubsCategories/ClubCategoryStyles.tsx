@@ -42,7 +42,7 @@ const CategoryTitle = styled.h1`
   margin-left: 39px;
   padding-top: 4%;
   color: white;
-  font-style: normal;
+  font-family: Helvetica;
 `;
 
 // Styling how the grid is displayed on the categories page depending on screen width.
