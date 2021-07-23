@@ -20,7 +20,7 @@ export const defaultCategory: Category[] = [
   },
   {
     ShortTitle: 'Community',
-    FullTitle: 'Community Service',
+    FullTitle: 'Community Service & Volunteer',
     icon: FaHandsHelping,
   },
   {
@@ -34,13 +34,8 @@ export const defaultCategory: Category[] = [
     icon: IoEarthOutline,
   },
   {
-    ShortTitle: 'Food',
-    FullTitle: 'Food & Drink',
-    icon: GiKnifeFork,
-  },
-  {
-    ShortTitle: 'Gaming',
-    FullTitle: 'Gaming',
+    ShortTitle: 'Interest',
+    FullTitle: 'Interest',
     icon: IoGameController,
   },
   {
@@ -50,17 +45,17 @@ export const defaultCategory: Category[] = [
   },
   {
     ShortTitle: 'Politics',
-    FullTitle: 'Politics',
+    FullTitle: 'Political',
     icon: GoLaw,
   },
   {
     ShortTitle: 'Religion',
-    FullTitle: 'Religion',
+    FullTitle: 'Religious',
     icon: FaPrayingHands,
   },
   {
     ShortTitle: 'Sports',
-    FullTitle: 'Sports & Rec',
+    FullTitle: 'Sports & Recreation',
     icon: GiSoccerBall,
   },
   {
