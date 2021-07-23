@@ -60,7 +60,7 @@ function ClubInfoPage() {
   const { clubType, clubName } = useParams<{ clubType: string; clubName: string }>();
   const clubInfo = findClubInfo(clubName);
   // Extracting the year and month the club was created.
-  // clubInfo[0].clubMembersAndCreationDate[1] = extractDate(clubInfo[0].clubMembersAndCreationDate[1]); // Commented this out until we have the acturate information.
+  clubInfo[0].clubMembersAndCreationDate[1] = extractDate(clubInfo[0].clubMembersAndCreationDate[1]); // Commented this out until we have the acturate information.
   const membersAndDates = clubInfo[0].clubMembersAndCreationDate;
   const title = clubInfo[0].clubName;
   const tags = clubInfo[0].clubTags;
@@ -134,7 +134,7 @@ function extractDate(rawDate: string) {
   if (extractedDate != null) {
     let splitDateArray = extractedDate[0].split('-');
     let monthIndex = Number(splitDateArray[1]);
-    let extractedMonth = months[monthIndex];
+    let extractedMonth = months[monthIndex - 1];
     let extractedYear = splitDateArray[0];
     processedDate = extractedMonth + ' ' + extractedYear;
   }
