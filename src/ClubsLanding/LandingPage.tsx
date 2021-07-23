@@ -92,7 +92,7 @@ const LandingPageBodyText = styled.p`
   height: fit-content;
   width: fit-content;
   margin-left: 8%;
-  padding-top: 15%;
+  padding-top: 3%;
   grid-column: 1;
   grid-row: 2;
 `;
@@ -180,7 +180,7 @@ const ImgDiv = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   height: 400px;
-  width: 620px;
+  width: 590px;
   grid-column: 2;
   grid-row: 3/5;
 `;

@@ -25,7 +25,7 @@ function ClubListPage() {
   return (
     <ClubPageDiv>
       <TitleItem categoryName={fullTitle} directoryName={directory} />
-      <Clubs category={clubList} />
+      <Clubs category={fullTitle} />
     </ClubPageDiv>
   );
 }

@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 import pec_logo from '../Assets/Images/pec.jpg';
 import { ClubInfoData } from '../CustomProps';
-import data from '../JSON/MockData.json';
+import data from '../JSON/ClubData.json';
 
 import { GridDiv, RightSubGridDiv, PhotoHeaderDiv } from './ClubInfoPageStyledComponents';
 import {
@@ -60,13 +60,14 @@ function ClubInfoPage() {
   const { clubType, clubName } = useParams<{ clubType: string; clubName: string }>();
   const clubInfo = findClubInfo(clubName);
   // Extracting the year and month the club was created.
-  clubInfo[0].clubMembersAndCreationDate[1] = extractDate(clubInfo[0].clubMembersAndCreationDate[1]);
+  // clubInfo[0].clubMembersAndCreationDate[1] = extractDate(clubInfo[0].clubMembersAndCreationDate[1]); // Commented this out until we have the acturate information.
   const membersAndDates = clubInfo[0].clubMembersAndCreationDate;
   const title = clubInfo[0].clubName;
   const tags = clubInfo[0].clubTags;
   const description = clubInfo[0].clubDescription;
   const club_logo = clubInfo[0].clubImage;
-  const links = clubInfo[0].clubLinks;
+  // const links = clubInfo[0].clubLinks;
+  const links = ['Temp', 'Temp'];
 
   const subGridProps = { membersAndDates, title, tags, clubType, clubName };
 
@@ -100,12 +101,13 @@ function ClubInfoPage() {
 function findClubInfo(clubName: string) {
   let completedData: ClubInfoData[] = data
     .filter((clubType) => clubType.name === clubName)
-    .map(({ name, description, tags, primaryEmail, members, createdDate }) => ({
+    .map(({ name, description, tags, socialMedia, primaryEmail, members, createdDate }) => ({
       clubName: name,
       clubDescription: description,
       clubTags: tags,
       clubImage: pec_logo,
-      clubLinks: [primaryEmail, 'join.slack.com/', 'uvic.zoom.us/club'],
+      clubEmail: primaryEmail,
+      clubSocialMedia: socialMedia,
       clubMembersAndCreationDate: [members + ' members', createdDate],
     }));
   return completedData;

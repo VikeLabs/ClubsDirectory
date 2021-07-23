@@ -14,7 +14,6 @@ export interface ClubInfoData {
   clubTags: string[];
   clubImage: string;
   clubMembersAndCreationDate: string[];
-  clubLinks: string[];
-  // Will need to add other properties for the additional links and photos.
-  // clubOtherLinks: string;
+  clubEmail: string;
+  clubSocialMedia: string[];
 }

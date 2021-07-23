@@ -1,7 +1,8 @@
 import { ComponentType } from 'react';
 import { FaHandsHelping, FaPaintBrush, FaMusic, FaPrayingHands, FaMicroscope, FaHome } from 'react-icons/fa';
-import { GiKnifeFork, GiSoccerBall } from 'react-icons/gi';
+import { GiSoccerBall } from 'react-icons/gi';
 import { GoLaw } from 'react-icons/go';
+import { HiOutlineSparkles } from 'react-icons/hi';
 import { IoIosPeople, IoIosMore } from 'react-icons/io';
 import { IoGameController, IoEarthOutline } from 'react-icons/io5';
 import { IconType } from 'react-icons/lib';
@@ -51,19 +52,9 @@ export const defaultCategoryMenu: CategoryItem[] = [
     categoryShortName: 'Environment',
   },
   {
-    categoryIcon: GiKnifeFork,
-    categoryName: 'Food & Drink',
-    categoryShortName: 'Food',
-  },
-  {
-    categoryIcon: IoGameController,
-    categoryName: 'Gaming',
-    categoryShortName: 'Gaming',
-  },
-  {
-    categoryIcon: FaMusic,
-    categoryName: 'Music',
-    categoryShortName: 'Music',
+    categoryIcon: HiOutlineSparkles,
+    categoryName: 'Interest',
+    categoryShortName: 'Interest',
   },
   {
     categoryIcon: GoLaw,
