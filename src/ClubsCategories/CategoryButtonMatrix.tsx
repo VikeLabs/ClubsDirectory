@@ -10,6 +10,7 @@ interface CategoryProps {
 function CategoryItem(props: CategoryProps) {
   // Retreiveing the short hand category title and icon from the CategoryData.tsx
   var title = props.category.ShortTitle;
+  var fullTitle = props.category.FullTitle;
   var IconImage = props.category.icon;
   return (
     // Linking each grid button to their corresponding page.

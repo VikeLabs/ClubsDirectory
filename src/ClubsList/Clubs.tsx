@@ -5,7 +5,7 @@ import HER_img from '../Assets/Images/HerClubIcon.png';
 import IMPROV_img from '../Assets/Images/ImprovIcon.png';
 import PEC_img from '../Assets/Images/PECClubListIcon.png';
 import { ClubListData } from '../CustomProps';
-import data from '../JSON/MockData.json';
+import data from '../JSON/ClubData.json';
 
 import {
   ClubsDiv,

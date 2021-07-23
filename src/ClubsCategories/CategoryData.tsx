@@ -1,9 +1,10 @@
 import { ComponentType } from 'react';
 import { FaHandsHelping, FaPaintBrush, FaMusic, FaPrayingHands, FaMicroscope } from 'react-icons/fa';
-import { GiKnifeFork, GiSoccerBall } from 'react-icons/gi';
+import { GiSoccerBall } from 'react-icons/gi';
 import { GoLaw } from 'react-icons/go';
+import { HiOutlineSparkles } from 'react-icons/hi';
 import { IoIosPeople, IoIosMore } from 'react-icons/io';
-import { IoGameController, IoEarthOutline } from 'react-icons/io5';
+import { IoEarthOutline } from 'react-icons/io5';
 
 export interface Category {
   ShortTitle: string;
@@ -20,7 +21,7 @@ export const defaultCategory: Category[] = [
   },
   {
     ShortTitle: 'Community',
-    FullTitle: 'Community Service',
+    FullTitle: 'Community Service & Volunteer',
     icon: FaHandsHelping,
   },
   {
@@ -34,33 +35,23 @@ export const defaultCategory: Category[] = [
     icon: IoEarthOutline,
   },
   {
-    ShortTitle: 'Food',
-    FullTitle: 'Food & Drink',
-    icon: GiKnifeFork,
-  },
-  {
-    ShortTitle: 'Gaming',
-    FullTitle: 'Gaming',
-    icon: IoGameController,
-  },
-  {
-    ShortTitle: 'Music',
-    FullTitle: 'Music',
-    icon: FaMusic,
+    ShortTitle: 'Interest',
+    FullTitle: 'Interest',
+    icon: HiOutlineSparkles,
   },
   {
     ShortTitle: 'Politics',
-    FullTitle: 'Politics',
+    FullTitle: 'Political',
     icon: GoLaw,
   },
   {
     ShortTitle: 'Religion',
-    FullTitle: 'Religion',
+    FullTitle: 'Religious',
     icon: FaPrayingHands,
   },
   {
     ShortTitle: 'Sports',
-    FullTitle: 'Sports & Rec',
+    FullTitle: 'Sports & Recreation',
     icon: GiSoccerBall,
   },
   {
