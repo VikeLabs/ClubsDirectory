@@ -1,9 +1,6 @@
 import { IoIosArrowForward } from 'react-icons/io';
 
-import DMTC_img from '../Assets/Images/DMTCIcon.png';
-import HER_img from '../Assets/Images/HerClubIcon.png';
-import IMPROV_img from '../Assets/Images/ImprovIcon.png';
-import PEC_img from '../Assets/Images/PECClubListIcon.png';
+import Vike_Labs_Icon from '../Assets/Images/Vike_Labs_Icon.png';
 import { ClubListData } from '../CustomProps';
 import data from '../JSON/ClubData.json';
 
@@ -55,13 +52,6 @@ function ClubIcon(iconProps: { club: ClubListData }) {
   );
 }
 
-function randomIcon() {
-  let possibleIcon = [HER_img, DMTC_img, PEC_img, IMPROV_img];
-  let randomNumber = Math.floor(Math.random() * (3 - 0 + 1) + 0);
-  console.log(randomNumber);
-  return possibleIcon[randomNumber];
-}
-
 function findClubs(clubCategory: string) {
   let completedData: ClubListData[] = data
     .filter((clubType) => clubType.category === clubCategory)
@@ -70,7 +60,7 @@ function findClubs(clubCategory: string) {
       clubCategory: clubCategory,
       clubDescription: description,
       clubTags: tags,
-      clubImage: randomIcon(),
+      clubImage: Vike_Labs_Icon,
     }));
   return completedData;
 }

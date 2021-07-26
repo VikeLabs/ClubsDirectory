@@ -1,13 +1,12 @@
 import { ComponentType } from 'react';
-import { FaHandsHelping, FaPaintBrush, FaMusic, FaPrayingHands, FaMicroscope, FaHome } from 'react-icons/fa';
+import { FaHandsHelping, FaPaintBrush, FaPrayingHands, FaMicroscope, FaHome } from 'react-icons/fa';
 import { GiSoccerBall } from 'react-icons/gi';
 import { GoLaw } from 'react-icons/go';
 import { HiOutlineSparkles } from 'react-icons/hi';
 import { IoIosPeople, IoIosMore } from 'react-icons/io';
-import { IoGameController, IoEarthOutline } from 'react-icons/io5';
+import { IoEarthOutline } from 'react-icons/io5';
 import { IconType } from 'react-icons/lib';
 
-import error_img from '../Assets/Images/error_image.png';
 export interface Photo {
   source: string;
   alt: string;
@@ -82,8 +81,3 @@ export const defaultCategoryMenu: CategoryItem[] = [
     categoryShortName: 'Other',
   },
 ];
-
-const defaultPhoto: Photo = {
-  source: error_img,
-  alt: 'club logo',
-};
