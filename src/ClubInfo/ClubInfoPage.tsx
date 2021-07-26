@@ -2,7 +2,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import pec_logo from '../Assets/Images/pec.jpg';
+import Vike_Labs_Icon from '../Assets/Images/Vike_Labs_Icon.png';
 import { ClubInfoData } from '../CustomProps';
 import data from '../JSON/ClubData.json';
 
@@ -105,7 +105,7 @@ function findClubInfo(clubName: string) {
       clubName: name,
       clubDescription: description,
       clubTags: tags,
-      clubImage: pec_logo,
+      clubImage: Vike_Labs_Icon,
       clubEmail: primaryEmail,
       clubSocialMedia: socialMedia,
       clubMembersAndCreationDate: [members + ' members', createdDate],
