@@ -13,7 +13,7 @@ import {
   defaultTitle,
   defaultPhotos,
   defaultInfos,
-  defaultLogo,
+  // defaultLogo,
   defaultTags,
   defaultIcon,
   defaultPath,
