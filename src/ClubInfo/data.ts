@@ -5,8 +5,6 @@ import { SiZoom } from 'react-icons/si';
 
 import beach from '../Assets/Images/beach.jpg';
 import kayak from '../Assets/Images/kayak.jpg';
-import pec_logo from '../Assets/Images/pec.jpg';
-import slack_logo from '../Assets/Images/slack.jpg';
 import wedding from '../Assets/Images/wedding.jpg';
 
 import { Photo } from './Photo';
@@ -105,10 +103,10 @@ export interface Logo {
   alt: string;
 }
 
-export const defaultLogo: Logo = {
-  source: pec_logo,
-  alt: 'logo',
-};
+// export const defaultLogo: Logo = {
+//   source: pec_logo,
+//   alt: 'logo',
+// };
 
 export interface Tag {
   text: string;
