@@ -138,6 +138,10 @@ const ClubTagsDiv = styled.div`
   }
   grid-row: 3;
   grid-column: 2;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 15px;
 `;
 
 const LinkButton = styled(Link)`
@@ -155,9 +159,6 @@ const StyledTag = styled(Tag)`
   @media ${device.mobile} {
     display: none;
   }
-  margin-left: 20px;
-  margin-top: 10px;
-  padding-left: 15px;
 `;
 
 export {
