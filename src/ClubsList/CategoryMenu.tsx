@@ -1,11 +1,10 @@
 import { IconButton, Menu, MenuButton, Portal, MenuList, MenuItem } from '@chakra-ui/react';
-import React from 'react';
 import styled from 'styled-components';
 
+import Icon from './../ClubInfo/Icon';
 import { CategoryItem } from './ClubListData';
 import { LinkButton } from './ClubListStyles';
 import HamIcon from './HamIcon';
-import Icon from './Icon';
 
 const MenuDiv = styled.div`
   grid-row: 1;

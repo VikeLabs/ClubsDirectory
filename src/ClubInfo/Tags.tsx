@@ -1,8 +1,6 @@
-import { Button, ButtonGroup } from '@chakra-ui/react';
+import { Button, ButtonGroup, Tag } from '@chakra-ui/react';
 import React from 'react';
 import styled from 'styled-components';
-
-import { Tag } from './data';
 
 const TagListDiv = styled.div`
   @media screen and (max-width: 768px) {
@@ -21,9 +19,9 @@ interface TagProps {
 function TagItem(props: TagProps) {
   return (
     <div>
-      <Button colorScheme="blue" size="md" variant="ghost" border="1px">
+      <Tag borderRadius="full" size="lg">
         {props.tag}
-      </Button>
+      </Tag>
     </div>
   );
 }
