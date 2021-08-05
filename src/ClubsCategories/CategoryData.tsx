@@ -1,5 +1,5 @@
 import { ComponentType } from 'react';
-import { FaHandsHelping, FaPaintBrush, FaMusic, FaPrayingHands, FaMicroscope } from 'react-icons/fa';
+import { FaHandsHelping, FaPaintBrush, FaPrayingHands, FaMicroscope } from 'react-icons/fa';
 import { GiSoccerBall } from 'react-icons/gi';
 import { GoLaw } from 'react-icons/go';
 import { HiOutlineSparkles } from 'react-icons/hi';

@@ -2,8 +2,6 @@ import React from 'react';
 import { IconType } from 'react-icons';
 import styled from 'styled-components';
 
-import { Icon } from './data';
-
 const IconItemDiv = styled.div`
   float: left;
   padding-right: 10px;

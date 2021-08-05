@@ -1,8 +1,7 @@
 import { IoIosArrowForward } from 'react-icons/io';
 
-import Vike_Labs_Icon from '../Assets/Images/Vike_Labs_Icon.png';
-import { ClubListData } from '../CustomProps';
-import data from '../JSON/ClubData.json';
+import { ClubListData } from '../Assets/DataParsing/DataProps';
+import { findShortClubInfo } from '../Assets/DataParsing/Parsing';
 
 import {
   ClubsDiv,
@@ -52,22 +51,9 @@ function ClubIcon(iconProps: { club: ClubListData }) {
   );
 }
 
-function findClubs(clubCategory: string) {
-  let completedData: ClubListData[] = data
-    .filter((clubType) => clubType.category === clubCategory)
-    .map(({ name, description, tags }) => ({
-      clubName: name,
-      clubCategory: clubCategory,
-      clubDescription: description,
-      clubTags: tags,
-      clubImage: Vike_Labs_Icon,
-    }));
-  return completedData;
-}
-
 function Clubs(clubType: { category: string }) {
   // Finding the clubs related to the passed category.
-  const clubs: ClubListData[] = findClubs(clubType.category);
+  const clubs: ClubListData[] = findShortClubInfo(clubType.category);
   return (
     <ClubsDiv>
       {clubs.map((club) => {

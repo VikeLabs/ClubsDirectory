@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Tag } from '@chakra-ui/react';
+import { ButtonGroup, Tag } from '@chakra-ui/react';
 import React from 'react';
 import styled from 'styled-components';
 
