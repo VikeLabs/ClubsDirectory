@@ -70,7 +70,7 @@ function extractDate(rawDate: string) {
   return processedDate;
 }
 
-// getFulltitle takes the club category path ID 
+// getFulltitle takes the club category path ID.
 // and searches for the full title of the category from the category data file.
 function getFullTitle(pathClubID: string) {
   // Variable for storing the full title when found else, empty string.
