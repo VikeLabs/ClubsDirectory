@@ -1,9 +1,12 @@
-import { defaultCategory } from '../../ClubsCategories/CategoryData';
+import { Categories } from '../../ClubsCategories/CategoryData';
 import rawData from '../../JSON/ClubData.json';
 import Vike_Labs_Icon from '../Images/Vike_Labs_Icon.png';
 
 import { ClubInfoData, ClubListData } from './DataProps';
 
+// findFullClubInfo is a function that takes a club name as input.
+// Then finds and extracts all the information about the passed club name
+// from the ClubData.json and returns an array of objects(See DataProps.tsx for the object).
 function findFullClubInfo(clubName: string) {
   let completedData: ClubInfoData[] = rawData
     .filter((clubType) => clubType.name === clubName)
@@ -19,6 +22,9 @@ function findFullClubInfo(clubName: string) {
   return completedData;
 }
 
+// findShortClubInfo is a function that takes a category name as input.
+// Then finds all the clubs in the category and extracts a subset of information about each club
+// from the ClubData.json. Returning an array of objects(See DataProps.tsx for the object).
 function findShortClubInfo(clubCategory: string) {
   let completedData: ClubListData[] = rawData
     .filter((clubType) => clubType.category === clubCategory)
@@ -32,9 +38,12 @@ function findShortClubInfo(clubCategory: string) {
   return completedData;
 }
 
+// extractDate is a function that takes a string in the form of YYYY-MM-DD Hr:Minute:Second
+// Then extracts the month and year, then converts the month from a number to the month
+// name. Returns a string in the form Month Year.
 function extractDate(rawDate: string) {
-  let extractedDate = RegExp(/[0-9]*\-[0-9]*\-[0-9]*/).exec(rawDate);
-  let processedDate = 'Date could not be extracted';
+  let extractedDate = RegExp(/[0-9]*\-[0-9]*\-[0-9]*/).exec(rawDate); // Extracting the 1984-11-06 part from input string.
+  let processedDate = 'Date could not be extracted'; // Error message indicating the input string did not contain a YYYY-MM-DD substring.
   const months = [
     'January',
     'February',
@@ -50,22 +59,24 @@ function extractDate(rawDate: string) {
     'December',
   ];
 
+  // Checking if the input string did contain the substring YYYY-MM-DD.
   if (extractedDate != null) {
-    let splitDateArray = extractedDate[0].split('-');
-    let monthIndex = Number(splitDateArray[1]);
-    let extractedMonth = months[monthIndex - 1];
+    let splitDateArray = extractedDate[0].split('-'); // Spliting the extracted string on the '-' creating an array of the form: YYYY MM DD
+    let monthIndex = Number(splitDateArray[1]); // Converting the MM value from a string to Number.
+    let extractedMonth = months[monthIndex - 1]; // Using the converted MM value to find the month.
     let extractedYear = splitDateArray[0];
     processedDate = extractedMonth + ' ' + extractedYear;
   }
   return processedDate;
 }
 
-// getFulltitle takes the club category path ID and searches for the full title of the category from the category data file.
+// getFulltitle takes the club category path ID 
+// and searches for the full title of the category from the category data file.
 function getFullTitle(pathClubID: string) {
   // Variable for storing the full title when found else, empty string.
   let tempTitle: string = '';
 
-  defaultCategory.filter((item) => item.ShortTitle === pathClubID).map((item, index) => (tempTitle = item.FullTitle));
+  Categories.filter((item) => item.ShortTitle === pathClubID).map((item, index) => (tempTitle = item.FullTitle));
 
   return tempTitle;
 }
