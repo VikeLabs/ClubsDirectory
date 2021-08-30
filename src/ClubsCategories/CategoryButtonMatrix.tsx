@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 
-import { Category, defaultCategory } from './CategoryData';
+import { Category, Categories } from './CategoryData';
 import { Grid, Gridbutton, CategoryTitle, ButtonIcon, ButtonLabel, LinkButton } from './ClubCategoryStyles';
 
 interface CategoryProps {
   category: Category;
 }
 
+// CategoryItem is a function that takes in the Category interface(See CategoryData.tsx) as a prop.
+// The function then extracts the short form name and the icon associated with the category and
+// displays it as a button, and links to the respective club listing page.
 function CategoryItem(props: CategoryProps) {
-  // Retreiveing the short hand category title and icon from the CategoryData.tsx
+  // Extracting the short hand category title and icon from the passed prop.
   var title = props.category.ShortTitle;
   var IconImage = props.category.icon;
   return (
@@ -26,7 +29,7 @@ function CategoryItem(props: CategoryProps) {
 
 function CategoryButtonMatrix() {
   // Array for storing all the category data.
-  const [categoies] = useState(defaultCategory);
+  const [categoies] = useState(Categories);
   return (
     <div>
       <CategoryTitle>Club Categories</CategoryTitle>

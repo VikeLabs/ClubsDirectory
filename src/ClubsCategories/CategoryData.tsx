@@ -6,14 +6,16 @@ import { HiOutlineSparkles } from 'react-icons/hi';
 import { IoIosPeople, IoIosMore } from 'react-icons/io';
 import { IoEarthOutline } from 'react-icons/io5';
 
+// This interface is for used for storing information about each category.
 export interface Category {
-  ShortTitle: string;
-  FullTitle: string;
-  icon: ComponentType;
+  ShortTitle: string; // String for the short form of a category name.
+  FullTitle: string; // String for the full name of a cateogry.
+  icon: ComponentType; // ComponentType for storing the icon of each button.
 }
 
-// Const for storing each category name(full and shorthand) and their icon.
-export const defaultCategory: Category[] = [
+// Categories is an array of objects, where the object is the Category interface.
+// This array is used for creating the button matrix(See CategoryButtonMatrix.tsx).
+export const Categories: Category[] = [
   {
     ShortTitle: 'Arts',
     FullTitle: 'Arts',
