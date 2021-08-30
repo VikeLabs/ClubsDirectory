@@ -6,9 +6,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';
+import { CATEGORIES } from '../categories';
 
 import CategoryMenu from './CategoryMenu';
-import { defaultCategoryMenu } from './ClubListData';
 
 // Title Container uses CSS grid to display the title and directory path.
 const TitleContainer = styled.div`
@@ -60,7 +60,7 @@ function TitleItem(props: { categoryName: string; directoryName: string }) {
   return (
     <TitleContainer>
       <ListingHeader>
-        <CategoryMenu categoryList={defaultCategoryMenu} />
+        <CategoryMenu categoryList={CATEGORIES} />
         <TitleTag>{props.categoryName}</TitleTag>
       </ListingHeader>
       <TitleDirTag>{props.directoryName}</TitleDirTag>
