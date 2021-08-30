@@ -1,4 +1,5 @@
-import { Categories } from '../../ClubsCategories/CategoryData';
+import { CATEGORIES } from '../../categories';
+import { ClubData } from '../../JSON/ClubData';
 import rawData from '../../JSON/ClubData.json';
 import Vike_Labs_Icon from '../Images/Vike_Labs_Icon.png';
 
@@ -76,7 +77,7 @@ function getFullTitle(pathClubID: string) {
   // Variable for storing the full title when found else, empty string.
   let tempTitle: string = '';
 
-  Categories.filter((item) => item.ShortTitle === pathClubID).map((item, index) => (tempTitle = item.FullTitle));
+  CATEGORIES.filter((item) => item.shortTitle === pathClubID).map((item, index) => (tempTitle = item.fullTitle));
 
   return tempTitle;
 }
