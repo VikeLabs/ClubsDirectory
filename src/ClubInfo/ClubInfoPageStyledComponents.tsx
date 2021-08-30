@@ -41,13 +41,3 @@ export const RightSubGridDiv = styled.div`
     'tags'
     'infos';
 `;
-
-export const PhotoHeaderDiv = styled.p`
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-  grid-area: photoHeader;
-  text-align: left;
-  margin-left: 15%;
-  font-weight: bold;
-`;
