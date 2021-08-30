@@ -6,7 +6,6 @@ import { extractDate, findFullClubInfo } from '../Assets/DataParsing/Parsing';
 import { GridDiv, RightSubGridDiv, PhotoHeaderDiv } from './ClubInfoPageStyledComponents';
 import { defaultPhotos /* defaultLogo,*/ } from './data';
 import Description from './Description';
-import InfoList from './Infos';
 import LinkList from './Links';
 import LogoItem from './Logo';
 import PathItem from './Path';
@@ -23,7 +22,6 @@ interface subGridProps {
 }
 
 function RightSubGrid(props: { subProps: subGridProps }) {
-  const infos = props.subProps.membersAndDates;
   const title = props.subProps.title;
   const tags = props.subProps.tags;
 
@@ -36,7 +34,6 @@ function RightSubGrid(props: { subProps: subGridProps }) {
       <PathItem category={props.subProps.clubType} clubName={props.subProps.clubName}></PathItem>
       <Title title={title} />
       <TagList tags={tags} />
-      <InfoList infos={infos} />
     </RightSubGridDiv>
   );
 }
