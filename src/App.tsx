@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // TODO: remove this
 import './Assets/CSS/GlobalBackgroundImage.css';
 import ClubInfoPage from './ClubInfo/ClubInfoPage';
-import CategoryPage from './ClubsCategories/CategoryPage';
+import { CategoryPage } from './ClubsCategories/CategoryPage';
 import LandingPage from './ClubsLanding/LandingPage';
 import ClubListPage from './ClubsList/ClubListPage';
 import { Footer } from './Footer';
@@ -18,9 +18,10 @@ function App() {
         <Switch>
           <Box as="main" mt="90px">
             <Route exact path="/" component={LandingPage} />
-            <Route exact path="/ClubCategories" component={CategoryPage} />
-            <Route exact path="/ClubCategories/ClubList/:clubList Club" component={ClubListPage} />
-            <Route exact path="/ClubCategories/ClubList/:clubType/:clubName" component={ClubInfoPage} />
+            {/* Club and Course Union Categories */}
+            <Route exact path="/categories" component={CategoryPage} />
+            <Route exact path="/categories/:category" component={ClubListPage} />
+            <Route exact path="/categories/:category/:slug" component={ClubInfoPage} />
           </Box>
         </Switch>
       </Router>

@@ -2,7 +2,7 @@
 Contains code and styling to display the category title and 
 the directory path at the top of the club list page. 
 */
-import React from 'react';
+
 import styled from 'styled-components';
 
 import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';

@@ -22,18 +22,14 @@ interface subGridProps {
   clubName: string;
 }
 
-function RightSubGrid(props: { subProps: subGridProps }) {
-  const infos = props.subProps.membersAndDates;
-  const title = props.subProps.title;
-  const tags = props.subProps.tags;
+function RightSubGrid(props: subGridProps) {
+  const infos = props.membersAndDates;
+  const title = props.title;
+  const tags = props.tags;
 
-  // const infos = defaultInfos;
-  // const title = defaultTitle;
-  // const tags = defaultTags;
-  // const path = defaultPath;
   return (
     <RightSubGridDiv>
-      <PathItem category={props.subProps.clubType} clubName={props.subProps.clubName}></PathItem>
+      <PathItem category={props.clubType} clubName={props.clubName}></PathItem>
       <Title title={title} />
       <TagList tags={tags} />
       <InfoList infos={infos} />
@@ -42,20 +38,22 @@ function RightSubGrid(props: { subProps: subGridProps }) {
 }
 
 function ClubInfoPage() {
-  // Parsing and extracting the data from the JSON.
-  const { clubType, clubName } = useParams<{ clubType: string; clubName: string }>();
-  const clubInfo = findFullClubInfo(clubName);
+  const { category, slug } = useParams<{ category: string; slug: string }>();
+  const clubInfo = findFullClubInfo(slug);
+  if (!clubInfo) {
+    return <div>Not Found!</div>;
+  }
+
   // Extracting the year and month the club was created.
-  clubInfo[0].clubMembersAndCreationDate[1] = extractDate(clubInfo[0].clubMembersAndCreationDate[1]); // Commented this out until we have the acturate information.
-  const membersAndDates = clubInfo[0].clubMembersAndCreationDate;
-  const title = clubInfo[0].clubName;
-  const tags = clubInfo[0].clubTags;
-  const description = clubInfo[0].clubDescription;
-  const club_logo = clubInfo[0].clubImage;
-  // const links = clubInfo[0].clubLinks;
+  clubInfo.clubMembersAndCreationDate[1] = extractDate(clubInfo.clubMembersAndCreationDate[1]); // Commented this out until we have the acturate information.
+  const membersAndDates = clubInfo.clubMembersAndCreationDate;
+  const title = clubInfo.clubName;
+  const tags = clubInfo.clubTags;
+  const description = clubInfo.clubDescription;
+  const club_logo = clubInfo.clubImage;
   const links = ['Temp', 'Temp'];
 
-  const subGridProps = { membersAndDates, title, tags, clubType, clubName };
+  const { clubName } = clubInfo;
 
   // const links = defaultLinks;
   // const description = defaultDescription;
@@ -74,7 +72,13 @@ function ClubInfoPage() {
     <div className="App">
       <GridDiv>
         <LogoItem source={club_logo} alt={clubName}></LogoItem>
-        <RightSubGrid subProps={subGridProps}></RightSubGrid>
+        <RightSubGrid
+          clubName={clubName}
+          clubType={category}
+          membersAndDates={membersAndDates}
+          title={title}
+          tags={tags}
+        />
         <Description description={description} />
         <LinkList links={links}></LinkList>
         <PhotoHeaderDiv>Featured Photos</PhotoHeaderDiv>

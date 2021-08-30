@@ -1,5 +1,3 @@
-import React from 'react';
-import { IconType } from 'react-icons';
 import { IoMdLink } from 'react-icons/io';
 import styled from 'styled-components';
 

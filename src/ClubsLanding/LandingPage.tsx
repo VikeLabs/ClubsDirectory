@@ -223,7 +223,7 @@ function LandingPage() {
       </LandingPageBodyText>
       <ButtonDiv>
         {/* Linking the button to change pages to the club categories. */}
-        <Link to="/ClubCategories" style={{ textDecoration: 'none' }}>
+        <Link to="/categories" style={{ textDecoration: 'none' }}>
           <CategoryNavButton>Explore Current Clubs</CategoryNavButton>
         </Link>
       </ButtonDiv>

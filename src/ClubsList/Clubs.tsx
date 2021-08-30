@@ -18,24 +18,29 @@ import {
   StyledPhoto,
 } from './ClubListStyles';
 
-function ClubIcon(iconProps: { club: ClubListData }) {
+interface ClubCardProps {
+  club: ClubListData;
+}
+
+function ClubCard({ club }: ClubCardProps) {
+  const url = `/categories/${club.clubCategory}/${club.clubName}`;
   return (
     // Linked button switches the page to the club info page when clicked.
-    <LinkButton to={`/ClubCategories/ClubList/${iconProps.club.clubCategory}/${iconProps.club.clubName}`}>
+    <LinkButton to={url}>
       <ClubIconDiv>
         <ClubImgDiv>
-          <StyledPhoto source={iconProps.club.clubImage} alt={'Club Icon'} />
+          <StyledPhoto source={club.clubImage} alt={'Club Icon'} />
         </ClubImgDiv>
         <ClubNameDiv>
-          <ClubName>{iconProps.club.clubName}</ClubName>
+          <ClubName>{club.clubName}</ClubName>
         </ClubNameDiv>
         <ClubDesDiv>
-          <ClubDes>{iconProps.club.clubDescription}</ClubDes>
+          <ClubDes>{club.clubDescription}</ClubDes>
         </ClubDesDiv>
         <ClubTagsDiv>
-          {iconProps.club.clubTags.map((tag, index) => {
+          {club.clubTags.map((tag, index) => {
             return (
-              <StyledTag borderRadius="full" key={index}>
+              <StyledTag key={index} borderRadius="full">
                 {tag}
               </StyledTag>
             );
@@ -53,12 +58,12 @@ function ClubIcon(iconProps: { club: ClubListData }) {
 
 function Clubs(clubType: { category: string }) {
   // Finding the clubs related to the passed category.
-  const clubs: ClubListData[] = findShortClubInfo(clubType.category);
+  const clubs = findShortClubInfo(clubType.category);
   return (
     <ClubsDiv>
-      {clubs.map((club) => {
-        return <ClubIcon club={club} />;
-      })}
+      {clubs.map((club, index) => (
+        <ClubCard key={index} club={club} />
+      ))}
     </ClubsDiv>
   );
 }

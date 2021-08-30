@@ -2,31 +2,32 @@ import { Categories } from '../../ClubsCategories/CategoryData';
 import rawData from '../../JSON/ClubData.json';
 import Vike_Labs_Icon from '../Images/Vike_Labs_Icon.png';
 
-import { ClubInfoData, ClubListData } from './DataProps';
+const clubs = rawData as ClubData[];
 
 // findFullClubInfo is a function that takes a club name as input.
 // Then finds and extracts all the information about the passed club name
 // from the ClubData.json and returns an array of objects(See DataProps.tsx for the object).
 function findFullClubInfo(clubName: string) {
-  let completedData: ClubInfoData[] = rawData
-    .filter((clubType) => clubType.name === clubName)
-    .map(({ name, description, tags, socialMedia, primaryEmail, members, createdDate }) => ({
-      clubName: name,
-      clubDescription: description,
-      clubTags: tags,
-      clubImage: Vike_Labs_Icon,
-      clubEmail: primaryEmail,
-      clubSocialMedia: socialMedia,
-      clubMembersAndCreationDate: [members + ' members', createdDate],
-    }));
-  return completedData;
+  const data = clubs.find(({ name }) => name === clubName);
+
+  if (!data) return null;
+
+  return {
+    clubName: data.name,
+    clubDescription: data.description,
+    clubTags: data.tags,
+    clubImage: Vike_Labs_Icon,
+    clubEmail: data.primaryEmail,
+    clubSocialMedia: data.socialMedia,
+    clubMembersAndCreationDate: [data.members + ' members', data.createdDate],
+  };
 }
 
 // findShortClubInfo is a function that takes a category name as input.
 // Then finds all the clubs in the category and extracts a subset of information about each club
 // from the ClubData.json. Returning an array of objects(See DataProps.tsx for the object).
 function findShortClubInfo(clubCategory: string) {
-  let completedData: ClubListData[] = rawData
+  return clubs
     .filter((clubType) => clubType.category === clubCategory)
     .map(({ name, description, tags }) => ({
       clubName: name,
@@ -35,7 +36,6 @@ function findShortClubInfo(clubCategory: string) {
       clubTags: tags,
       clubImage: Vike_Labs_Icon,
     }));
-  return completedData;
 }
 
 // extractDate is a function that takes a string in the form of YYYY-MM-DD Hr:Minute:Second

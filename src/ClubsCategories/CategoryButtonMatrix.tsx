@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { Category, CATEGORIES } from '../categories';
 
 import { Category, Categories } from './CategoryData';
 import { Grid, Gridbutton, CategoryTitle, ButtonIcon, ButtonLabel, LinkButton } from './ClubCategoryStyles';
@@ -16,12 +16,12 @@ function CategoryItem(props: CategoryProps) {
   var IconImage = props.category.icon;
   return (
     // Linking each grid button to their corresponding page.
-    <LinkButton to={`/ClubCategories/ClubList/${title} Club`}>
+    <LinkButton to={`/categories/${slug}`}>
       <Gridbutton>
         <ButtonIcon>
           <IconImage />
         </ButtonIcon>
-        <ButtonLabel>{title}</ButtonLabel>
+        <ButtonLabel>{shortTitle}</ButtonLabel>
       </Gridbutton>
     </LinkButton>
   );
@@ -34,9 +34,9 @@ function CategoryButtonMatrix() {
     <div>
       <CategoryTitle>Club Categories</CategoryTitle>
       <Grid>
-        {categoies.map((category) => (
+        {CATEGORIES.map((category, index) => (
           // Creating buttons for each item in the categories array.
-          <CategoryItem category={category} />
+          <CategoryItem key={index} category={category} />
         ))}
       </Grid>
     </div>
