@@ -3,14 +3,11 @@ import { useParams } from 'react-router-dom';
 
 import { extractDate, findFullClubInfo } from '../Assets/DataParsing/Parsing';
 
-import { GridDiv, RightSubGridDiv, PhotoHeaderDiv } from './ClubInfoPageStyledComponents';
-import { defaultPhotos /* defaultLogo,*/ } from './data';
+import { GridDiv, RightSubGridDiv } from './ClubInfoPageStyledComponents';
 import Description from './Description';
-import InfoList from './Infos';
 import LinkList from './Links';
 import LogoItem from './Logo';
 import PathItem from './Path';
-import PhotoBar from './Photo';
 import TagList from './Tags';
 import Title from './Title';
 
@@ -23,7 +20,6 @@ interface subGridProps {
 }
 
 function RightSubGrid(props: { subProps: subGridProps }) {
-  const infos = props.subProps.membersAndDates;
   const title = props.subProps.title;
   const tags = props.subProps.tags;
 
@@ -36,7 +32,6 @@ function RightSubGrid(props: { subProps: subGridProps }) {
       <PathItem category={props.subProps.clubType} clubName={props.subProps.clubName}></PathItem>
       <Title title={title} />
       <TagList tags={tags} />
-      <InfoList infos={infos} />
     </RightSubGridDiv>
   );
 }
@@ -59,7 +54,6 @@ function ClubInfoPage() {
 
   // const links = defaultLinks;
   // const description = defaultDescription;
-  const photos = defaultPhotos;
   // const club_logo = defaultLogo;
 
   // header
@@ -77,8 +71,6 @@ function ClubInfoPage() {
         <RightSubGrid subProps={subGridProps}></RightSubGrid>
         <Description description={description} />
         <LinkList links={links}></LinkList>
-        <PhotoHeaderDiv>Featured Photos</PhotoHeaderDiv>
-        <PhotoBar photos={photos}></PhotoBar>
       </GridDiv>
     </div>
   );
