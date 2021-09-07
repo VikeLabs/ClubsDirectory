@@ -21,14 +21,10 @@ function slugMap(club) {
   };
 }
 
-async function main() {
-  const originalBytes = (await fs.readFile(inputFilePath)).buffer;
-  const originalString = new Buffer.from(originalBytes).toString();
-  const originalJSON = JSON.parse(originalString);
+const originalBytes = (await fs.readFile(inputFilePath)).buffer;
+const originalString = new Buffer.from(originalBytes).toString();
+const originalJSON = JSON.parse(originalString);
 
-  const sluggedJSON = originalJSON.map(slugMap);
+const sluggedJSON = originalJSON.map(slugMap);
 
-  console.log(JSON.stringify(sluggedJSON, null, 2));
-}
-
-main();
+console.log(JSON.stringify(sluggedJSON, null, 2));

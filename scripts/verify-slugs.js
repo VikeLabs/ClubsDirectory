@@ -22,17 +22,13 @@ function validateSlug(club) {
   return true;
 }
 
-async function main() {
-  const originalBytes = (await fs.readFile(inputFilePath)).buffer;
-  const originalString = new Buffer.from(originalBytes).toString();
-  const originalJSON = JSON.parse(originalString);
+const originalBytes = (await fs.readFile(inputFilePath)).buffer;
+const originalString = new Buffer.from(originalBytes).toString();
+const originalJSON = JSON.parse(originalString);
 
-  if (originalJSON.every(validateSlug)) {
-    console.log('All slugs are valid.');
-  } else {
-    console.log('Invalid slug found.');
-    process.exit(1);
-  }
+if (originalJSON.every(validateSlug)) {
+  console.log('All slugs are valid.');
+} else {
+  console.log('Invalid slug found.');
+  process.exit(1);
 }
-
-main();
