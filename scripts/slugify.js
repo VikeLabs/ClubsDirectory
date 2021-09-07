@@ -11,7 +11,7 @@ const [, , inputFilePath] = process.argv;
 
 const existingSlugs = new Map();
 function slugMap(club) {
-  const originalSlug = slugify(club.name).toLowerCase();
+  const originalSlug = slugify(club.name, { lower: true, strict: true });
   const existing = existingSlugs.get(originalSlug) ?? 0;
   const slug = existing ? originalSlug + '-' + (existing + 1) : originalSlug;
   existingSlugs.set(originalSlug, existing + 1);
