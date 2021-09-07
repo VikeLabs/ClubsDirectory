@@ -125,7 +125,7 @@
     ],
     "description": "Students Offering Support (SOS) is a nation-wide charity that supports university chapters across Canada. In addition to general fundraising, we host Exam-Aid preparation services to fund SOS Global Impact Projects in developing countries. SOS is a unique social enterprise that relies on passionate student leaders to create a positive impact, both at home and abroad, through the SOS model of “Raising Marks, Raising Money, Raising Roofs.”",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "uvic-students-offering-support-(sos)"
+    "slug": "uvic-students-offering-support-sos"
   },
   {
     "id": "9",
@@ -366,7 +366,7 @@
     ],
     "description": "UMANG: UVic Indian Students’ Association was initially formed in 2005 by undergraduate and graduate students. We aim to promote Indian culture on campus and bridge cultural gaps in the society. Over the past few years, our team has grown and succeeded in hosting events and workshops. By doing so, we have promoted cultural diversity among students and community.We are one of the most active clubs on campus and organize events on a weekly basis.",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "umang-uvic-indian-students'-association"
+    "slug": "umang-uvic-indian-students-association"
   },
   {
     "id": "24",
@@ -382,7 +382,7 @@
     ],
     "description": "Society for Indian Classical Arts (SICA) is a not for profit student club at University of Victoria (UVic). SICA comprises of students, faculty and community members dedicated to promote and create awareness of South Asian arts and culture. Each year SICA brings numerous artists from across Canada who share their talent in various South Asian art forms. SICA has organized numerous events such as Indian Classical, Folk dances and music concerts.",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "society-for-indian-classical-arts-(sica)"
+    "slug": "society-for-indian-classical-arts-sica"
   },
   {
     "id": "25",
@@ -430,7 +430,7 @@
     ],
     "description": "The UVicUSS is dedicated to promoting Ukrainian culture on campus through events, activism and community engagement. We have strong ties with the local Ukrainian community and are always excited to share our traditions with our peers. Whether they are Ukrainian or not, we welcome all students to come and enjoy what we have to offer!",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "uvic-ukrainian-students'-society"
+    "slug": "uvic-ukrainian-students-society"
   },
   {
     "id": "28",
@@ -830,7 +830,7 @@
     ],
     "description": "The focus of this club is to help new brewers learn how to make not just beer, but other fermented beverages as well. We have started looking at techniques from around the world! From Korean rice wines, to Scandinavian farmhouse ales. Have you always wondered how these drinks were made? Join UVic Wizards of Beer and discover for yourself, and brew them too!",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "beer-club-(uvic-wizards-of-beer)"
+    "slug": "beer-club-uvic-wizards-of-beer"
   },
   {
     "id": "53",
@@ -1022,7 +1022,7 @@
     ],
     "description": "The UVFAC is a club dedicated to learning about investments for all skill levels. A place where students can ask questions and talk with others that are interested in a finance career or personal investing. All club funding is put directly towards financial learning tools. Please feel free to reach out at any time to our admins and come to our bi-weekly online meetings.",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "uvic-financial-analysis-club-(uvfac)"
+    "slug": "uvic-financial-analysis-club-uvfac"
   },
   {
     "id": "65",
@@ -1278,7 +1278,7 @@
     ],
     "description": "We reach out to everyone who wants to know and discover the fullness of the Catholic faith, and we are dedicated to building up leaders who will change the world. We also provide opportunities for people to be engaged in a welcoming, loving community; with opportunities for spiritual, and personal growth. Join us for faith studies, events, Zoom hangouts, and retreats!",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "catholic-christian-outreach-(cco)"
+    "slug": "catholic-christian-outreach-cco"
   },
   {
     "id": "81",
@@ -1327,7 +1327,7 @@
     ],
     "description": "We're a community that loves Jesus and follows in his footsteps at UVic. We value growing, worshiping, praying, learning, serving, and celebrating together. ​Whoever you are, whatever you believe, you are welcome here!",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "ucm-(university-christian-ministries)"
+    "slug": "ucm-university-christian-ministries"
   },
   {
     "id": "84",
@@ -1359,7 +1359,7 @@
     ],
     "description": "The ABS club (Association for Baha’i studies) is a club that allows Baha’i students and faculty (as well as any one else interested) to aid one another in meaningful service to our campus community as well as reflect on how we can coherently integrate our spiritual beliefs and academic study. This club hopes to hold online social spaces to increase a sense of community and engage in conversation around spiritual topics.",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "abs-(association-for-baha'i-studies)"
+    "slug": "abs-association-for-bahai-studies"
   },
   {
     "id": "86",
@@ -1375,7 +1375,7 @@
     ],
     "description": "TharAllah: Shia Muslim Society of Victoria” is a religious club intended to commemorate important dates in the Shia-Islamic calendar by holding events regularly as well as on special occasions for our growing community here on campus. TharAllah provides an opportunity for students from Muslim and other backgrounds to get together over religious and cultural programmes, socialize, and take part in developing our community.",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "tharallah-(shia-muslim-society-of-victoria)"
+    "slug": "tharallah-shia-muslim-society-of-victoria"
   },
   {
     "id": "87",
@@ -1616,7 +1616,7 @@
     ],
     "description": "BMED is a group of undergraduate engineering students who design, research, and test medical devices, biomedical technologies, and assistive solutions.",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "biomedical-engineering-design-team-(bmed)"
+    "slug": "biomedical-engineering-design-team-bmed"
   },
   {
     "id": "102",
@@ -1856,7 +1856,7 @@
     ],
     "description": "SUCO provides free consulting to STEM based organizations/companies and hosts free seminars presented by professionals in the STEM field on a vast array of topics.",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "stem-undergraduate-consulting-organization-(suco)"
+    "slug": "stem-undergraduate-consulting-organization-suco"
   },
   {
     "id": "117",
