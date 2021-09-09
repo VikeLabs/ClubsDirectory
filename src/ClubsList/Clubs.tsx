@@ -1,7 +1,9 @@
 import { IoIosArrowForward } from 'react-icons/io';
 
-import { ClubListData } from '../Assets/DataParsing/DataProps';
-import { findShortClubInfo } from '../Assets/DataParsing/Parsing';
+import Logo from '../Assets/Images/Vike_Labs_Icon.png';
+import { ClubData } from '../JSON/ClubData';
+import { findClubsByCategory } from '../JSON/helpers';
+import { Error404Page } from '../pages/error/404';
 
 import {
   ClubsDiv,
@@ -19,26 +21,27 @@ import {
 } from './ClubListStyles';
 
 interface ClubCardProps {
-  club: ClubListData;
+  club: ClubData;
 }
 
 function ClubCard({ club }: ClubCardProps) {
-  const url = `/categories/${club.clubCategory}/${club.clubName}`;
+  const url = `/categories/${club.category}/${club.slug}`;
   return (
     // Linked button switches the page to the club info page when clicked.
     <LinkButton to={url}>
       <ClubIconDiv>
         <ClubImgDiv>
-          <StyledPhoto source={club.clubImage} alt={'Club Icon'} />
+          {/* TODO: Replace with actual logo */}
+          <StyledPhoto source={Logo} alt={'Club Icon'} />
         </ClubImgDiv>
         <ClubNameDiv>
-          <ClubName>{club.clubName}</ClubName>
+          <ClubName>{club.name}</ClubName>
         </ClubNameDiv>
         <ClubDesDiv>
-          <ClubDes>{club.clubDescription}</ClubDes>
+          <ClubDes>{club.description}</ClubDes>
         </ClubDesDiv>
         <ClubTagsDiv>
-          {club.clubTags.map((tag, index) => {
+          {club.tags.map((tag, index) => {
             return (
               <StyledTag key={index} borderRadius="full">
                 {tag}
@@ -56,9 +59,12 @@ function ClubCard({ club }: ClubCardProps) {
   );
 }
 
-function Clubs(clubType: { category: string }) {
+function Clubs({ category: categorySlug }: { category: string }) {
   // Finding the clubs related to the passed category.
-  const clubs = findShortClubInfo(clubType.category);
+  const clubs = findClubsByCategory(categorySlug);
+
+  if (!clubs) return <Error404Page />;
+
   return (
     <ClubsDiv>
       {clubs.map((club, index) => (
