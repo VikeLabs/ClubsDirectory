@@ -1,7 +1,7 @@
-import { CATEGORIES } from '../../categories';
-import { ClubData } from '../../JSON/ClubData';
-import rawData from '../../JSON/ClubData.json';
-import Vike_Labs_Icon from '../Images/Vike_Labs_Icon.png';
+import Vike_Labs_Icon from '../Assets/Images/Vike_Labs_Icon.png';
+import { CATEGORIES } from '../categories';
+import { ClubData } from '../JSON/ClubData';
+import rawData from '../JSON/ClubData.json';
 
 const clubs = rawData as ClubData[];
 
