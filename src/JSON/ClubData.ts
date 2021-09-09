@@ -5,6 +5,7 @@ export interface ClubData {
   category: string;
   primaryEmail: string;
   socialMedia: string[];
+  slug: string;
   members: string;
   tags: string[];
   description: string;
