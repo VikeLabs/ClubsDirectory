@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './Assets/CSS/GlobalBackgroundImage.css';
 import ClubInfoPage from './ClubInfo/ClubInfoPage';
 import { CategoryPage } from './ClubsCategories/CategoryPage';
-import LandingPage from './ClubsLanding/LandingPage';
 import ClubListPage from './ClubsList/ClubListPage';
 import { Footer } from './Footer';
 import { Header } from './Header';
+import LandingPage from './pages/home';
 
 function App() {
   return (

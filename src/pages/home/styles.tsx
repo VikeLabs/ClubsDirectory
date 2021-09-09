@@ -1,13 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';
-import desktopPeople from '../Assets/Images/DesktopPeople.png';
-import mobileBackground from '../Assets/Images/MobileBackground.png';
+import { categoryDevice, device } from '../../Assets/CSS/DeviceBreakPoints';
+import desktopPeople from '../../Assets/Images/DesktopPeople.png';
+import mobileBackground from '../../Assets/Images/MobileBackground.png';
 
 // Styling the title of the landing page.
-const LandingPageTitle = styled.h1`
+export const LandingPageTitle = styled.h1`
   @media ${device.mobileTiny} {
     font-size: 50px;
     padding-top: 4%;
@@ -46,7 +44,7 @@ const LandingPageTitle = styled.h1`
 `;
 
 // Styling the paragraph text displayed on the landing page.
-const LandingPageBodyText = styled.p`
+export const LandingPageBodyText = styled.p`
   @media ${device.mobileTiny} {
     font-size: 16px;
     grid-column: 1;
@@ -98,7 +96,7 @@ const LandingPageBodyText = styled.p`
 `;
 
 // Changing the background image and grid layout of the landing page for mobile(width <= 767px) and desktop.
-const LandingDiv = styled.div`
+export const LandingDiv = styled.div`
   @media ${device.mobile} {
     background-image: url(${mobileBackground});
     background-repeat: no-repeat;
@@ -113,7 +111,7 @@ const LandingDiv = styled.div`
 `;
 
 // Styling the 'Explore Current Clubs' button.
-const CategoryNavButton = styled.button`
+export const CategoryNavButton = styled.button`
   @media ${device.mobileTiny} {
     width: 260px;
     height: 60px;
@@ -143,7 +141,7 @@ const CategoryNavButton = styled.button`
 `;
 
 // Styling the image with the people dancing.
-const ImgDiv = styled.div`
+export const ImgDiv = styled.div`
   @media ${device.mobileTiny} {
     height: 200px;
     width: 280px;
@@ -186,7 +184,7 @@ const ImgDiv = styled.div`
 `;
 
 // Styling the 'Explore Current Clubs' button container.
-const ButtonDiv = styled.div`
+export const ButtonDiv = styled.div`
   @media ${device.mobileTiny} {
     padding-top: 10%;
   }
@@ -213,23 +211,3 @@ const ButtonDiv = styled.div`
   grid-column: 1;
   grid-row: 3;
 `;
-
-function LandingPage() {
-  return (
-    <LandingDiv>
-      <LandingPageTitle>Clubs</LandingPageTitle>
-      <LandingPageBodyText>
-        The University of Victoria Student Society has over 200 different student-led clubs to suit your interests.
-      </LandingPageBodyText>
-      <ButtonDiv>
-        {/* Linking the button to change pages to the club categories. */}
-        <Link to="/categories" style={{ textDecoration: 'none' }}>
-          <CategoryNavButton>Explore Current Clubs</CategoryNavButton>
-        </Link>
-      </ButtonDiv>
-      <ImgDiv />
-    </LandingDiv>
-  );
-}
-
-export default LandingPage;
