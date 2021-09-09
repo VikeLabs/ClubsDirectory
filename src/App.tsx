@@ -1,5 +1,5 @@
 import { Box, Container } from '@chakra-ui/react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 // TODO: remove this
 import './Assets/CSS/GlobalBackgroundImage.css';
@@ -20,6 +20,8 @@ function App() {
             <Route exact path="/" component={LandingPage} />
             {/* Club and Course Union Categories */}
             <Route exact path="/categories" component={CategoryPage} />
+            {/* TODO: remove when link on UVSS website is changed to /categories */}
+            <Redirect from="/ClubCategories" to="/categories" />
             <Route exact path="/categories/:category" component={ClubListPage} />
             <Route exact path="/categories/:category/:slug" component={ClubInfoPage} />
           </Box>
