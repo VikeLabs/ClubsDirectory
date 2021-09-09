@@ -25,7 +25,7 @@ export const CATEGORIES: Category[] = [
   {
     shortTitle: 'Community',
     fullTitle: 'Community Service & Volunteer',
-    slug: 'community',
+    slug: 'community-service-and-volunteer',
     icon: FaHandsHelping,
   },
   {
