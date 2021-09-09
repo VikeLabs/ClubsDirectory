@@ -1,3 +1,4 @@
+import { Button } from '@chakra-ui/react';
 import { IoMdLink } from 'react-icons/io';
 import styled from 'styled-components';
 
@@ -10,16 +11,26 @@ const LinkListDiv = styled.ul`
     margin-left: 0;
     margin-bottom: 10px;
   }
+  overflow: auto;
   margin-top: 20px;
   margin-left: 15%;
 `;
 
+const urlStart = /^https?:\/\/(www\.)?/;
+const urlQueries = /\?.*$/;
+
+function simplifyURL(url: string) {
+  return url.replace(urlStart, '').replace(urlQueries, '');
+}
+
 function LinkItem(props: { link: string }) {
   return (
-    <div>
-      <Icon icon={IoMdLink}></Icon>
-      <p>{props.link}</p>
-    </div>
+    <Button size="sm">
+      <a href={props.link}>
+        <Icon icon={IoMdLink}></Icon>
+        {simplifyURL(props.link)}
+      </a>
+    </Button>
   );
 }
 
@@ -27,9 +38,11 @@ function LinkList(props: { links: string[] }) {
   return (
     <LinkListDiv>
       <ul className="link-list">
-        {props.links.map((link) => {
-          return <LinkItem link={link} />;
-        })}
+        {props.links
+          .filter((s) => s !== '')
+          .map((link) => (
+            <LinkItem link={link} />
+          ))}
       </ul>
     </LinkListDiv>
   );
