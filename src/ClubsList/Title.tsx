@@ -3,7 +3,7 @@ Contains code and styling to display the category title and
 the directory path at the top of the club list page. 
 */
 
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';
 import { CATEGORIES } from '../categories';

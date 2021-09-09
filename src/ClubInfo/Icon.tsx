@@ -1,5 +1,5 @@
-import React, { ComponentType } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+import { ComponentType } from 'react';
 
 const IconItemDiv = styled.div`
   float: left;

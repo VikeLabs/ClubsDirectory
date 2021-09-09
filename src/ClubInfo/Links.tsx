@@ -1,5 +1,5 @@
+import styled from '@emotion/styled';
 import { IoMdLink } from 'react-icons/io';
-import styled from 'styled-components';
 
 import Icon from './Icon';
 
