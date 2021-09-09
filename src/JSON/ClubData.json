@@ -1172,7 +1172,7 @@
     "id": "74",
     "name": "University of Victoria Conservative Club",
     "category": "Political",
-    "primaryEmail": "tjkalyniuk@gmail.com",
+    "primaryEmail": "uvic.cc@gmail.com",
     "socialMedia": [
       "https://www.instagram.com/uvic.conservatives/"
     ],
@@ -1616,7 +1616,7 @@
     ],
     "description": "The UVic Rocketry Team is a student-led group at the University of Victoria that designs and builds competitive sounding rockets. We participate at the annual Spaceport America Cup (SA Cup), located at the world’s first purpose-built commercial spaceport located in southern New Mexico, United States.",
     "createdDate": "1920-01-15 14:38:49",
-    "slug": "uvic-rocketyr"
+    "slug": "uvic-rocketry"
   },
   {
     "id": "103",
@@ -1937,5 +1937,22 @@
     "description": "The UVic Competitive Programming Club is a group of students who enjoy solving hard problems quickly with code. We compete annually in the International Collegiate Programming Contest (ICPC), and meet weekly to practice and learn together. The problems we work on are also highly applicable to technical job interviews. The club's objective is not teaching members how to code.",
     "createdDate": "1920-01-15 14:38:49",
     "slug": "uvic-competitive-programming-club"
+  },
+  {
+    "id": "123",
+    "name": "UVic Archery Club",
+    "category": "Sports",
+    "primaryEmail": "vikesarchery@uvic.ca",
+    "socialMedia": [
+      "https://discord.gg/eKHQJXt",
+      "https://instagram.com/uvicarchers?utm_medium=copy_link"
+    ],
+    "members": "0",
+    "tags": [
+      "Sports"
+    ],
+    "description": "Archery offers a sense of control, camaraderie and competition; with patience and practice it can turn into a life-long hobby. Learn form, techniques and skills needed to begin your archery adventure or join us to compete in local and regional tournaments. For more information email vikesarchery@uvic.ca or find us on facebook under UVIC Archers.",
+    "createdDate": "1920-01-15 14:38:49",
+    "slug": "uvic-archery"
   }
 ]
