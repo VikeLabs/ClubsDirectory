@@ -1,5 +1,6 @@
 import { Button } from '@chakra-ui/react';
-import { IoMdLink } from 'react-icons/io';
+import { IconType } from 'react-icons';
+import { FaDiscord, FaFacebook, FaInstagram, FaLink } from 'react-icons/fa';
 import styled from 'styled-components';
 
 import Icon from './Icon';
@@ -23,11 +24,24 @@ function simplifyURL(url: string) {
   return url.replace(urlStart, '').replace(urlQueries, '');
 }
 
+function getIcon(url: string): IconType {
+  const defaultIcon: IconType = FaLink;
+  const urlMap: { [key: string]: IconType } = {
+    'facebook.com': FaFacebook,
+    'instagram.com': FaInstagram,
+    'discord.gg': FaDiscord,
+  };
+
+  const domain = new URL(url).hostname.replace(/^www\./, '');
+
+  return urlMap[domain] ?? defaultIcon;
+}
+
 function LinkItem(props: { link: string }) {
   return (
     <Button size="sm" style={{ maxWidth: '100%' }}>
       <a href={props.link} style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
-        <Icon icon={IoMdLink}></Icon>
+        <Icon icon={getIcon(props.link)}></Icon>
         {simplifyURL(props.link)}
       </a>
     </Button>
