@@ -3,12 +3,6 @@ import { AiOutlineSlack, AiOutlineMail } from 'react-icons/ai';
 import { IoIosPeople, IoIosCalendar } from 'react-icons/io';
 import { SiZoom } from 'react-icons/si';
 
-import beach from '../Assets/Images/beach.jpg';
-import kayak from '../Assets/Images/kayak.jpg';
-import wedding from '../Assets/Images/wedding.jpg';
-
-import { Photo } from './Photo';
-
 export interface Icon {
   icon: ComponentType;
 }
@@ -66,21 +60,6 @@ export interface Title {
 export const defaultTitle: Title = {
   text: 'UVic Photography Excursion Club',
 };
-
-export const defaultPhotos: Photo[] = [
-  {
-    source: kayak,
-    alt: 'slack1',
-  },
-  {
-    source: beach,
-    alt: 'slack2',
-  },
-  {
-    source: wedding,
-    alt: 'slack3',
-  },
-];
 
 export interface Info {
   icon: Icon;
