@@ -25,8 +25,8 @@ function simplifyURL(url: string) {
 
 function LinkItem(props: { link: string }) {
   return (
-    <Button size="sm">
-      <a href={props.link}>
+    <Button size="sm" style={{ maxWidth: '100%' }}>
+      <a href={props.link} style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
         <Icon icon={IoMdLink}></Icon>
         {simplifyURL(props.link)}
       </a>
