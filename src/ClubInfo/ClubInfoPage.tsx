@@ -1,7 +1,8 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import { extractDate, findFullClubInfo } from '../Assets/DataParsing/Parsing';
+import Logo from '../Assets/Images/Vike_Labs_Icon.png';
+import { findClubBySlug } from '../JSON/helpers';
+import { Error404Page } from '../pages/error/404';
 
 import { GridDiv, RightSubGridDiv } from './ClubInfoPageStyledComponents';
 import Description from './Description';
@@ -15,21 +16,17 @@ interface subGridProps {
   membersAndDates: string[];
   title: string;
   tags: string[];
-  clubType: string;
+  categorySlug: string;
   clubName: string;
 }
 
-function RightSubGrid(props: { subProps: subGridProps }) {
-  const title = props.subProps.title;
-  const tags = props.subProps.tags;
+function RightSubGrid(props: subGridProps) {
+  const title = props.title;
+  const tags = props.tags;
 
-  // const infos = defaultInfos;
-  // const title = defaultTitle;
-  // const tags = defaultTags;
-  // const path = defaultPath;
   return (
     <RightSubGridDiv>
-      <PathItem category={props.subProps.clubType} clubName={props.subProps.clubName}></PathItem>
+      <PathItem category={props.categorySlug} clubName={props.clubName}></PathItem>
       <Title title={title} />
       <TagList tags={tags} />
     </RightSubGridDiv>
@@ -37,40 +34,22 @@ function RightSubGrid(props: { subProps: subGridProps }) {
 }
 
 function ClubInfoPage() {
-  // Parsing and extracting the data from the JSON.
-  const { clubType, clubName } = useParams<{ clubType: string; clubName: string }>();
-  const clubInfo = findFullClubInfo(clubName);
-  // Extracting the year and month the club was created.
-  clubInfo[0].clubMembersAndCreationDate[1] = extractDate(clubInfo[0].clubMembersAndCreationDate[1]); // Commented this out until we have the acturate information.
-  const membersAndDates = clubInfo[0].clubMembersAndCreationDate;
-  const title = clubInfo[0].clubName;
-  const tags = clubInfo[0].clubTags;
-  const description = clubInfo[0].clubDescription;
-  const club_logo = clubInfo[0].clubImage;
-  // const links = clubInfo[0].clubLinks;
-  const links = ['Temp', 'Temp'];
+  // grab route params using react-router-dom
+  const { slug } = useParams<{ category: string; slug: string }>();
 
-  const subGridProps = { membersAndDates, title, tags, clubType, clubName };
+  const club = findClubBySlug(slug);
 
-  // const links = defaultLinks;
-  // const description = defaultDescription;
-  // const club_logo = defaultLogo;
+  if (!club) return <Error404Page />;
 
-  // header
-  // logo path
-  //      name
-  //      tags
-  // links infos
-  //      desc
-  // photos
+  const { name, tags, description, socialMedia, category: categorySlug } = club;
 
   return (
-    <div className="App">
+    <div>
       <GridDiv>
-        <LogoItem source={club_logo} alt={clubName}></LogoItem>
-        <RightSubGrid subProps={subGridProps}></RightSubGrid>
+        <LogoItem source={Logo} alt={'clubName'}></LogoItem>
+        <RightSubGrid clubName={name} categorySlug={categorySlug} membersAndDates={[]} title={name} tags={tags} />
         <Description description={description} />
-        <LinkList links={links}></LinkList>
+        <LinkList links={socialMedia}></LinkList>
       </GridDiv>
     </div>
   );

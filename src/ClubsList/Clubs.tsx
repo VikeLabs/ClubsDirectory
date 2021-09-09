@@ -1,7 +1,9 @@
 import { IoIosArrowForward } from 'react-icons/io';
 
-import { ClubListData } from '../Assets/DataParsing/DataProps';
-import { findShortClubInfo } from '../Assets/DataParsing/Parsing';
+import Logo from '../Assets/Images/Vike_Labs_Icon.png';
+import { ClubData } from '../JSON/ClubData';
+import { findClubsByCategory } from '../JSON/helpers';
+import { Error404Page } from '../pages/error/404';
 
 import {
   ClubsDiv,
@@ -18,24 +20,30 @@ import {
   StyledPhoto,
 } from './ClubListStyles';
 
-function ClubIcon(iconProps: { club: ClubListData }) {
+interface ClubCardProps {
+  club: ClubData;
+}
+
+function ClubCard({ club }: ClubCardProps) {
+  const url = `/categories/${club.category}/${club.slug}`;
   return (
     // Linked button switches the page to the club info page when clicked.
-    <LinkButton to={`/ClubCategories/ClubList/${iconProps.club.clubCategory}/${iconProps.club.clubName}`}>
+    <LinkButton to={url}>
       <ClubIconDiv>
         <ClubImgDiv>
-          <StyledPhoto source={iconProps.club.clubImage} alt={'Club Icon'} />
+          {/* TODO: Replace with actual logo */}
+          <StyledPhoto source={Logo} alt={'Club Icon'} />
         </ClubImgDiv>
         <ClubNameDiv>
-          <ClubName>{iconProps.club.clubName}</ClubName>
+          <ClubName>{club.name}</ClubName>
         </ClubNameDiv>
         <ClubDesDiv>
-          <ClubDes>{iconProps.club.clubDescription}</ClubDes>
+          <ClubDes>{club.description}</ClubDes>
         </ClubDesDiv>
         <ClubTagsDiv>
-          {iconProps.club.clubTags.map((tag, index) => {
+          {club.tags.map((tag, index) => {
             return (
-              <StyledTag borderRadius="full" key={index}>
+              <StyledTag key={index} borderRadius="full">
                 {tag}
               </StyledTag>
             );
@@ -51,14 +59,17 @@ function ClubIcon(iconProps: { club: ClubListData }) {
   );
 }
 
-function Clubs(clubType: { category: string }) {
+function Clubs({ category: categorySlug }: { category: string }) {
   // Finding the clubs related to the passed category.
-  const clubs: ClubListData[] = findShortClubInfo(clubType.category);
+  const clubs = findClubsByCategory(categorySlug);
+
+  if (!clubs) return <Error404Page />;
+
   return (
     <ClubsDiv>
-      {clubs.map((club) => {
-        return <ClubIcon club={club} />;
-      })}
+      {clubs.map((club, index) => (
+        <ClubCard key={index} club={club} />
+      ))}
     </ClubsDiv>
   );
 }

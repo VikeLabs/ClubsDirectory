@@ -1,9 +1,7 @@
-import React from 'react';
-
 import CategoryButtonMatrix from './CategoryButtonMatrix';
 import { CategoryDiv } from './ClubCategoryStyles';
 
-function CategoryPage() {
+export function CategoryPage(): JSX.Element {
   return (
     <CategoryDiv>
       {/* Component containg the grid of buttons for each club category */}
@@ -11,4 +9,3 @@ function CategoryPage() {
     </CategoryDiv>
   );
 }
-export default CategoryPage;
