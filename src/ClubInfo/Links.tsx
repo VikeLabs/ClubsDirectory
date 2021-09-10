@@ -19,9 +19,10 @@ const LinkListDiv = styled.ul`
 
 const urlStart = /^https?:\/\/(www\.)?/;
 const urlQueries = /\?.*$/;
+const trailingSlash = /\/$/;
 
 function simplifyURL(url: string) {
-  return url.replace(urlStart, '').replace(urlQueries, '');
+  return url.replace(urlStart, '').replace(urlQueries, '').replace(trailingSlash, '');
 }
 
 function getIcon(url: string): IconType {
