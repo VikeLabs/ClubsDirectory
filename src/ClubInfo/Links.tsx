@@ -51,6 +51,7 @@ function LinkItem(props: { link: string }) {
         whiteSpace: 'nowrap',
         fontSize: '0.9em',
         textDecoration: 'underline',
+        padding: '0.05em 0',
       }}
     >
       <Icon icon={getIcon(props.link)}></Icon>
