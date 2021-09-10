@@ -46,7 +46,7 @@ function ClubInfoPage() {
   return (
     <div>
       <GridDiv>
-        <LogoItem source={slug} alt={'clubName'}></LogoItem>
+        <LogoItem source={slug} alt={name}></LogoItem>
         <RightSubGrid clubName={name} categorySlug={categorySlug} membersAndDates={[]} title={name} tags={tags} />
         <Description description={description} />
         <LinkList links={socialMedia}></LinkList>
