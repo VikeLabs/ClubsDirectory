@@ -42,6 +42,7 @@ function LinkItem(props: { link: string }) {
   return (
     <a
       href={props.link}
+      target="_blank"
       style={{
         overflow: 'hidden',
         textOverflow: 'ellipsis',
