@@ -40,20 +40,21 @@ function getIcon(url: string): IconType {
 
 function LinkItem(props: { link: string }) {
   return (
-    <Button size="sm" style={{ maxWidth: '100%' }}>
-      <a
-        href={props.link}
-        style={{
-          overflow: 'hidden',
-          textOverflow: 'ellipsis',
-          display: 'flex',
-          alignItems: 'center',
-        }}
-      >
-        <Icon icon={getIcon(props.link)}></Icon>
-        <span style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}>{simplifyURL(props.link)}</span>
-      </a>
-    </Button>
+    <a
+      href={props.link}
+      style={{
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        display: 'flex',
+        alignItems: 'center',
+        whiteSpace: 'nowrap',
+        fontSize: '0.9em',
+        textDecoration: 'underline',
+      }}
+    >
+      <Icon icon={getIcon(props.link)}></Icon>
+      <span style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}>{simplifyURL(props.link)}</span>
+    </a>
   );
 }
 
