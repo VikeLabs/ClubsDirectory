@@ -10,11 +10,11 @@ import { ClubInfoData, ClubListData } from './DataProps';
 function findFullClubInfo(clubName: string) {
   let completedData: ClubInfoData[] = rawData
     .filter((clubType) => clubType.name === clubName)
-    .map(({ name, description, tags, socialMedia, primaryEmail, members, createdDate }) => ({
+    .map(({ name, description, tags, socialMedia, primaryEmail, members, createdDate, slug }) => ({
       clubName: name,
       clubDescription: description,
       clubTags: tags,
-      clubImage: Vike_Labs_Icon,
+      clubImage: slug,
       clubEmail: primaryEmail,
       clubSocialMedia: socialMedia,
       clubMembersAndCreationDate: [members + ' members', createdDate],
@@ -28,12 +28,12 @@ function findFullClubInfo(clubName: string) {
 function findShortClubInfo(clubCategory: string) {
   let completedData: ClubListData[] = rawData
     .filter((clubType) => clubType.category === clubCategory)
-    .map(({ name, description, tags }) => ({
+    .map(({ name, description, tags, slug }) => ({
       clubName: name,
       clubCategory: clubCategory,
       clubDescription: description,
       clubTags: tags,
-      clubImage: Vike_Labs_Icon,
+      clubImage: slug,
     }));
   return completedData;
 }

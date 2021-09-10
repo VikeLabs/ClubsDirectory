@@ -24,7 +24,10 @@ function ClubIcon(iconProps: { club: ClubListData }) {
     <LinkButton to={`/ClubCategories/ClubList/${iconProps.club.clubCategory}/${iconProps.club.clubName}`}>
       <ClubIconDiv>
         <ClubImgDiv>
-          <StyledPhoto source={iconProps.club.clubImage} alt={'Club Icon'} />
+          <StyledPhoto
+            source={process.env.PUBLIC_URL + '/Logos/' + iconProps.club.clubImage + '.png'}
+            alt={'Club Icon'}
+          />
         </ClubImgDiv>
         <ClubNameDiv>
           <ClubName>{iconProps.club.clubName}</ClubName>
