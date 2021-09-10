@@ -1,8 +1,10 @@
-import { IconButton, Menu, MenuButton, Portal, MenuList, MenuItem } from '@chakra-ui/react';
+import { IconButton, Menu, MenuButton, Portal, MenuList, MenuItem, Box } from '@chakra-ui/react';
+import { FaHome } from 'react-icons/fa';
 import styled from 'styled-components';
 
+import { Category } from '../categories';
+
 import Icon from './../ClubInfo/Icon';
-import { CategoryItem } from './ClubListData';
 import { LinkButton } from './ClubListStyles';
 import HamIcon from './HamIcon';
 
@@ -12,35 +14,31 @@ const MenuDiv = styled.div`
   margin-left: 20px;
 `;
 
+const HomeIcon = () => (
+  <Box pr="10px">
+    <FaHome />
+  </Box>
+);
+
 interface CategoryMenuProp {
-  categoryList: CategoryItem[];
+  categoryList: Category[];
 }
 
-function CategoryMenu(props: CategoryMenuProp) {
+function CategoryMenu({ categoryList }: CategoryMenuProp) {
   return (
     <MenuDiv>
       <Menu>
         <MenuButton as={IconButton} icon={<HamIcon />} />
         <Portal>
           <MenuList>
-            {props.categoryList.map((categoryItem, index) => {
-              if (categoryItem.categoryName === 'Home') {
-                return (
-                  <LinkButton to="/ClubCategories">
-                    <MenuItem key={index} icon={<Icon icon={categoryItem.categoryIcon} />}>
-                      {categoryItem.categoryName}
-                    </MenuItem>
-                  </LinkButton>
-                );
-              }
-              return (
-                <LinkButton to={`/ClubCategories/ClubList/${categoryItem.categoryShortName} Club`}>
-                  <MenuItem key={index} icon={<Icon icon={categoryItem.categoryIcon} />}>
-                    {categoryItem.categoryName}
-                  </MenuItem>
-                </LinkButton>
-              );
-            })}
+            <LinkButton to="/">
+              <MenuItem icon={<HomeIcon />}>Home</MenuItem>
+            </LinkButton>
+            {categoryList.map((category, index) => (
+              <LinkButton key={index} to={`/categories/${category.slug}`}>
+                <MenuItem icon={<Icon icon={category.icon} />}>{category.shortTitle}</MenuItem>
+              </LinkButton>
+            ))}
           </MenuList>
         </Portal>
       </Menu>
