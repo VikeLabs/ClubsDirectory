@@ -49,7 +49,11 @@ export function CategoryHeader({ path, title }: { path: string; title: string })
           {title}
         </Heading>
       </Flex>
-      <Text fontWeight="semibold" color={['black', 'black', 'black', 'white']}>
+      <Text
+        fontWeight="semibold"
+        color={['black', 'black', 'black', 'white']}
+        display={['none', 'none', 'block', 'block']}
+      >
         {path}
       </Text>
     </Flex>
