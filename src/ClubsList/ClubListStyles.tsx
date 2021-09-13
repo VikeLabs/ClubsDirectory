@@ -1,6 +1,6 @@
 import { Tag } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 
 import { device, categoryDevice } from '../Assets/CSS/DeviceBreakPoints';
 import mobileBackground from '../Assets/Images/MobileBackground.png';

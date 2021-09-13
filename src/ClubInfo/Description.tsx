@@ -1,17 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import { border, color, BorderProps, ColorProps } from 'styled-system';
+import styled from '@emotion/styled';
 
-interface Props extends ColorProps, BorderProps {
-  children: React.ReactNode;
-}
-
-const Box = styled.div<Props>`
+const Box = styled.div`
   @media screen and (max-width: 768px) {
     margin: 0;
   }
-  ${color};
-  ${border};
+
   grid-area: description;
   text-align: left;
   margin: 10px 50px 10px 10px;

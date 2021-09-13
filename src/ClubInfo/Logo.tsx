@@ -1,5 +1,5 @@
-import React, { SyntheticEvent } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
+import { SyntheticEvent } from 'react';
 
 import VikeLabsLogo from '../Assets/Images/Vike_Labs_Icon.png';
 

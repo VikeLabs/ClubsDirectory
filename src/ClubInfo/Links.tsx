@@ -1,7 +1,8 @@
 import { Button } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import { IconType } from 'react-icons';
 import { FaDiscord, FaFacebook, FaInstagram, FaLink } from 'react-icons/fa';
-import styled from 'styled-components';
+import { IoMdLink } from 'react-icons/io';
 
 import Icon from './Icon';
 

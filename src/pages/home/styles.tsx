@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 import { categoryDevice, device } from '../../Assets/CSS/DeviceBreakPoints';
 import desktopPeople from '../../Assets/Images/DesktopPeople.png';

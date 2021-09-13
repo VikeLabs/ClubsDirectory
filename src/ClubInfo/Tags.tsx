@@ -1,6 +1,5 @@
 import { ButtonGroup, Tag } from '@chakra-ui/react';
-import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const TagListDiv = styled.div`
   @media screen and (max-width: 768px) {

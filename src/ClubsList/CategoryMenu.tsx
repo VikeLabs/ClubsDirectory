@@ -1,6 +1,6 @@
 import { IconButton, Menu, MenuButton, Portal, MenuList, MenuItem, Box } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import { FaHome } from 'react-icons/fa';
-import styled from 'styled-components';
 
 import { Category } from '../categories';
 
