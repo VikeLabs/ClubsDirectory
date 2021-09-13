@@ -7,17 +7,18 @@ const urlStart = /^https?:\/\/(www\.)?/;
 const urlQueries = /\?.*$/;
 const trailingSlash = /\/$/;
 
+const urlMap: { [key: string]: IconType } = {
+  'facebook.com': FaFacebook,
+  'instagram.com': FaInstagram,
+  'discord.gg': FaDiscord,
+};
+
 function simplifyURL(url: string) {
   return url.replace(urlStart, '').replace(urlQueries, '').replace(trailingSlash, '');
 }
 
 function getIcon(url: string): IconType {
   const defaultIcon: IconType = FaLink;
-  const urlMap: { [key: string]: IconType } = {
-    'facebook.com': FaFacebook,
-    'instagram.com': FaInstagram,
-    'discord.gg': FaDiscord,
-  };
 
   const domain = new URL(url).hostname.replace(/^www\./, '');
 
