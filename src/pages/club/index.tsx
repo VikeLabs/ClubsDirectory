@@ -84,7 +84,7 @@ export function ClubPage() {
             <ClubImage slug={slug} />
           </Box>
         </Center>
-        <Box>
+        <Box maxW={[null, null, null, '170px']}>
           <LinkList links={club.socialMedia} />
         </Box>
       </Box>
