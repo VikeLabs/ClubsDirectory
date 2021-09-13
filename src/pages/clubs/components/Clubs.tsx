@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 import { ClubData } from '../../../JSON/ClubData';
 import { findClubsByCategory } from '../../../JSON/helpers';
+import { generateGroupLink } from '../../../links';
 import { Error404Page } from '../../error/404';
 
 const ArrowIcon = () => (
@@ -79,7 +80,7 @@ export function Clubs({ categorySlug }: { categorySlug: string }): JSX.Element {
   return (
     <Box ml={['1', '2', '6', '24']} mr="2">
       {clubs.map((club) => (
-        <LinkBox as={Link} key={club.slug} to={`/categories/${club.category}/${club.slug}`}>
+        <LinkBox as={Link} key={club.slug} to={generateGroupLink(club.category, club.slug)}>
           <Box my={['2', '2', '3', '4']}>
             <Card club={club} />
           </Box>

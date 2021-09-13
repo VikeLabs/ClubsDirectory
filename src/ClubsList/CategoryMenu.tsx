@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { FaHome } from 'react-icons/fa';
 
 import { Category } from '../categories';
+import { generateCategoryLink } from '../links';
 
 import Icon from './../ClubInfo/Icon';
 import { LinkButton } from './ClubListStyles';
@@ -35,7 +36,7 @@ function CategoryMenu({ categoryList }: CategoryMenuProp) {
               <MenuItem icon={<HomeIcon />}>Home</MenuItem>
             </LinkButton>
             {categoryList.map((category, index) => (
-              <LinkButton key={index} to={`/categories/${category.slug}`}>
+              <LinkButton key={index} to={generateCategoryLink(category.slug)}>
                 <MenuItem icon={<Icon icon={category.icon} />}>{category.shortTitle}</MenuItem>
               </LinkButton>
             ))}

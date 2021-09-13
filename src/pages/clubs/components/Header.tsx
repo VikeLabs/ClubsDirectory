@@ -1,12 +1,19 @@
 import { IconButton } from '@chakra-ui/button';
 import { Box, Flex, Heading, Text } from '@chakra-ui/layout';
-import { useBreakpointValue } from '@chakra-ui/media-query';
 import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu';
+import { FaHome } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 import { CATEGORIES } from '../../../categories';
 import Icon from '../../../ClubInfo/Icon';
 import { LinkButton } from '../../../ClubsCategories/ClubCategoryStyles';
+import { generateCategoryLink } from '../../../links';
+
+const HomeIcon = () => (
+  <Box pr="10px">
+    <FaHome />
+  </Box>
+);
 
 function CategoriesMenu() {
   return (
@@ -18,9 +25,11 @@ function CategoriesMenu() {
         bg="none"
       />
       <MenuList>
-        <LinkButton to="/">{/* <MenuItem icon={<HomeIcon />}>Home</MenuItem> */}</LinkButton>
+        <LinkButton to="/">
+          <MenuItem icon={<HomeIcon />}>Home</MenuItem>
+        </LinkButton>
         {CATEGORIES.map((category, index) => (
-          <LinkButton key={index} to={`/ng/categories/${category.slug}`}>
+          <LinkButton key={index} to={generateCategoryLink(category.slug)}>
             <MenuItem icon={<Icon icon={category.icon} />}>{category.shortTitle}</MenuItem>
           </LinkButton>
         ))}

@@ -9,6 +9,7 @@ import { LinkList } from '../../components/SocialMediaLinks';
 import { Tags } from '../../components/Tags';
 import { ClubData } from '../../JSON/ClubData';
 import { findClubBySlug } from '../../JSON/helpers';
+import { generateCategoryLink } from '../../links';
 import { Error404Page } from '../error/404';
 
 const imageSizes = ['150px', '150px', '150px', '150px'];
@@ -58,7 +59,8 @@ function Breadcrumbs({ slug, name }: { slug: string; name: string }) {
   const categoryTitle = CATEGORIES.find((c) => c.slug === slug)?.fullTitle;
   return (
     <Box>
-      <Link to="/categories">Categories</Link> / <Link to={`/categories/${slug}`}>{categoryTitle ?? ''}</Link> / {name}
+      <Link to="/categories">Categories</Link> / <Link to={generateCategoryLink(slug)}>{categoryTitle ?? ''}</Link> /{' '}
+      {name}
     </Box>
   );
 }
