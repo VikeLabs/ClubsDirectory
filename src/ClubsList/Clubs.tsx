@@ -31,8 +31,7 @@ function ClubCard({ club }: ClubCardProps) {
     <LinkButton to={url}>
       <ClubIconDiv>
         <ClubImgDiv>
-          {/* TODO: Replace with actual logo */}
-          <StyledPhoto source={Logo} alt={'Club Icon'} />
+          <StyledPhoto source={process.env.PUBLIC_URL + '/Logos/' + club.slug + '.png'} alt={'Club Icon'} />
         </ClubImgDiv>
         <ClubNameDiv>
           <ClubName>{club.name}</ClubName>

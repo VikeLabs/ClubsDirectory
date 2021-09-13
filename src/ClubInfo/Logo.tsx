@@ -1,4 +1,7 @@
 import styled from '@emotion/styled';
+import { SyntheticEvent } from 'react';
+
+import VikeLabsLogo from '../Assets/Images/Vike_Labs_Icon.png';
 
 import './photo.css';
 
@@ -26,7 +29,7 @@ export interface LogoProps {
 function LogoItem(props: { source: string; alt: string }) {
   return (
     <LogoDiv className="photo-item">
-      <img src={props.source} alt={props.alt}></img>
+      <img src={process.env.PUBLIC_URL + '/Logos/' + props.source + '.png'} alt={props.alt}></img>
     </LogoDiv>
   );
 }

@@ -108,6 +108,12 @@ const ClubImgDiv = styled.div`
     margin-left: 12px;
     max-width: 130px;
   }
+  @media ${device.desktop} {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 150px;
+    max-width: 190px;
+  }
   grid-row: 1 / -1;
   grid-column: 1;
   margin-left: 7px;
