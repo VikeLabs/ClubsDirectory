@@ -1,5 +1,5 @@
 import { Box, Container } from '@chakra-ui/react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // TODO: remove this
 import './Assets/CSS/GlobalBackgroundImage.css';
@@ -8,7 +8,8 @@ import { CategoryPage } from './ClubsCategories/CategoryPage';
 import ClubListPage from './ClubsList/ClubListPage';
 import { Footer } from './Footer';
 import { Header } from './Header';
-import { ClubsPage } from './pages/clubs/ClubsPage';
+import { ClubPage } from './pages/club';
+import { ClubsPage } from './pages/clubs';
 import LandingPage from './pages/home';
 
 function App() {
@@ -23,10 +24,10 @@ function App() {
             <Route exact path="/categories" component={CategoryPage} />
             {/* TODO: remove when link on UVSS website is changed to /categories */}
             <Route exact path="/categories/:category" component={ClubListPage} />
+            <Route exact path="/categories/:category/:slug" component={ClubInfoPage} />
 
             <Route exact path="/ng/categories/:category" component={ClubsPage} />
-
-            <Route exact path="/categories/:category/:slug" component={ClubInfoPage} />
+            <Route exact path="/ng/categories/:category/:slug" component={ClubPage} />
 
             {/* <Redirect from="/ClubCategories" to="/categories" /> */}
           </Box>
