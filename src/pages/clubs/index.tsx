@@ -1,8 +1,6 @@
-import { Box, Heading } from '@chakra-ui/layout';
-import styled from '@emotion/styled';
+import { Box } from '@chakra-ui/layout';
 import { useParams } from 'react-router';
 
-import CompletedBackground from '../../Assets/Images/CompletedBackground.png';
 import MobileBackground from '../../Assets/Images/MobileBackground.png';
 import { CATEGORIES } from '../../categories';
 import { Error404Page } from '../error/404';

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { SyntheticEvent } from 'react';
 
 import VikeLabsLogo from '../Assets/Images/Vike_Labs_Icon.png';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 
 import './photo.css';
 
@@ -28,19 +28,9 @@ export interface LogoProps {
 
 function LogoItem(props: { source: string; alt: string }) {
   return (
-    <LogoDiv className="photo-item">
-      <img src={process.env.PUBLIC_URL + '/Logos/' + props.source + '.png'} alt={props.alt}></img>
+    <LogoDiv>
+      <ImageWithFallback src={process.env.PUBLIC_URL + '/Logos/' + props.source + '.png'} fallback={VikeLabsLogo} />
     </LogoDiv>
-  );
-}
-
-function LogoBar(logoProps: { source: string; alt: string }) {
-  return (
-    <ul className="logo-bar">
-      <div className="logo-item">
-        <img src={logoProps.source} alt={logoProps.alt} />
-      </div>
-    </ul>
   );
 }
 
