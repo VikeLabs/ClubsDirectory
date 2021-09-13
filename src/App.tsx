@@ -21,15 +21,14 @@ function App() {
           <Box as="main" mt="90px">
             <Route exact path="/" component={LandingPage} />
             {/* Club and Course Union Categories */}
-            <Route exact path="/categories" component={CategoryPage} />
             {/* TODO: remove when link on UVSS website is changed to /categories */}
+            <Route exact path="/ClubCategories" component={CategoryPage} />
+            <Route exact path="/categories" component={CategoryPage} />
             <Route exact path="/categories/:category" component={ClubListPage} />
             <Route exact path="/categories/:category/:slug" component={ClubInfoPage} />
-
+            {/* WIP */}
             <Route exact path="/ng/categories/:category" component={ClubsPage} />
             <Route exact path="/ng/categories/:category/:slug" component={ClubPage} />
-
-            {/* <Redirect from="/ClubCategories" to="/categories" /> */}
           </Box>
         </Switch>
       </Router>
