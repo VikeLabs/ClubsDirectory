@@ -1,8 +1,8 @@
-import styled from '@emotion/styled';
-import { IoMdLink } from 'react-icons/io';
 import { Button } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import { IconType } from 'react-icons';
 import { FaDiscord, FaFacebook, FaInstagram, FaLink } from 'react-icons/fa';
+import { IoMdLink } from 'react-icons/io';
 
 import Icon from './Icon';
 
