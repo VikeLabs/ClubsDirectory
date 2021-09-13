@@ -254,7 +254,7 @@
     "name": "Japanese Culture Club",
     "category": "culture",
     "primaryEmail": "jccuvic@gmail.com",
-    "socialMedia": ["https://www.facebook.com/jccuvic/"],
+    "socialMedia": ["https://www.facebook.com/jccuvic/", "https://www.instagram.com/jccuvic/", "https://jccuvic.ca"],
     "tags": ["Cultural"],
     "description": "We are Japanese students and those interested in Japanese culture. Our activities include language exchange for all levels of ability, social outings*, workshops, and anything you might like to see included. We welcome all students! Note: Due to Covid19 all social outings and in person events are post-poned",
     "slug": "japanese-culture-club"
@@ -734,13 +734,9 @@
     "name": "University of Victoria Conservative Club",
     "category": "politics",
     "primaryEmail": "uvic.cc@gmail.com",
-    "socialMedia": [
-      "https://www.instagram.com/uvic.conservatives/"
-    ],
+    "socialMedia": ["https://www.instagram.com/uvic.conservatives/"],
     "members": "0",
-    "tags": [
-      "Political"
-    ],
+    "tags": ["Political"],
     "description": "The UVic Conservative is a place where individuals can meet to have gatherings and speaking with prominent federal Conservatives. We are open to all regardless of party membership or political orientation. The club also sends a delegation to the National COnvention every year or so.",
     "slug": "university-of-victoria-conservative-club"
   },
@@ -966,7 +962,7 @@
   },
   {
     "id": "98",
-    "name": "Uvic Robotics",
+    "name": "UVic Robotics",
     "category": "stem",
     "primaryEmail": "uvic.robotics@gmail.com",
     "socialMedia": ["https://uvicroboticsclub.wordpress.com/"],
@@ -995,7 +991,7 @@
       "https://www.facebook.com/VikeLabs",
       "https://discord.gg/AWcEfYKjff"
     ],
-    "tags": ["STEM"],
+    "tags": ["STEM", "SENG", "CSC"],
     "description": "VikeLabs is a collective of students who learn to build, deploy, and test software quickly. We view UVic as a kind of laboratory for testing solutions to problems that exist within the UVic community. We limit ourselves to the UVic community because it's much easier to deploy and test solutions to users where we are in close proximity to them and their problems. Feel free to reach out.",
     "slug": "vikelabs"
   },
@@ -1011,7 +1007,7 @@
   },
   {
     "id": "102",
-    "name": "UVic Rocketyr",
+    "name": "UVic Rocketry",
     "category": "stem",
     "primaryEmail": "nicholascastellani@gmail.com",
     "socialMedia": ["https://www.facebook.com/uvicrocketry/"],
@@ -1225,14 +1221,9 @@
     "name": "UVic Archery Club",
     "category": "Sports",
     "primaryEmail": "vikesarchery@uvic.ca",
-    "socialMedia": [
-      "https://discord.gg/eKHQJXt",
-      "https://instagram.com/uvicarchers?utm_medium=copy_link"
-    ],
+    "socialMedia": ["https://discord.gg/eKHQJXt", "https://instagram.com/uvicarchers?utm_medium=copy_link"],
     "members": "0",
-    "tags": [
-      "Sports"
-    ],
+    "tags": ["Sports"],
     "description": "Archery offers a sense of control, camaraderie and competition; with patience and practice it can turn into a life-long hobby. Learn form, techniques and skills needed to begin your archery adventure or join us to compete in local and regional tournaments. For more information email vikesarchery@uvic.ca or find us on facebook under UVIC Archers.",
     "createdDate": "1920-01-15 14:38:49",
     "slug": "uvic-archery"
