@@ -16,7 +16,7 @@ const ButtonIcon = styled(Center)`
 
 // Styling the text located in the category buttons.
 const ButtonLabel = styled.p`
-  margin-top: -5px;
+  margin: -5px 10px 0px 10px;
 `;
 
 // Changing the categories page background when screen width is at 767px or less.
@@ -98,17 +98,17 @@ const Gridbutton = styled.button`
   @media ${categoryDevice.mobileXS} {
     width: 140px;
     height: 140px;
-    font-size: 23px;
+    font-size: 20px;
   }
   @media ${categoryDevice.mobileS} {
     width: 150px;
     height: 150px;
-    font-size: 25px;
+    font-size: 22px;
   }
   @media ${categoryDevice.mobile} {
     width: 175px;
     height: 175px;
-    font-size: 30px;
+    font-size: 22px;
   }
   @media ${categoryDevice.tablet} {
     width: 200px;
