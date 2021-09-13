@@ -8,6 +8,7 @@ import { CategoryPage } from './ClubsCategories/CategoryPage';
 import ClubListPage from './ClubsList/ClubListPage';
 import { Footer } from './Footer';
 import { Header } from './Header';
+import { ClubsPage } from './pages/clubs/ClubsPage';
 import LandingPage from './pages/home';
 
 function App() {
@@ -21,9 +22,13 @@ function App() {
             {/* Club and Course Union Categories */}
             <Route exact path="/categories" component={CategoryPage} />
             {/* TODO: remove when link on UVSS website is changed to /categories */}
-            <Redirect from="/ClubCategories" to="/categories" />
             <Route exact path="/categories/:category" component={ClubListPage} />
+
+            <Route exact path="/ng/categories/:category" component={ClubsPage} />
+
             <Route exact path="/categories/:category/:slug" component={ClubInfoPage} />
+
+            {/* <Redirect from="/ClubCategories" to="/categories" /> */}
           </Box>
         </Switch>
       </Router>
