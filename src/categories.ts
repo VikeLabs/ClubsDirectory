@@ -2,7 +2,7 @@ import { ComponentType } from 'react';
 import { FaHandsHelping, FaPaintBrush, FaPrayingHands, FaMicroscope } from 'react-icons/fa';
 import { GiSoccerBall } from 'react-icons/gi';
 import { GoLaw } from 'react-icons/go';
-import { HiOutlineSparkles } from 'react-icons/hi';
+import { HiAcademicCap, HiOutlineSparkles } from 'react-icons/hi';
 import { IoIosPeople, IoIosMore } from 'react-icons/io';
 import { IoEarthOutline } from 'react-icons/io5';
 
@@ -69,6 +69,12 @@ export const CATEGORIES: Category[] = [
     fullTitle: 'STEM',
     slug: 'stem',
     icon: FaMicroscope,
+  },
+  {
+    shortTitle: 'Course Unions',
+    fullTitle: 'Course Unions',
+    slug: 'course-union',
+    icon: HiAcademicCap,
   },
   {
     shortTitle: 'Other',
