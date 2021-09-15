@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 
-import Logo from '../Assets/Images/Vike_Labs_Icon.png';
 import { findClubBySlug } from '../JSON/helpers';
 import { Error404Page } from '../pages/error/404';
 

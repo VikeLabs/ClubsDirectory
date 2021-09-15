@@ -1,8 +1,8 @@
 import { IoIosArrowForward } from 'react-icons/io';
 
-import Logo from '../Assets/Images/Vike_Labs_Icon.png';
 import { ClubData } from '../JSON/ClubData';
 import { findClubsByCategory } from '../JSON/helpers';
+import { generateGroupLink } from '../links';
 import { Error404Page } from '../pages/error/404';
 
 import {
@@ -25,10 +25,9 @@ interface ClubCardProps {
 }
 
 function ClubCard({ club }: ClubCardProps) {
-  const url = `/categories/${club.category}/${club.slug}`;
   return (
     // Linked button switches the page to the club info page when clicked.
-    <LinkButton to={url}>
+    <LinkButton to={generateGroupLink(club.category, club.slug)}>
       <ClubIconDiv>
         <ClubImgDiv>
           <StyledPhoto source={process.env.PUBLIC_URL + '/Logos/' + club.slug + '.png'} alt={'Club Icon'} />
