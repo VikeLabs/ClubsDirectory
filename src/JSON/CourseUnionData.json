@@ -1,0 +1,208 @@
+[
+  {
+    "name": "Bureau of Sociology Students (BOSS)",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.facebook.com/UVic.BOSS"],
+    "slug": "bureau-of-sociology-students-boss"
+  },
+  {
+    "name": "French Undergrads",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.instagram.com/uvic_frenchundergrads/"],
+    "slug": "french-undergrads"
+  },
+  {
+    "name": "University of Victoria Nursing Student Society (UVNSS)",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://onlineacademiccommunity.uvic.ca/uvnss/"],
+    "slug": "university-of-victoria-nursing-student-society-uvnss"
+  },
+  {
+    "name": "Music Student Association",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.instagram.com/uvic.music.msa/?hl=en"],
+    "slug": "music-student-association"
+  },
+  {
+    "name": "University of Victoria Student Music Educators' Association",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://uvsmea.wixsite.com/website", "https://www.instagram.com/uvsmea/"],
+    "slug": "university-of-victoria-student-music-educators-association"
+  },
+  {
+    "name": "Computer Music Course Union (CMCU)",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.facebook.com/groups/150250328367095/?ref=share"],
+    "slug": "computer-music-course-union-cmcu"
+  },
+  {
+    "name": "Psychology Undergraduate Students (PUGS)",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://onlineacademiccommunity.uvic.ca/psychstudents/", "https://www.instagram.com/pugs.uvic/"],
+    "slug": "psychology-undergraduate-students-pugs"
+  },
+  {
+    "name": "Society of Geography Students",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.facebook.com/SOGSUVic"],
+    "slug": "society-of-geography-students"
+  },
+  {
+    "name": "Biochemistry and Microbiology Student Society",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": [],
+    "slug": "biochemistry-and-microbiology-student-society"
+  },
+  {
+    "name": "Uvic English Students' Association",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.instagram.com/uvicesa/", "https://uvicesa.wordpress.com/"],
+    "slug": "uvic-english-students-association"
+  },
+  {
+    "name": "EPHE PERKS",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.instagram.com/ephe.perks/"],
+    "slug": "ephe-perks"
+  },
+  {
+    "name": "UVic Writing Undergraduate Course Union",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.instagram.com/thissideofwest/", "https://thissideofwest.uvic.ca/"],
+    "slug": "uvic-writing-undergraduate-course-union"
+  },
+  {
+    "name": "UVic Chemistry Student Society",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": [],
+    "slug": "uvic-chemistry-student-society"
+  },
+  {
+    "name": "PHSP Student Association",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://phspsa.com/"],
+    "slug": "phsp-student-association"
+  },
+  {
+    "name": "Health Information Science Course Union",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://hinfcu.wordpress.com/", "https://www.instagram.com/uvichinfcu/?hl=en"],
+    "slug": "health-information-science-course-union"
+  },
+  {
+    "name": "Economics Course Union",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.facebook.com/uvic.ecu/"],
+    "slug": "economics-course-union"
+  },
+  {
+    "name": "Greek and Roman Studies Student Association",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": [
+      "https://www.instagram.com/uvicgrssa/",
+      "https://www.uvic.ca/humanities/greekroman/undergraduate/index.php"
+    ],
+    "slug": "greek-and-roman-studies-student-association"
+  },
+  {
+    "name": "Undergraduates of Political Science",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": [],
+    "slug": "undergraduates-of-political-science"
+  },
+  {
+    "name": "PHASERS",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": [],
+    "slug": "phasers"
+  },
+  {
+    "name": "UVIC Germanic and Slavic Studies Course Union (UVIC GRSL)",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.instagram.com/uvicgrsl/", "https://www.facebook.com/uvicgrsl"],
+    "slug": "uvic-germanic-and-slavic-studies-course-union-uvic-grsl"
+  },
+  {
+    "name": "Biology Undergraduate Society (BUGS)",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.instagram.com/uvicbugs/?hl=en"],
+    "slug": "biology-undergraduate-society-bugs"
+  },
+  {
+    "name": "Underlings (Linguistic Course Union)",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.facebook.com/groups/uvicunderlings/", "https://uvicunderlings.wordpress.com/"],
+    "slug": "underlings-linguistic-course-union"
+  },
+  {
+    "name": "Pacific Asian Student Society",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": ["https://www.facebook.com/passuvic"],
+    "slug": "pacific-asian-student-society"
+  },
+  {
+    "name": "Bunch of Anthropology Students",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": [
+      "https://www.facebook.com/BunchofAnthropologyStudents",
+      "https://www.uvic.ca/socialsciences/anthropology/undergraduate/studentsociety/index.php"
+    ],
+    "slug": "bunch-of-anthropology-students"
+  },
+  {
+    "name": "History Undergraduate Body",
+    "category": "course-union",
+    "tags": [],
+    "description": "",
+    "socialMedia": [],
+    "slug": "history-undergraduate-body"
+  }
+]

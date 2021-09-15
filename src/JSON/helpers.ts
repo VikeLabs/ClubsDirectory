@@ -1,8 +1,12 @@
 import { ClubData } from '../JSON/ClubData';
-import rawData from '../JSON/ClubData.json';
+import ClubDataRaw from '../JSON/ClubData.json';
+import CourseUnionDataRaw from '../JSON/CourseUnionData.json';
 
-const clubs = rawData as ClubData[];
+const clubs = ClubDataRaw as ClubData[];
+const courseUnions = CourseUnionDataRaw as ClubData[];
 
-export const findClubBySlug = (clubSlug: string) => clubs.find(({ slug }) => slug === clubSlug);
+const groups = [...clubs, ...courseUnions];
 
-export const findClubsByCategory = (categorySlug: string) => clubs.filter(({ category }) => categorySlug === category);
+export const findClubBySlug = (clubSlug: string) => groups.find(({ slug }) => slug === clubSlug);
+
+export const findClubsByCategory = (categorySlug: string) => groups.filter(({ category }) => categorySlug === category);
