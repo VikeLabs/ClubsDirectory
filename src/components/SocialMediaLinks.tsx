@@ -1,24 +1,17 @@
-import styled from '@emotion/styled';
 import { IconType } from 'react-icons';
 import { FaDiscord, FaFacebook, FaInstagram, FaLink } from 'react-icons/fa';
 
-import Icon from './Icon';
-
-const LinkListDiv = styled.ul`
-  grid-area: links;
-  text-align: left;
-  @media screen and (max-width: 768px) {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-  overflow: auto;
-  margin-top: 20px;
-  margin-left: 15%;
-`;
+import IconItem from '../ClubInfo/Icon';
 
 const urlStart = /^https?:\/\/(www\.)?/;
 const urlQueries = /\?.*$/;
 const trailingSlash = /\/$/;
+
+const urlMap: { [key: string]: IconType } = {
+  'facebook.com': FaFacebook,
+  'instagram.com': FaInstagram,
+  'discord.gg': FaDiscord,
+};
 
 function simplifyURL(url: string) {
   return url.replace(urlStart, '').replace(urlQueries, '').replace(trailingSlash, '');
@@ -26,11 +19,6 @@ function simplifyURL(url: string) {
 
 function getIcon(url: string): IconType {
   const defaultIcon: IconType = FaLink;
-  const urlMap: { [key: string]: IconType } = {
-    'facebook.com': FaFacebook,
-    'instagram.com': FaInstagram,
-    'discord.gg': FaDiscord,
-  };
 
   const domain = new URL(url).hostname.replace(/^www\./, '');
 
@@ -39,6 +27,7 @@ function getIcon(url: string): IconType {
 
 function LinkItem(props: { link: string }) {
   return (
+    // eslint-disable-next-line react/jsx-no-target-blank
     <a
       href={props.link}
       target="_blank"
@@ -53,24 +42,20 @@ function LinkItem(props: { link: string }) {
         padding: '0.05em 0',
       }}
     >
-      <Icon icon={getIcon(props.link)}></Icon>
+      <IconItem icon={getIcon(props.link)}></IconItem>
       <span style={{ textOverflow: 'ellipsis', overflow: 'hidden' }}>{simplifyURL(props.link)}</span>
     </a>
   );
 }
 
-function LinkList(props: { links: string[] }) {
+export function LinkList(props: { links: string[] }) {
   return (
-    <LinkListDiv>
-      <ul className="link-list">
-        {props.links
-          .filter((s) => s !== '')
-          .map((link) => (
-            <LinkItem link={link} />
-          ))}
-      </ul>
-    </LinkListDiv>
+    <ul>
+      {props.links
+        .filter((s) => s !== '')
+        .map((link) => (
+          <LinkItem link={link} />
+        ))}
+    </ul>
   );
 }
-
-export default LinkList;

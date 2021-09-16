@@ -1,4 +1,5 @@
 import { CATEGORIES, Category } from '../categories';
+import { generateCategoryLink } from '../links';
 
 import { Grid, Gridbutton, CategoryTitle, ButtonIcon, ButtonLabel, LinkButton } from './ClubCategoryStyles';
 
@@ -15,7 +16,7 @@ function CategoryItem(props: CategoryProps) {
   const IconImage = props.category.icon;
   return (
     // Linking each grid button to their corresponding page.
-    <LinkButton to={`/categories/${props.category.slug}`}>
+    <LinkButton to={generateCategoryLink(props.category.slug)}>
       <Gridbutton>
         <ButtonIcon>
           <IconImage />

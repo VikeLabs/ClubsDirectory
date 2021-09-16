@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { CATEGORIES } from '../categories';
+import { generateCategoryLink } from '../links';
 
 function PathItem(props: { category: string; clubName: string }) {
   const categoryTitle = CATEGORIES.find((c) => c.slug === props.category)?.fullTitle;
@@ -8,7 +9,7 @@ function PathItem(props: { category: string; clubName: string }) {
     <div>
       {/* TODO: remove lowercase */}
       <Link to="/categories">Club Categories / </Link>
-      <Link to={`/categories/${props.category}`}>{categoryTitle ?? ''}</Link> / {props.clubName}
+      <Link to={generateCategoryLink(props.category)}>{categoryTitle ?? ''}</Link> / {props.clubName}
     </div>
   );
 }
