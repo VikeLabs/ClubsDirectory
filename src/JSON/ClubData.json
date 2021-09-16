@@ -778,15 +778,10 @@
     "primaryEmail": "uvic.cc@gmail.com",
     "socialMedia": ["https://www.instagram.com/uvic.conservatives/"],
     "members": "0",
-<<<<<<< HEAD
     "tags": [
       "Political"
     ],
     "description": "The University of Victoria Campus Conservatives is open to all UVic students and encourages all students to become politically engaged and active. Get in touch with us if you would like more information about joining our federal party, or working on a campaign. Like and Follow us to stay up-to-date on the latest Young Conservative news and opportunities!",
-=======
-    "tags": ["Political"],
-    "description": "The UVic Conservative is a place where individuals can meet to have gatherings and speaking with prominent federal Conservatives. We are open to all regardless of party membership or political orientation. The club also sends a delegation to the National COnvention every year or so.",
->>>>>>> ab020ce70a69f742af8ba0d54716af4a64740c4a
     "slug": "university-of-victoria-conservative-club"
   },
   {
@@ -1274,13 +1269,13 @@
   {
     "id": "121",
     "name": "Students Above Stigma",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "uvic.students.above.stigma@gmail.com",
     "socialMedia": [
       "https://uvicstudentsaboves.wixsite.com/studentsabovestigma",
       "https://www.instagram.com/uvic_sas/"
     ],
-    "tags": ["Community"],
+    "tags": ["Community Service & Volunteer"],
     "description": "Students Above Stigma is a student-led group dedicated towards eradicating mental illness stigma through educating the public on the various psychiatric disorders. Our overall goal is to overcome prejudice views by increasing public awareness and empathy. SAS is comprised of a diverse collection of executive teams and general members, all coming together to make real change in the community!",
     "slug": "students-above-stigma"
   },
@@ -1363,12 +1358,12 @@
   {
     "id": "128",
     "name": "UVIC CKI",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "uvic.cki.exec@gmail.com",
     "socialMedia": ["https://www.facebook.com/groups/uviccirclek/"],
     "members": "0",
     "tags": [
-      "Community"
+      "Community Service & Volunteer"
     ],
     "description": "UVic Circle K is Victoria’s university-level branch of the renowned volunteer organization Kiwanis International. Being a part of the Circle K community is a great way to buff up your resume, participate in fun volunteer events, meet like-minded people and make lasting community service connections! We welcome any interested students and community members passionate about service and the vision of our club!",
     "slug": "uvic-cki"
@@ -1376,7 +1371,7 @@
   {
     "id": "129",
     "name": "H4H",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "arjunchehil@gmail.com",
     "socialMedia": [
       "https://hygiene4homeless.ca/",
@@ -1384,7 +1379,7 @@
     ],
     "members": "0",
     "tags": [
-      "Community"
+      "Community Service & Volunteer"
     ],
     "description": "This club aims to address the homeless crisis in Victoria. Hygiene packages including tooth brushes, toilet paper etc will be given to homeless people.",
     "slug": "uvic-h4h"
@@ -1410,7 +1405,7 @@
     "socialMedia": [],
     "members": "0",
     "tags": [
-      "Culture"
+      "Cultural"
     ],
     "description": "We explore the Tamil culture and language through teaching reading and writing.",
     "slug": "uvic-tamil-society"
@@ -1434,12 +1429,12 @@
   {
     "id": "133",
     "name": "UVic Mental Health and Wellbeing Club",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "brittanyskov@outlook.com",
     "socialMedia": ["https://instagram.com/uvicmentalhealthchannel?utm_medium=copy_link"],
     "members": "0",
     "tags": [
-      "Community"
+      "Community Service & Volunteer"
     ],
     "description": "UVic Mental Health and Wellbeing Club assists students with maintaining mental health and wellbeing through social connection and community. We host monthly meet-up events for students to meet new people, connect, and de-stress. Online, we provide mental health information and resources for on-campus and Greater Victoria Area supports, and tips for a wide range of topics.",
     "slug": "neurotech-uvic"
@@ -1564,12 +1559,12 @@
   {
     "id": "142",
     "name": "UVic Harm Reduction",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "uvicharmreduction@gmail.com",
     "socialMedia": [],
     "members": "0",
     "tags": [
-      "Community"
+      "Community Service & Volunteer"
     ],
     "description": "We are a group of students aiming to bring awareness to the practice of harm reduction. We advocate for accessible community supports and evidence-based responses to the harms associated with drug use and criminalization.",
     "slug": "uvic-harm-reduction"
@@ -1616,7 +1611,7 @@
   {
     "id": "142",
     "name": "Community Cabbage",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "communitycabbage21@gmail.com",
     "socialMedia": [
       "https://uviccommunitycabbage.wordpress.com/",
@@ -1624,7 +1619,7 @@
     ],
     "members": "0",
     "tags": [
-      "Community"
+      "Community Service & Volunteer"
     ],
     "description": "The Community Cabbage is a student organization devoted to the reclamation and redistribution of food waste. We use edible but unsellable food donated by grocery stores to prepare healthy and delightful vegetarian/vegan meals at a community kitchen. These free hot meals are served weekly for free on campus to increase food security networks and educate people about food waste.",
     "slug": "community-cabbage"
@@ -1706,12 +1701,12 @@
   {
     "id": "142",
     "name": "The FentaNIL Project",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "mayajquealey@gmail.com",
     "socialMedia": ["https://www.instagram.com/fentaniluvic/"],
     "members": "0",
     "tags": [
-      "Community"
+      "Community Service & Volunteer"
     ],
     "description": "The FentaNIL Project is a student group that focuses on the opioid crisis in Victoria. Through Naloxone training, raising awareness, and advocacy, we are looking to ameliorate the negative effects of the opioid crisis within our community.",
     "slug": "fentanil-project"
@@ -1732,12 +1727,12 @@
   {
     "id": "142",
     "name": "Recovery Club",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "recoverclubuvic@gmail.com",
     "socialMedia": [""],
     "members": "0",
     "tags": [
-      "Community"
+      "Community Service & Volunteer"
     ],
     "description": "This club will be there to provide information to those looking for a way of addiction of all substances and to lead them towards place that can help them within the city and the world. Addiction can effect everyone and university students are very susceptible",
     "slug": "recovery-club"
@@ -1810,12 +1805,12 @@
   {
     "id": "142",
     "name": "MEDLIFE UVIC",
-    "category": "community",
+    "category": "community-service-and-volunteer",
     "primaryEmail": "medlife.uvic@gmail.com",
     "socialMedia": ["https://www.instagram.com/medlife_uvic/"],
     "members": "0",
     "tags": [
-      "Community"
+      "Community Service & Volunteer"
     ],
     "description": "MEDLIFE UVIC is a student-run chapter partnered with the non-profit organization MEDLIFE, which works with local professionals in low-income communities throughout Latin America and Africa to improve their access to basic health care, education, and community development. If you are passionate about volunteering, fundraising, and working alongside student leaders from Canada and around the world we welcome you to join MEDLIFE UVIC!",
     "slug": "medlife-uvic"
@@ -1940,12 +1935,12 @@
   {
     "id": "142",
     "name": "UVic Turkish Student Society",
-    "category": "interest",
+    "category": "culture",
     "primaryEmail": "uvic.tss@gmail.com",
     "socialMedia": ["https://www.instagram.com/uvic_tss/"],
     "members": "0",
     "tags": [
-      "Interest"
+      "Cultural"
     ],
     "description": "UVic Turkish Student Society (UVic TSS) is a student association under UVSS. Our aim is to create a community that embraces Turkish culture and brings Turkish students together. We plan to have monthly gatherings to plan fun events.",
     "slug": "uvic-turkish-student-society"
