@@ -4,9 +4,9 @@
     "name": "UVic Drama and Musical Theatre Club",
     "category": "arts",
     "primaryEmail": "uvss.dmtc@gmail.com",
-    "socialMedia": ["https://www.facebook.com/uvssdrama"],
+    "socialMedia": ["https://www.facebook.com/uvssdrama", "https://www.instagram.com/uvssdramaclub/"],
     "tags": ["Arts"],
-    "description": "The DMTC is dedicated to inspiring students from all faculties and experience levels to be involved with the dramatic arts. This year, we will be offering a wide range of virtual activities such as dance workshops and drama games. We will also be performing a staged reading of a play this spring.",
+    "description": "The DMTC is dedicated to inspiring students from all faculties and experience levels to be involved with the dramatic arts. This year, we will be offering a wide range of virtual and in-person activities such as dance workshops and drama games. We will also be performing multiple one-act plays, fully acted in and directed by students.",
     "slug": "uvic-drama-and-musical-theatre-club"
   },
   {
@@ -14,9 +14,9 @@
     "name": "Her Campus",
     "category": "arts",
     "primaryEmail": "hc.uvic@hercampus.com",
-    "socialMedia": ["https://www.instagram.com/hercampusuvic"],
+    "socialMedia": ["https://www.hercampus.com/school/u-vic/", "https://www.instagram.com/hercampusuvic"],
     "tags": ["Arts"],
-    "description": "Her Campus at UVic is a branch of Her Campus, an international online magazine created by students for students. Our content is a resource and a source of entertainment that highlights campus news, events, interesting students, faculty, alumni, campus photos, and a range of content tailored for women at UVic. Our members write, edit, run social media accounts, and plan and market events; all while being part of a supportive community.",
+    "description": "Her Campus at Uvic is an inclusive online magazine specializing in campus life. From movie reviews to our current political climate, Her Campus allows a platform to write about what interests you, as opposed to that ten page paper due next weekend. We are run by a group of individuals interested in social media, editing, and media studies, and would love to have you on our team!",
     "slug": "her-campus"
   },
   {
@@ -24,29 +24,32 @@
     "name": "UVic Guitar Club",
     "category": "arts",
     "primaryEmail": "uvicguitarclub@gmail.com",
-    "socialMedia": ["https://www.facebook.com/groups/213608966025660"],
+    "socialMedia": ["https://www.facebook.com/uvicguitarofficial/", "https://www.instagram.com/uvicguitarofficial/"],
     "tags": ["Arts"],
-    "description": "A place for guitarists to learn, connect, and play the world's greatest instrument! During COVID: limited socially distanced jam sessions, a few online lessons",
+    "description": "UVic's club for guitarists to connect, learn, and jam! Meetings will depend on COVID restrictions and demand. Join our discord for more info: https://discord.gg/wMEqAFpj2p",
     "slug": "uvic-guitar-club"
   },
   {
     "id": "4",
     "name": "Rotaract Club Of Victoria",
     "category": "community-service-and-volunteer",
-    "primaryEmail": "rotaractvictoria@gmail.com",
-    "socialMedia": ["https://www.instagram.com/rotaractvictoria_5020/?hl=en"],
+    "primaryEmail": "meghanshenry@icloud.com",
+    "socialMedia": ["https://www.facebook.com/uvicephepeermentorshipprogram", "https://www.instagram.com/ephepeermentorship/"],
     "tags": ["Community Service & Volunteer"],
-    "description": "We are a club that volunteers and strives to better our community. Our meetings consist of having guest speakers, social meetings and volunteering.",
+    "description": "Are you interested in a program within the EPHE department at UVic?  Are you looking to learn more about campus life/resources/events, ways to stay active, volunteer opportunities, and RHED, PHE, or Kinesiology? If so, consider finding a peer mentor within our EPHE Peer Mentorship Program.  Upon joining this program, you will be paired with an upper year undergraduate EPHE student based on similar interests, degree paths, and anticipated career",
     "slug": "rotaract-club-of-victoria"
   },
   {
     "id": "5",
     "name": "One For The World UVic",
     "category": "community-service-and-volunteer",
-    "primaryEmail": "uvic@1fortheworld.com",
-    "socialMedia": ["https://www.instagram.com/onefortheworld_uvic/"],
+    "primaryEmail": "kylieogilvie1@gmail.com",
+    "socialMedia": [
+      "https://www.instagram.com/onefortheworld_uvic/",
+      "https://donational.org/oftw-uvic"
+    ],
     "tags": ["Community Service & Volunteer"],
-    "description": "One for the World (OFTW) has officially launched a chapter at UVIC! OFTW hosts educational speaker talks on global issues/research with the purpose of recruiting people to donate 1% of their income (a future goal). One for the World is a non profit organization that uses philanthropy to donate to well deserved and researched charities worldwide. One for the World is proud to support charities that give back to deserving people.",
+    "description": "One For the World is an organization that fundraises to end extreme poverty through monetary pledges. The chapter at UVic plans to hold events to network and reach out to people with an altruistic mindset to educate and make these pledges.",
     "slug": "one-for-the-world-uvic"
   },
   {
@@ -64,7 +67,10 @@
     "name": "UVic Stem Cell Club",
     "category": "community-service-and-volunteer",
     "primaryEmail": "uvicstemcell@gmail.com",
-    "socialMedia": ["https://www.instagram.com/stemcelluvic/"],
+    "socialMedia": [
+      "https://www.instagram.com/stemcelluvic/",
+      "http://www.stemcellclub.ca"
+    ],
     "tags": ["Community Service & Volunteer"],
     "description": "The UVIC Stem Cell Club is a group of student volunteers who aim to improve the quality and quantity of membership on Canada's stem cell donor database by holding stem cell drives where we recruit potential stem cell donors. Our work improves the chances that patients in-need of stem cell transplantation will find the one match they need to save their lives!",
     "slug": "uvic-stem-cell-club"
@@ -74,19 +80,19 @@
     "name": "UVic Students Offering Support (SOS)",
     "category": "community-service-and-volunteer",
     "primaryEmail": "uvic.pres@studentsofferingsupport.org",
-    "socialMedia": ["https://linktr.ee/UVicStudentsOfferingSupport"],
+    "socialMedia": ["https://uvic.soscampus.com/", "https://linktr.ee/UVicStudentsOfferingSupport"],
     "tags": ["Community Service & Volunteer"],
-    "description": "Students Offering Support (SOS) is a nation-wide charity that supports university chapters across Canada. In addition to general fundraising, we host Exam-Aid preparation services to fund SOS Global Impact Projects in developing countries. SOS is a unique social enterprise that relies on passionate student leaders to create a positive impact, both at home and abroad, through the SOS model of “Raising Marks, Raising Money, Raising Roofs.”",
+    "description": "Students Offering Support (SOS) is a nationwide charity that supports university chapters across Canada. In addition to general fundraising, we host Exam-Aid preparation services to fund SOS Global Impact Projects, including community and education initiatives, in developing countries. SOS relies on passionate student leaders to create a positive impact through the SOS model of “Raising Marks, Raising Money, Raising Roofs.”",
     "slug": "uvic-students-offering-support-sos"
   },
   {
     "id": "9",
     "name": "Young Women in Business",
     "category": "community-service-and-volunteer",
-    "primaryEmail": "Dhruvi.raicchada@ywib.ca",
-    "socialMedia": [""],
+    "primaryEmail": "uvic@ywib.ca",
+    "socialMedia": ["https://ywib.ca/uvic/team", "https://www.instagram.com/ywibuvic/?hl=en"],
     "tags": ["Community Service & Volunteer"],
-    "description": "We host events for business and economics students. It helps them to network with other students and learn about various skills needed in future or in their career.",
+    "description": "Young Women in Business is a community for emerging female leaders and young professionals who want to create their own success. We provide young women and professionals with events, programs and an engaged network of ambitious women, to help them become successful in their careers, take on new challenges and develop skills.",
     "slug": "young-women-in-business"
   },
   {
@@ -104,9 +110,9 @@
     "name": "Global Engineering Brigades",
     "category": "community-service-and-volunteer",
     "primaryEmail": "uvicgb@gmail.com",
-    "socialMedia": ["https://www.facebook.com/UniversityofVictoriaGlobalBrigades/"],
+    "socialMedia": ["https://www.uvicglobalbrigades.com/", "https://www.instagram.com/uvicglobalbrigades/?hl=en"],
     "tags": ["Community Service & Volunteer"],
-    "description": "Global Engineering Brigades (GEB) is a student-led movement for clean water access in the developing communities of Central America. We aim to empower these communities through a holistic model and every year our club travels to these communities to partner with local engineering technicians to aid in the assessment, planning, and designing of a new or improved clean water system.",
+    "description": "UVIC Global Engineering Brigades focuses on resolving water disparities within rural communities of developing nations. During the reading break in February, UVic volunteers participate in an virtual or in-person Brigade which involve working alongside local engineers, technicians, and community members to evaluate, plan, and design a new hydrologic systems to better serve the community!",
     "slug": "global-engineering-brigades"
   },
   {
@@ -114,9 +120,9 @@
     "name": "UVIC Global Business Brigades",
     "category": "community-service-and-volunteer",
     "primaryEmail": "uvicgb@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicglobalbrigades/"],
+    "socialMedia": ["https://www.uvicglobalbrigades.com/", "https://www.instagram.com/uvicglobalbrigades/"],
     "tags": ["Community Service & Volunteer"],
-    "description": "UVic Global Brigades is a student-led group from the University of Victoria. We work alongside the international, non-profit organization, Global Brigades, to collaboratively work towards reducing global health and economic disparities. Our club has been active since 2008, check out our impact over these past 11 years. In a Business Brigade, we work with rural entrepreneurs to provide free consulting for their business and a deliverable package.",
+    "description": "Global Business Brigades works in collaboration with other Global Brigades chapters to resolve health and economic disparities within under-resourced communities, through a unique holistic approach. Each February reading break, our volunteers participate in an in-person or virtual Brigade which involves consulting small businesses, strengthening community owned banks, and providing financial literacy workshops within rural communities!",
     "slug": "uvic-global-business-brigades"
   },
   {
@@ -124,9 +130,12 @@
     "name": "University of Victoria Global Medical Brigades",
     "category": "community-service-and-volunteer",
     "primaryEmail": "uvicgb@gmail.com",
-    "socialMedia": ["https://www.facebook.com/UniversityofVictoriaGlobalBrigades"],
+    "socialMedia": [
+      "https://www.uvicglobalbrigades.com/",
+      "https://www.facebook.com/UniversityofVictoriaGlobalBrigades"
+    ],
     "tags": ["Community Service & Volunteer"],
-    "description": "Global Medical Brigades is the largest student-led and student-funded club dedicated to addressing issues in global healthcare inequality, promoting sustainable living standards in developing rural communities and providing affordable healthcare access to those who need it. If you're looking to build relationships with like-minded students, gain skill-based volunteering experience and expand your medical knowledge, then GMB is the club for you!",
+    "description": "UVic Medical Brigades partners with underdeveloped, rural communities in Central America to help provide basic healthcare services and health education to the community members through either in-person brigades or telebrigades. The Medical Brigade is the first step of Global Brigade's holistic model; in which the ultimate goal is to lead the communities we partner with to a self-sustainable status and brigades are no longer needed.",
     "slug": "university-of-victoria-global-medical-brigades"
   },
   {
@@ -154,9 +163,9 @@
     "name": "Uvic Blood4Life Club",
     "category": "community-service-and-volunteer",
     "primaryEmail": "uvic.bloodclinics@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicblood4life/"],
+    "socialMedia": ["https://www.notion.so/Uvic-Blood-4-Life-Club-f6be3a7985bd4549aee73b566b55ce48", "https://www.instagram.com/uvicblood4life/"],
     "tags": ["Community Service & Volunteer"],
-    "description": "The Uvic Blood4Life clubs is directly affiliated and sponsored by the Canadian Blood Services. Together with Canadian Blood Services we work closely to promote both volunteering and donating at blood drive events in our campus community. If you have any questions about our club or wish to join please feel free to email us at uvic.bloodclinics@gmail.com",
+    "description": "The Uvic Blood4Life club is directly affiliated and sponsored by the Canadian Blood Services. Together with Canadian Blood Services, we work closely to promote both volunteering and donating at blood drive events in our campus community. If you have any questions about our club or wish to join please feel free to email us at uvic.bloodclinics@gmail.com",
     "slug": "uvic-blood4life-club"
   },
   {
@@ -164,9 +173,9 @@
     "name": "Best Buddies UVic",
     "category": "community-service-and-volunteer",
     "primaryEmail": "bestbuddies@lnv.ca",
-    "socialMedia": ["https://www.instagram.com/bestbuddiesuvic/", "https://www.facebook.com/bestbuddiesuvic"],
+    "socialMedia": ["https://www.instagram.com/bestbuddiesuvic/", "https://www.facebook.com/groups/1450615641829621"],
     "tags": ["Community Service & Volunteer"],
-    "description": "The Best Buddies UVic club matches community members who have disabilities with UVic students in order to form a meaningful friendship. Our program gives people with disabilities the chance to have experiences that most people take for granted including enjoying the company of a good friend. Our buddy pairs meet up once or twice a month to do something fun together and we organize group events for everyone to come together!",
+    "description": "As a Best Buddies Canada University Program, Best Buddies UVic pairs students in post-secondary institutions with adults from the community with intellectual or developmental disabilities to form meaningful friendships. These friendships improve the quality of life and level of inclusion for a population that is often isolated and excluded.",
     "slug": "best-buddies-uvic"
   },
   {
@@ -176,7 +185,7 @@
     "primaryEmail": "unicef.uofvic@gmail.com",
     "socialMedia": ["https://www.instagram.com/uvicunicef2021/"],
     "tags": ["Community Service & Volunteer"],
-    "description": "UVIC UNICEF follows the charter of UNICEF and works to fundraise for global disaster relief as well as for causes regarding impoverished children in 3rd world countries. We have 4 main events we fundraise for throughout the year, 1) homeless care packages, 2) sponsored orphanage in Uganda, 3) charity of our choice, and 4) UNICEF. The club has monthly social events and fundraisers. We are always welcoming new members to our safe and fun team!",
+    "description": "UVIC UNICEF is a club that provides aid to communities both locally and globally. In Victoria, we provide care packages to the homeless and less fortunate individuals in the community. Globally, we donate money annually to our designated orphanage in Uganda. UVIC UNICEF offers various volunteer and outreach opportunities for all, while engaging in different events and fundraisers to connect with other like-minded students.",
     "slug": "uvic-unicef"
   },
   {
@@ -191,13 +200,13 @@
   },
   {
     "id": "20",
-    "name": "Latinos",
+    "name": "Latinos Without Borders",
     "category": "culture",
     "primaryEmail": "latinoswb@gmail.com",
     "socialMedia": [""],
     "tags": ["Cultural"],
     "description": "Promote Latino culture in UVic and in the Victoria area. The club does events through the year for promoting Latino culture and also for fundraising for causes that can help people locally and in other countries. We invite Latinos and non-Latinos to take part in the club.",
-    "slug": "latinos"
+    "slug": "latinos-without-borders"
   },
   {
     "id": "21",
@@ -206,7 +215,7 @@
     "primaryEmail": "nabilnazri@gmail.com",
     "socialMedia": ["https://www.facebook.com/groups/2274525889457605"],
     "tags": ["Cultural"],
-    "description": "A culture club association. Its goals are to conduct activities around campus to promote and share cultural pieces (e.g dance, cakes/pastries sales, holiday events, exchange programs, socials, etc.). The club resonates and aims to attract students of Malaysian, Bruneian, Singaporean, and Indonesian background.",
+    "description": "Who: A culture club association. Its goals are to conduct activities around campus to promote and share culture pieces (e.g dance, cakes/pastries sales, holiday events, exchange programs, socials, etc.). The club resonates and aims to attract students of Malaysian, Bruneian, Singaporean, and Indonesian background. What: We want to make UVIC a culturally more diverse and active place. Compared to other universities, UVIC and Victoria, in general,",
     "slug": "satay-students-association"
   },
   {
@@ -214,9 +223,9 @@
     "name": "The Warren Undergraduate Review",
     "category": "culture",
     "primaryEmail": "warrenexec@gmail.com",
-    "socialMedia": ["https://www.instagram.com/warrenreview"],
+    "socialMedia": ["https://www.warrenreview.ca", "https://www.instagram.com/warrenreview"],
     "tags": ["Cultural"],
-    "description": "The Warren is an open concept literary journal out of the University of Victoria publishing the creative works of undergraduates from around the world. The journal aims to foster the growth of a vibrant multidisciplinary creative culture and providing invaluable exposure for young writers, thinkers and artists.",
+    "description": "Founded in the Fall of 2009, The Warren is an open concept creative journal publishing the original works of undergraduates. The journal aims to foster the growth of a vibrant multidisciplinary creative culture at the University while providing invaluable exposure for young writers, thinkers and artists.",
     "slug": "the-warren-undergraduate-review"
   },
   {
@@ -234,7 +243,10 @@
     "name": "Society for Indian Classical Arts (SICA)",
     "category": "culture",
     "primaryEmail": "sica@uvic.ca",
-    "socialMedia": ["http://facebook.com/UVicSICA"],
+    "socialMedia": [
+      "http://facebook.com/UVicSICA",
+      "http://web.uvic.ca/~sica/"
+    ],
     "tags": ["Cultural"],
     "description": "Society for Indian Classical Arts (SICA) is a not for profit student club at University of Victoria (UVic). SICA comprises of students, faculty and community members dedicated to promote and create awareness of South Asian arts and culture. Each year SICA brings numerous artists from across Canada who share their talent in various South Asian art forms. SICA has organized numerous events such as Indian Classical, Folk dances and music concerts.",
     "slug": "society-for-indian-classical-arts-sica"
@@ -254,19 +266,19 @@
     "name": "Japanese Culture Club",
     "category": "culture",
     "primaryEmail": "jccuvic@gmail.com",
-    "socialMedia": ["https://www.facebook.com/jccuvic/"],
+    "socialMedia": ["https://jccuvic.ca/", "https://www.facebook.com/jccuvic/"],
     "tags": ["Cultural"],
-    "description": "We are Japanese students and those interested in Japanese culture. Our activities include language exchange for all levels of ability, social outings*, workshops, and anything you might like to see included. We welcome all students! Note: Due to Covid19 all social outings and in person events are post-poned",
+    "description": "We are Japanese students and those interested in Japanese culture. Our activities include language exchange for all levels of ability, social outings, workshops, and anything you might like to see included. We welcome all students!",
     "slug": "japanese-culture-club"
   },
   {
     "id": "27",
     "name": "Uvic Ukrainian Students' Society",
     "category": "culture",
-    "primaryEmail": "chasegargus@gmail.com",
-    "socialMedia": ["https://www.facebook.com/UVicUSS"],
+    "primaryEmail": "uvicuss@gmail.com",
+    "socialMedia": ["https://uvicuss.weebly.com/", "https://www.instagram.com/uvicuss/"],
     "tags": ["Cultural"],
-    "description": "The UVicUSS is dedicated to promoting Ukrainian culture on campus through events, activism and community engagement. We have strong ties with the local Ukrainian community and are always excited to share our traditions with our peers. Whether they are Ukrainian or not, we welcome all students to come and enjoy what we have to offer!",
+    "description": "The UVic Ukrainian Students' Society (UVicUSS) is a student led organization based out of the University of Victoria dedicated to promoting community and providing students with the opportunity to connect with and experience Ukrainian Culture.  We provide students with incredible opportunities to grow their leadership skills, network with the broader Ukrainian community, engage in volunteer opportunities and form life-long friendships. Ukrainian",
     "slug": "uvic-ukrainian-students-society"
   },
   {
@@ -284,7 +296,7 @@
     "name": "Hong Kong Student Association",
     "category": "culture",
     "primaryEmail": "uvichksa@gmail.com",
-    "socialMedia": ["https://www.facebook.com/UVicHKSA"],
+    "socialMedia": ["https://uvichksa.wixsite.com/home", "https://www.facebook.com/UVicHKSA"],
     "tags": ["Cultural"],
     "description": "The UVic HKSA is a student association under the University of Victoria Student Society (UVSS) constituency. Our vision is to unite all Cantonese speaking, and individuals interested in Hong Kong culture. Furthermore, we aim to achieve our goal through various social and cultural activities that promotes Hong Kong culture and benefits the greater community as a whole.",
     "slug": "hong-kong-student-association"
@@ -292,10 +304,13 @@
   {
     "id": "30",
     "name": "Music Production Club",
-    "category": "culture",
+    "category": "arts",
     "primaryEmail": "uvicmpc@gmail.com",
-    "socialMedia": ["https://www.facebook.com/groups/uvicmpc"],
-    "tags": ["Cultural"],
+    "socialMedia": [
+      "https://www.facebook.com/groups/uvicmpc",
+      "https://www.instagram.com/uvic_mpc/"
+    ],
+    "tags": ["Arts"],
     "description": "UVic Music Production Club is a community of music and technology enthusiasts of all levels looking to connect, create, and share with peers. We offer opportunities and events to fit all sorts of musicians and producers. If you are interested in learning about music production or the music industry, we would love to have you!",
     "slug": "music-production-club"
   },
@@ -306,17 +321,17 @@
     "primaryEmail": "tws.uvic@gmail.com",
     "socialMedia": ["http://www.instagram.com/twsuvic"],
     "tags": ["Environmental"],
-    "description": "The Wildlife Society UVic Student Chapter is a chapter within the international non-profit organization, The Wildlife Society. TWS UVic aims to build an accessible community at UVic for students interested in wildlife, wildlife research, management, and conservation, as well as provide opportunities to network and gain experience through social events, workshops, notices of volunteer opportunities and conferences",
+    "description": "The Wildlife Society UVic Student Chapter is a club for those interested in learning about and gaining experience in wildlife science, management and conservation. We are a chapter of the international non-profit association, The Wildlife Society, which supports wildlife professionals, wildlife stewardship and conservation.",
     "slug": "the-wildlife-society-uvic-student-chapter"
   },
   {
     "id": "32",
     "name": "Uvic Birdwatching Club",
     "category": "environment",
-    "primaryEmail": "uvicbirdwatching@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicbirdwatchingclub/"],
+    "primaryEmail": "thyggen@gmail.com",
+    "socialMedia": ["https://www.facebook.com/groups/820670808813219"],
     "tags": ["Environmental"],
-    "description": "The UVic birdwatching club will give students with interests in birds an opportunity to share their interests with other UVic students through outings and other club events. Members will be encouraged to join the leaders at birdwatching hotspots to experience the wonderful world of birds, improve bird identification abilities, and help contribute to citizen science databases such as ebird and inaturalist.",
+    "description": "The official birding club of the University of Victoria! Join our Facebook group @uvicbirdingclub to stay up to date with community-led outings and events, local bird conservation, rare birds in the area, and more. We hope to facilitate relationship building between passionate nature-loving people and their peers, through mostly casual events. You don't have to be a student to join, and there is no official sign-up to be a member. Happy birding!",
     "slug": "uvic-birdwatching-club"
   },
   {
@@ -344,9 +359,12 @@
     "name": "Ecological Restoration Club",
     "category": "environment",
     "primaryEmail": "nature@uvic.ca",
-    "socialMedia": ["https://www.instagram.com/uvic_erc/"],
+    "socialMedia": [
+      "https://onlineacademiccommunity.uvic.ca/nature/",
+      "https://www.instagram.com/uvic_erc/"
+    ],
     "tags": ["Environmental"],
-    "description": "The UVic Ecological Restoration Club provides opportunities for students to get involved in hands-on stewardship through campus and community restoration. You can get involved in projects such as native plant gardening, invasive species identification and removal, and overnight camping trips. Come spend time outside with us!",
+    "description": "The Ecological Restoration Club (ERC) is a student-led club at the University of Victoria. Since 2011, students have been collaborating within the club to build capacity of students to restore ecosystems by offering opportunities to engage in regional stewardship initiatives, skill development workshops, and collaborating on club projects. We are committed to being a welcoming and accessible group to all interested in participating.",
     "slug": "ecological-restoration-club"
   },
   {
@@ -356,7 +374,7 @@
     "primaryEmail": "uvic@clubs.surfrider.org",
     "socialMedia": ["https://www.instagram.com/surfrideruvic/"],
     "tags": ["Environmental"],
-    "description": "The Surfrider Foundation is a non-profit environmental organization dedicated to the protection and enjoyment of the world's oceans, beaches and waves for all people, through conservation, activism, research and education. The Surfrider UVic club aims to get students involved in environmental stewardship through community events such as beach cleanups, documentary screenings, social meetups, and other sustainability-themed events.",
+    "description": "The Surfrider Foundation is dedicated to the protection and enjoyment of the world's oceans, waves, and beaches, for all people, through a powerful activist network. We are a student club at the University of Victoria focused on ocean stewardship, conservation, and sustainability, mainly through the lens of plastic pollution. We regularly host beach cleanups and engage with students and members of the community.",
     "slug": "surfrider-foundation-uvic-club"
   },
   {
@@ -364,9 +382,9 @@
     "name": "UVic Photography Excursion Club",
     "category": "interest",
     "primaryEmail": "photographyexcursionclub@gmail.com",
-    "socialMedia": ["https://www.facebook.com/uvicpec"],
+    "socialMedia": ["https://www.facebook.com/uvicpec", "https://www.instagram.com/uvic_pec/"],
     "tags": ["Interest"],
-    "description": "We are a photography based club that focuses on enhancing skills and building strong relationships with other members! Join us as we go on hikes, miniature trips, and downtown walks for the chance to explore the island and beyond (and to take wicked shots, of course).",
+    "description": "The Photography Excursion Club encourages students to practice their photography skills and get outdoors. The club is centred around weekend day trips where club members travel to various locations around Victoria to take pictures.",
     "slug": "uvic-photography-excursion-club"
   },
   {
@@ -374,7 +392,10 @@
     "name": "UVIC Tabletop RPG Club",
     "category": "interest",
     "primaryEmail": "tabletopuvic@gmail.com",
-    "socialMedia": [""],
+    "socialMedia": [
+      "https://www.facebook.com/groups/1395896260441655/?ref=share",
+      "https://discord.gg/Fc7d3eZTPp"
+    ],
     "tags": ["Interest"],
     "description": "The uvic ttrpg club is a place where students can find groups for and participate in tabletop role-playing games like dungeons and dragons, pathfinder, Warhammer, and many others. We welcome people of all knowledge levels and game interests.",
     "slug": "uvic-tabletop-rpg-club"
@@ -383,10 +404,13 @@
     "id": "39",
     "name": "Model United Nations",
     "category": "interest",
-    "primaryEmail": "presidentuvicmun@gmail.com",
-    "socialMedia": ["https://www.facebook.com/UvicMUNClub"],
+    "primaryEmail": "katy.berglund@icloud.com",
+    "socialMedia": [
+      "https://www.uvicmunclub.com/",
+      "https://www.facebook.com/UvicMUNClub"
+    ],
     "tags": ["Interest"],
-    "description": "We simulate the United Nations at various conferences around Canada and the US. We give students the chance to meet new people, learn new skills and to travel to new places!",
+    "description": "As a club, we come together to simulate the United Nations. Why do we do this? Because it allows us to step into politics. By putting ourselves into the shoes of world leaders, we are given a platform to speak passionately about the issues that will shape our generation. Practice public speaking, debate and writing, while focusing on international issues! Plus lots of fun social events. New and seasoned MUN'ers alike are very welcome!",
     "slug": "model-united-nations"
   },
   {
@@ -394,9 +418,9 @@
     "name": "UVic League of Legends Club",
     "category": "interest",
     "primaryEmail": "uvicleague@gmail.com",
-    "socialMedia": ["https://discord.gg/YgpkmaE"],
+    "socialMedia": ["https://discord.gg/YgpkmaE", "https://www.facebook.com/groups/uvicleagueoflegends"],
     "tags": ["Interest"],
-    "description": "Our goal is to connect UVic's League of Legends players (and other gamers!) of all skill levels to create a fun, casual, and open community within the school!",
+    "description": "Our goal is to connect UVic's League of Legends players (and other gamers!) of all skill levels to create a fun, casual, and open community within the school! Whether you are looking to meet new players, discuss gameplay strategies, or get involved in the competitive scene, you've come to the right place! We'll host in-house games, viewing parties, intramurals/collegiate games, and more!",
     "slug": "uvic-league-of-legends-club"
   },
   {
@@ -444,9 +468,12 @@
     "name": "UVic Astrophotography Club",
     "category": "interest",
     "primaryEmail": "uvicastrophoto@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicastrophoto/"],
+    "socialMedia": [
+      "https://www.instagram.com/uvicastrophoto/",
+      "https://www.facebook.com/groups/uvicastrophoto/?ref=share"
+    ],
     "tags": ["Interest"],
-    "description": "We are a group of UVic students who are trying to eliminate any gap between art and science.",
+    "description": "A group for anyone interested in combining knowledge of astronomy and photography for capturing pictures of galaxy's, nebulas and planets!",
     "slug": "uvic-astrophotography-club"
   },
   {
@@ -466,7 +493,7 @@
     "primaryEmail": "vikesimprov@gmail.com",
     "socialMedia": ["https://www.facebook.com/VikesImprov"],
     "tags": ["Interest"],
-    "description": "Vikes Improv is an improvised comedy club at UVic! We hold weekly workshops on Mondays and Fridays over Zoom, where the coaching team leads exercises and games to help improvisers of all skill and experience levels. The coaching team also hosts monthly improv shows, which are streamed live on our YouTube channel.",
+    "description": "Vikes Improv is an improvised comedy and storytelling club, focused on a positive learning environment and teaching foundations and skills in improv. They hold workshops every week on Monday and Friday evenings on a drop-in basis, and all experience levels are welcome at any time! They also put on shows on the last Friday of every month, which are open for anyone to watch.",
     "slug": "vikes-improv"
   },
   {
@@ -474,9 +501,9 @@
     "name": "Games Club",
     "category": "interest",
     "primaryEmail": "uvicgamesclub@gmail.com",
-    "socialMedia": [""],
+    "socialMedia": ["https://www.google.com/url?sa=t&source=web&rct=j&url=https://m.facebook.com/groups/UVicGamesClub/&ved=2ahUKEwih6YH0_s7yAhUDGDQIHYyLCBcQFnoECAMQAQ&usg=AOvVaw1i-bkOlM7UDo8mTN6eW6J0"],
     "tags": ["Interest"],
-    "description": "We play board games in an online discord.",
+    "description": "Learn and play fun and interesting board games.",
     "slug": "games-club"
   },
   {
@@ -504,7 +531,7 @@
     "name": "UVic Anime Club",
     "category": "interest",
     "primaryEmail": "uvic.anime.club@gmail.com",
-    "socialMedia": [""],
+    "socialMedia": ["https://m.facebook.com/groups/134750051449/?ref=group_browse"],
     "tags": ["Interest"],
     "description": "Exploring Japanese culture and language through Japanese animated media",
     "slug": "uvic-anime-club"
@@ -514,9 +541,9 @@
     "name": "Beer Club (UVic Wizards of Beer)",
     "category": "interest",
     "primaryEmail": "UVicBeerCraft@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvic_wizards_of_beer/"],
+    "socialMedia": ["https://www.facebook.com/groups/231152286964107", "https://www.instagram.com/uvic_wizards_of_beer/"],
     "tags": ["Interest"],
-    "description": "The focus of this club is to help new brewers learn how to make not just beer, but other fermented beverages as well. We have started looking at techniques from around the world! From Korean rice wines, to Scandinavian farmhouse ales. Have you always wondered how these drinks were made? Join UVic Wizards of Beer and discover for yourself, and brew them too!",
+    "description": "Over time our goal is to develop epic brewing skills. The focus of this club is to help new brewers learn how to make not just beer, but other fermented beverages as well. We look at brewing techniques from around the world! From Korean rice wines, to Scandinavian farmhouse ales. Have you always wondered how these drinks were made? Join UVic Wizards of Beer and discover for yourself, and brew them too!",
     "slug": "beer-club-uvic-wizards-of-beer"
   },
   {
@@ -524,7 +551,7 @@
     "name": "UVic Photoclub",
     "category": "interest",
     "primaryEmail": "UVicsPhotoclub@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicsphotoclub/"],
+    "socialMedia": ["https://www.facebook.com/groups/917171881711252", "https://www.instagram.com/uvicsphotoclub/"],
     "tags": ["Interest"],
     "description": "A resource for UVic students to help them with expressing themselves with (analog and digital) photography.\r\nPhotoclub is what the membership makes it. Since technology is always changing so we try to focus on the fundamentals of photography. We also know that most students are on a budget and keep that in mind. Many of our workshops and discussions apply to most cameras, digital and analog. There is something for everyone in Photoclub!",
     "slug": "uvic-photoclub"
@@ -544,7 +571,7 @@
     "name": "UVic Minecraft Club",
     "category": "interest",
     "primaryEmail": "uvicmc@gmail.com",
-    "socialMedia": ["https://discord.gg/8dSffVs"],
+    "socialMedia": ["https://www.uvicmc.net/", "https://www.instagram.com/uvicmc/"],
     "tags": ["Interest"],
     "description": "The UVic Minecraft Club is a place to make friends, play some games, and have a chill time. Our Minecraft server has been running 24/7 since February of 2019. So far we've had over 500 unique players from UVic!",
     "slug": "uvic-minecraft-club"
@@ -554,9 +581,12 @@
     "name": "Uvic NiteShifters Toastmasters Club",
     "category": "interest",
     "primaryEmail": "niteshiftersvictoriabc@gmail.com",
-    "socialMedia": ["https://www.facebook.com/uvictoastmasters"],
+    "socialMedia": [
+      "https://niteshifters.toastmastersclubs.org/",
+      "https://www.facebook.com/uvictoastmasters"
+    ],
     "tags": ["Interest"],
-    "description": "Improve your public speaking skills with Toastmasters; we offer an Interactive group to develop effective communication and leadership skills. Build on your self-confidence, awareness in a supportive network. Drop by for the experience Thursday nights 7:30pm via Zoom.",
+    "description": "We provide a supportive and friendly learning environment to empower our members to become more confident speakers and leaders.",
     "slug": "uvic-niteshifters-toastmasters-club"
   },
   {
@@ -574,9 +604,9 @@
     "name": "International Friendship Group",
     "category": "interest",
     "primaryEmail": "ifguvic@gmail.com",
-    "socialMedia": [""],
+    "socialMedia": ["http://www.ifguvic.com", "http://www.facebook.com/groups/248745308496527"],
     "tags": ["Interest"],
-    "description": "The International Friendship Group exists to foster cross-cultural understanding among UVic's international students, domestic students and members of Victoria's wider community. We do this through regular activities (eg. free English classes, lunchtime conversation gatherings, potluck meals) as well as special events (eg. Barbecue Picnics, Christmas Party, Easter Egg Hunt) WITHIN COVID safety protocols.",
+    "description": "The International Friendship Group exists to foster cross-cultural understanding among UVic's international students, domestic students and members of Victoria's wider community.  We do this through regular activities (eg. free English classes, lunchtime conversation gatherings, potluck meals) as well as special events (eg. barbecue picnics, Christmas party, Easter egg hunt) within COVID safety protocols.",
     "slug": "international-friendship-group"
   },
   {
@@ -586,7 +616,7 @@
     "primaryEmail": "zmybeihang@gmail.com",
     "socialMedia": ["https://www.facebook.com/vicmantm/"],
     "tags": ["Interest"],
-    "description": "We provide a safe space for Mandarin speakers to improve their public speaking and leadership skills.",
+    "description": "We empower individuals to be more confident by helping them practice and improve their public speaking and leadership skills in Mandarin Chinese.",
     "slug": "victoria-mandarin-toastmasters-club"
   },
   {
@@ -602,21 +632,24 @@
   {
     "id": "61",
     "name": "Chinese Students and Scholars Association",
-    "category": "other",
+    "category": "culture",
     "primaryEmail": "president@cssavc.com",
-    "socialMedia": [""],
-    "tags": ["Other"],
-    "description": "The non-profit student organization supported by the education department of the Chinese consulate in Vancouver, The largest Chinese student association in higher education institutions in greater Victoria, regularly organizes various kinds of activities to maintain the social circle of Chinese students in Victoria and help Chinese students studying abroad.",
+    "socialMedia": ["http://www.uviccssa.ca"],
+    "tags": ["Cultural"],
+    "description": "Victoria Chinese Students and Scholars Association (CSSA) is a non-profit student organization managed by China Embassy. This organization is registered at University of Victoria and Camosun College.",
     "slug": "chinese-students-and-scholars-association"
   },
   {
     "id": "62",
-    "name": "WUSC UVic",
+    "name": "World University Service of Canada (WUSC) UVIC",
     "category": "other",
     "primaryEmail": "wuscuvic@gmail.com",
-    "socialMedia": ["https://www.instagram.com/wuscuvic/?hl=en"],
+    "socialMedia": [
+      "https://www.facebook.com/wuscuvic",
+      "https://www.instagram.com/wuscuvic/?hl=en"
+    ],
     "tags": ["Other"],
-    "description": "WUSC UVic is a youth to youth sponsorship that empowers students to play an active role in the sponsorship of refugee students. every year WUSC UVic sponsor 3 to 4 students to come to study here at UVic. We offer different support including social and academic supports. our main goal is to provide a great experience for students in their first year here at UVic",
+    "description": "WUSC UVic is a youth to youth sponsorship that empowers students to play an active role in the sponsorship of refugee students. Every year WUSC sponsors 3 to 4 students to study here at UVic. Our club offers social, academic, and financial support for the students. Our main goals are to build a solid and encouraging community for students and volunteers and increase our intercultural knowledge and communication skills.",
     "slug": "wusc-uvic"
   },
   {
@@ -672,11 +705,14 @@
   {
     "id": "68",
     "name": "Cabaret Voltaire Diversions",
-    "category": "other",
+    "category": "arts",
     "primaryEmail": "cabaretvoltaireevents@gmail.com",
-    "socialMedia": ["https://www.instagram.com/cabaretvoltairediversions/"],
-    "tags": ["Other"],
-    "description": "Cabaret Voltaire Societe & Diversions mission is to create engaging, accessible and inclusive events that showcase the underrepresented artists and musicians in our community. In doing this we recognise the great importance of including and encouraging the younger generations in the creative process and artistic engagement. Because of this and the unanimous belief in the young creative mind, we seek to provide educational opportunities to youth.",
+    "socialMedia": [
+      "https://www.instagram.com/cabaretvoltairediversions/",
+      "https://www.cabaretvoltairediversions.org"
+    ],
+    "tags": ["Arts"],
+    "description": "Established in 2016 and formally incorporated as a BC Non-Profit Society March 5 2018, Cabaret Voltaire Societe & Diversions seeks to create engaging, accessible, inclusive, and imaginative experiences through experimental art that encourage audiences and performers alike to expand upon their relationships with creative expression. Cabaret Voltaire Diversions is our UVSS Sister Club and really the starting point for the now incorporated society.",
     "slug": "cabaret-voltaire-diversions"
   },
   {
@@ -696,15 +732,18 @@
     "primaryEmail": "bcyoungliberals@uvic.ca",
     "socialMedia": ["https://www.facebook.com/uvicbcliberals"],
     "tags": ["Political"],
-    "description": "The UVic BC Young Liberals are the political voice of students and young professionals working to promote free enterprise values, to ensure that tomorrow’s BC is even better than today’s. Whether you've never voted, are new to BC, or are passionate about being a part of a prosperous BC for all, we welcome you! Send us an email or a Facebook direct message to hear about events, involvement in riding associations, and work opportunities.",
+    "description": "The UVic BC Young Liberals are the political voice of students and young professionals working to promote free enterprise values, to ensure that tomorrow’s BC is even better than today’s. Whether you've never voted, are new to BC, or are passionate about being a part of a prosperous BC for all, we welcome you! Send us an email or a Facebook direct message to hear about events, involvement in riding associations, and work/volunteer opportunities",
     "slug": "uvic-bc-young-liberals"
   },
   {
     "id": "71",
     "name": "Socialist Fightback UVic",
     "category": "politics",
-    "primaryEmail": "mdgvictoria@gmail.com",
-    "socialMedia": ["https://www.facebook.com/SocialistFightbackUVic"],
+    "primaryEmail": "socialistfightbackuvic@gmail.com",
+    "socialMedia": [
+      "https://Marxist.ca",
+      "https://www.facebook.com/SocialistFightbackUVic"
+    ],
     "tags": ["Political"],
     "description": "Socialist Fightback UVic advocates for revolutionary politics on campus and highlights the importance of collective political action in the struggle for workers and students. We organize events from a socialist perspective on questions of history, philosophy and contemporary issues. We fight for universal education, worker's rights and an end to capitalism.",
     "slug": "socialist-fightback-uvic"
@@ -714,9 +753,12 @@
     "name": "UVic Tenant Action Group",
     "category": "politics",
     "primaryEmail": "tenants.victoria@gmail.com",
-    "socialMedia": ["https://www.instagram.com/vtag.bc/"],
+    "socialMedia": [
+      "https://www.victoriatenants.com/",
+      "https://www.facebook.com/TAG.Victoria"
+    ],
     "tags": ["Political"],
-    "description": "The UVic Tenant Action Group is a UVSS club committed to transforming the housing system and ensuring access to housing for all. We advocate for the rights of renters, people precariously housed, people experiencing homelessness, and all who do not own their home - this includes the vast majority of students at UVic.",
+    "description": "The UVic Tenant Action Group seeks to foster change, share knowledge, and build solidarity for housing justice in Greater Victoria, on the unceded territories of the Lkwungen, Malahat, Pacheedaht, Scia’new, T’Sou-ke and W̱SÁNEĆ peoples. We advocate for the rights of renters, people precariously housed, people experiencing homelessness, and all who do not own their home - this includes the vast majority of students at UVic.",
     "slug": "uvic-tenant-action-group"
   },
   {
@@ -724,9 +766,9 @@
     "name": "UVic Greens",
     "category": "politics",
     "primaryEmail": "uvicgreens@gmail.com",
-    "socialMedia": [""],
+    "socialMedia": ["https://www.instagram.com/uvicgreens/"],
     "tags": ["Political"],
-    "description": "We are a student club at the University of Victoria that supports the Green Party of Canada, the Green Party of BC and the values of the Global Greens.We strive to exemplify and progress the core values of the Global Greens; ecological wisdom, respect for diversity, participatory democracy, social justice, sustainability and non-violence both through our own activities and by promoting the Green Party.",
+    "description": "We are a student club at the University of Victoria that supports the Green Party of Canada, the Green Party of BC and the values of the Global Greens. We strive to exemplify and progress the core values of the Global Greens; ecological wisdom, respect for diversity, participatory democracy, social justice, sustainability and non-violence both through our own activities and by promoting the Green Party.",
     "slug": "uvic-greens"
   },
   {
@@ -741,27 +783,30 @@
     "tags": [
       "Political"
     ],
-    "description": "The UVic Conservative is a place where individuals can meet to have gatherings and speaking with prominent federal Conservatives. We are open to all regardless of party membership or political orientation. The club also sends a delegation to the National COnvention every year or so.",
+    "description": "The University of Victoria Campus Conservatives is open to all UVic students and encourages all students to become politically engaged and active. Get in touch with us if you would like more information about joining our federal party, or working on a campaign. Like and Follow us to stay up-to-date on the latest Young Conservative news and opportunities!",
     "slug": "university-of-victoria-conservative-club"
   },
   {
     "id": "75",
-    "name": "Elect Her",
+    "name": "Elect Her*",
     "category": "politics",
     "primaryEmail": "electheruvic@gmail.com",
-    "socialMedia": ["https://www.facebook.com/ElectHerUVic"],
+    "socialMedia": [
+      "https://electheruvic.law.blog/",
+      "https://www.instagram.com/elect_her_uvic/?hl=en"
+    ],
     "tags": ["Political"],
-    "description": "Elect Her UVic supports an increase in the involvement of women and marginalized genders in every aspect of the political process. Through advocacy efforts on campus, we strive to create intentional spaces to de-construct barriers that persist in politics.",
+    "description": "Elect Her* is supports an increase involvement of marginalized genders and other marginalized groups with the political process. We engage with advocacy to try to break down the persisting barriers facing these groups in politics.",
     "slug": "elect-her"
   },
   {
     "id": "76",
-    "name": "Uvic ndp",
+    "name": "UVic NDP",
     "category": "politics",
     "primaryEmail": "uvicndp@gmail.com",
-    "socialMedia": [""],
+    "socialMedia": ["https://www.facebook.com/uvicndpclub"],
     "tags": ["Political"],
-    "description": "A political club affiliated with the NDP",
+    "description": "University of Victoria's NDP Club. We proudly represent both the federal and provincial New Democratic parties on campus and around the South Island.",
     "slug": "uvic-ndp"
   },
   {
@@ -778,17 +823,17 @@
     "id": "78",
     "name": "UVic Ismaili Students Association",
     "category": "religion",
-    "primaryEmail": "ismaili.uvic@gmail.com",
+    "primaryEmail": "sarah.keshvani@gmail.com",
     "socialMedia": [""],
     "tags": ["Religious"],
-    "description": "As a religious group, our goal is to gather with UVic Ismaili students for prayers. We provide a room where they can come together and study at any time of the day, as well to come and pray with us in the evenings. Alongside, we also intend to have a mentorship program for first year students also conduct career panel programs each semester for all students. This year, SFU, UVIC, and UBC have come together to organize programs virtually.",
+    "description": "UVic ISA is a club where Ismaili students (international and domestic) get-together every day in the evenings for prayers, games, movie nights, and dinners.  The goal is to help new students to connect with like-minded individuals and for old students to continue building strong relationships with peers along with acting like mentors for new incoming students. We collaborate with SFU and UBC ISA to organize annual events and build connections.",
     "slug": "uvic-ismaili-students-association"
   },
   {
     "id": "79",
     "name": "University Bible Fellowship",
     "category": "religion",
-    "primaryEmail": "qwd0520@gmail.com",
+    "primaryEmail": "james.park.victoria@gmail.com",
     "socialMedia": [""],
     "tags": ["Religious"],
     "description": "The University Bible Fellowship is an global student organization dedicated to the task of campus evangelism. Our main work is to help college students and teenagers study the Bible and live according to its teachings.",
@@ -799,9 +844,12 @@
     "name": "Catholic Christian Outreach (CCO)",
     "category": "religion",
     "primaryEmail": "Victoria@cco.ca",
-    "socialMedia": ["https://www.facebook.com/groups/509977529813517"],
+    "socialMedia": [
+      "https://cco.ca/",
+      "https://www.facebook.com/groups/509977529813517"
+    ],
     "tags": ["Religious"],
-    "description": "We reach out to everyone who wants to know and discover the fullness of the Catholic faith, and we are dedicated to building up leaders who will change the world. We also provide opportunities for people to be engaged in a welcoming, loving community; with opportunities for spiritual, and personal growth. Join us for faith studies, events, Zoom hangouts, and retreats!",
+    "description": "Catholic Christian Outreach™ (CCO™) is a university student movement dedicated to evangelization. We challenge young adults to live in the fullness of the Catholic faith with a strong emphasis on becoming leaders in the renewal of the world.",
     "slug": "catholic-christian-outreach-cco"
   },
   {
@@ -809,9 +857,12 @@
     "name": "Inter-Varsity Christian Fellowship Club",
     "category": "religion",
     "primaryEmail": "intervarsityuvictoria@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvic_ivcf"],
+    "socialMedia": [
+      "https://ivcf.ca/campus/connectoncampus/victoria/",
+      "https://www.instagram.com/uvic_ivcf"
+    ],
     "tags": ["Religious"],
-    "description": "Welcome and Outreach/ socials.\r\n- Building genuine friendships (keeping up with people and making an effort to involve them and make them feel valued in\r\nthe club)\r\n- Study with me (group zoom call where we all just study individually) - Games night\r\n- Skip-the-dishes-train\r\nAbove will be done through Online platform (ex, Zoom).",
+    "description": "Friends. Faith. Peace. We're a faith-based community and a space to explore who Jesus is and discover how to serve the UVIC community. We provide space for mentorship and opportunities to grow in your walk on the Jesus with students on campus and all across the province.",
     "slug": "inter-varsity-christian-fellowship-club"
   },
   {
@@ -819,7 +870,7 @@
     "name": "Uvic Muslim Student Association",
     "category": "religion",
     "primaryEmail": "msauvic@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicmsa/?hl=e", "https://www.facebook.com/msauvic"],
+    "socialMedia": ["https://onlineacademiccommunity.uvic.ca/msa/", "https://www.instagram.com/uvicmsa/?hl=en,https://www.facebook.com/msauvic", "https://www.facebook.com/msauvic"],
     "tags": ["Religious"],
     "description": "The purpose of the club is to inform the surrounding UVic and Victoria community about Islam and Muslims. It is to build a place where Muslims feel safe and supported and where non-Muslims feel allowed to ask questions.",
     "slug": "uvic-muslim-student-association"
@@ -829,9 +880,9 @@
     "name": "UCM (University Christian Ministries)",
     "category": "religion",
     "primaryEmail": "ucm.uvic@gmail.com",
-    "socialMedia": ["https://www.instagram.com/ucm.uvic/?hl=en"],
+    "socialMedia": ["http://www.ucmuvic.com/", "https://www.instagram.com/ucm.uvic/?hl=en"],
     "tags": ["Religious"],
-    "description": "We're a community that loves Jesus and follows in his footsteps at UVic. We value growing, worshiping, praying, learning, serving, and celebrating together. ​Whoever you are, whatever you believe, you are welcome here!",
+    "description": "We're a group of college-age men and women who love Jesus, and follow in his footsteps at UVic. We value community, worship, discipleship, and loving each other and our campus. Whoever you are, you're welcome here!",
     "slug": "ucm-university-christian-ministries"
   },
   {
@@ -841,7 +892,7 @@
     "primaryEmail": "courtneystokes506@yahoo.ca",
     "socialMedia": [""],
     "tags": ["Religious"],
-    "description": "Join us for weekly bible studies and fun biweekly events with UVIC Inclusive Christians. Members identify as Christian, Spiritual but not Religious, or are simply curious to learn more about the Christian tradition. We overtly welcome those who identify as LGBTQ2IA+, women, IBPoc, refugees, people with disabilities, people regardless of socioeconomic status, and people representing other marginalized groups.",
+    "description": "Inclusive Christians at UVIC is a club that supports a progressive and inclusive voice.  Members identify as Christian, Spiritual but not Religious, or are simply curious to learn more about the Christian tradition. We overtly welcome people who identify as 2SLGBTQIA+, women, IBPoc, refugees, people with disabilities, people regardless of socioeconomic status, and people representing other marginalized groups.",
     "slug": "inclusive-christians-club"
   },
   {
@@ -851,7 +902,7 @@
     "primaryEmail": "events@uvicbahai.ca",
     "socialMedia": ["https://www.instagram.com/uvicbahai/"],
     "tags": ["Religious"],
-    "description": "The ABS club (Association for Baha’i studies) is a club that allows Baha’i students and faculty (as well as any one else interested) to aid one another in meaningful service to our campus community as well as reflect on how we can coherently integrate our spiritual beliefs and academic study. This club hopes to hold online social spaces to increase a sense of community and engage in conversation around spiritual topics.",
+    "description": "The campus association for Baha’i studies is a club for Baha’i students and anyone interested in the community building endeavors of the Baha’i Faith.",
     "slug": "abs-association-for-bahai-studies"
   },
   {
@@ -868,10 +919,10 @@
     "id": "88",
     "name": "UVic Poker Club",
     "category": "sports-and-recreation",
-    "primaryEmail": "dontraisemybigblind@gmail.com",
+    "primaryEmail": "10pokerclub2@gmail.com",
     "socialMedia": [""],
     "tags": ["Sports & Recreation"],
-    "description": "UVIC's only Poker Club, now playing online due to the pandemic. We play No Limit Hold'Em, email us for more information.",
+    "description": "The Poker Club welcomes everybody. Whether you are a fish (no idea how to play poker) or a shark (highly skilled poker player) the Poker Club aims to provide a fun environment to learn the amazing game of Poker. We will be focusing on No Limit Texas Hold-em unless there is enough interest for other games.",
     "slug": "uvic-poker-club"
   },
   {
@@ -887,11 +938,11 @@
   {
     "id": "90",
     "name": "UVIC Live Music Club",
-    "category": "sports-and-recreation",
-    "primaryEmail": "kkosowick911@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uviclivemusic/"],
-    "tags": ["Sports & Recreation"],
-    "description": "The Uvic Live Music Club is a group with the goal of a growing a community of musicians and music lovers here at UVic. We host many musical events such as Open Mics, Band Concerts, Jam Sessions, Songwriting workshops and more!",
+    "category": "arts",
+    "primaryEmail": "dillycooner@gmail.com",
+    "socialMedia": ["https://www.facebook.com/groups/296283664228373/", "https://www.instagram.com/uviclivemusic/"],
+    "tags": ["Arts"],
+    "description": "The Uvic Live Music Club that strives to connect musicians and music lovers here in Victoria. We strive to do this by hosting a variety of live music events such as: Open Mic Nights, Jam Sessions, Workshops, Club Mixers, Concerts and Pub nights.",
     "slug": "uvic-live-music-club"
   },
   {
@@ -901,7 +952,7 @@
     "primaryEmail": "girlsoffthegridvic@gmail.com",
     "socialMedia": ["https://www.instagram.com/uvicgirlsoffgrid/", "https://www.facebook.com/uvicgirlsoffgrid"],
     "tags": ["Sports & Recreation"],
-    "description": "Our goal is to create a beginner friendly, inclusive outdoor network for girls and non-binary folks looking to start getting outside, or make more likeminded friends to adventure with. These activities include but are not limited to: hiking, paddling, sunrise yoga, surfing, camping, and rock climbing, as well as socially conscious initiatives, like beach cleanups.",
+    "description": "We are a group aiming to empower people through outdoor recreation in a women-centred space. We provide opportunities to take courses, attend excursions and events. Some of these events include camping trips, surf trips, climbing courses, outdoors film festivals and Wilderness First Aid.",
     "slug": "girls-off-the-grid"
   },
   {
@@ -919,9 +970,9 @@
     "name": "UVIC SUP Club",
     "category": "sports-and-recreation",
     "primaryEmail": "uvicsup@gmail.com",
-    "socialMedia": [""],
+    "socialMedia": ["https://www.facebook.com/uvicsup"],
     "tags": ["Sports & Recreation"],
-    "description": "UVic SUP Club aims to bring like-minded students, staff and alumni of different backgrounds together in competitive and recreational paddling on Stand-Up Paddleboards (SUP). We paddle in Cadboro Bay in in sheltered waters.",
+    "description": "UVic SUP Club aims to bring like-minded students, staff and alumni of different backgrounds together in paddling on Stand-Up Paddleboards (SUP). We plan daily trips (usually a minimum of 2 per week) to Cadboro Bay to paddle in sheltered waters.",
     "slug": "uvic-sup-club"
   },
   {
@@ -948,10 +999,13 @@
     "id": "96",
     "name": "UVic CSGO/VALORANT Club",
     "category": "sports-and-recreation",
-    "primaryEmail": "uvicvalorantcsgoclub@gmail.com",
-    "socialMedia": ["https://www.facebook.com/groups/419162239460168"],
+    "primaryEmail": "mikeli2014op@gmail.com",
+    "socialMedia": [
+      "https://www.facebook.com/groups/419162239460168",
+      "https://discord.gg/fHXcvW"
+    ],
     "tags": ["Sports & Recreation"],
-    "description": "We offer CSGO/Valorant casual and competitive games for free! This is also a space for people to socialize with people who have similar interests. Furthermore, there will tournaments with prizes and virtual achievement tags.",
+    "description": "https://discord.gg/fHXcvW",
     "slug": "uvic-csgovalorant-club"
   },
   {
@@ -969,16 +1023,19 @@
     "name": "Uvic Robotics",
     "category": "stem",
     "primaryEmail": "uvic.robotics@gmail.com",
-    "socialMedia": ["https://uvicroboticsclub.wordpress.com/"],
+    "socialMedia": [
+      "https://uvicroboticsclub.wordpress.com/", 
+      "https://www.instagram.com/uvicrobotics/"
+    ],
     "tags": ["STEM"],
-    "description": "We are the UVic Robotics and we take part 2021 Canadian International Rover Challenge (CIRC). Our team is working on a prototype Mars Rover to help accomplish various tasks and challenging scenarios. Our rover is expected to complete several tasks, these include navigating through rough Mars-like terrain or autonomous operations operating the rover arm. On top of this, we also have plans to do other activities and projects robotics related.",
+    "description": "We are the UVic Robotics, and we take part 2022 Canadian International Rover Challenge (CIRC). Our team is working on a prototype Mars Rover to help accomplish various tasks and challenging scenarios. Our rover is expected to completeseveral tasks, including navigating through rough Mars-like terrain or autonomous operations operating the rover arm. On top of this, we also have plans to do other activities and projects which robotics related.",
     "slug": "uvic-robotics"
   },
   {
     "id": "99",
     "name": "ACI-UVic student chapter",
     "category": "stem",
-    "primaryEmail": "uvicaci@gmail.com",
+    "primaryEmail": "Boyuwang@uvic.ca",
     "socialMedia": ["https://www.facebook.com/profile.php?id=100009059519156"],
     "tags": ["STEM"],
     "description": "This club is the American Concrete Institute (ACI)- UVic student chapter.\r\nIt is for students who are interested in concrete technology and want to join the network of civil engineers.",
@@ -1004,30 +1061,32 @@
     "name": "Biomedical Engineering Design Team (BMED)",
     "category": "stem",
     "primaryEmail": "uvicbmedesign@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicbmedesign/?hl=en"],
+    "socialMedia": [
+      "https://www.instagram.com/uvicbmedesign/?hl=en",
+      "https://onlineacademiccommunity.uvic.ca/bmed/"
+    ],
     "tags": ["STEM"],
-    "description": "BMED is a group of undergraduate engineering students who design, research, and test medical devices, biomedical technologies, and assistive solutions.",
+    "description": "We design medical devices to solve medical issues in the community through engineering.",
     "slug": "biomedical-engineering-design-team-bmed"
   },
   {
     "id": "102",
-    "name": "UVic Rocketyr",
+    "name": "UVic Rocketry",
     "category": "stem",
-    "primaryEmail": "nicholascastellani@gmail.com",
-    "socialMedia": ["https://www.facebook.com/uvicrocketry/"],
+    "primaryEmail": "uvicrocketry@gmail.com",
+    "socialMedia": ["https://onlineacademiccommunity.uvic.ca/rocketry/", "https://www.facebook.com/uvicrocketry/"],
     "tags": ["STEM"],
-    "description": "The UVic Rocketry Team is a student-led group at the University of Victoria that designs and builds competitive sounding rockets. We participate at the annual Spaceport America Cup (SA Cup), located at the world’s first purpose-built commercial spaceport located in southern New Mexico, United States.",
-    "createdDate": "1920-01-15 14:38:49",
+    "description": "The UVic Rocketry Team is a student-led group at the University of Victoria that designs and builds competitive sounding rockets. We participate the annual Spaceport America Cup (SA Cup), located at the world’s first purpose-built commercial spaceport located in southern New Mexico, United States. If you are interested in building rockets and learning engineering skills that are applicable in industry, then come on and join our team!",
     "slug": "uvic-rocketry"
   },
   {
     "id": "103",
     "name": "Canadian Society for Civil Engineering",
     "category": "stem",
-    "primaryEmail": "csce.uvic@gmail.com",
+    "primaryEmail": "maryam.monazami@gmail.com",
     "socialMedia": ["https://linktr.ee/csceuvic"],
     "tags": ["STEM"],
-    "description": "A community for Civil Engineering students to grow their knowledge, experience and mentorship in Civil Engineering outside the classroom setting",
+    "description": "The Canadian society for civil engineering is a well-known society for civil engineers which was created and developed to build professional connections between civil engineering students and industry as well as maintaining the high standards of civil engineering practices in Canada. In CSCE Uvic chapter, we are a group of students and our chapter was created to facilitate the exchange of knowledge between university and students.",
     "slug": "canadian-society-for-civil-engineering"
   },
   {
@@ -1035,9 +1094,9 @@
     "name": "University of Victoria Renewable Energy Club",
     "category": "stem",
     "primaryEmail": "uvicrenewableenergyclub@gmail.com",
-    "socialMedia": ["https://www.facebook.com/University-of-Victoria-Renewable-Energy-Club-105152894858342"],
+    "socialMedia": ["http://oac.uvic.ca/urec", "https://www.facebook.com/URECatUVic"],
     "tags": ["STEM"],
-    "description": "The UVic Renewable Energy Club is an engineering and design-focused club working to improve the field of Renewable Energy. At its core, UREC is a club to learn and develop key skills and knowledge related to the ever-important field of sustainable energy production. By practicing these skills, students can improve their engineering skill-set and prepare for a career in the field of sustainable energy production.",
+    "description": "The UVic Renewable Energy Club is an engineering and design focused club working to improve the field of Renewable Energy. At its core, UREC is a club to learn and develop key skills and knowledge related to the ever important field of sustainable energy production. By practising these skills, students can improve their engineering skill-set and prepare for a career in the field of Energy Production.",
     "slug": "university-of-victoria-renewable-energy-club"
   },
   {
@@ -1057,7 +1116,7 @@
     "primaryEmail": "predentalclubuvic@gmail.com",
     "socialMedia": ["https://www.instagram.com/predentalclubuvic/"],
     "tags": ["STEM"],
-    "description": "The UVIC Pre-Dental Club is a place for students who are interested in entering the field of dentistry following their studies at UVIC. This is a place to meet like-minded peers, chat, ask questions, and support each other; as well as participate in dentistry related activities (virtually!).",
+    "description": "The UVIC Pre-Dental Club is a place for students who are interested in entering the field of dentistry following their studies at UVIC. This is a place to meet like-minded peers, chat, ask questions, and support each other.",
     "slug": "uvic-pre-dental-club"
   },
   {
@@ -1065,7 +1124,7 @@
     "name": "Leadership Through Diversity",
     "category": "stem",
     "primaryEmail": "ltd.uvic@gmail.com",
-    "socialMedia": ["https://www.facebook.com/leadershipthroughdiversity/"],
+    "socialMedia": ["https://onlineacademiccommunity.uvic.ca/ltd/", "https://www.facebook.com/leadershipthroughdiversity/"],
     "tags": ["STEM"],
     "description": "Leadership Through Diversity (LTD) is an engineering group focused on supporting underrepresented groups in engineering, mentoring students and host both fun and educational events. We gladly welcome new members and have opportunities for various executive roles. Come check us out on Facebook, Instagram or ltd.uvic.ca.",
     "slug": "leadership-through-diversity"
@@ -1084,10 +1143,10 @@
     "id": "109",
     "name": "Association for Women in Math UVic Student Chapter",
     "category": "stem",
-    "primaryEmail": "awmuvic@gmail.com",
-    "socialMedia": ["https://www.facebook.com/AWMchapters/"],
+    "primaryEmail": "awmstudent@uvic.ca",
+    "socialMedia": ["https://onlineacademiccommunity.uvic.ca/awm/", "https://www.instagram.com/uvicawm"],
     "tags": ["STEM"],
-    "description": "The goals of the Chapter are to promote the following: an increased knowledge of and greater interest in the mathematical sciences, including pure and applied mathematics, statistics, and their applications; a greater understanding of the contributions of women in the mathematical sciences; prepare for careers in the mathematical sciences.",
+    "description": "The goals of the Chapter are to promote: an increased knowledge of and greater interest in the mathematical sciences, including pure and applied mathematics, statistics, and their applications; a greater understanding of the contributions of women in the mathematical sciences; prepare for careers in the mathematical sciences. We are open to everyone and hope to foster a diverse community of students within the math and stats department.",
     "slug": "association-for-women-in-math-uvic-student-chapter"
   },
   {
@@ -1095,7 +1154,10 @@
     "name": "AUVIC",
     "category": "stem",
     "primaryEmail": "auvic@uvic.ca",
-    "socialMedia": ["https://www.facebook.com/engrauvic"],
+    "socialMedia": [
+      "https://onlineacademiccommunity.uvic.ca/auvic/",
+      "https://www.facebook.com/engrauvic"
+    ],
     "tags": ["STEM"],
     "description": "AUVIC members take on the task of creating a completely autonomous underwater vehicles to compete on an international level at the Robosub competition. The innovative frame design, motor controller and power board PCBs, cutting edge machine learning and computer vision software, and even an electromagnetically driven torpedo launcher are all examples of what AUVIC members have created. We accept all from first year to even the graduate level.",
     "slug": "auvic"
@@ -1107,7 +1169,7 @@
     "primaryEmail": "uvic.gamedev.club@gmail.com",
     "socialMedia": ["https://www.facebook.com/groups/uvicgamedev"],
     "tags": ["STEM"],
-    "description": "UVic GameDev is a club at the University of Victoria that is focused on making games, whether it be professionally or for fun, solo or in teams. Game Developers of all disciplines and skill levels are encouraged to check out our workshops, presentations, and events!",
+    "description": "A club dedicated to making video games! Whether your a programmer, artist, writer, or someone full of ideas all about games. We meet and discuss all things related to gaming, game dev, and our own personal projects. We often group up, or head on solo, into game jams!",
     "slug": "uvic-game-dev"
   },
   {
@@ -1117,7 +1179,7 @@
     "primaryEmail": "uvicprevet@gmail.com",
     "socialMedia": [""],
     "tags": ["STEM"],
-    "description": "The UVic Pre-Vet Club is for anyone interested in pursuing a career in veterinary medicine and other animal related fields. Check out our Facebook page for more info! (UVic Pre-Vet Club)",
+    "description": "A club for students with aspirations of going to vet school for support with applications, job searching, volunteer work, and other related endeavours.",
     "slug": "uvic-pre-veterinary-club"
   },
   {
@@ -1135,9 +1197,12 @@
     "name": "University of Victoria Formula Hybrid",
     "category": "stem",
     "primaryEmail": "uvicformulahybrid@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvichybrid/"],
+    "socialMedia": [
+      "https://uvicformulahybrid.wordpress.com/",
+      "https://www.instagram.com/uvichybrid/"
+    ],
     "tags": ["STEM"],
-    "description": "The UVic Hybrid team designs and builds a hybrid formula-style car for the annual Formula Hybrid competition. We welcome all students who are interested, including those that are not studying engineering.",
+    "description": "The University of Victoria’s Formula Hybrid Team is a student-led club that supports members in acquiring diverse skills in sustainable energy and automotive applications. Our team is composed primarily of students from mechanical, electrical, and software engineering, as well as computer science, business, commerce, and other faculties.",
     "slug": "university-of-victoria-formula-hybrid"
   },
   {
@@ -1145,9 +1210,9 @@
     "name": "UVIC Submarine Racing Club",
     "category": "stem",
     "primaryEmail": "uvic.submarine@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicsubmarine/"],
+    "socialMedia": ["https://www.uvicsubmarine.com/", "https://www.instagram.com/uvicsubmarine/"],
     "tags": ["STEM"],
-    "description": "The Uvic Submarine Racing Club’s (UVSRC) main goal is to design, build, and race a human-powered submarine at the annual International Submarine Race held either in the USA (ISR) or the United Kingdom (eISR). We also believe in the importance of networking between sponsors, employers, and club members for future career opportunities. To achieve this, the Club strives to develop students’ research, technical, and manufacturing skills in Marine",
+    "description": "The Uvic Submarine Racing Club’s (UVSRC) main goal is to design, build, and race a human-powered submarine at the annual International Submarine Race held either in the USA (ISR) or the United Kingdom (eISR).",
     "slug": "uvic-submarine-racing-club"
   },
   {
@@ -1157,7 +1222,7 @@
     "primaryEmail": "SUCOcanada@gmail.com",
     "socialMedia": ["https://www.instagram.com/suco.canada/"],
     "tags": ["STEM"],
-    "description": "SUCO provides free consulting to STEM based organizations/companies and hosts free seminars presented by professionals in the STEM field on a vast array of topics.",
+    "description": "SUCO Canada provides free consulting for STEM professionals, start-ups, and non-profits and hosts monthly seminars presented by STEM speakers from varying backgrounds and specialties.",
     "slug": "stem-undergraduate-consulting-organization-suco"
   },
   {
@@ -1165,9 +1230,9 @@
     "name": "UVic Formula Racing",
     "category": "stem",
     "primaryEmail": "uvic.fsae@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicfsae/"],
+    "socialMedia": ["https://fsae.engr.uvic.ca/", "https://www.instagram.com/uvicfsae/"],
     "tags": ["STEM"],
-    "description": "The UVic Formula Motorsport team is a university club whose goal is to design and build a new small, open-wheeled, formula-style car each year. The car then competes in Formula SAE, which is the world's largest collegiate design competition. Our members are highly dedicated and motivated students who seek to get the most out of their university experience.",
+    "description": "UVic Formula Racing is an engineering club that designs, manufactures, builds and manufactures a small open wheeled racecar. Each year the team competes in the largest collegiate design competition in the world, Formula SAE. Members of the team have the opportunity to gain skills in project management, engineering design, budgeting funds and social networking.",
     "slug": "uvic-formula-racing"
   },
   {
@@ -1175,7 +1240,7 @@
     "name": "UVic Formula Racing Electric",
     "category": "stem",
     "primaryEmail": "uvfr.electric@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvicfsae/"],
+    "socialMedia": ["https://fsae.engr.uvic.ca/", "https://www.instagram.com/uvicfsae/"],
     "tags": ["STEM"],
     "description": "UVic Formula Racing Electric is an club dedicated to electric vehicle technology and motorsport. We design and build an open-wheel electric race car for competition in the Formula SAE Electric competition. This aims to provide students with valuable skills for their future careers and expose students to a rapidly growing industry.",
     "slug": "uvic-formula-racing-electric"
@@ -1184,7 +1249,7 @@
     "id": "119",
     "name": "Engineers Without Borders",
     "category": "stem",
-    "primaryEmail": "rivphillips@gmail.com",
+    "primaryEmail": "oceanrip@live.ca",
     "socialMedia": [""],
     "tags": ["STEM"],
     "description": "We work with Engineers Without Borders Canada to improve equality, sustainability, and social issues on campus and within the broader community. Using engineering logic we are able to aid in making measurable change in Canada and beyond.",
@@ -1195,7 +1260,10 @@
     "name": "UVic Women in Science",
     "category": "stem",
     "primaryEmail": "womeninscienceuvic@gmail.com",
-    "socialMedia": ["https://www.facebook.com/womeninscienceuvic"],
+    "socialMedia": [
+      "https://www.uvicwomeninscience.com/",
+      "https://www.facebook.com/womeninscienceuvic"
+    ],
     "tags": ["STEM"],
     "description": "The purpose of this club is to connect and support female graduate and undergraduate students pursuing STEM (Science, Technology, Engineering, and Mathemaitcs) fields. Through newsletters, social events, guest lectures and professional development seminars, this network is open to all genders and persons who want to contribute to the success of these women.",
     "slug": "uvic-women-in-science"
@@ -1203,22 +1271,25 @@
   {
     "id": "121",
     "name": "Students Above Stigma",
-    "category": "stem",
+    "category": "community",
     "primaryEmail": "uvic.students.above.stigma@gmail.com",
-    "socialMedia": ["https://www.instagram.com/uvic_sas/"],
-    "tags": ["STEM"],
-    "description": "Students Above Stigma (SAS) is a Uvic club dedicated toward eradicating the stigma surrounding psychiatric illnesses through an educational approach.\r\nKnow science, no stigma.",
+    "socialMedia": [
+      "https://uvicstudentsaboves.wixsite.com/studentsabovestigma",
+      "https://www.instagram.com/uvic_sas/"
+    ],
+    "tags": ["Community"],
+    "description": "Students Above Stigma is a student-led group dedicated towards eradicating mental illness stigma through educating the public on the various psychiatric disorders. Our overall goal is to overcome prejudice views by increasing public awareness and empathy. SAS is comprised of a diverse collection of executive teams and general members, all coming together to make real change in the community!",
     "slug": "students-above-stigma"
   },
   {
     "id": "122",
-    "name": "UVic Competitive Programming Club",
+    "name": "UVic Programming Club",
     "category": "stem",
     "primaryEmail": "uvic.programming.club@gmail.com",
-    "socialMedia": [""],
+    "socialMedia": ["https://uvicprogrammingclub.github.io/", "https://www.facebook.com/uvicprogrammingclub"],
     "tags": ["STEM"],
-    "description": "The UVic Competitive Programming Club is a group of students who enjoy solving hard problems quickly with code. We compete annually in the International Collegiate Programming Contest (ICPC), and meet weekly to practice and learn together. The problems we work on are also highly applicable to technical job interviews. The club's objective is not teaching members how to code.",
-    "slug": "uvic-competitive-programming-club"
+    "description": "The UVic Competitive Programming Club is a group of students who enjoy solving programming problems. We compete annually in the International Collegiate Programming Contest (ICPC), and meet weekly to practice and discuss about algorithms.",
+    "slug": "uvic-programming-club"
   },
   {
     "id": "123",
@@ -1234,7 +1305,651 @@
       "Sports"
     ],
     "description": "Archery offers a sense of control, camaraderie and competition; with patience and practice it can turn into a life-long hobby. Learn form, techniques and skills needed to begin your archery adventure or join us to compete in local and regional tournaments. For more information email vikesarchery@uvic.ca or find us on facebook under UVIC Archers.",
-    "createdDate": "1920-01-15 14:38:49",
     "slug": "uvic-archery"
+  },
+  {
+    "id": "124",
+    "name": "UVic Waterski Club",
+    "category": "Sports",
+    "primaryEmail": "zoe.garlinskigonsky@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Sports"
+    ],
+    "description": "UVic Water ski Club will be a a great fit for anyone interested and passionate about waterskiing or watersports in general. We will plan and organize trips to a few different lakes on the island to ski and camp. This club will be suited for any skill level of waterskiing :)",
+    "slug": "uvic-waterski"
+  },
+  {
+    "id": "125",
+    "name": "Amnesty International UVic",
+    "category": "Interest",
+    "primaryEmail": "amnestyatuvic@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "Branch of international human rights organization with a focus on global and local activism",
+    "slug": "amnesty-international-uvic"
+  },
+  {
+    "id": "126",
+    "name": "UVIC Pakistani Student's Association",
+    "category": "Culture",
+    "primaryEmail": "psauvic21@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Culture"
+    ],
+    "description": "The goal of the UVIC Pakistani Students' Association is to provide a platform through which students and faculty on campus can come together to help each other and promote Pakistani culture. It is a place for students of Pakistani ethnicity to come together and experience the different cultures at UVic while embracing their own culture and spreading it through activities and events to inculcate a positive approach to other students.",
+    "slug": "uvic-pakistani-students-association"
+  },
+  {
+    "id": "127",
+    "name": "Pre Occupational Therapy Club",
+    "category": "Other",
+    "primaryEmail": "uvicpreot@gmail.com",
+    "socialMedia": [
+      "https://linktr.ee/uvicpreot",
+      "https://www.instagram.com/uvicpreot/"
+    ],
+    "members": "0",
+    "tags": [
+      "Culture"
+    ],
+    "description": "The goal of the UVIC Pakistani Students' Association is to provide a platform through which students and faculty on campus can come together to help each other and promote Pakistani culture. It is a place for students of Pakistani ethnicity to come together and experience the different cultures at UVic while embracing their own culture and spreading it through activities and events to inculcate a positive approach to other students.",
+    "slug": "uvic-pakistani-students-association"
+  },
+  {
+    "id": "128",
+    "name": "UVIC CKI",
+    "category": "community",
+    "primaryEmail": "uvic.cki.exec@gmail.com",
+    "socialMedia": ["https://www.facebook.com/groups/uviccirclek/"],
+    "members": "0",
+    "tags": [
+      "Community"
+    ],
+    "description": "UVic Circle K is Victoria’s university-level branch of the renowned volunteer organization Kiwanis International. Being a part of the Circle K community is a great way to buff up your resume, participate in fun volunteer events, meet like-minded people and make lasting community service connections! We welcome any interested students and community members passionate about service and the vision of our club!",
+    "slug": "uvic-cki"
+  },
+  {
+    "id": "129",
+    "name": "H4H",
+    "category": "community",
+    "primaryEmail": "arjunchehil@gmail.com",
+    "socialMedia": [
+      "https://hygiene4homeless.ca/",
+      "https://instagram.com/h4huvic/"
+    ],
+    "members": "0",
+    "tags": [
+      "Community"
+    ],
+    "description": "This club aims to address the homeless crisis in Victoria. Hygiene packages including tooth brushes, toilet paper etc will be given to homeless people.",
+    "slug": "uvic-h4h"
+  },
+  {
+    "id": "130",
+    "name": "University of Victoria 4X4",
+    "category": "interest",
+    "primaryEmail": "benlenner7@gmail.com",
+    "socialMedia": ["https://www.facebook.com/groups/2654985914563574/?ref=share"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "Uvic club for offroad enthusiasts to share events, good times, mechanical assistance, and trips.",
+    "slug": "uvic-4x4"
+  },
+  {
+    "id": "131",
+    "name": "UVic Tamil Society",
+    "category": "culture",
+    "primaryEmail": "s.anish1911@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Culture"
+    ],
+    "description": "We explore the Tamil culture and language through teaching reading and writing.",
+    "slug": "uvic-tamil-society"
+  },
+  {
+    "id": "132",
+    "name": "Neurotech UVic",
+    "category": "stem",
+    "primaryEmail": "neurotechuvic@gmail.com",
+    "socialMedia": [
+      "https://neurotechuvic.github.io",
+      "https://instagram.com/uvicneurotech"
+    ],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "The UVic Neurotech Club provides an educational and welcoming environment for students of all backgrounds and majors to learn about and work with Neurotechnology. We utilize cutting edge hardware and methodology to create technology using and related to brain-computer interfaces. The work and research we do is very multidisciplinary, with a span of computer science, hardware engineering, and neuroscience/biology.",
+    "slug": "neurotech-uvic"
+  },
+  {
+    "id": "133",
+    "name": "UVic Mental Health and Wellbeing Club",
+    "category": "community",
+    "primaryEmail": "brittanyskov@outlook.com",
+    "socialMedia": ["https://instagram.com/uvicmentalhealthchannel?utm_medium=copy_link"],
+    "members": "0",
+    "tags": [
+      "Community"
+    ],
+    "description": "UVic Mental Health and Wellbeing Club assists students with maintaining mental health and wellbeing through social connection and community. We host monthly meet-up events for students to meet new people, connect, and de-stress. Online, we provide mental health information and resources for on-campus and Greater Victoria Area supports, and tips for a wide range of topics.",
+    "slug": "neurotech-uvic"
+  },
+  {
+    "id": "134",
+    "name": "Visual Arts Student Association",
+    "category": "arts",
+    "primaryEmail": "Visualartsstudentsassn@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Arts"
+    ],
+    "description": "VASA is the Visual Arts Students’ Association at UVIC. It is run by undergrads for undergrads. Membership is open to students registered in any class of the Visual Arts department. Course unions including VASA operate with the purpose of planning both academic and social events and activities related to their area of study.",
+    "slug": "uvic-vasa"
+  },
+  {
+    "id": "135",
+    "name": "Uvic Data Structures and Algorithms Club",
+    "category": "stem",
+    "primaryEmail": "uvicdatastructures@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "UDSA is a club where you can increase data structures and algorithm proficiency from sites like leetcode, get advice from students who have previously attended interviews, and attend technical mock interviews.",
+    "slug": "uvic-data-structures-and-algorithms"
+  },
+  {
+    "id": "136",
+    "name": "Mercy Ship Waves Club",
+    "category": "Other",
+    "primaryEmail": "mswc@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Other"
+    ],
+    "description": "",
+    "slug": "mercy-ship-waves"
+  },
+  {
+    "id": "137",
+    "name": "UVic ASL Club",
+    "category": "Interest",
+    "primaryEmail": "ravi.coughlan@yahoo.ca",
+    "socialMedia": ["https://www.facebook.com/groups/209516622728911"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "ASL Club is a fun way to learn and practice American Sign Language with fellow students and community members through conversation, volunteering, games, and activities. Our mission is to increase awareness of Deaf culture and the Deaf community.",
+    "slug": "uvic-asl"
+  },
+  {
+    "id": "138",
+    "name": "University of Victoria Debate Society",
+    "category": "Interest",
+    "primaryEmail": "uvicdebate@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvicdebatesociety/?hl=en"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "UVDS is a platform through which students can better their public speaking and critical thinking skills by discussing world issues in formal debate. UVDS follows the British Parliamentary, Canadian Parliamentary, and Australs debating format. We are a member of CUSID, and provide opportunities to compete in regional, national, and international university debating events.",
+    "slug": "uvic-debate-society"
+  },
+  {
+    "id": "139",
+    "name": "UVic Stroke Awareness Association",
+    "category": "Other",
+    "primaryEmail": "saa.uvic@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvicstrokeawareness/"],
+    "members": "0",
+    "tags": [
+      "Other"
+    ],
+    "description": "The Uvic Stroke Awareness Association is a student club aiming to raise awareness about strokes with hopes of prevention and early detection, as well as offer support to the children of stroke survivors.",
+    "slug": "uvic-stroke-awareness-association"
+  },
+  {
+    "id": "140",
+    "name": "UVic Boxing Club",
+    "category": "sports",
+    "primaryEmail": "uvicboxing@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvic_boxing/"],
+    "members": "0",
+    "tags": [
+      "Sports"
+    ],
+    "description": "The UVic Boxing Club welcomes all: levels, backgrounds, histories. The club holds classes focusing on basics with coordination drills, pad work, conditioning, and partner drills. For those who already have boxing experience, find seasoned members in the club to help fill in the holes in your game. The club will host events to watch big pay-per-view fights with members and non-members. You can follow us on ig:@uvic_boxing",
+    "slug": "uvic-boxing-club"
+  },
+  {
+    "id": "141",
+    "name": "UVic Crypto Club",
+    "category": "interest",
+    "primaryEmail": "uviccrypto@gmail.com",
+    "socialMedia": ["https://discord.gg/ym2EBKAx3R"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "The UVic Crypto Club aims to connect like-minded individuals interested in learning more about all things Blockchain, Cryptocurrency, and DeFi. Built on the foundational pillars of Learning, Educating, and Networking, our goal is to create a supportive, tight-knit community that explores and researches new topics while assisting those who are new to the crypto-space through conversations, workshops, speaker events, and informational posts.",
+    "slug": "uvic-crypto-club"
+  },
+  {
+    "id": "142",
+    "name": "Hema, Uvic's Edge",
+    "category": "interest",
+    "primaryEmail": "UVicHEMA@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "Have you ever wanted to swing a sword? Learn to fight like people from the olden days? Then this is the club for you! Uvic's Edge is a Historical European Martial Arts club here to teach you how to spar with things like longswords, messers, or even swords and bucklers. So if you like fighting your friends come join us!",
+    "slug": "hema-uvics-edge"
+  },
+  {
+    "id": "142",
+    "name": "UVic Harm Reduction",
+    "category": "community",
+    "primaryEmail": "uvicharmreduction@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Community"
+    ],
+    "description": "We are a group of students aiming to bring awareness to the practice of harm reduction. We advocate for accessible community supports and evidence-based responses to the harms associated with drug use and criminalization.",
+    "slug": "uvic-harm-reduction"
+  },
+  {
+    "id": "142",
+    "name": "UvicMTG",
+    "category": "interest",
+    "primaryEmail": "wpaynton@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "A club at UVic for Magic: The Gathering players, but not exclusively UVic students. Started in September 2011, the club is mostly casual but embraces the game in all of its forms and formats. Returning members are experienced and willing to help teach new players",
+    "slug": "uvic-mtg"
+  },
+  {
+    "id": "142",
+    "name": "Dogwood",
+    "category": "environment",
+    "primaryEmail": "uvicdogwood@gmail.com",
+    "socialMedia": [],
+    "members": "0",
+    "tags": [
+      "Environment"
+    ],
+    "description": "UVIC chapter of B.C.'s largest non-partisan citizen action network; bringing British Columbians together to reclaim power over our environment and democracy. We fight for environmental justice: having focused in the past on cancelling the Trans Mountain pipeline, encouraging proportional representation, and supporting anti-colonial, anti-corporate initiatives. We always welcome anyone who wants to make a difference in a sustainable way.",
+    "slug": "dogwood"
+  },
+  {
+    "id": "142",
+    "name": "UVic Chess Club",
+    "category": "Interest",
+    "primaryEmail": "officialuvicchessclub@gmail.com",
+    "socialMedia": ["https://www.facebook.com/groups/1392850464308411"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "We meet weekly to play chess! Enthusiasts of all levels are welcome!",
+    "slug": "uvic-chess-club"
+  },
+  {
+    "id": "142",
+    "name": "Community Cabbage",
+    "category": "community",
+    "primaryEmail": "communitycabbage21@gmail.com",
+    "socialMedia": [
+      "https://uviccommunitycabbage.wordpress.com/",
+      "https://instagram.com/uvic.community.cabbage?utm_medium=copy_link"
+    ],
+    "members": "0",
+    "tags": [
+      "Community"
+    ],
+    "description": "The Community Cabbage is a student organization devoted to the reclamation and redistribution of food waste. We use edible but unsellable food donated by grocery stores to prepare healthy and delightful vegetarian/vegan meals at a community kitchen. These free hot meals are served weekly for free on campus to increase food security networks and educate people about food waste.",
+    "slug": "community-cabbage"
+  },
+  {
+    "id": "142",
+    "name": "AERO",
+    "category": "stem",
+    "primaryEmail": "president@uvicaero.com",
+    "socialMedia": ["https://uvicaero.com"],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "UVic AERO is a group of students who are passionate about aeronautics and drones. We primarily compete in the Unmanned Systems Canada drone competition: designing, building, and flying our drones. No experience is necessary, if you are interested in flying, programming, or just being around cool drones join our Slack with your uvic email address uvicaero.slack.com.",
+    "slug": "aero"
+  },
+  {
+    "id": "142",
+    "name": "UVic IEEE Student Branch",
+    "category": "stem",
+    "primaryEmail": "ieeesb@uvic.ca",
+    "socialMedia": [
+      "https://sites.google.com/view/uvic-ieee-sb/home",
+      "https://www.linkedin.com/company/ieee-uvic-student-branch/?viewAsMember=true"
+    ],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "Our group connects students with opportunities presented by the IEEE. We also host student events, provide lab space for members to use freely, offer academic support for first-year math and computer science to all engineering students, and provide electrical and software troubleshooting assistance. Contact us at ieeesb@uvic.ca",
+    "slug": "uvic-ieee-student-branch"
+  },
+  {
+    "id": "142",
+    "name": "UVic Satellite Design",
+    "category": "stem",
+    "primaryEmail": "management@uvsd.ca",
+    "socialMedia": [
+      "http://uvsd.ca",
+      "https://www.instagram.com/uvicsat/"
+    ],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "UVSD is a student led organization that competes in the Canadian Satellite Design Challenge with the main goal of building a functioning cubesat. Team members work together, solving engineering problems unique to spaceflight, with the help from industry experts who evaluate their work. The winning team gets a chance to launch their satellite into orbit and operate it through its lifetime.",
+    "slug": "uvic-satellite-design"
+  },
+  {
+    "id": "142",
+    "name": "UVic Longboarding",
+    "category": "sports",
+    "primaryEmail": "longboarduvic@gmail.com",
+    "socialMedia": ["https://www.facebook.com/groups/UVICLongboarding/?ref=share"],
+    "members": "0",
+    "tags": [
+      "Sports"
+    ],
+    "description": "Love surfing but can't make the trek to Tofino? Do you miss shredding those snowy slopes? Join the cement surfers here in Vic! Regular meetups at least once a week. Ask us any questions via our Facebook Page or email!",
+    "slug": "uvic-longboarding"
+  },
+  {
+    "id": "142",
+    "name": "General Assembly of Students in Earth and Ocean Sciences",
+    "category": "environment",
+    "primaryEmail": "gaseosexec@gmail.com",
+    "socialMedia": [
+      "https://www.facebook.com/GASEOS",
+      "https://www.instagram.com/uvicgaseos/?hl=en"
+    ],
+    "members": "0",
+    "tags": [
+      "Environment"
+    ],
+    "description": "GASEOS is a student union that represents the students in Earth and Ocean Sciences at the University of Victoria. GASEOS organizes events, provides valuable information to students and bridges the gap between students and industry professionals. We also attend SEOS faculty meetings and address any thoughts and concerns that students might have.",
+    "slug": "uvic-gaseos"
+  },
+  {
+    "id": "142",
+    "name": "The FentaNIL Project",
+    "category": "community",
+    "primaryEmail": "mayajquealey@gmail.com",
+    "socialMedia": ["https://www.instagram.com/fentaniluvic/"],
+    "members": "0",
+    "tags": [
+      "Community"
+    ],
+    "description": "The FentaNIL Project is a student group that focuses on the opioid crisis in Victoria. Through Naloxone training, raising awareness, and advocacy, we are looking to ameliorate the negative effects of the opioid crisis within our community.",
+    "slug": "fentanil-project"
+  },
+  {
+    "id": "142",
+    "name": "History Undergraduate Body",
+    "category": "other",
+    "primaryEmail": "hub.uvic@gmail.com",
+    "socialMedia": [""],
+    "members": "0",
+    "tags": [
+      "Other"
+    ],
+    "description": "",
+    "slug": "history-undergraduate-body"
+  },
+  {
+    "id": "142",
+    "name": "Recovery Club",
+    "category": "community",
+    "primaryEmail": "recoverclubuvic@gmail.com",
+    "socialMedia": [""],
+    "members": "0",
+    "tags": [
+      "Community"
+    ],
+    "description": "This club will be there to provide information to those looking for a way of addiction of all substances and to lead them towards place that can help them within the city and the world. Addiction can effect everyone and university students are very susceptible",
+    "slug": "recovery-club"
+  },
+  {
+    "id": "142",
+    "name": "Society of Economic Geologists",
+    "category": "stem",
+    "primaryEmail": "uvic.seg@gmail.com",
+    "socialMedia": [""],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "The UVic branch of SEG aims to educate and inform aspiring geologists about career options and guidance. We will do this via guest speakers and networking events.",
+    "slug": "society-of-economic-geologists"
+  },
+  {
+    "id": "142",
+    "name": "Cognitive Neuroscience Club (CNC)",
+    "category": "stem",
+    "primaryEmail": "uviccnc@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvic.cnc"],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "UVic CNC is a new engaging club for students in or interested in cognitive neuroscience. This club seeks to provide volunteer opportunities, research experience, and interactions with peers in the field!",
+    "slug": "cognitive-neuroscience-club"
+  },
+  {
+    "id": "142",
+    "name": "Curbside Farms",
+    "category": "environment",
+    "primaryEmail": "curbsidefarmscoop@gmail.com",
+    "socialMedia": ["https://www.curbsidefarms.ca/", "https://www.instagram.com/curbsidefarms/"],
+    "members": "0",
+    "tags": [
+      "Environment"
+    ],
+    "description": "We engage environmental and food security issues by promoting urban food production and community development. We construct affordable garden beds from used wooden pallets and are building an online platform that allows users to share gardening knowledge, resources, and food that they've grown. We welcome students of all backgrounds and with all skill sets. This is a multidisciplinary project with a place for everyone!",
+    "slug": "curbside-farms"
+  },
+  {
+    "id": "142",
+    "name": "UVic Environment Engineering Club (UVEEC)",
+    "category": "stem",
+    "primaryEmail": "uvicenvironment@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvicenvironment/"],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "We’re uvic environment engineering club! Our goal is to create projects and products that help our local environment! Send an email to uvicenvironment@gmail.com or check Instagram posts for a meeting dates! Thank you!!",
+    "slug": "uvic-environent-engineering-club"
+  },
+  {
+    "id": "142",
+    "name": "UVic Mountain Bike Clubs",
+    "category": "sports",
+    "primaryEmail": "mtbuvic@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvic.mtb.club/"],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "We are all things mountain biking! From group rides at Hartland, ladies rides, bike maintenance clinics, beginners clinics with a PIMB certified coach, Redbull Rampage watch party, trail building, and up-island adventures. We are all inclusive, and encourage that people of all skill levels give it a go!",
+    "slug": "uvic-mountain-bike-clubs"
+  },
+  {
+    "id": "142",
+    "name": "MEDLIFE UVIC",
+    "category": "community",
+    "primaryEmail": "medlife.uvic@gmail.com",
+    "socialMedia": ["https://www.instagram.com/medlife_uvic/"],
+    "members": "0",
+    "tags": [
+      "Community"
+    ],
+    "description": "MEDLIFE UVIC is a student-run chapter partnered with the non-profit organization MEDLIFE, which works with local professionals in low-income communities throughout Latin America and Africa to improve their access to basic health care, education, and community development. If you are passionate about volunteering, fundraising, and working alongside student leaders from Canada and around the world we welcome you to join MEDLIFE UVIC!",
+    "slug": "medlife-uvic"
+  },
+  {
+    "id": "142",
+    "name": "UVic People of Neuroscience (PONS)",
+    "category": "stem",
+    "primaryEmail": "uvicpons@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvicpons/"],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "UVic People of Neuroscience is a club that connects students who have a passion for neuroscience. Our goal is to share information about neuroscience-related research and programs to increase student engagement within the field.",
+    "slug": "uvic-people-of-neuroscience"
+  },
+  {
+    "id": "142",
+    "name": "UVic Entrepreneurship Club",
+    "category": "interest",
+    "primaryEmail": "uvicentrepreneurshipclub@gmail.com",
+    "socialMedia": ["https://www.linkedin.com/company/uvic-entrepreneurship-club", "https://www.instagram.com/uvicentrepreneurshipclub"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "Check out our Instagram and Linkedin for updates on events, micro-internships, and other programming! DM us for more information on how you can get involved.",
+    "slug": "uvic-entrepreneurship-club"
+  },
+  {
+    "id": "142",
+    "name": "UVic UVIC Investment Group",
+    "category": "interest",
+    "primaryEmail": "investmentgroup.uvic@gmail.com",
+    "socialMedia": ["https://www.uvicinvestmentgroup.com/", "https://www.instagram.com/uvicinvestmentgroup/"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "The University of Victoria Investment Group aims to create an investment society of like-minded students who are interested in institutional investing, economic markets, and pursuing finance as a career. It will not only act as a hub for information and discussion where students will learn from each other, professionals, fresh graduates, and professors, but it will also add a competitive edge to our member’s resumes.",
+    "slug": "uvic-investment-group"
+  },
+  {
+    "id": "142",
+    "name": "UVic Kpop Club",
+    "category": "interest",
+    "primaryEmail": "investmentgroup.uvic@gmail.com",
+    "socialMedia": ["https://www.facebook.com/groups/1634209293502311/?ref=share"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "UVic Kpop Club is an interest group for those interested in Korean pop culture to connect and bond. We meet once a week, and often have event nights that include games and snacks. Open to anyone, and commitment-free!",
+    "slug": "uvic-kpop-club"
+  },
+  {
+    "id": "142",
+    "name": "UVIC WECS (Women in Engineering and Computer Science)",
+    "category": "stem",
+    "primaryEmail": "uvictoriawecs@gmail.com",
+    "socialMedia": ["https://instagram.com/uvicwecs?r=nametag"],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "WECS (Women in Engineering and Computer Science) is open to students of all genders. Our purpose is to create a welcoming environment for all students navigating their engineering and computer science degrees via exam prep sessions, and a peer mentor ship program. WECS would also like to host coding workshops for students outside of engineering who would like to learn some programming basics.",
+    "slug": "uvic-wecs"
+  },
+  {
+    "id": "142",
+    "name": "University of Victoria Consulting Group",
+    "category": "interest",
+    "primaryEmail": "uvicconsulting@gmail.com",
+    "socialMedia": ["https://uvicconsulting.wixsite.com/website", "https://www.instagram.com/uvicconsultinggroup/"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "The UVCG provides pro bono consulting services to local businesses and nonprofits across Canada and beyond. Members can gain valuable experience by attending skill-building workshops, working on client projects, attending networking panels and information sessions and beyond.",
+    "slug": "uvic-consulting-group"
+  },
+  {
+    "id": "142",
+    "name": "International Student Services Club",
+    "category": "stem",
+    "primaryEmail": "isscuvic@gmail.com",
+    "socialMedia": [""],
+    "members": "0",
+    "tags": [
+      "STEM"
+    ],
+    "description": "This club is aimed at helping Chinese international students merge into local culture. By starting all kinds of free sessions, not only assist them on academic courses but also help them find accompanies.",
+    "slug": "international-student-services-club"
+  },
+  {
+    "id": "142",
+    "name": "UVic Trad Music Club",
+    "category": "arts",
+    "primaryEmail": "uvictrad@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvictrad/"],
+    "members": "0",
+    "tags": [
+      "Arts"
+    ],
+    "description": "We are a club dedicated to promoting traditional music at UVic with jam sessions and workshops! We welcome all instruments (fiddle, guitar, piano, cello, mandolin, banjo, concertina, whistle, etc.), and all types of \"fiddle\" music (Celtic, Canadian, Old-Time, French-Canadian, American, Scandinavian, Romanian, etc.)!",
+    "slug": "uvic-trad-music-club"
+  },
+  {
+    "id": "142",
+    "name": "Product Management Club",
+    "category": "interest",
+    "primaryEmail": "arnavbathla@uvic.ca",
+    "socialMedia": [""],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "Product Management club is meant for students to get to know more about the industry while building long lasting relationships with industry professionals. We are planning to hold AMAs, Productthon, a book club, and much more!",
+    "slug": "product-management-club"
+  },
+  {
+    "id": "142",
+    "name": "UVic Turkish Student Society",
+    "category": "interest",
+    "primaryEmail": "uvic.tss@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvic_tss/"],
+    "members": "0",
+    "tags": [
+      "Interest"
+    ],
+    "description": "UVic Turkish Student Society (UVic TSS) is a student association under UVSS. Our aim is to create a community that embraces Turkish culture and brings Turkish students together. We plan to have monthly gatherings to plan fun events.",
+    "slug": "uvic-turkish-student-society"
   }
 ]
