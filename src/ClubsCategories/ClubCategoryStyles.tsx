@@ -93,22 +93,22 @@ const Gridbutton = styled.button`
   @media ${device.mobileTiny} {
     width: 120px;
     height: 120px;
-    font-size: 19px;
+    font-size: 1em;
   }
   @media ${categoryDevice.mobileXS} {
     width: 140px;
     height: 140px;
-    font-size: 20px;
+    font-size: 1.2em;
   }
   @media ${categoryDevice.mobileS} {
     width: 150px;
     height: 150px;
-    font-size: 22px;
+    font-size: 1.3em;
   }
   @media ${categoryDevice.mobile} {
     width: 175px;
     height: 175px;
-    font-size: 22px;
+    font-size: 1.5em;
   }
   @media ${categoryDevice.tablet} {
     width: 200px;
