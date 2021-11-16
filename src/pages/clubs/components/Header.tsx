@@ -4,10 +4,10 @@ import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu';
 import { FaHome } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-import { CATEGORIES } from '../../../categories';
-import Icon from '../../../ClubInfo/Icon';
-import { LinkButton } from '../../../ClubsCategories/ClubCategoryStyles';
-import { generateCategoryLink } from '../../../links';
+import { IconItem } from '../../../components/Icon';
+import { CATEGORIES } from '../../../data/categories';
+import { generateCategoryLink } from '../../../data/links';
+import { LinkButton } from '../../categories/components/ClubCategoryStyles';
 
 const HomeIcon = () => (
   <Box pr="10px">
@@ -30,7 +30,7 @@ function CategoriesMenu() {
         </LinkButton>
         {CATEGORIES.map((category, index) => (
           <LinkButton key={index} to={generateCategoryLink(category.slug)}>
-            <MenuItem icon={<Icon icon={category.icon} />}>{category.shortTitle}</MenuItem>
+            <MenuItem icon={<IconItem icon={category.icon} />}>{category.shortTitle}</MenuItem>
           </LinkButton>
         ))}
       </MenuList>

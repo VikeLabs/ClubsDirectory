@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
+import { generateGroupLink } from '../../../data/links';
 import { ClubData } from '../../../JSON/ClubData';
 import { findClubsByCategory } from '../../../JSON/helpers';
-import { generateGroupLink } from '../../../links';
 import { Error404Page } from '../../error/404';
 
 const ArrowIcon = () => (

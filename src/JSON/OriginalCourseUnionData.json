@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Bureau of Sociology Students (BOSS)",
+    "primaryEmail": "boss.uvic@gmail.com",
+    "socialMedia": "https://www.facebook.com/UVic.BOSS"
+  },
+  {
+    "name": "French Undergrads",
+    "primaryEmail": "uvicfrenchundergrads@gmail.com",
+    "socialMedia": "https://www.instagram.com/uvic_frenchundergrads/"
+  },
+  {
+    "name": "University of Victoria Nursing Student Society (UVNSS)",
+    "primaryEmail": "uvicnursingstudentsociety@gmail.com",
+    "socialMedia": ["https://onlineacademiccommunity.uvic.ca/uvnss/"]
+  },
+  {
+    "name": "Music Student Association",
+    "primaryEmail": "uvicmsa01@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvic.music.msa/?hl=en"]
+  },
+  {
+    "name": "University of Victoria Student Music Educators' Association",
+    "primaryEmail": "uvsmea@gmail.com",
+    "socialMedia": ["https://uvsmea.wixsite.com/website", "https://www.instagram.com/uvsmea/"]
+  },
+  {
+    "name": "Computer Music Course Union (CMCU)",
+    "primaryEmail": "",
+    "socialMedia": ["https://www.facebook.com/groups/150250328367095/?ref=share"]
+  },
+  {
+    "name": "Psychology Undergraduate Students (PUGS)",
+    "primaryEmail": "psychos.uvic@gmail.com",
+    "socialMedia": ["https://onlineacademiccommunity.uvic.ca/psychstudents/", "https://www.instagram.com/pugs.uvic/"]
+  },
+  {
+    "name": "Society of Geography Students",
+    "primaryEmail": "rileysondergaard@gmail.com",
+    "socialMedia": ["https://www.facebook.com/SOGSUVic"]
+  },
+  {
+    "name": "Biochemistry and Microbiology Student Society",
+    "primaryEmail": "bmss.uvic@gmail.com",
+    "socialMedia": []
+  },
+  {
+    "name": "Uvic English Students' Association",
+    "primaryEmail": "englishstudents@uvic.ca",
+    "socialMedia": ["https://www.instagram.com/uvicesa/", "https://uvicesa.wordpress.com/"]
+  },
+  {
+    "name": "EPHE PERKS",
+    "primaryEmail": "ephe.perk@gmail.com",
+    "socialMedia": ["https://www.instagram.com/ephe.perks/"]
+  },
+  {
+    "name": "UVic Writing Undergraduate Course Union",
+    "primaryEmail": "thissideofwest@gmail.com",
+    "socialMedia": ["https://www.instagram.com/thissideofwest/", "https://thissideofwest.uvic.ca/"]
+  },
+  {
+    "name": "UVic Chemistry Student Society",
+    "primaryEmail": "chemsoc@uvic.ca",
+    "socialMedia": []
+  },
+  {
+    "name": "PHSP Student Association",
+    "primaryEmail": "info@phspsa.com",
+    "socialMedia": ["https://phspsa.com/"]
+  },
+  {
+    "name": "Health Information Science Course Union",
+    "primaryEmail": "hinfcu@gmail.com",
+    "socialMedia": ["https://hinfcu.wordpress.com/", "https://www.instagram.com/uvichinfcu/?hl=en"]
+  },
+  {
+    "name": "Economics Course Union",
+    "primaryEmail": "ecu@uvic.ca",
+    "socialMedia": ["https://www.facebook.com/uvic.ecu/"]
+  },
+  {
+    "name": "Greek and Roman Studies Student Association",
+    "primaryEmail": "miraharveyy@gmail.com",
+    "socialMedia": [
+      "https://www.instagram.com/uvicgrssa/",
+      "https://www.uvic.ca/humanities/greekroman/undergraduate/index.php"
+    ]
+  },
+  {
+    "name": "Undergraduates of Political Science",
+    "primaryEmail": "ups@uvic.ca",
+    "socialMedia": []
+  },
+  {
+    "name": "PHASERS",
+    "primaryEmail": "ruhee199@gmail.com",
+    "socialMedia": []
+  },
+  {
+    "name": "UVIC Germanic and Slavic Studies Course Union (UVIC GRSL)",
+    "primaryEmail": "uvicgrsl@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvicgrsl/", "https://www.facebook.com/uvicgrsl"]
+  },
+  {
+    "name": "Biology Undergraduate Society (BUGS)",
+    "primaryEmail": "uvicbugs@gmail.com",
+    "socialMedia": ["https://www.instagram.com/uvicbugs/?hl=en"]
+  },
+  {
+    "name": "Underlings (Linguistic Course Union)",
+    "primaryEmail": "underlingsuvic@gmail.com",
+    "socialMedia": ["https://www.facebook.com/groups/uvicunderlings/", "https://uvicunderlings.wordpress.com/"]
+  },
+  {
+    "name": "Pacific Asian Student Society",
+    "primaryEmail": "hmatthew5@outlook.com",
+    "socialMedia": ["https://www.facebook.com/passuvic"]
+  },
+  {
+    "name": "Bunch of Anthropology Students",
+    "primaryEmail": "uvicboas@gmail.com",
+    "socialMedia": [
+      "https://www.facebook.com/BunchofAnthropologyStudents",
+      "https://www.uvic.ca/socialsciences/anthropology/undergraduate/studentsociety/index.php"
+    ]
+  },
+  {
+    "name": "History Undergraduate Body",
+    "primaryEmail": "",
+    "socialMedia": []
+  }
+]

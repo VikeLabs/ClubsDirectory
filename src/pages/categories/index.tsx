@@ -1,5 +1,5 @@
-import CategoryButtonMatrix from './CategoryButtonMatrix';
-import { CategoryDiv } from './ClubCategoryStyles';
+import { CategoryButtonMatrix } from './components/CategoryButtonMatrix';
+import { CategoryDiv } from './components/ClubCategoryStyles';
 
 export function CategoryPage(): JSX.Element {
   return (

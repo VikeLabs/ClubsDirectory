@@ -2,11 +2,11 @@ import { Center } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
-import { categoryDevice, device } from '../Assets/CSS/DeviceBreakPoints';
-import mobileBackground from '../Assets/Images/MobileCategoryBackground.png';
+import { categoryDevice, device } from '../../../Assets/CSS/DeviceBreakPoints';
+import mobileBackground from '../../../Assets/Images/MobileCategoryBackground.png';
 
 // Styling the category button icon size for desktop and mobile.
-const ButtonIcon = styled(Center)`
+export const ButtonIcon = styled(Center)`
   @media ${device.mobile} {
     font-size: 50px;
   }
@@ -15,12 +15,12 @@ const ButtonIcon = styled(Center)`
 `;
 
 // Styling the text located in the category buttons.
-const ButtonLabel = styled.p`
+export const ButtonLabel = styled.p`
   margin: -5px 10px 0px 10px;
 `;
 
 // Changing the categories page background when screen width is at 767px or less.
-const CategoryDiv = styled.div`
+export const CategoryDiv = styled.div`
   @media ${device.mobile} {
     background-color: #ebf6f7;
     background-image: url(${mobileBackground});
@@ -30,7 +30,7 @@ const CategoryDiv = styled.div`
 `;
 
 // Styling how the title is displayed depending on screen width.
-const CategoryTitle = styled.h1`
+export const CategoryTitle = styled.h1`
   @media ${device.mobile} {
     font-size: 32px;
     color: black;
@@ -46,7 +46,7 @@ const CategoryTitle = styled.h1`
 `;
 
 // Styling how the grid is displayed on the categories page depending on screen width.
-const Grid = styled.div`
+export const Grid = styled.div`
   @media ${device.mobileTiny} {
     grid-template-columns: repeat(2, max-content);
     margin-top: 10%;
@@ -89,7 +89,7 @@ const Grid = styled.div`
 `;
 
 // Styling how the category buttons look depending on screen width.
-const Gridbutton = styled.button`
+export const Gridbutton = styled.button`
   @media ${device.mobileTiny} {
     width: 120px;
     height: 120px;
@@ -137,8 +137,6 @@ const Gridbutton = styled.button`
 `;
 
 // Removing the underscore that is default with Link.
-const LinkButton = styled(Link)`
+export const LinkButton = styled(Link)`
   text-decoration: none;
 `;
-
-export { Grid, Gridbutton, CategoryTitle, ButtonIcon, ButtonLabel, LinkButton, CategoryDiv };

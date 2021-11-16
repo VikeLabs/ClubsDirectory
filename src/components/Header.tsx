@@ -1,6 +1,6 @@
 import { Box, Flex, LinkBox } from '@chakra-ui/react';
 
-import { ReactComponent as Logo } from './uvss.svg';
+import { ReactComponent as Logo } from '../uvss.svg';
 
 // Implements a mocked-out version of the header on the UVSS homepage. Not meant to be a 1:1 replica
 export function Header(): JSX.Element {
