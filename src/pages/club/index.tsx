@@ -4,13 +4,14 @@ import { useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
-import { CATEGORIES } from '../../categories';
-import { LinkList } from '../../components/SocialMediaLinks';
-import { Tags } from '../../components/Tags';
+import { CATEGORIES } from '../../data/categories';
+import { generateCategoryLink } from '../../data/links';
 import { ClubData } from '../../JSON/ClubData';
 import { findClubBySlug } from '../../JSON/helpers';
-import { generateCategoryLink } from '../../links';
 import { Error404Page } from '../error/404';
+
+import { LinkList } from './components/SocialMediaLinks';
+import { Tags } from './components/Tags';
 
 const imageSizes = ['150px', '150px', '150px', '150px'];
 
@@ -67,7 +68,9 @@ function Breadcrumbs({ slug, name }: { slug: string; name: string }) {
 
 export function ClubPage() {
   // grab route params using react-router-dom
-  const { slug } = useParams<{ category: string; slug: string }>();
+  const { slug } = useParams();
+
+  if (!slug) return <Error404Page />;
 
   const club = findClubBySlug(slug);
 

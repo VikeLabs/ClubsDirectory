@@ -10,7 +10,7 @@ export interface IconProps {
   icon: ComponentType;
 }
 
-function IconItem(props: IconProps) {
+export function IconItem(props: IconProps) {
   const IconType = props.icon;
   return (
     <IconItemDiv>
@@ -18,5 +18,3 @@ function IconItem(props: IconProps) {
     </IconItemDiv>
   );
 }
-
-export default IconItem;

@@ -8,7 +8,7 @@ import { uvssTheme } from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider theme={uvssTheme}>
+    <ChakraProvider theme={uvssTheme} resetCSS>
       <App />
     </ChakraProvider>
   </React.StrictMode>,
